@@ -1,3 +1,8 @@
+require('dotenv').config({
+  path: '.env'
+});
+
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -24,11 +29,19 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/gatsby-icon.png`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
+    // Da vedere se e come integrare le PWA
     // `gatsby-plugin-offline`,
+
+    {
+      resolve: `gatsby-source-datocms`,
+      options: {
+        previewMode: false,
+        disableLiveReload: false,
+        apiToken: process.env.DATO_CMS_API_KEY,
+      }
+    }
   ],
 }
