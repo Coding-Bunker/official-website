@@ -42,6 +42,7 @@ module.exports = {
         disableLiveReload: false,
         apiToken: process.env.DATO_CMS_API_KEY,
       }
-    }
+    },
+    "gatsby-plugin-sass",
   ],
 }
