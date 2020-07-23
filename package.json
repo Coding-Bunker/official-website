@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "coding-bunker-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "WIP Site",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "a lot of people",
   "dependencies": {
     "bootstrap": "^4.5.0",
     "gatsby": "^2.23.10",
