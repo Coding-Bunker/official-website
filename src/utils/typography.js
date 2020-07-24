@@ -1,13 +1,18 @@
 import Typography from "typography";
+import injectFonts from "./inject-fonts"
 
 const typography = new Typography({
   baseFontSize: "18px",
   baseLineHeight: 1.45,
-  headerFontFamily: ["Raleway Regular", "sans-serif"],
-  bodyFontFamily: ["Raleway Regular", "sans-serif"]
+  headerFontFamily: ["Raleway", "sans-serif"],
+  bodyFontFamily: ["Raleway", "sans-serif"],
+  googleFonts: [
+    {
+      name: "Raleway",
+      styles: ["400", "700"],
+    },
+  ],
 });
 
-// Insert styles directly into the <head>
-typography.injectStyles();
 
 export default typography;
