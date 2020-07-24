@@ -1,5 +1,4 @@
 import Typography from "typography";
-import injectFonts from "./inject-fonts"
 
 const typography = new Typography({
   baseFontSize: "18px",
