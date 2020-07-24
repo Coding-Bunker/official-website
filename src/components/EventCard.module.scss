@@ -80,6 +80,12 @@
     font-size: 1rem;
 }
 
+@media screen and (max-width: 420px) {
+    .title {
+        font-size: .75rem;
+    }
+}
+
 // Classe che gestisce la descrizione dell'evento
 .description {
     position: relative;
