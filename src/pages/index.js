@@ -1,11 +1,10 @@
 import React from "react"
 
-import EventCard from "../components/EventCard"
+import ProjectCard from "../components/ProjectCard"
 
 const IndexPage = () => (
   <div>
-    <EventCard title="Lavorare nel mondo del Coding" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit sodales nulla id" date="25/09/20" img={require("../images/test.png")}/>
-    {/* <EventCard title="Lavorare nel mondo del Coding" description="Lorem ipsum sit docet..." date="25/09/20" img={require("../images/hackathon.png")}/> */}
+    <ProjectCard img={require("../images/project.png")} title="Progetto 1" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit sodales nulla id" />
   </div>
 )
 
