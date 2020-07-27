@@ -1,6 +1,7 @@
 import React from "react"
 import staffCardStyles from "./StaffCard.module.scss"
 
+
 export default props => {
     return (
         <div className={staffCardStyles.component + (props.className? ` ${props.className}` : "")}>
@@ -13,6 +14,5 @@ export default props => {
                 </div>
             </div>      
         </div>
-        
     )
 }
