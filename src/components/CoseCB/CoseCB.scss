@@ -20,3 +20,10 @@ p{
   font-weight: 500;
   font-size: 18px;
 }
+
+@media only screen and (max-width: 576px) {
+  span{
+    display: block;
+    text-align: center;
+  }
+}
