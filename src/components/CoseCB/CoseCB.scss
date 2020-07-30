@@ -1,7 +1,16 @@
+
 //Titolo
-h1{
+.Titolo{
   font-weight: bold;
   color: rgba(161,115,249,1);
+  font-size: 32px;
+}
+
+//sottotitolo
+span{
+  font-weight: bold;
+  color: rgba(161,115,249,1);
+  padding-left: 10px;
 }
 
 //Descrizione Scritta
@@ -9,4 +18,5 @@ p{
   color: black;
   padding-top: 1rem;
   font-weight: 500;
+  font-size: 18px;
 }
