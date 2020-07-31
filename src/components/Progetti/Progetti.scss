@@ -1,9 +1,13 @@
+@import "../ProjectCard/ProjectCard.module";
+
+//Contenitore della sezione
 .main-container{
   width: 100%;
   height: 70vh;
   background-color: rgb(175, 109, 255);
 }
 
+//Titolo "Alcuni nostri progetti"
 .titolo-progetti{
   font-size: 40px;
   color: white;
@@ -14,10 +18,7 @@
   padding-top: 1rem;
 }
 
-.altri-progetti{
-  text-align: end;
-}
-
+//sottotilo per altri progetti
 .scopri-progetti{
   font-weight: lighter;
   display: inline-block;
@@ -27,8 +28,30 @@
   color: white;
 }
 
+//contenitore sottotitolo
+.altri-progetti{
+  text-align: end;
+}
+
+//per cambiare il puntatore
 .scopri-progetti:hover{
   cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .descriptionContainer{
+    padding-bottom: 20vh;
+  }
+
+  .main-container{
+    height: 100%;
+    width: 100%;
+  }
+
+  .containerCard{
+    padding-bottom: 20vh;
+  }
+  
 }
 
 
