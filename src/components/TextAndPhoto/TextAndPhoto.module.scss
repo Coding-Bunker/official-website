@@ -1,3 +1,4 @@
+// classe per la sezione globale
 .containerSection {
     color: white;
     padding: 10vh 0;
@@ -5,16 +6,19 @@
     height: 70vh;
 }
 
+// classe scritta coding bunker
 .title {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
+// classe testo sotto coding bunker
 .description {
     font-size: 1.2rem;
 }
 
+// classe foto figa
 .img {
     position: relative;
     left: 7vh;
@@ -23,10 +27,35 @@
     display: inline-block;
 }
 
+// container per la foto
 .imgContainer {
     display: inline-block;
 }
 
+// div che contiene il testo
 .containerText {
     width: 190vh;
+}
+
+// telefono
+@media screen and (max-width: 420px) {
+    .imgContainer {
+        width: 0px;
+        height: 0px;
+    }
+
+    .containerText {
+        width: 90%;
+    }
+
+    .containerSection {
+        height: auto;
+    }
+}
+
+// ipad e tablet
+@media screen and (min-width: 421px) and (max-width: 1024px) {
+    .containerText {
+        width: 75%;
+    }
 }
