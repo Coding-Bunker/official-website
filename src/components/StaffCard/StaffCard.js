@@ -5,7 +5,7 @@ import staffCardStyles from "./StaffCard.module.scss"
 export default props => {
     return (
         <div className={staffCardStyles.component + (props.className? ` ${props.className}` : "")}>
-            <div className={staffCardStyles.profilePicContainer}><img className={staffCardStyles.profilePic} src={props.profilePic} /></div>
+            <div className={staffCardStyles.profilePicContainer}><img className={staffCardStyles.profilePic} src={props.profilePic} alt=""/></div>
             <div className={staffCardStyles.containerCard}>
                 <div className={staffCardStyles.imgBackground}></div>
                 <div className={staffCardStyles.descriptionContainer}>

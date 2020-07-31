@@ -1,8 +1,11 @@
 import React from "react"
 import StaffCard from "../components/StaffCard/StaffCard"
+import LoStaff from "../components/LoStaff/LoStaff";
 
 const IndexPage = () => (
-  <StaffCard profilePic={require("../images/me.jpg")} name="Federico Gerardi" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit sodales nulla id consectetur." />
+    <div>
+        <LoStaff/>
+    </div>
 )
 
 export default IndexPage
