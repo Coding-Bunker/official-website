@@ -38,7 +38,8 @@
   cursor: pointer;
 }
 
-@media (max-width: 576px) {
+//per i telefoni
+@media (max-width: 992px) {
   .descriptionContainer{
     padding-bottom: 20vh;
   }
