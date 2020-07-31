@@ -1,0 +1,32 @@
+.containerSection {
+    color: white;
+    padding: 10vh 0;
+    background-color: #111111;
+    height: 70vh;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.2rem;
+}
+
+.img {
+    position: relative;
+    left: 7vh;
+    top: 5vh;
+    width: 105vh;
+    display: inline-block;
+}
+
+.imgContainer {
+    display: inline-block;
+}
+
+.containerText {
+    width: 190vh;
+}
