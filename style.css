@@ -4,6 +4,7 @@ body {
   background: #EEEEF4;
   color:#999;
   font-family:Roboto;
+  overflow-x: hidden;
 }
 
 h1{
@@ -21,6 +22,4 @@ p{font-weight:300;}
   height:300px;
   text-align:center;
   margin:0;
-  
-  
 }
