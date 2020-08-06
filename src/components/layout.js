@@ -8,9 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { Helmet } from "react-helmet"
 
-import Header from "./header"
+import Navbar from "./Navbar"
 import Footer from "./Footer"
 import Fonts from "./fonts"
 
@@ -28,7 +27,7 @@ const Layout = ({ children }) => {
   return (
     <React.Fragment>
       <Fonts />
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Navbar siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
           margin: `0 auto`,

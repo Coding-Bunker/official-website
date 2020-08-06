@@ -9,7 +9,9 @@ const LinkButton = ({ link, icon }) => (
                 <span style={{
                         position: "relative",
                         display: "block",
-                        height: "32px"
+                        height: "32px",
+                        width: "32px",
+                        fontSize: "initial"
                 }}>
                         <FontAwesomeIcon
                                 inverse

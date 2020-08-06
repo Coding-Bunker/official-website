@@ -104,15 +104,15 @@
 		padding: 20px;
 
 		&__left {
-      @media screen and (min-width: 630px) {
-        float: left;
-      }
+			@media screen and (min-width: 630px) {
+				float: left;
+			}
 		}
 
 		&__rigth {
 			@media screen and (min-width: 630px) {
-        float: right;
-      }
+				float: right;
+			}
 
 			a {
 				color: #898a98;
@@ -128,7 +128,7 @@
 		}
 	}
 	&__logo {
-    float: right;
-    margin-right: 20px;
+		float: right;
+		margin-right: 20px;
 	}
 }

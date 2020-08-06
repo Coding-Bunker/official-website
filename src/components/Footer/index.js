@@ -47,14 +47,11 @@ const Footer = () => {
 	const onSubmitForm = async data => {
 		console.log(data)
 
-		const res = await axios.post('http://94.38.129.41:8080/newsletters', {
+		await axios.post('http://94.38.129.41:8080/newsletters', {
 			data,
 		})
-
-		console.log(res.data)
 	}
 
-	console.log(data)
 
 	return (
 		<footer className="footer">
@@ -125,8 +122,8 @@ const Footer = () => {
 				<Row>
 					<Col className="footer__copyright">
 						<Container fluid>
-							<div class="footer__copyright__left">Coding Bunker © 2020</div>
-							<div class="footer__copyright__rigth">
+							<div className="footer__copyright__left">Coding Bunker © 2020</div>
+							<div className="footer__copyright__rigth">
 								{data.datoCmsFooter.riferimentoLinkLegali.map((route, index) => (
 									<Link key={index} to={route.link}>
 										{route.nome}
@@ -135,7 +132,7 @@ const Footer = () => {
 							</div>
 						</Container>
 					</Col>
-					<div class="footer__logo">
+					<div className="footer__logo">
 						<Img imgStyle={{ marginBottom: 0 }} fixed={data.datoCmsFooter.logo.fixed} />
 					</div>
 				</Row>
