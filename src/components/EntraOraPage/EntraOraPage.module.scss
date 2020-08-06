@@ -1,0 +1,56 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+.entra-ora {
+  background: #7289da;
+  height: auto;
+  color: white;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.logo-discord img {
+  width: 50%;
+  height: auto;
+}
+
+.cta {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+  padding: 50px;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.entra-ora-btn {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 1125px) {
+  .entra-ora {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .entra-ora-btn {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .entra-ora-btn {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 15px;
+  }
+}
