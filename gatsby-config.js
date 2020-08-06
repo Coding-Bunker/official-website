@@ -39,7 +39,7 @@ module.exports = {
       resolve: `gatsby-source-datocms`,
       options: {
         previewMode: false,
-        disableLiveReload: false,
+        disableLiveReload: true, // Sennò superiamo il limite di chiamate mensile
         apiToken: process.env.DATO_CMS_API_KEY,
       }
     },
@@ -47,8 +47,9 @@ module.exports = {
     {
       resolve: "gatsby-plugin-typography",
       options: {
-        pathToConfigModule: "src/utils/typography.js"
+        pathToConfigModule: "src/utils/typography.js",
       }
-    }
+    },
+    "gatsby-plugin-fontawesome-css",
   ],
 }
