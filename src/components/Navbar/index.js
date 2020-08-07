@@ -22,22 +22,35 @@ const Navbar = () => {
 			}
 		`,
 	)
-	console.log(data);
+	console.log(data)
 	return (
 		<BtNavbar expand="lg" bg="primary" variant="dark">
-			
 			<BtNavbar.Brand to="/" as={Link}>
-				<Img style={{ verticalAlign: "middle" }} imgStyle={{ marginBottom: 0 }} fixed={data.datoCmsNavbar.logo.fixed} />
+				<Img
+					style={{ verticalAlign: 'middle' }}
+					imgStyle={{ marginBottom: 0 }}
+					fixed={data.datoCmsNavbar.logo.fixed}
+				/>
 			</BtNavbar.Brand>
 			<BtNavbar.Toggle />
 			<div className="nav-container w-100">
 				<BtNavbar.Collapse>
 					<Nav className="links mr-auto">
-						<Nav.Link to="/chi-siamo" as={Link}>Chi siamo</Nav.Link>
-						<Nav.Link to="entra-ora" as={Link}>Entra ora</Nav.Link>
-						<Nav.Link to="hall-of-fame" as={Link}>Hall of fame</Nav.Link>
-						<Nav.Link to="/blog" as={Link}>Blog</Nav.Link>
-						<Nav.Link to="/sostienici" as={Link}>Sostienici</Nav.Link>
+						<Nav.Link to="/chi-siamo" as={Link}>
+							Chi siamo
+						</Nav.Link>
+						<Nav.Link to="entra-ora" as={Link}>
+							Entra ora
+						</Nav.Link>
+						<Nav.Link to="hall-of-fame" as={Link}>
+							Hall of fame
+						</Nav.Link>
+						<Nav.Link to="/blog" as={Link}>
+							Blog
+						</Nav.Link>
+						<Nav.Link to="/sostienici" as={Link}>
+							Sostienici
+						</Nav.Link>
 					</Nav>
 					<Nav className="link-buttons">
 						<LinkButton link={'/test'} icon={faInstagram} />

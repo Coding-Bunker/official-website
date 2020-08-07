@@ -12,7 +12,7 @@ const withFonts = Component => ({ ...rest }) => (
 	</Component>
 )
 
-const withSeo = Component => ({ description = "", lang = "en", meta = [], title, ...rest }) => {
+const withSeo = Component => ({ description = '', lang = 'en', meta = [], title, ...rest }) => {
 	const { site } = useStaticQuery(
 		graphql`
 			query {
@@ -27,7 +27,7 @@ const withSeo = Component => ({ description = "", lang = "en", meta = [], title,
 		`,
 	)
 
-        const metaDescription = description || site.siteMetadata.description;
+	const metaDescription = description || site.siteMetadata.description
 
 	return (
 		<Component

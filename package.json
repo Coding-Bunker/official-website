@@ -1,9 +1,26 @@
 {
   "name": "coding-bunker-website",
-  "private": true,
   "description": "WIP Site",
   "version": "0.1.0",
   "author": "a lot of people",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --allow-empty"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md}": "prettier --write"
+  },
+
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
@@ -37,21 +54,14 @@
     "typography": "^0.16.19"
   },
   "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
     "prettier": "2.0.5"
   },
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "dev": "gatsby develop",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Coding-Bunker/official-website.git"
@@ -59,6 +69,5 @@
   "bugs": {
     "url": "https://github.com/Coding-Bunker/official-website/issues"
   },
-  "homepage": "https://github.com/Coding-Bunker/official-website#readme",
-  "main": "gatsby-browser.js"
+  "homepage": "https://github.com/Coding-Bunker/official-website#readme"
 }
