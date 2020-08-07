@@ -37,6 +37,8 @@
     "typography": "^0.16.19"
   },
   "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
     "prettier": "2.0.5"
   },
   "keywords": [
@@ -60,5 +62,13 @@
     "url": "https://github.com/Coding-Bunker/official-website/issues"
   },
   "homepage": "https://github.com/Coding-Bunker/official-website#readme",
-  "main": "gatsby-browser.js"
+  "main": "gatsby-browser.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md}": "prettier --write"
+  }
 }
