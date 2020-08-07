@@ -4,13 +4,11 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
-import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => 
 {
   return (
     <Layout>
-      <SEO title="Home" />
       <h1>{data.datoCmsHomepage.sections[0].titolo /*visitare un attributo della sezione numero 0 (ovvero DatoCmsAboutUsSection che non bisogna indicare)*/}</h1>
       <p>
         {data.datoCmsHomepage.sections[0].descrizione}
