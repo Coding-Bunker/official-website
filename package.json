@@ -1,9 +1,26 @@
 {
   "name": "coding-bunker-website",
-  "private": true,
   "description": "WIP Site",
   "version": "0.1.0",
   "author": "a lot of people",
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged --allow-empty"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,md}": "prettier --write"
+  },
+
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
@@ -45,15 +62,6 @@
     "gatsby"
   ],
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "dev": "gatsby develop",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Coding-Bunker/official-website.git"
@@ -61,14 +69,5 @@
   "bugs": {
     "url": "https://github.com/Coding-Bunker/official-website/issues"
   },
-  "homepage": "https://github.com/Coding-Bunker/official-website#readme",
-  "main": "gatsby-browser.js",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,json,md}": "prettier --write"
-  }
+  "homepage": "https://github.com/Coding-Bunker/official-website#readme"
 }
