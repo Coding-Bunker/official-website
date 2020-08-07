@@ -24,7 +24,7 @@ const Navbar = () => {
 	)
 	console.log(data);
 	return (
-		<BtNavbar expand="lg" bg="primary" variant="dark" fixed="top">
+		<BtNavbar expand="lg" bg="primary" variant="dark">
 			
 			<BtNavbar.Brand to="/" as={Link}>
 				<Img style={{ verticalAlign: "middle" }} imgStyle={{ marginBottom: 0 }} fixed={data.datoCmsNavbar.logo.fixed} />

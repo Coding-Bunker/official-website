@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Navbar from "./Navbar"
 import Footer from "./Footer"
-import Fonts from "./fonts"
+import Head from "./Head"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <React.Fragment>
-      <Fonts />
+      <Head />
       <Navbar siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
