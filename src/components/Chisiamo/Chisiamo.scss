@@ -1,21 +1,23 @@
 //Titolo (chi siamo)
-span{
-  display: block;
-  font-weight: bold;
-  font-size: 40px;
-  padding-top: 5vh;
-  padding-bottom: 4vh;
-}
+.chi-siamo {
+  span{
+    display: block;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 5vh;
+    padding-bottom: 4vh;
+  }
 
-//Testo
-p{
-  font-size: 20px;
-  padding-bottom: 2vh;
-}
+  //Testo
+  p{
+    font-size: 20px;
+    padding-bottom: 2vh;
+  }
 
-//contenitore che racchiude tutto il testo
-.contenitore-testo{
-  padding-left: 10vh;
+  //contenitore che racchiude tutto il testo
+  .contenitore-testo{
+    padding-left: 10vh;
+  }
 }
 
 
