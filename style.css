@@ -1,5 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 
+* {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+
 body {
   background: #EEEEF4;
   color:#999;
