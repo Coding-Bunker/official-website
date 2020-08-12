@@ -15,7 +15,11 @@ const IndexPage = ({ data }) => {
 						.titolo /*visitare un attributo della sezione numero 0 (ovvero DatoCmsAboutUsSection che non bisogna indicare)*/
 				}
 			</h1>
-			<p>{data.homepage.sections[0].descrizione}</p>
+			<p
+				dangerouslySetInnerHTML={{
+					__html: data.homepage.sections[0].descrizioneNode.childMarkdownRemark.html,
+				}}
+			/>
 			<p>Welcome to your new Gatsby site.</p>
 			<p>Now go build something great.</p>
 			<div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
@@ -32,14 +36,22 @@ export const query = graphql`
 			sections {
 				... on DatoCmsAboutUsSection {
 					titolo
-					descrizione
+					descrizioneNode {
+						childMarkdownRemark {
+							html
+						}
+					}
 					immagine {
 						url
 					}
 				}
 				... on DatoCmsAboutCodingBunkerSection {
 					titolo
-					descrizione
+					descrizioneNode {
+						childMarkdownRemark {
+							html
+						}
+					}
 					immagine {
 						url
 					}
