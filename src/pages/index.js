@@ -6,15 +6,16 @@ import Layout from '../components/layout'
 import Image from '../components/image'
 
 const IndexPage = ({ data }) => {
+	console.log(data)
 	return (
 		<Layout>
 			<h1>
 				{
-					data.datoCmsHomepage.sections[0]
+					data.homepage.sections[0]
 						.titolo /*visitare un attributo della sezione numero 0 (ovvero DatoCmsAboutUsSection che non bisogna indicare)*/
 				}
 			</h1>
-			<p>{data.datoCmsHomepage.sections[0].descrizione}</p>
+			<p>{data.homepage.sections[0].descrizione}</p>
 			<p>Welcome to your new Gatsby site.</p>
 			<p>Now go build something great.</p>
 			<div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
@@ -27,7 +28,7 @@ const IndexPage = ({ data }) => {
 }
 export const query = graphql`
 	{
-		datoCmsHomepage {
+		homepage: datoCmsHomepage {
 			sections {
 				... on DatoCmsAboutUsSection {
 					titolo
