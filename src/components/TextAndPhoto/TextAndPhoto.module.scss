@@ -15,13 +15,13 @@
 
 // classe testo sotto coding bunker
 .description {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 // classe foto figa
 .img {
     position: relative;
-    left: 7vh;
+    left: 7.6vh;
     top: 5vh;
     width: 105vh;
     display: inline-block;
@@ -58,4 +58,19 @@
     .containerText {
         width: 75%;
     }
+}
+
+.linkContainer {
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #a576ff;
+    position: relative;
+    top: 20px;
+}
+
+.link {
+    display: inline-block;
+    border-bottom: solid #a576ff 2px;
+
 }

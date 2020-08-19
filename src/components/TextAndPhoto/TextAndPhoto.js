@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import textAndPhotoStyles from "./TextAndPhoto.module.scss"
 import { Container, Row, Col } from "react-bootstrap"
 
@@ -10,6 +11,11 @@ export default props => (
                 <Col>
                     <div className={textAndPhotoStyles.title}>{props.title}</div>
                     <div className={textAndPhotoStyles.description}>{props.description}</div>
+                    <div className={textAndPhotoStyles.linkContainer}>
+                        <div className={textAndPhotoStyles.link}>
+                            <Link to={props.linkTo}>{props.linkText} <span style={{fontWeight: "normal"}}>></span></Link>
+                        </div>
+                    </div>
                 </Col>
                 <div className={textAndPhotoStyles.imgContainer}>
                     <img className={textAndPhotoStyles.img} src={props.img} />
