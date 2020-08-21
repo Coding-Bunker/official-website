@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import Head from './Head'
+import Scollable from './Scollable/Scollable'
 
 const Layout = ({ children }) => {
 	const data = useStaticQuery(graphql`
@@ -36,6 +37,9 @@ const Layout = ({ children }) => {
 				}}
 			>
 				<main>{children}</main>
+			</div>
+			<div>
+				<Scollable />
 			</div>
 			<Footer />
 		</React.Fragment>
