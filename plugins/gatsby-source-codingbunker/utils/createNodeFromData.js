@@ -13,5 +13,5 @@ module.exports = (data, dataType, helpers) => {
 	const node = Object.assign({}, data, nodeMetaData);
 	helpers.createNode(node);
 
-	return;
+	return node;
 };
