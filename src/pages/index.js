@@ -1,10 +1,10 @@
 import React from "react"
 
-import Progetti from "../components/Progetti/Progetti";
+import CookieBar from "../components/CookieBar/CookieBar";
 
 const IndexPage = () => (
   <div>
-      <Progetti/>
+      <CookieBar/>
   </div>
 )
 
