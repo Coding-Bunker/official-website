@@ -7,7 +7,11 @@ import ProjectCard from "../ProjectCard/ProjectCard";
 const Progetti = () =>{
     return(
         <div className="main-container">
-            <span className="titolo-progetti">Alcuni nostri progetti</span>
+
+            <Container className="Container-titolo">
+                <span className="titolo-progetti">Alcuni nostri progetti</span>
+            </Container>
+
             <Container fluid>
                 <Row className="justify-content-around">
                     <Col md="auto">
