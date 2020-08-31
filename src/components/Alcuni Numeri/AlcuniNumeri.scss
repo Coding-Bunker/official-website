@@ -1,0 +1,75 @@
+
+//------------= Sezione superiore =------------//
+                                               //
+//Divisore (rettangoli neri vicino a Lo Staff) //
+.Divisore{                                     //
+  height: 1vh;                                 //
+  width: 15vh;                                 //
+  background-color: black;                     //
+  display: inline-block;                       //
+  margin-bottom: 0.7vh                         //
+}                                              //
+                                               //
+//Titolo Lo staff                              //
+.Titolo-Staff{                                 //
+  cursor: default;                             //
+  font-weight: bold;                           //
+  text-align: center;                          //
+  font-size: 35px;                             //
+  padding-left: 7vh;                           //
+  padding-right: 7vh;                          //
+}                                              //
+                                               //
+//Contenitore del titolo e dei divisori        //
+.Contenitore-Titoli{                           //
+  display: flex;                               //
+  align-items: center;                         //
+  justify-content: center;                     //
+                                               //
+}                                              //
+                                               //
+//-----------= Sezione intermedia =------------//
+
+//Fa riferimento al contenitore della sezione dei numeri
+.Contenitore-Numeri{
+  text-align: center;
+  padding-top: 15vh;
+}
+
+//Decorazione per i numeri
+.Decorazione-Numeri{
+  font-size: 10vh;
+  font-weight: bolder;
+  cursor: default;
+}
+
+//Decorazione per i sottotitoli
+.Decorazione-Sottotitoli{
+  cursor: default;
+  color: #a576ff;
+  font-weight: 900;
+  font-size: 5vh;
+}
+
+//Questa classe serve per mandare a capo i due span dei sottotitoli
+.Indent{
+  display: block;
+}
+
+
+
+@media (max-width: 768px) {
+
+  .Decorazione-Sottotitoli{
+    color: #a576ff;
+    font-weight: 900;
+    font-size: 3.5vh;
+  }
+
+}
+
+
+
+
+
+
