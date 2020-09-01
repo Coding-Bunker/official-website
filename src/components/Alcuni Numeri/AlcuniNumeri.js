@@ -1,4 +1,5 @@
 import React from "react";
+import GrowingNumber from "../GrowingNumber/GrowingNumber"
 import { Container, Row, Col } from "react-bootstrap";
 
 import "./AlcuniNumeri.scss"
@@ -17,13 +18,13 @@ const AlcuniNumeri = () =>{
             <Container className="Contenitore-Numeri">
                 <Row>
                     <Col>
-                        <span className="Decorazione-Numeri">984</span>
+                        <span className="Decorazione-Numeri"><GrowingNumber number={2136} /></span>
                     </Col>
                     <Col>
-                        <span className="Decorazione-Numeri">3</span>
+                        <span className="Decorazione-Numeri"><GrowingNumber number={3} /></span>
                     </Col>
                     <Col>
-                        <span className="Decorazione-Numeri">3</span>
+                        <span className="Decorazione-Numeri"><GrowingNumber number={5} /></span>
                     </Col>
                 </Row>
                 <Row>
