@@ -5,7 +5,7 @@ import "./DiconoDiNoi.scss"
 
 const DiconoDiNoi = () =>{
     return (
-        <div>
+        <div className="dicono-di-noi">
             {/* Titolo della sezione "Dicono di noi" */}
             <div className="intestazione">
                 <div className="linea"/>
