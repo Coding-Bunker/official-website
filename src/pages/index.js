@@ -1,11 +1,11 @@
-import React from "react"
+import React from 'react'
 
-import DiconoDiNoi from "../components/Dicono Di Noi/DiconoDiNoi";
+import DiconoDiNoi from '../components/Dicono Di Noi/DiconoDiNoi'
 
 const IndexPage = () => (
-  <div>
-      <DiconoDiNoi />
-  </div>
+	<div>
+		<DiconoDiNoi />
+	</div>
 )
 
 export default IndexPage
