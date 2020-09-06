@@ -1,0 +1,69 @@
+@import "../../styles/style.scss";
+
+// classe che gestisce il componente in se
+.containerCard {
+    border: .1px solid rgba(0,0,0,.1);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    display: inline-block;
+    transition: .2s all;
+    width: 65vh;
+    border-radius: 0px 0px 20px 20px;
+}
+
+// Allarghiamo il componente a tutto schermo nel caso in cui stiamo da telefono
+@media screen and (max-width: 420px) {
+    .containerCard {
+        width: 100%;
+    }
+}
+
+// Animazione per il componente quando ci si passa sopra con il mouse
+.containerCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
+// Div che contiene la foto
+.imgContainer {
+    height: auto;
+    width: auto;
+    
+}
+
+// Classe che gestisce la foto
+.img {
+    margin: 0;
+    width: 100%;
+}
+
+// Div che contiene tutta la descrizione del progetto
+.descriptionContainer {
+    display: inline-block;
+    padding: 30px 30px;
+    width: 100%;
+    height: 12%;
+    background-color: #111111;
+    color: #fff;
+    border-radius: 0px 0px 20px 20px;
+}
+
+// Classe che gestisce il titolo del progetto
+.title {
+    font-weight: bold;
+    font-size: 1rem;
+    position: relative;
+    bottom: 10px;
+}
+
+@media screen and (max-width: 420px) {
+    .title {
+        font-size: .75rem;
+    }
+}
+
+// Classe che gestisce la descrizione del progetto
+.description {
+    position: relative;
+    font-size: .6rem;
+    display: block;
+}
