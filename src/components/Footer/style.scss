@@ -1,0 +1,134 @@
+@import '../../styles/variables';
+
+.footer {
+	display: block;
+
+	color: white;
+
+	&__links {
+		border-radius: 40px 0 0 0;
+
+		.d-flex {
+			margin-top: 1em;
+			margin-bottom: 2em;
+
+			a {
+				margin-right: 20px;
+				color: initial;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+
+		ul {
+			margin: 0;
+			font-weight: lighter;
+		}
+
+		a {
+			color: white;
+			font-size: 0.9rem;
+		}
+
+		h6 {
+			position: relative;
+			font-weight: bold;
+
+			margin-bottom: 30px;
+
+			&::after {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 60px;
+				height: 2.5px;
+
+				left: 50%;
+				top: 30px;
+
+				transform: translate(-50%, 0);
+
+				background-color: white;
+			}
+		}
+	}
+
+	&__newsletter {
+		text-align: left;
+
+		form {
+			margin: auto;
+
+			button.btn {
+				width: 100%;
+
+				&,
+				&.btn-primary:active {
+					background: white;
+					color: black;
+					border: none;
+					outline: none;
+				}
+
+				&.btn-primary {
+					&:focus,
+					&:focus:active {
+						box-shadow: none;
+					}
+				}
+			}
+		}
+
+		.form-control {
+			border: 2px solid white;
+			border-radius: 0;
+
+			&,
+			&::placeholder {
+				color: white;
+			}
+
+			background-color: $secondary;
+
+			&:focus {
+				box-shadow: none;
+			}
+		}
+	}
+
+	&__copyright {
+		background-color: white;
+		color: black;
+		padding: 20px;
+
+		&__left {
+			@media screen and (min-width: 630px) {
+				float: left;
+			}
+		}
+
+		&__rigth {
+			@media screen and (min-width: 630px) {
+				float: right;
+			}
+
+			a {
+				color: #898a98;
+			}
+
+			& > * {
+				margin-right: 30px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	&__logo {
+		float: right;
+		margin-right: 20px;
+	}
+}
