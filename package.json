@@ -10,7 +10,9 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "migration:export": "node ./scripts/export-env.js",
+    "migration:import": "node ./scripts/import-env.js"
   },
   "husky": {
     "hooks": {
@@ -53,8 +55,11 @@
     "typography": "^0.16.19"
   },
   "devDependencies": {
+    "datocms-client": "^3.0.37",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
+    "minimist": "^1.2.5",
+    "ora": "^5.0.0",
     "prettier": "2.0.5"
   },
   "keywords": [

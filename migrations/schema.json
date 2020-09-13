@@ -1,0 +1,1844 @@
+[
+	{
+		"itemType": {
+			"id": "266055",
+			"name": "Quotes",
+			"apiKey": "quote",
+			"collectionAppeareance": "table",
+			"collectionAppearance": "table",
+			"singleton": false,
+			"allLocalesRequired": true,
+			"sortable": false,
+			"modularBlock": false,
+			"draftModeActive": false,
+			"tree": false,
+			"orderingDirection": null,
+			"hasSingletonItem": false,
+			"singletonItem": null,
+			"fields": ["1181042", "1181043", "1181044", "1181046"],
+			"titleField": "1181043",
+			"orderingField": null
+		},
+		"fields": [
+			{
+				"id": "1181046",
+				"label": "Testo_citato",
+				"fieldType": "text",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "testo_citato",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "markdown",
+					"parameters": {
+						"toolbar": [
+							"heading",
+							"bold",
+							"italic",
+							"strikethrough",
+							"unordered_list",
+							"ordered_list",
+							"quote",
+							"link",
+							"image",
+							"fullscreen"
+						]
+					},
+					"type": "markdown"
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "markdown",
+					"parameters": {
+						"toolbar": [
+							"heading",
+							"bold",
+							"italic",
+							"strikethrough",
+							"unordered_list",
+							"ordered_list",
+							"quote",
+							"link",
+							"image",
+							"fullscreen"
+						]
+					},
+					"type": "markdown"
+				},
+				"position": 4,
+				"itemType": "266055"
+			},
+			{
+				"id": "1181044",
+				"label": "Ruolo_staff",
+				"fieldType": "string",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "ruolo_staff",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"position": 3,
+				"itemType": "266055"
+			},
+			{
+				"id": "1181043",
+				"label": "Nome_staff",
+				"fieldType": "string",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "nome_staff",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"position": 2,
+				"itemType": "266055"
+			},
+			{
+				"id": "1181042",
+				"label": "Immagine_staff",
+				"fieldType": "file",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "immagine_staff",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "file",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "file",
+					"parameters": {}
+				},
+				"position": 1,
+				"itemType": "266055"
+			}
+		]
+	},
+	{
+		"itemType": {
+			"id": "266835",
+			"name": "Navbar",
+			"apiKey": "navbar",
+			"collectionAppeareance": "table",
+			"collectionAppearance": "table",
+			"singleton": true,
+			"allLocalesRequired": true,
+			"sortable": false,
+			"modularBlock": false,
+			"draftModeActive": false,
+			"tree": false,
+			"orderingDirection": null,
+			"hasSingletonItem": true,
+			"singletonItem": "5804351",
+			"fields": ["1185447", "1185450", "1185457"],
+			"titleField": null,
+			"orderingField": null
+		},
+		"fields": [
+			{
+				"id": "1185457",
+				"label": "Links",
+				"fieldType": "link",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "links",
+				"hint": null,
+				"validators": {
+					"itemItemType": {
+						"itemTypes": ["266836"]
+					}
+				},
+				"appeareance": {
+					"addons": [],
+					"editor": "link_select",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "link_select",
+					"parameters": {}
+				},
+				"position": 3,
+				"itemType": "266835"
+			},
+			{
+				"id": "1185450",
+				"label": "Riferimento_altre_pagine",
+				"fieldType": "links",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "riferimento_altre_pagine",
+				"hint": null,
+				"validators": {
+					"itemsItemType": {
+						"itemTypes": ["266836"]
+					},
+					"size": {
+						"eq": 5
+					}
+				},
+				"appeareance": {
+					"addons": [],
+					"editor": "links_select",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "links_select",
+					"parameters": {}
+				},
+				"position": 2,
+				"itemType": "266835"
+			},
+			{
+				"id": "1185447",
+				"label": "Logo",
+				"fieldType": "file",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "logo",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "file",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "file",
+					"parameters": {}
+				},
+				"position": 1,
+				"itemType": "266835"
+			}
+		]
+	},
+	{
+		"itemType": {
+			"id": "269974",
+			"name": "Event_section",
+			"apiKey": "event_section",
+			"collectionAppeareance": "table",
+			"collectionAppearance": "table",
+			"singleton": false,
+			"allLocalesRequired": true,
+			"sortable": false,
+			"modularBlock": true,
+			"draftModeActive": false,
+			"tree": false,
+			"orderingDirection": null,
+			"hasSingletonItem": false,
+			"singletonItem": null,
+			"fields": ["1202790", "1202791"],
+			"titleField": null,
+			"orderingField": null
+		},
+		"fields": [
+			{
+				"id": "1202791",
+				"label": "Carte",
+				"fieldType": "links",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "carte",
+				"hint": null,
+				"validators": {
+					"itemsItemType": {
+						"itemTypes": ["266049"]
+					}
+				},
+				"appeareance": {
+					"addons": [],
+					"editor": "links_select",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "links_select",
+					"parameters": {}
+				},
+				"position": 2,
+				"itemType": "269974"
+			},
+			{
+				"id": "1202790",
+				"label": "Titolo",
+				"fieldType": "string",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "titolo",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"position": 1,
+				"itemType": "269974"
+			}
+		]
+	},
+	{
+		"itemType": {
+			"id": "269968",
+			"name": "Homepage",
+			"apiKey": "homepage",
+			"collectionAppeareance": "table",
+			"collectionAppearance": "table",
+			"singleton": true,
+			"allLocalesRequired": true,
+			"sortable": false,
+			"modularBlock": false,
+			"draftModeActive": false,
+			"tree": false,
+			"orderingDirection": null,
+			"hasSingletonItem": true,
+			"singletonItem": "5778849",
+			"fields": ["1202772"],
+			"titleField": null,
+			"orderingField": null
+		},
+		"fields": [
+			{
+				"id": "1202772",
+				"label": "Sections",
+				"fieldType": "rich_text",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "sections",
+				"hint": null,
+				"validators": {
+					"richTextBlocks": {
+						"itemTypes": ["269970", "269971", "269972", "269973", "269974", "269975", "269976"]
+					}
+				},
+				"appeareance": {
+					"addons": [],
+					"editor": "rich_text",
+					"parameters": {
+						"startCollapsed": false
+					}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "rich_text",
+					"parameters": {
+						"startCollapsed": false
+					}
+				},
+				"position": 1,
+				"itemType": "269968"
+			}
+		]
+	},
+	{
+		"itemType": {
+			"id": "269976",
+			"name": "Project_section",
+			"apiKey": "project_section",
+			"collectionAppeareance": "table",
+			"collectionAppearance": "table",
+			"singleton": false,
+			"allLocalesRequired": true,
+			"sortable": false,
+			"modularBlock": true,
+			"draftModeActive": false,
+			"tree": false,
+			"orderingDirection": null,
+			"hasSingletonItem": false,
+			"singletonItem": null,
+			"fields": ["1202794", "1202795", "1202809", "1202810"],
+			"titleField": null,
+			"orderingField": null
+		},
+		"fields": [
+			{
+				"id": "1202810",
+				"label": "Link_pagina_progetti",
+				"fieldType": "string",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "link_pagina_progetti",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"position": 4,
+				"itemType": "269976"
+			},
+			{
+				"id": "1202809",
+				"label": "Progetti",
+				"fieldType": "links",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "progetti",
+				"hint": null,
+				"validators": {
+					"itemsItemType": {
+						"itemTypes": ["266049"]
+					}
+				},
+				"appeareance": {
+					"addons": [],
+					"editor": "links_select",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "links_select",
+					"parameters": {}
+				},
+				"position": 3,
+				"itemType": "269976"
+			},
+			{
+				"id": "1202795",
+				"label": "Descrizione",
+				"fieldType": "text",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "descrizione",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "markdown",
+					"parameters": {
+						"toolbar": [
+							"heading",
+							"bold",
+							"italic",
+							"strikethrough",
+							"unordered_list",
+							"ordered_list",
+							"quote",
+							"link",
+							"image",
+							"fullscreen"
+						]
+					},
+					"type": "markdown"
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "markdown",
+					"parameters": {
+						"toolbar": [
+							"heading",
+							"bold",
+							"italic",
+							"strikethrough",
+							"unordered_list",
+							"ordered_list",
+							"quote",
+							"link",
+							"image",
+							"fullscreen"
+						]
+					},
+					"type": "markdown"
+				},
+				"position": 2,
+				"itemType": "269976"
+			},
+			{
+				"id": "1202794",
+				"label": "Titolo",
+				"fieldType": "string",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "titolo",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"position": 1,
+				"itemType": "269976"
+			}
+		]
+	},
+	{
+		"itemType": {
+			"id": "269970",
+			"name": "About_us_section",
+			"apiKey": "about_us_section",
+			"collectionAppeareance": "table",
+			"collectionAppearance": "table",
+			"singleton": false,
+			"allLocalesRequired": true,
+			"sortable": false,
+			"modularBlock": true,
+			"draftModeActive": false,
+			"tree": false,
+			"orderingDirection": null,
+			"hasSingletonItem": false,
+			"singletonItem": null,
+			"fields": ["1202779", "1202780", "1202781"],
+			"titleField": null,
+			"orderingField": null
+		},
+		"fields": [
+			{
+				"id": "1202781",
+				"label": "Immagine",
+				"fieldType": "file",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "immagine",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "file",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "file",
+					"parameters": {}
+				},
+				"position": 3,
+				"itemType": "269970"
+			},
+			{
+				"id": "1202780",
+				"label": "Descrizione",
+				"fieldType": "text",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "descrizione",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "markdown",
+					"parameters": {
+						"toolbar": [
+							"heading",
+							"bold",
+							"italic",
+							"strikethrough",
+							"unordered_list",
+							"ordered_list",
+							"quote",
+							"link",
+							"image",
+							"fullscreen"
+						]
+					},
+					"type": "markdown"
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "markdown",
+					"parameters": {
+						"toolbar": [
+							"heading",
+							"bold",
+							"italic",
+							"strikethrough",
+							"unordered_list",
+							"ordered_list",
+							"quote",
+							"link",
+							"image",
+							"fullscreen"
+						]
+					},
+					"type": "markdown"
+				},
+				"position": 2,
+				"itemType": "269970"
+			},
+			{
+				"id": "1202779",
+				"label": "Titolo",
+				"fieldType": "string",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "titolo",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"position": 1,
+				"itemType": "269970"
+			}
+		]
+	},
+	{
+		"itemType": {
+			"id": "269975",
+			"name": "Partner_section",
+			"apiKey": "partner_section",
+			"collectionAppeareance": "table",
+			"collectionAppearance": "table",
+			"singleton": false,
+			"allLocalesRequired": true,
+			"sortable": false,
+			"modularBlock": true,
+			"draftModeActive": false,
+			"tree": false,
+			"orderingDirection": null,
+			"hasSingletonItem": false,
+			"singletonItem": null,
+			"fields": ["1202792", "1202793"],
+			"titleField": null,
+			"orderingField": null
+		},
+		"fields": [
+			{
+				"id": "1202793",
+				"label": "Partners",
+				"fieldType": "links",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "partners",
+				"hint": null,
+				"validators": {
+					"itemsItemType": {
+						"itemTypes": ["266057"]
+					}
+				},
+				"appeareance": {
+					"addons": [],
+					"editor": "links_select",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "links_select",
+					"parameters": {}
+				},
+				"position": 2,
+				"itemType": "269975"
+			},
+			{
+				"id": "1202792",
+				"label": "Titolo",
+				"fieldType": "string",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "titolo",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"position": 1,
+				"itemType": "269975"
+			}
+		]
+	},
+	{
+		"itemType": {
+			"id": "269971",
+			"name": "About_coding_bunker_section",
+			"apiKey": "about_coding_bunker_section",
+			"collectionAppeareance": "table",
+			"collectionAppearance": "table",
+			"singleton": false,
+			"allLocalesRequired": true,
+			"sortable": false,
+			"modularBlock": true,
+			"draftModeActive": false,
+			"tree": false,
+			"orderingDirection": null,
+			"hasSingletonItem": false,
+			"singletonItem": null,
+			"fields": ["1202783", "1202784", "1202782"],
+			"titleField": null,
+			"orderingField": null
+		},
+		"fields": [
+			{
+				"id": "1202784",
+				"label": "Descrizione",
+				"fieldType": "text",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "descrizione",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "markdown",
+					"parameters": {
+						"toolbar": [
+							"heading",
+							"bold",
+							"italic",
+							"strikethrough",
+							"unordered_list",
+							"ordered_list",
+							"quote",
+							"link",
+							"image",
+							"fullscreen"
+						]
+					},
+					"type": "markdown"
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "markdown",
+					"parameters": {
+						"toolbar": [
+							"heading",
+							"bold",
+							"italic",
+							"strikethrough",
+							"unordered_list",
+							"ordered_list",
+							"quote",
+							"link",
+							"image",
+							"fullscreen"
+						]
+					},
+					"type": "markdown"
+				},
+				"position": 2,
+				"itemType": "269971"
+			},
+			{
+				"id": "1202783",
+				"label": "Titolo",
+				"fieldType": "string",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "titolo",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"position": 1,
+				"itemType": "269971"
+			},
+			{
+				"id": "1202782",
+				"label": "Immagine",
+				"fieldType": "file",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "immagine",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "file",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "file",
+					"parameters": {}
+				},
+				"position": 3,
+				"itemType": "269971"
+			}
+		]
+	},
+	{
+		"itemType": {
+			"id": "266836",
+			"name": "Route",
+			"apiKey": "route_link",
+			"collectionAppeareance": "table",
+			"collectionAppearance": "table",
+			"singleton": false,
+			"allLocalesRequired": true,
+			"sortable": false,
+			"modularBlock": false,
+			"draftModeActive": false,
+			"tree": false,
+			"orderingDirection": null,
+			"hasSingletonItem": false,
+			"singletonItem": null,
+			"fields": ["1185448", "1185449"],
+			"titleField": "1185448",
+			"orderingField": null
+		},
+		"fields": [
+			{
+				"id": "1185449",
+				"label": "Link",
+				"fieldType": "string",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "link",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"position": 2,
+				"itemType": "266836"
+			},
+			{
+				"id": "1185448",
+				"label": "Nome",
+				"fieldType": "string",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "nome",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"position": 1,
+				"itemType": "266836"
+			}
+		]
+	},
+	{
+		"itemType": {
+			"id": "269972",
+			"name": "Discord_section",
+			"apiKey": "discord_section",
+			"collectionAppeareance": "table",
+			"collectionAppearance": "table",
+			"singleton": false,
+			"allLocalesRequired": true,
+			"sortable": false,
+			"modularBlock": true,
+			"draftModeActive": false,
+			"tree": false,
+			"orderingDirection": null,
+			"hasSingletonItem": false,
+			"singletonItem": null,
+			"fields": ["1202785", "1202786", "1202787", "1202815"],
+			"titleField": null,
+			"orderingField": null
+		},
+		"fields": [
+			{
+				"id": "1202815",
+				"label": "Link_discord",
+				"fieldType": "link",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "link_discord",
+				"hint": null,
+				"validators": {
+					"itemItemType": {
+						"itemTypes": ["266836"]
+					}
+				},
+				"appeareance": {
+					"addons": [],
+					"editor": "link_select",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "link_select",
+					"parameters": {}
+				},
+				"position": 4,
+				"itemType": "269972"
+			},
+			{
+				"id": "1202787",
+				"label": "Descrizione",
+				"fieldType": "text",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "descrizione",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "markdown",
+					"parameters": {
+						"toolbar": [
+							"heading",
+							"bold",
+							"italic",
+							"strikethrough",
+							"unordered_list",
+							"ordered_list",
+							"quote",
+							"link",
+							"image",
+							"fullscreen"
+						]
+					},
+					"type": "markdown"
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "markdown",
+					"parameters": {
+						"toolbar": [
+							"heading",
+							"bold",
+							"italic",
+							"strikethrough",
+							"unordered_list",
+							"ordered_list",
+							"quote",
+							"link",
+							"image",
+							"fullscreen"
+						]
+					},
+					"type": "markdown"
+				},
+				"position": 3,
+				"itemType": "269972"
+			},
+			{
+				"id": "1202786",
+				"label": "Immagine_background",
+				"fieldType": "file",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "immagine_background",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "file",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "file",
+					"parameters": {}
+				},
+				"position": 2,
+				"itemType": "269972"
+			},
+			{
+				"id": "1202785",
+				"label": "Immagine_discord",
+				"fieldType": "file",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "immagine_discord",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "file",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "file",
+					"parameters": {}
+				},
+				"position": 1,
+				"itemType": "269972"
+			}
+		]
+	},
+	{
+		"itemType": {
+			"id": "266837",
+			"name": "Footer",
+			"apiKey": "footer",
+			"collectionAppeareance": "table",
+			"collectionAppearance": "table",
+			"singleton": true,
+			"allLocalesRequired": true,
+			"sortable": false,
+			"modularBlock": false,
+			"draftModeActive": false,
+			"tree": false,
+			"orderingDirection": null,
+			"hasSingletonItem": true,
+			"singletonItem": "5710505",
+			"fields": ["1185456", "1185458", "1190586", "1202457", "1202456", "1202458", "1204972"],
+			"titleField": "1185458",
+			"orderingField": null
+		},
+		"fields": [
+			{
+				"id": "1204972",
+				"label": "logo",
+				"fieldType": "file",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "logo",
+				"hint": null,
+				"validators": {
+					"required": {}
+				},
+				"appeareance": {
+					"addons": [],
+					"editor": "file",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "file",
+					"parameters": {}
+				},
+				"position": 11,
+				"itemType": "266837"
+			},
+			{
+				"id": "1202458",
+				"label": "Riferimento_Link Legali",
+				"fieldType": "links",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "riferimento_link_legali",
+				"hint": null,
+				"validators": {
+					"itemsItemType": {
+						"itemTypes": ["266836"]
+					}
+				},
+				"appeareance": {
+					"addons": [],
+					"editor": "links_select",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "links_select",
+					"parameters": {}
+				},
+				"position": 10,
+				"itemType": "266837"
+			},
+			{
+				"id": "1202457",
+				"label": "Riferimento_Resta Aggiornato",
+				"fieldType": "links",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "riferimento_resta_aggiornato",
+				"hint": null,
+				"validators": {
+					"itemsItemType": {
+						"itemTypes": ["266836"]
+					}
+				},
+				"appeareance": {
+					"addons": [],
+					"editor": "links_select",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "links_select",
+					"parameters": {}
+				},
+				"position": 8,
+				"itemType": "266837"
+			},
+			{
+				"id": "1202456",
+				"label": "Riferimento_Sostienici",
+				"fieldType": "links",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "riferimento_sostienici",
+				"hint": null,
+				"validators": {
+					"itemsItemType": {
+						"itemTypes": ["266836"]
+					}
+				},
+				"appeareance": {
+					"addons": [],
+					"editor": "links_select",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "links_select",
+					"parameters": {}
+				},
+				"position": 9,
+				"itemType": "266837"
+			},
+			{
+				"id": "1190586",
+				"label": "Riferimento_Coding Bunker",
+				"fieldType": "links",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "riferimento_coding_bunker",
+				"hint": null,
+				"validators": {
+					"itemsItemType": {
+						"itemTypes": ["266836"]
+					}
+				},
+				"appeareance": {
+					"addons": [],
+					"editor": "links_select",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "links_select",
+					"parameters": {}
+				},
+				"position": 7,
+				"itemType": "266837"
+			},
+			{
+				"id": "1185458",
+				"label": "Newsletter_description",
+				"fieldType": "string",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "newsletter_description",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"position": 6,
+				"itemType": "266837"
+			},
+			{
+				"id": "1185456",
+				"label": "Links",
+				"fieldType": "link",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "links",
+				"hint": null,
+				"validators": {
+					"itemItemType": {
+						"itemTypes": ["266836"]
+					},
+					"required": {}
+				},
+				"appeareance": {
+					"addons": [],
+					"editor": "link_select",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "link_select",
+					"parameters": {}
+				},
+				"position": 5,
+				"itemType": "266837"
+			}
+		]
+	},
+	{
+		"itemType": {
+			"id": "269973",
+			"name": "Quote_section",
+			"apiKey": "quote_section",
+			"collectionAppeareance": "table",
+			"collectionAppearance": "table",
+			"singleton": false,
+			"allLocalesRequired": true,
+			"sortable": false,
+			"modularBlock": true,
+			"draftModeActive": false,
+			"tree": false,
+			"orderingDirection": null,
+			"hasSingletonItem": false,
+			"singletonItem": null,
+			"fields": ["1202788", "1202789"],
+			"titleField": null,
+			"orderingField": null
+		},
+		"fields": [
+			{
+				"id": "1202789",
+				"label": "Immagini_virgolette",
+				"fieldType": "gallery",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "immagini_virgolette",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "gallery",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "gallery",
+					"parameters": {}
+				},
+				"position": 2,
+				"itemType": "269973"
+			},
+			{
+				"id": "1202788",
+				"label": "Riferimento_quote",
+				"fieldType": "link",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "riferimento_quote",
+				"hint": null,
+				"validators": {
+					"itemItemType": {
+						"itemTypes": ["266055"]
+					},
+					"required": {}
+				},
+				"appeareance": {
+					"addons": [],
+					"editor": "link_select",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "link_select",
+					"parameters": {}
+				},
+				"position": 1,
+				"itemType": "269973"
+			}
+		]
+	},
+	{
+		"itemType": {
+			"id": "266832",
+			"name": "route",
+			"apiKey": "route",
+			"collectionAppeareance": "table",
+			"collectionAppearance": "table",
+			"singleton": false,
+			"allLocalesRequired": true,
+			"sortable": false,
+			"modularBlock": true,
+			"draftModeActive": false,
+			"tree": false,
+			"orderingDirection": null,
+			"hasSingletonItem": false,
+			"singletonItem": null,
+			"fields": [],
+			"titleField": null,
+			"orderingField": null
+		},
+		"fields": []
+	},
+	{
+		"itemType": {
+			"id": "266332",
+			"name": "Contributor",
+			"apiKey": "contributor",
+			"collectionAppeareance": "table",
+			"collectionAppearance": "table",
+			"singleton": false,
+			"allLocalesRequired": true,
+			"sortable": false,
+			"modularBlock": true,
+			"draftModeActive": false,
+			"tree": false,
+			"orderingDirection": null,
+			"hasSingletonItem": false,
+			"singletonItem": null,
+			"fields": ["1185407"],
+			"titleField": null,
+			"orderingField": null
+		},
+		"fields": [
+			{
+				"id": "1185407",
+				"label": "Nome_contributor",
+				"fieldType": "string",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "nome_contributor",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"position": 1,
+				"itemType": "266332"
+			}
+		]
+	},
+	{
+		"itemType": {
+			"id": "266329",
+			"name": "test_sub_1",
+			"apiKey": "test_sub1",
+			"collectionAppeareance": "table",
+			"collectionAppearance": "table",
+			"singleton": false,
+			"allLocalesRequired": true,
+			"sortable": false,
+			"modularBlock": true,
+			"draftModeActive": false,
+			"tree": false,
+			"orderingDirection": null,
+			"hasSingletonItem": false,
+			"singletonItem": null,
+			"fields": [],
+			"titleField": null,
+			"orderingField": null
+		},
+		"fields": []
+	},
+	{
+		"itemType": {
+			"id": "266331",
+			"name": "Progetto",
+			"apiKey": "progetto",
+			"collectionAppeareance": "table",
+			"collectionAppearance": "table",
+			"singleton": false,
+			"allLocalesRequired": true,
+			"sortable": false,
+			"modularBlock": true,
+			"draftModeActive": false,
+			"tree": false,
+			"orderingDirection": null,
+			"hasSingletonItem": false,
+			"singletonItem": null,
+			"fields": ["1185418", "1185419", "1185421", "1185422"],
+			"titleField": null,
+			"orderingField": null
+		},
+		"fields": [
+			{
+				"id": "1185422",
+				"label": "Link",
+				"fieldType": "string",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "link",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"position": 4,
+				"itemType": "266331"
+			},
+			{
+				"id": "1185421",
+				"label": "Descrizione",
+				"fieldType": "text",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "descrizione",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "markdown",
+					"parameters": {
+						"toolbar": [
+							"heading",
+							"bold",
+							"italic",
+							"strikethrough",
+							"unordered_list",
+							"ordered_list",
+							"quote",
+							"link",
+							"image",
+							"fullscreen"
+						]
+					},
+					"type": "markdown"
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "markdown",
+					"parameters": {
+						"toolbar": [
+							"heading",
+							"bold",
+							"italic",
+							"strikethrough",
+							"unordered_list",
+							"ordered_list",
+							"quote",
+							"link",
+							"image",
+							"fullscreen"
+						]
+					},
+					"type": "markdown"
+				},
+				"position": 3,
+				"itemType": "266331"
+			},
+			{
+				"id": "1185419",
+				"label": "Titolo",
+				"fieldType": "string",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "titolo",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"position": 2,
+				"itemType": "266331"
+			},
+			{
+				"id": "1185418",
+				"label": "Immagine",
+				"fieldType": "file",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "immagine",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "file",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "file",
+					"parameters": {}
+				},
+				"position": 1,
+				"itemType": "266331"
+			}
+		]
+	},
+	{
+		"itemType": {
+			"id": "266057",
+			"name": "Partners",
+			"apiKey": "partner",
+			"collectionAppeareance": "table",
+			"collectionAppearance": "table",
+			"singleton": false,
+			"allLocalesRequired": true,
+			"sortable": false,
+			"modularBlock": false,
+			"draftModeActive": false,
+			"tree": false,
+			"orderingDirection": null,
+			"hasSingletonItem": false,
+			"singletonItem": null,
+			"fields": ["1181051", "1181261", "1181263"],
+			"titleField": "1181261",
+			"orderingField": null
+		},
+		"fields": [
+			{
+				"id": "1181263",
+				"label": "Link_sito_partner",
+				"fieldType": "string",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "link_sito_partner",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"position": 3,
+				"itemType": "266057"
+			},
+			{
+				"id": "1181261",
+				"label": "Nome_partner",
+				"fieldType": "string",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "nome_partner",
+				"hint": "Non per forza dev'essere messo, ma è comodo",
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"position": 2,
+				"itemType": "266057"
+			},
+			{
+				"id": "1181051",
+				"label": "Immagine_partner",
+				"fieldType": "file",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "immagine_partner",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "file",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "file",
+					"parameters": {}
+				},
+				"position": 1,
+				"itemType": "266057"
+			}
+		]
+	},
+	{
+		"itemType": {
+			"id": "266049",
+			"name": "Cards",
+			"apiKey": "card",
+			"collectionAppeareance": "table",
+			"collectionAppearance": "table",
+			"singleton": false,
+			"allLocalesRequired": true,
+			"sortable": false,
+			"modularBlock": false,
+			"draftModeActive": false,
+			"tree": false,
+			"orderingDirection": null,
+			"hasSingletonItem": false,
+			"singletonItem": null,
+			"fields": ["1182455"],
+			"titleField": null,
+			"orderingField": null
+		},
+		"fields": [
+			{
+				"id": "1182455",
+				"label": "Tipo carta",
+				"fieldType": "rich_text",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "tipo_carta",
+				"hint": null,
+				"validators": {
+					"richTextBlocks": {
+						"itemTypes": ["266330", "266331", "266332"]
+					}
+				},
+				"appeareance": {
+					"addons": [],
+					"editor": "rich_text",
+					"parameters": {
+						"startCollapsed": false
+					}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "rich_text",
+					"parameters": {
+						"startCollapsed": false
+					}
+				},
+				"position": 4,
+				"itemType": "266049"
+			}
+		]
+	},
+	{
+		"itemType": {
+			"id": "266330",
+			"name": "Evento",
+			"apiKey": "evento",
+			"collectionAppeareance": "table",
+			"collectionAppearance": "table",
+			"singleton": false,
+			"allLocalesRequired": true,
+			"sortable": false,
+			"modularBlock": true,
+			"draftModeActive": false,
+			"tree": false,
+			"orderingDirection": null,
+			"hasSingletonItem": false,
+			"singletonItem": null,
+			"fields": ["1185408", "1185409", "1185410", "1185424"],
+			"titleField": null,
+			"orderingField": null
+		},
+		"fields": [
+			{
+				"id": "1185424",
+				"label": "Link",
+				"fieldType": "string",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "link",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "single_line",
+					"parameters": {
+						"heading": false
+					}
+				},
+				"position": 4,
+				"itemType": "266330"
+			},
+			{
+				"id": "1185410",
+				"label": "Posizione_evento",
+				"fieldType": "lat_lon",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "posizione_evento",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "map",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "map",
+					"parameters": {}
+				},
+				"position": 3,
+				"itemType": "266330"
+			},
+			{
+				"id": "1185409",
+				"label": "Foto_evento",
+				"fieldType": "file",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "foto_evento",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "file",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "file",
+					"parameters": {}
+				},
+				"position": 2,
+				"itemType": "266330"
+			},
+			{
+				"id": "1185408",
+				"label": "Data_evento",
+				"fieldType": "date_time",
+				"localized": false,
+				"defaultValue": null,
+				"apiKey": "data_evento",
+				"hint": null,
+				"validators": {},
+				"appeareance": {
+					"addons": [],
+					"editor": "date_time_picker",
+					"parameters": {}
+				},
+				"appearance": {
+					"addons": [],
+					"editor": "date_time_picker",
+					"parameters": {}
+				},
+				"position": 1,
+				"itemType": "266330"
+			}
+		]
+	}
+]
