@@ -1,10 +1,10 @@
 import React from "react"
+import EntraOraHome from "../components/EntraOraHome/EntraOraHome";
 
-import PostCard from "../components/PostCard/PostCard";
 
 const IndexPage = () => (
   <div>
-      <PostCard />
+      <EntraOraHome />
   </div>
 )
 

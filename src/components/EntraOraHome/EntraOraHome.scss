@@ -1,0 +1,26 @@
+.entra-ora-component {
+  * {
+    font-family: 'Raleway', sans-serif;
+  }
+  .entra-ora {
+    height: 500px;
+    color: white;
+    padding-bottom: 50px;
+  }
+  
+  p {
+    width: 60%;
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 200px;
+    margin: 0 auto;
+  }
+  
+  .entra-ora-btn {
+    position: relative;
+    left: 38%;
+    margin: 2em;
+    text-align: center;
+    border-radius: 15px;
+  }
+}
