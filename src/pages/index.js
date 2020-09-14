@@ -1,10 +1,10 @@
 import React from "react"
 
-import DiconoDiNoi from "../components/Dicono Di Noi/DiconoDiNoi";
+import Blog from "../components/Blog/Blog";
 
 const IndexPage = () => (
   <div>
-      <DiconoDiNoi />
+      <Blog />
   </div>
 )
 
