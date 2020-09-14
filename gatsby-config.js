@@ -2,6 +2,8 @@ require('dotenv').config({
 	path: '.env',
 })
 
+const path = require('path')
+
 module.exports = {
 	siteMetadata: {
 		title: `Gatsby Default Starter`,
@@ -54,6 +56,14 @@ module.exports = {
 			resolve: `gatsby-transformer-remark`,
 			options: {
 				plugins: [],
+			},
+		},
+		{
+			resolve: `gatsby-plugin-mdx`,
+			options: {
+				defaultLayouts: {
+					default: path.join(__dirname, './src/components/BlogLayout'),
+				},
 			},
 		},
 	],
