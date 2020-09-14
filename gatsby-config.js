@@ -50,5 +50,11 @@ module.exports = {
 			},
 		},
 		'gatsby-plugin-fontawesome-css',
+		{
+			resolve: `gatsby-transformer-remark`,
+			options: {
+				plugins: [],
+			},
+		},
 	],
 }
