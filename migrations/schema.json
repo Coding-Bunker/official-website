@@ -176,8 +176,8 @@
 				"apiKey": "links",
 				"hint": null,
 				"validators": {
-					"itemItemType": {
-						"itemTypes": ["266836"]
+					"itemsItemType": {
+						"itemTypes": ["route_link"]
 					}
 				},
 				"appeareance": {
@@ -203,7 +203,7 @@
 				"hint": null,
 				"validators": {
 					"itemsItemType": {
-						"itemTypes": ["266836"]
+						"itemTypes": ["route_link"]
 					},
 					"size": {
 						"eq": 5
@@ -277,7 +277,7 @@
 				"hint": null,
 				"validators": {
 					"itemsItemType": {
-						"itemTypes": ["266049"]
+						"itemTypes": ["card"]
 					}
 				},
 				"appeareance": {
@@ -352,7 +352,15 @@
 				"hint": null,
 				"validators": {
 					"richTextBlocks": {
-						"itemTypes": ["269970", "269971", "269972", "269973", "269974", "269975", "269976"]
+						"itemTypes": [
+							"about_us_section",
+							"about_coding_bunker_section",
+							"discord_section",
+							"quote_section",
+							"event_section",
+							"partner_section",
+							"project_section"
+						]
 					}
 				},
 				"appeareance": {
@@ -431,7 +439,7 @@
 				"hint": null,
 				"validators": {
 					"itemsItemType": {
-						"itemTypes": ["266049"]
+						"itemTypes": ["card"]
 					}
 				},
 				"appeareance": {
@@ -677,7 +685,7 @@
 				"hint": null,
 				"validators": {
 					"itemsItemType": {
-						"itemTypes": ["266057"]
+						"itemTypes": ["partner"]
 					}
 				},
 				"appeareance": {
@@ -948,7 +956,7 @@
 				"hint": null,
 				"validators": {
 					"itemItemType": {
-						"itemTypes": ["266836"]
+						"itemTypes": ["route_link"]
 					}
 				},
 				"appeareance": {
@@ -1115,7 +1123,7 @@
 				"hint": null,
 				"validators": {
 					"itemsItemType": {
-						"itemTypes": ["266836"]
+						"itemTypes": ["route_link"]
 					}
 				},
 				"appeareance": {
@@ -1141,7 +1149,7 @@
 				"hint": null,
 				"validators": {
 					"itemsItemType": {
-						"itemTypes": ["266836"]
+						"itemTypes": ["route_link"]
 					}
 				},
 				"appeareance": {
@@ -1167,7 +1175,7 @@
 				"hint": null,
 				"validators": {
 					"itemsItemType": {
-						"itemTypes": ["266836"]
+						"itemTypes": ["route_link"]
 					}
 				},
 				"appeareance": {
@@ -1193,7 +1201,7 @@
 				"hint": null,
 				"validators": {
 					"itemsItemType": {
-						"itemTypes": ["266836"]
+						"itemTypes": ["route_link"]
 					}
 				},
 				"appeareance": {
@@ -1245,7 +1253,7 @@
 				"hint": null,
 				"validators": {
 					"itemItemType": {
-						"itemTypes": ["266836"]
+						"itemTypes": ["route_link"]
 					},
 					"required": {}
 				},
@@ -1317,7 +1325,7 @@
 				"hint": null,
 				"validators": {
 					"itemItemType": {
-						"itemTypes": ["266055"]
+						"itemTypes": ["quote"]
 					},
 					"required": {}
 				},
@@ -1704,7 +1712,7 @@
 				"hint": null,
 				"validators": {
 					"richTextBlocks": {
-						"itemTypes": ["266330", "266331", "266332"]
+						"itemTypes": ["evento", "progetto", "contributor"]
 					}
 				},
 				"appeareance": {

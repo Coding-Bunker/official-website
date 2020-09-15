@@ -24,7 +24,38 @@ async function exportSchema() {
 				}
 
 				const fields = await client.fields.all(type.apiKey)
-				model.fields = fields
+				model.fields = fields.map(field => {
+					if (field.validators) {
+						if (field.validators.itemItemType) {
+							const apiKeys = fields
+								.filter(fieldToFilter =>
+									field.validators.itemItemType.itemTypes.includes(fieldToFilter.id),
+								)
+								.map(fieldToMap => fieldToMap.apiKey)
+							field.validators.itemItemType.itemTypes = apiKeys
+						}
+
+						if (field.validators.itemsItemType) {
+							const apiKeys = fields
+								.filter(fieldToFilter =>
+									field.validators.itemsItemType.itemTypes.includes(fieldToFilter.id),
+								)
+								.map(fieldToMap => fieldToMap.apiKey)
+							field.validators.itemsItemType.itemTypes = apiKeys
+						}
+
+						if (field.validators.richTextBlocks) {
+							const apiKeys = fields
+								.filter(fieldToFilter =>
+									field.validators.richTextBlocks.itemTypes.includes(fieldToFilter.id),
+								)
+								.map(fieldToMap => fieldToMap.apiKey)
+							field.validators.richTextBlocks.itemTypes = apiKeys
+						}
+					}
+
+					return field
+				})
 
 				schema.push(model)
 			}),

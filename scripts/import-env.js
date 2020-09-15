@@ -24,10 +24,7 @@ async function importSchema() {
 		const newEnvExists = envs.find(env => env.id === newEnvName)
 
 		if (newEnvExists) {
-			forkSpinner.fail()
-			console.error(`enviorment of name ${newEnvName} already exists`)
-
-			process.exit(1)
+			await client.environments.destroy(newEnvExists.id)
 		}
 
 		await client.environments.fork(primaryEnv.id, {
@@ -37,7 +34,7 @@ async function importSchema() {
 		forkSpinner.succeed()
 	} catch (e) {
 		forkSpinner.fail()
-		console.error(e.body.data[0].attributes.code)
+		console.error(e)
 		process.exit(1)
 	}
 
@@ -88,27 +85,59 @@ async function importSchema() {
 	}
 
 	const insertingSchemaSpinner = ora(`Creating models and fields`).start()
+	const createdModels = new Map()
+
 	try {
 		await Promise.all(
 			readedSchema.map(async model => {
 				delete model.itemType.id
 				delete model.itemType.fields
+				delete model.itemType.singletonItem
+				delete model.itemType.titleField
 
-				await client.itemType.create(model.itemType)
+				const newModel = await client.itemType.create(model.itemType)
+				createdModels.set(model.itemType.apiKey, newModel)
 
 				if (!Array.isArray(model.fields)) {
 					readingspinner.fail()
 					console.error('Every model must have an array field')
 					process.exit(1)
 				}
-
-				await Promise.all(
+			}),
+		)
+		await Promise.all(
+			readedSchema.map(model =>
+				Promise.all(
 					model.fields.map(async field => {
 						delete field.id
-						await client.fields.create(model.itemType.apiKey, field)
+						delete field.itemType
+
+						if (field.validators) {
+							if (field.validators.itemItemType) {
+								field.validators.itemItemType.itemTypes = field.validators.itemItemType.itemTypes.map(
+									key => createdModels.get(key).id,
+								)
+							}
+							if (field.validators.richTextBlocks) {
+								field.validators.richTextBlocks.itemTypes = field.validators.richTextBlocks.itemTypes.map(
+									key => createdModels.get(key).id,
+								)
+							}
+							if (field.validators.itemsItemType) {
+								field.validators.itemsItemType.itemTypes = field.validators.itemsItemType.itemTypes.map(
+									key => createdModels.get(key).id,
+								)
+							}
+						}
+						try {
+							await client.fields.create(model.itemType.apiKey, field)
+						} catch (e) {
+							console.log(field, field.validators, e)
+							process.exit(1)
+						}
 					}),
-				)
-			}),
+				),
+			),
 		)
 
 		insertingSchemaSpinner.succeed()
