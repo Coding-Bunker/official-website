@@ -50,6 +50,7 @@
     "react-helmet": "^6.1.0",
     "react-hook-form": "^6.2.0",
     "react-typography": "^0.16.19",
+    "react-visibility-sensor": "^5.1.1",
     "typography": "^0.16.19"
   },
   "devDependencies": {

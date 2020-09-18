@@ -1,5 +1,6 @@
 import React from 'react'
 import contributorCard from './ContributorCard.module.scss'
+import { Col, Row, Container } from "react-bootstrap"
 
 export default props => {
 	let user = props.user
@@ -28,13 +29,30 @@ export default props => {
 	}
 
 	return (
+		// <div className={contributorCard.containerCard}>
+		// 	<div className={contributorCard.name}>{props.name}</div>
+		// 	<div className={contributorCard.expert}>{props.expert}</div>
+		// 	<div className={contributorCard.discordContainer} style={{ backgroundColor: bgcolor }}>
+		// 		<div className={contributorCard.discordTitle}>{props.user}</div>
+		// 		<div className={contributorCard.discordDescription}>{props.description}</div>
+		// 	</div>
+		// </div>
+
 		<div className={contributorCard.containerCard}>
-			<div className={contributorCard.name}>{props.name}</div>
-			<div className={contributorCard.expert}>{props.expert}</div>
-			<div className={contributorCard.discordContainer} style={{ backgroundColor: bgcolor }}>
-				<div className={contributorCard.discordTitle}>{props.user}</div>
-				<div className={contributorCard.discordDescription}>{props.description}</div>
-			</div>
+			<Row className={contributorCard.coso}>
+				<Col className={contributorCard.left} lg="4" style={{backgroundColor: bgcolor}}>
+					<Container fluid>
+						<div className={contributorCard.user}>{props.user}</div>
+						<div className={contributorCard.profilePicContainer}><img src={props.profilePic} className={contributorCard.profilePic} /></div>
+					</Container>
+				</Col>
+				<Col >
+					<div className={contributorCard.name}>{props.name}</div>
+					<Container fluid="sm">
+						<div className={contributorCard.description}>{props.description}</div>
+					</Container>
+				</Col>
+			</Row>
 		</div>
 	)
 }

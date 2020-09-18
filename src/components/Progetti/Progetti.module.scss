@@ -1,0 +1,67 @@
+@import "../ProjectCard/ProjectCard.module.scss";
+
+//Contenitore della sezione
+.main_container{
+  width: 100%;
+  height: 85vh;
+  background-color: rgb(175, 109, 255);
+}
+
+//Titolo "Alcuni nostri progetti"
+.titolo_progetti{
+  font-size: 40px;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  margin-bottom: 6rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.Container_titolo{
+  width: 550px;
+}
+
+//sottotilo per altri progetti
+.scopri_progetti{
+  font-weight: lighter;
+  font-size: 30px;
+  display: inline-block;
+  margin-top: 10vh;
+  margin-right: 6vh;
+  text-align: end;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+//contenitore sottotitolo
+.altri_progetti{
+  text-align: end;
+}
+
+//per cambiare il puntatore
+.scopri_progetti:hover{
+  cursor: pointer;
+}
+
+//per i telefoni
+@media (max-width: 992px) {
+
+
+  .main_container{
+    height: 100%;
+    width: 100%;
+  }
+
+  .containerCard{
+    margin-bottom: 20vh;
+  }
+  
+}
+
+

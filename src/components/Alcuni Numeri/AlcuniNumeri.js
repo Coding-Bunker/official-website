@@ -7,7 +7,7 @@ import "./AlcuniNumeri.scss"
 
 const AlcuniNumeri = () =>{
     return(
-        <div>
+        <div className="alcuni-numeri">
             <div className="Contenitore-Titoli">
                 <div className="Divisore"/>
                 <span className="Titolo-Staff">Alcuni numeri</span>
