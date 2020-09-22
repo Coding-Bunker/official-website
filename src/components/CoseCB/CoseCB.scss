@@ -1,25 +1,62 @@
 .cose-CB{
 
+  .MainContainer{
+    padding-left: 3em;
+    padding-top: 25vh;
+    padding-bottom: 10em;
+  }
+
   //Titolo
   .Titolo{
-    font-weight: bold;
+    font-weight: 900;
     color: rgba(161,115,249,1);
-    font-size: 32px;
+    display: inline-block;
   }
 
   //sottotitolo
   span{
-    font-weight: bold;
+    font-size: 1.5em;
+    font-weight: 700;
     color: rgba(161,115,249,1);
     padding-left: 10px;
   }
 
+  //contenitore che comprende descrizione+logo per togliere il padding di default delle colonne di React Bootstrap
+  .Container-Inferiore{
+    padding-left : 0 !important;
+  }
+
   //Descrizione Scritta
-  p{
-    color: black;
-    padding-top: 1rem;
-    font-weight: 500;
-    font-size: 18px;
+  .Container-Descrizione{
+    p{
+      color: black;
+      padding-top: 1em;
+      font-weight: 500;
+      font-size: 1.35em;
+    }
+  }
+
+  //Logo Coding Bunker :D
+  .LogoCB{
+    width: 500px;
+    height: 297px;
+    margin-left: 15em;
+  }
+
+  //contenitore scopri di più
+  .Contanier-Scopri{
+    text-align: center;
+    padding-right: 20em;
+
+    //Testo effettivo del scopri di più
+    .Scopri{
+      font-weight: 900;
+      font-size: 30px;
+      text-decoration: none;
+      text-align: end;
+      color: rgba(161,115,249,1);
+      border-bottom: 3px solid rgba(161,115,249,1);
+    }
   }
 
   @media only screen and (max-width: 576px) {
