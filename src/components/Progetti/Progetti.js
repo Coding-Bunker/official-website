@@ -26,11 +26,7 @@ const Progetti = () =>{
                 </Row>
             </Container>
             <div className={progettiStyle.altri_progetti}>
-<<<<<<< Updated upstream
-                <span className={progettiStyle.scopri_progetti}>Scopri tutti i progetti</span>
-=======
                 <a href="#" className={progettiStyle.scopri_progetti}>Scopri tutti i progetti</a>
->>>>>>> Stashed changes
             </div>
         </div>
     )

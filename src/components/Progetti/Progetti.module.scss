@@ -3,11 +3,7 @@
 //Contenitore della sezione
 .main_container{
   width: 100%;
-<<<<<<< Updated upstream
-  height: 85vh;
-=======
   height: 70vh;
->>>>>>> Stashed changes
   background-color: rgb(175, 109, 255);
 }
 
@@ -19,15 +15,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-<<<<<<< Updated upstream
-  border-bottom: 2px solid white;
-  border-left: 2px solid white;
-  border-right: 2px solid white;
-=======
   border-bottom: 4px solid white;
   border-left: 4px solid white;
   border-right: 4px solid white;
->>>>>>> Stashed changes
   margin-bottom: 6rem;
   padding-bottom: 1rem;
   padding-top: 1rem;
@@ -47,10 +37,7 @@
   text-align: end;
   color: white;
   border-bottom: 1px solid white;
-<<<<<<< Updated upstream
-=======
   text-decoration: none !important;
->>>>>>> Stashed changes
 }
 
 //contenitore sottotitolo
@@ -61,10 +48,7 @@
 //per cambiare il puntatore
 .scopri_progetti:hover{
   cursor: pointer;
-<<<<<<< Updated upstream
-=======
   color: white;
->>>>>>> Stashed changes
 }
 
 //per i telefoni
