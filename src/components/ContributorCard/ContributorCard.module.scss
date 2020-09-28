@@ -6,10 +6,10 @@
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     display: inline-block;
     transition: .2s all;
-    width: 50vh;
+    width: 60vh;
     border-radius: 20px;
     text-align: center;
-    height: 25vh;
+    height: 250px;
 }
 
 
@@ -28,7 +28,7 @@
 }
 
 .description {
-    font-size: .7rem;
+    font-size: .8rem;
 }
 
 .profilePic {
@@ -44,6 +44,8 @@
 
 .left {
     text-align: center;
+    border-radius: 20px 0 0 20px;
+    height: 100%;
 }
 
 .user {
