@@ -1,10 +1,10 @@
 import React from "react"
-import EntraOraHome from "../components/EntraOraHome/EntraOraHome";
 
+import AuthorPage from "../components/AuthorPage/AuthorPage";
 
 const IndexPage = () => (
   <div>
-      <EntraOraHome />
+      <AuthorPage />
   </div>
 )
 
