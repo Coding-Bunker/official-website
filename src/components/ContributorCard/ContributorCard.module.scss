@@ -6,17 +6,12 @@
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     display: inline-block;
     transition: .2s all;
-    width: 65vh;
+    width: 60vh;
     border-radius: 20px;
     text-align: center;
+    height: 250px;
 }
 
-// Allarghiamo il componente a tutto schermo nel caso in cui stiamo da telefono
-@media screen and (max-width: 420px) {
-    .containerCard {
-        width: 100%;
-    }
-}
 
 // Animazione per il componente quando ci si passa sopra con il mouse
 .containerCard:hover {
@@ -27,38 +22,37 @@
 // Classe contentente il nome dell'utente
 .name {
     margin-top: 20px;
-    font-weight: bold;
-}
-
-// Classe contenente la specializzazione dell'utente
-.expert {
-    color: #9d9d9d;
-    font-weight: bold;
     margin-bottom: 20px;
-    font-size: .9rem;
-}
-
-
-// Classe che contiene il ruolo su discord e la descrizione
-.discordContainer {
-    border-radius: 20px;
-    color: white;
-    padding-top: 15px;
-    padding-bottom: 30px;
-}
-
-
-// Classe che contiene il ruolo che l'utente ha su discord
-.discordTitle {
-    
-    padding-bottom: 20px;
-    font-size:  .9rem;
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
+.description {
+    font-size: .8rem;
+}
 
-// Classe che contiene la descrizione dell'utente
-.discordDescription {
-    font-size: .6rem;
-    padding: 0 10%;
+.profilePic {
+    margin-top: 30px;
+    width: 100vh;
+    border-radius: 200px;
+    border: 4px white solid;
+}
+
+.coso {
+    height: 100%;
+}
+
+.left {
+    text-align: center;
+    border-radius: 20px 0 0 20px;
+    height: 100%;
+}
+
+.user {
+    text-transform: uppercase;
+    font-size: .7rem;
+    color: white;
+    background-color: rgba(0,0,0,.2);
+    border-radius: 200px;
+    margin-top: 20px;
 }
