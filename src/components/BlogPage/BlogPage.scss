@@ -1,0 +1,134 @@
+.blog-page-component {
+    .heading {
+        background-color: #111111;
+        color: white;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding-top: 100px;
+    }
+
+    .left {
+        padding-left: 50px;
+    }
+
+    .left h1 {
+        font-weight: bold;
+    }
+
+    .left h5 {
+        color: #C2C2C2;
+    }
+
+    .autore-blog {
+        font-size: 20px; 
+        color: #C2C2C2;
+        float: left;
+        margin-top: 5em;
+    }
+        
+    .autore-blog > img {
+        width: 60px;
+        height: 60px;
+        margin: 0;
+    }
+
+    .leggi-blog {
+        float: right;
+        border: none;
+        background-color: #A576FF;
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+        padding: 0.5em 1.5em;
+        margin-top: 5em;
+    }
+
+    .leggi-blog img {
+        margin: 0;
+    }
+
+    .right img {
+        width: 85%;
+        margin: 0 auto;
+        position: relative;
+        left: 100px;
+        top: 50px;
+    }
+
+    .categorie {
+        background-color: #A576FF;
+        color: white;
+        margin: 5em 0;
+        padding: 1em 0;
+    }
+
+    .categorie h1 {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .griglia {
+        text-align: center;
+    }
+
+    .argomento {
+        color: white;
+        margin-right: 2em;
+        font-size: 35px;
+        line-height: 2.5em;
+        text-decoration: underline;
+    }
+
+    .ultimi-articoli h1 {
+        font-weight: bold;
+        margin-bottom: 1.5em;
+    }
+
+    .i-piu-letti h1 {
+        font-weight: bold;
+        margin-bottom: 1.5em;
+    }
+
+    .interviste > h1 {
+        font-weight: bold;
+        margin-bottom: 1.5em;
+    }
+
+    .ultimi-articoli,
+    .i-piu-letti,
+    .interviste {
+        margin-bottom: 3em;
+        padding-left: 5em;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .vedi-tutti {
+        color: #A576FF;
+        font-size: 40px;
+        text-align: right;
+        float: right;
+        margin-right: 130px;
+        font-weight: bold;
+    }
+
+    .altri-articoli {
+
+        border: none;
+        background-color: #A576FF;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0.5em 1.5em;
+    }
+
+    .button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5em;
+    }
+}

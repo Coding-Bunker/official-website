@@ -5,9 +5,7 @@
     background-color: white;
     color: black;
     border-radius: 0 0 10px 10px;
-    position: relative;
-    top: 80px;
-    left: 150px;
+    box-shadow: 0px 0px 32px #00000029;
   }
   
   .categoria-parent {
@@ -103,16 +101,20 @@
   .leggi {
     float: right;
     position: relative;
-    bottom: 60px;
-    border-bottom: 35px solid #A576FF;
-    border-left: 35px solid transparent;
+    bottom: 53px;
+    width: 0;
+    height: 0;
+    border-bottom: 55px solid #A576FF;
+    border-left: 55px solid transparent;
     border-radius: 0 0 8px 0;
   }
   
   .leggi img {
+    z-index: 0;
     position: relative;
-    top: 30px;
-    right: 7px;
+    top: 24px;
+    right: 27px;
+    max-width: none;
   }
   
   .metadati {

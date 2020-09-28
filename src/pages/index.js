@@ -1,10 +1,10 @@
 import React from "react"
-import EntraOraHome from "../components/EntraOraHome/EntraOraHome";
 
+import BlogPage from "../components/BlogPage/BlogPage";
 
 const IndexPage = () => (
   <div>
-      <EntraOraHome />
+      <BlogPage />
   </div>
 )
 
