@@ -1,5 +1,3 @@
-import React from 'react'
-import contributorCard from './ContributorCard.module.scss'
 import { Col, Row, Container } from "react-bootstrap"
 
 export default props => {
@@ -25,6 +23,9 @@ export default props => {
 			break
 		case 'Junior member':
 			bgcolor = 'rgb(122, 203, 219)'
+			break
+		case 'Contributor':
+			bgcolor = '#33C46C'
 			break
 	}
 
