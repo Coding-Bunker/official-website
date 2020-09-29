@@ -14,8 +14,11 @@ const backgroundStyle = {
 const EntraOraHome = () => {
     return(
         <section className="entra-ora-component">
-            <img className="Icona-Discord" src={require("../../images/icona-discord.png")}/>
+            <div className="Icona-Discord">
+                <img src={require("../../images/icona-discord.png")}/>
+            </div>
             <Container fluid className="entra-ora" style={ backgroundStyle }>
+
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio consequuntur YEET YEET YEET libero similique commodi? Qui amet doloremque ab libero numquam dicta, explicabo quo commodi voluptatibus, error, earum hic minima architecto nesciunt?</p>
 
                 <div className="centrare">

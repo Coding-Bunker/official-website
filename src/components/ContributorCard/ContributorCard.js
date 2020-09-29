@@ -1,4 +1,7 @@
 import { Col, Row, Container } from "react-bootstrap"
+import React from "react";
+import contributorCard from	"./ContributorCard.module.scss"
+
 
 export default props => {
 	let user = props.user
