@@ -1,0 +1,231 @@
+// .blog-section {
+//   .left {
+//     width: 50%;
+//     float: left;
+//     padding: 3em;
+//   }
+  
+//   .right {
+//     width: 50%;
+//     float: right;
+//   }
+  
+//   h1 {
+//     font-weight: 900;
+//   }
+  
+//   span {
+//     font-size: 0.5em;
+//   }
+  
+//   p {
+//     font-size: 1em;
+//   }
+  
+//   .argomento {
+//     color: #A576FF;
+//     font-weight: bold;
+//     margin-right: 2em;
+//     font-size: 1.2em;
+//     line-height: 2.5em;
+//   }
+  
+//   .immagine > img {
+//     margin: 0;
+//   }
+  
+//   .post-card {
+//     max-width: 350px;
+//     max-height: 700px;
+//     background-color: white;
+//     color: black;
+//     border-radius: 0 0 10px 10px;
+//     position: relative;
+//     top: 80px;
+//     left: 150px;
+//   }
+  
+//   .categoria-parent {
+//     background-color: black;
+//   }
+  
+//   .categoria-child {
+//     background-color: #A576FF;
+//     color: white;
+//     float: right;
+//     font-size: 0.8em;
+//     font-weight: bold;
+//     height: 0;
+//   }
+  
+//   .categoria-child > p {
+//     background-color: #A576FF;
+//     color: white;
+//     font-size: 0.9em;
+//     font-weight: bold;
+//     padding: 0.5em 2em 0.5em 1em;
+//     position: relative;
+//     left: 15px;
+//     bottom: 18px;
+//   }
+  
+//   .titolo {
+//     font-size: 1.3em;
+//     text-align: center;
+//     font-weight: bold;
+//     margin-top: 0.5em;
+//   }
+  
+//   .estratto {
+//     font-size: 0.7em;
+//     padding: 0.8em 3.3em;
+//   }
+  
+//   .div-info {
+//     margin: 2em;
+//   }
+  
+//   .info {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     font-size: 0.7em;
+//   }
+  
+//   .data {
+//     width: 50%;
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: flex-end;
+//     padding: 5px 20px;
+//   }
+  
+//   .data > img,
+//   .tempo-di-lettura > img {
+//     margin: 0;
+//   }
+  
+//   #second {
+//     padding: 0px 28px;
+//   }
+  
+//   #third {
+//     padding: 0px 23px;
+//   }
+  
+//   .tempo-di-lettura {
+//     width: 50%;
+//     display: flex;
+//     justify-content: flex-start;
+//     align-items: flex-start;
+//     padding: 5px 20px;
+//   }
+  
+//   .autore {
+//     font-size: 15px; 
+//   }
+  
+//   .autore > img {
+//     width: 40px;
+//     height: 40px;
+//     margin: 0;
+//   }
+  
+//   .leggi {
+//     float: right;
+//     position: relative;
+//     bottom: 84px;
+//     border-bottom: 35px solid #A576FF;
+//     border-left: 35px solid transparent;
+//     border-radius: 0 0 8px 0;
+//   }
+  
+//   .leggi img {
+//     position: relative;
+//     top: 55px;
+//     right: 7px;
+//   }
+  
+//   .metadati {
+//     border: 2px solid #A576FF;
+//     border-radius: 0 0 9px 9px;
+//   }
+  
+//   .vai-al-blog {
+//     float: right;
+//     position: relative;
+//     border-bottom: 60px solid #A576FF;
+//     border-left: 40px solid transparent;
+//     border-right: 40px solid transparent;
+//     rotate: 270deg;
+//     left: 504px;
+//     bottom: 300px;
+//   }
+  
+//   .vai-al-blog > p {
+//     position: relative;
+//     top: 60px;
+//   }
+// }
+
+.section {
+  background-color: black;
+  clip-path: polygon(0 0, 50% 0, 60% 10%, 100% 10%, 100% 100%, 50% 100%, 40% 90%, 0 90%);
+  height: 90vh;
+}
+
+.container {
+  padding-left: 3em;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 50px;
+  display: inline-block;
+} 
+
+.description {
+  color: white;
+  margin-top: 30px;
+  font-weight: 100;
+}
+
+.themes {
+  color: white;
+  margin-top: 7.5vh;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.argsContainer {
+  margin-top: 20px;
+}
+
+.args {
+  font-weight: bold;
+  color: #A576FF;
+  text-align: center;
+  padding: 10px;
+}
+
+.card {
+  position: relative;
+  top: 7.5vh;
+}
+
+.button {
+  color: white;
+  background-color: #A576FF;
+  display: inline-block;
+  padding: 20px 70px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
+  transform: rotate(270deg);
+  position: relative;
+  left: 72.5vh;
+  bottom: 20vh;
+  cursor: pointer;
+}

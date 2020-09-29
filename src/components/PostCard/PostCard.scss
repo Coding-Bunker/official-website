@@ -1,39 +1,4 @@
-.blog-section {
-  .left {
-    width: 50%;
-    float: left;
-    padding: 3em;
-  }
-  
-  .right {
-    width: 50%;
-    float: right;
-  }
-  
-  h1 {
-    font-weight: 900;
-  }
-  
-  span {
-    font-size: 0.5em;
-  }
-  
-  p {
-    font-size: 1em;
-  }
-  
-  .argomento {
-    color: #A576FF;
-    font-weight: bold;
-    margin-right: 2em;
-    font-size: 1.2em;
-    line-height: 2.5em;
-  }
-  
-  .immagine > img {
-    margin: 0;
-  }
-  
+.post-card-component {
   .post-card {
     max-width: 350px;
     max-height: 700px;
@@ -67,6 +32,10 @@
     position: relative;
     left: 15px;
     bottom: 18px;
+  }
+
+  .immagine img {
+    margin: 0;
   }
   
   .titolo {
@@ -134,7 +103,7 @@
   .leggi {
     float: right;
     position: relative;
-    bottom: 84px;
+    bottom: 60px;
     border-bottom: 35px solid #A576FF;
     border-left: 35px solid transparent;
     border-radius: 0 0 8px 0;
@@ -142,28 +111,12 @@
   
   .leggi img {
     position: relative;
-    top: 55px;
+    top: 30px;
     right: 7px;
   }
   
   .metadati {
     border: 2px solid #A576FF;
     border-radius: 0 0 9px 9px;
-  }
-  
-  .vai-al-blog {
-    float: right;
-    position: relative;
-    border-bottom: 60px solid #A576FF;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
-    rotate: 270deg;
-    left: 504px;
-    bottom: 300px;
-  }
-  
-  .vai-al-blog > p {
-    position: relative;
-    top: 60px;
   }
 }
