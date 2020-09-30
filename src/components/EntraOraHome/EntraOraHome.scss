@@ -3,7 +3,7 @@
     font-family: 'Raleway', sans-serif;
   }
   .entra-ora {
-    height: 500px;
+    height: 570px;
     color: white;
     padding-bottom: 50px;
   }
@@ -15,12 +15,26 @@
     padding-top: 200px;
     margin: 0 auto;
   }
+
+  //Ho reso l'icona di discord un item effettivo
+  .Icona-Discord{
+    margin: 0 auto;
+    position: relative;
+    top: 75px;
+    width: 150px;
+    height: 150px;
+  }
   
   .entra-ora-btn {
-    position: relative;
-    left: 38%;
-    margin: 2em;
+    margin-top: 6vh;
     text-align: center;
     border-radius: 15px;
   }
+
+  //div per centrare il bottone
+  .centrare{
+    text-align: center;
+    margin: 0 auto;
+  }
+  margin-top: 15vh;
 }
