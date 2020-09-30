@@ -6,9 +6,9 @@ import calendar from '../../images/calendar.png';
 import clock from '../../images/clock.png';
 import arrowRight from '../../images/right-arrow.png';
 
-const PostCard = () =>{
+const PostCard = props =>{
     return (
-        <div className="post-card-component">
+        <div className={"post-card-component " + props.className}>
             <div className="post-card">
                 <div className="categoria-parent">
                     <div className="categoria-child">

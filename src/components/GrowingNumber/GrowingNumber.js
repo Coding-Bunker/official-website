@@ -1,4 +1,5 @@
 import React from 'react'
+import VizSensor from "react-visibility-sensor"
 
 export default class GrowingNumber extends React.Component {
 	constructor(props) {
@@ -24,18 +25,21 @@ export default class GrowingNumber extends React.Component {
 
 	}
 
-	componentDidMount() {
-		let firstTime = ((this.time * 50) / 100) / (this.props.number - 4),
-		secondTime = (this.time * 4) / 100,
-		thirdTime = (this.time * 6) / 100,
-		fourthTime = (this.time * 15) / 100,
-		fifthTime = (this.time * 25) / 100
+	componentDidMount(){
+	// onChange(isVisible) {
+		// if (isVisible) {
+			let firstTime = ((this.time * 50) / 100) / (this.props.number - 4),
+			secondTime = (this.time * 4) / 100,
+			thirdTime = (this.time * 6) / 100,
+			fourthTime = (this.time * 15) / 100,
+			fifthTime = (this.time * 25) / 100
 
-		this.firstInterval = setInterval(() => this.add(), firstTime);
-		this.secondInterval = setInterval(() => this.add(), secondTime)
-		this.thirdInterval = setInterval(() => this.add(), thirdTime)
-		this.fourthInterval = setInterval(() => this.add(), fourthTime)
-		this.fifthInterval = setInterval(() => this.add(), fifthTime)
+			this.firstInterval = setInterval(() => this.add(), firstTime);
+			this.secondInterval = setInterval(() => this.add(), secondTime)
+			this.thirdInterval = setInterval(() => this.add(), thirdTime)
+			this.fourthInterval = setInterval(() => this.add(), fourthTime)
+			this.fifthInterval = setInterval(() => this.add(), fifthTime)
+		// }
 	}
 
 	add() {
@@ -69,7 +73,9 @@ export default class GrowingNumber extends React.Component {
 	render() {
 		return (
 			<div>
-				{this.state.number}
+				{/* <VizSensor onChange={this.onChange}> */}
+					{this.state.number}
+				{/* </VizSensor> */}
 			</div>
 		)
 	}
