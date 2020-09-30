@@ -2,7 +2,7 @@ require('dotenv').config({
   path: '.env'
 });
 
-
+console.log(!!process.env.DATO_CMS_API_KEY)
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
