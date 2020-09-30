@@ -1,5 +1,5 @@
 import React from 'react'
-import pastEventCardStyles from './pastEventCard.module.scss'
+import pastEventCardStyles from './PastEventCard.module.scss'
 import { Container, Col, Row } from 'react-bootstrap'
 import { Link } from 'gatsby'
 

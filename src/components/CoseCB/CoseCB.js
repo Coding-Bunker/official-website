@@ -24,7 +24,7 @@ const CoseCB = () => {
 						</Col>
 						<Col>
 							<div className="LogoCB">
-								<img src={require('../../images/logoCB2.png')} />
+								<img src={require('../../images/LogoCB2.png')} />
 							</div>
 						</Col>
 					</Row>
@@ -32,7 +32,7 @@ const CoseCB = () => {
 
 				<div className="Contanier-Scopri">
 					<a href="#" className="Scopri">
-						Scopri di più >
+						Scopri di più
 					</a>
 				</div>
 			</div>
