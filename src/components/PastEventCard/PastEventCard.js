@@ -34,7 +34,7 @@ export default props => {
 			<Row>{peopleElement}</Row>
 			<div className={pastEventCardStyles.showMoreContainer}>
 				<Link to={props.linkTo}>
-					<div className={pastEventCardStyles.showMore}>{props.showMore} ></div>
+					<div className={pastEventCardStyles.showMore}>{props.showMore}</div>
 				</Link>
 			</div>
 		</div>
