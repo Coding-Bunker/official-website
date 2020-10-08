@@ -1,4 +1,3 @@
-
 name: Build and Deploy
 
 on:
@@ -11,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - run: echo DATO_CMS_API_KEY=${{ secrets.DATO_CMS_API_KEY }} > .env
-      - uses: enriikke/gatsby-gh-pages-action@v2
-        with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
-          deploy-branch: gh-pages  
+      # - run: echo DATO_CMS_API_KEY=${{ secrets.DATO_CMS_API_KEY }} > .env
+      # - uses: enriikke/gatsby-gh-pages-action@v2
+      #   with:
+      #     access-token: ${{ secrets.ACCESS_TOKEN }}
+      #     deploy-branch: gh-pages

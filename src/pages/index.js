@@ -1,5 +1,7 @@
 import React from 'react'
-import Navbar from '../components/Navbar/index'
+
+import Layout from '../components/layout'
+
 import TextAndPhoto from '../components/TextAndPhoto/TextAndPhoto'
 import CoseCB from '../components/CoseCB/CoseCB'
 import Scrollable from '../components/Scrollable/Scrollable'
@@ -11,11 +13,9 @@ import EntraOraHome from '../components/EntraOraHome/EntraOraHome'
 import Progetti from '../components/Progetti/Progetti'
 import Testimonianze from '../components/Testimonianze/Testimonianze'
 import Aziende from '../components/Aziende/Aziende'
-import Footer from '../components/Footer/index'
 
 const IndexPage = () => (
-	<>
-		<Navbar />
+	<Layout>
 		<TextAndPhoto
 			linkText="Leggi altro"
 			title="Coding Bunker"
@@ -32,8 +32,7 @@ const IndexPage = () => (
 		<Progetti />
 		<Testimonianze />
 		<Aziende />
-		<Footer />
-	</>
+	</Layout>
 )
 
 export default IndexPage
