@@ -48,7 +48,7 @@ const PostCard = props => {
 							Pasquale Giorgio
 						</div>
 						<div className="leggi">
-							<img src={arrowRight} alt="" />
+							<i class="fas fa-long-arrow-alt-right"></i>
 						</div>
 					</div>
 				</div>
