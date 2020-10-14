@@ -5,7 +5,7 @@
 .Divisore{                                     //
   height: 1vh;                                 //
   width: 15vh;                                 //
-  background-color: black;                     //
+  background-color: black;                   //
   display: inline-block;                       //
   margin-bottom: 0.7vh                         //
 }                                              //
@@ -15,7 +15,7 @@
   cursor: default;                             //
   font-weight: bold;                           //
   text-align: center;                          //
-  font-size: 35px;                             //
+  font-size: 2.5rem;                             //
   padding-left: 7vh;                           //
   padding-right: 7vh;                          //
 }                                              //
@@ -34,11 +34,12 @@
 .Contenitore-Numeri{
   text-align: center;
   padding-top: 15vh;
+  padding-bottom: 15vh;
 }
 
 //Decorazione per i numeri
 .Decorazione-Numeri{
-  font-size: 10vh;
+  font-size: 4.5rem;
   font-weight: bolder;
   cursor: default;
 }
@@ -48,7 +49,7 @@
   cursor: default;
   color: #a576ff;
   font-weight: 900;
-  font-size: 5vh;
+  font-size: 2.5rem;
 }
 
 //Questa classe serve per mandare a capo i due span dei sottotitoli
@@ -56,6 +57,9 @@
   display: block;
 }
 
+.alcuni-numeri {
+  margin-top: 25vh;
+}
 
 
 @media (max-width: 768px) {

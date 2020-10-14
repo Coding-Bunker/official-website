@@ -1,6 +1,6 @@
+import { Col, Row, Container } from 'react-bootstrap'
 import React from 'react'
 import contributorCard from './ContributorCard.module.scss'
-import { Col, Row, Container } from "react-bootstrap"
 
 export default props => {
 	let user = props.user
@@ -43,13 +43,15 @@ export default props => {
 
 		<div className={contributorCard.containerCard}>
 			<Row className={contributorCard.coso}>
-				<Col className={contributorCard.left} lg="4" style={{backgroundColor: bgcolor}}>
+				<Col className={contributorCard.left} lg="4" style={{ backgroundColor: bgcolor }}>
 					<Container fluid>
 						<div className={contributorCard.user}>{props.user}</div>
-						<div className={contributorCard.profilePicContainer}><img src={props.profilePic} className={contributorCard.profilePic} /></div>
+						<div className={contributorCard.profilePicContainer}>
+							<img src={props.profilePic} className={contributorCard.profilePic} />
+						</div>
 					</Container>
 				</Col>
-				<Col >
+				<Col>
 					<div className={contributorCard.name}>{props.name}</div>
 					<Container fluid="sm">
 						<div className={contributorCard.description}>{props.description}</div>
