@@ -11,22 +11,17 @@ module.exports = async (gatsbyHelpers, { apiKey, apiEndpoint }) => {
 		createNode,
 	};
 
-	if (!apiKey) throw new Error('apiKey is missing from plugin options');
+	if (!apiKey) reporter.panic('apiKey is missing from plugin options');
+	if (!apiEndpoint) reporter.panic('apiEndpoint is missing from plugin options');
 
-	if (!apiEndpoint) throw new Error('apiEndpoint is missing from plugin options');
+	const activity = reporter.activityTimer(`loading data from API`, {
+		parentSpan,
+	});
 
 	try {
-		const activity = reporter.activityTimer(`loading data from API`, {
-			parentSpan,
-		});
-
 		activity.start();
 
-		const { contributors, events, posts, projects } = await data(
-			pluginOptions.apiKey,
-			pluginOptions.apiEndpoint,
-			reporter,
-		);
+		const { contributors, events, posts, projects } = await data(apiKey, apiEndpoint, reporter);
 
 		contributors.forEach(contributor => createNodeFromData(contributor, CONTRIBUTOR_TYPE, helpers));
 		events.forEach(event => createNodeFromData(event, EVENT_TYPE, helpers));
@@ -35,6 +30,7 @@ module.exports = async (gatsbyHelpers, { apiKey, apiEndpoint }) => {
 
 		activity.end();
 	} catch (e) {
+		activity.panic(e.message);
 		reporter.error('Failed to fetch data from endpoint', e instanceof Error ? e : void 0);
 	}
 };

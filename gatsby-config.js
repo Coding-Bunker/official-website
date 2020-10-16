@@ -61,6 +61,7 @@ module.exports = {
 			resolve: `gatsby-source-codingbunker`,
 			options: {
 				apiKey: process.env.BACKEND_API_KEY,
+				apiEndpoint: 'https://coding-bunker-dev.herokuapp.com/',
 			},
 		},
 	],
