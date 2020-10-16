@@ -1,0 +1,98 @@
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+.hall-of-fame {
+  .heading {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .heading img {
+    width: 100%;
+  }
+
+  .testo {
+    margin: 5em 3em 0 3em;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .vedi-altri {
+    display: flex;
+    justify-content: center;
+  }
+
+  .vedi-altri button {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    padding: 0.4em 4em;
+    background-color: #A576FF;
+    border: none;
+  }
+
+  .linea {
+    height: 1vh;
+    width: 15vh;
+    background-color: black;
+    display: inline-block;
+    margin-bottom: 0.7vh
+  }
+  
+  .titolo {
+    cursor: default;
+    font-weight: bold;
+    text-align: center;
+    font-size: 35px;
+    padding-left: 7vh;
+    padding-right: 7vh;
+  }
+
+  .intestazione {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+
+  .contatore {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1em 0 5em 0;
+  }
+
+  .conteggio {
+    margin: 0 auto;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .conteggio p {
+    font-size: 40px;
+    color: #A576FF;
+  }
+
+  .progetti {
+    background-color: #A576FF;
+    padding: 4em;
+  }
+
+  .row {
+    margin-bottom: 50px;
+  }
+
+  .contributors {
+    margin: 4em 0;
+  }
+
+  .sottotitolo {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}

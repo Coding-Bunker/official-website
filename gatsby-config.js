@@ -38,7 +38,7 @@ module.exports = {
 			resolve: `gatsby-source-datocms`,
 			options: {
 				previewMode: false,
-				disableLiveReload: true, // Sennò superiamo il limite di chiamate mensile
+				disableLiveReload: false,
 				apiToken: process.env.DATO_CMS_API_KEY,
 			},
 		},

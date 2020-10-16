@@ -1,117 +1,38 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
 
-const IndexPage = ({ data }) => {
-	console.log(data)
-	return (
-		<Layout>
-			<h1>
-				{
-					data.homepage.sections[0]
-						.titolo /*visitare un attributo della sezione numero 0 (ovvero DatoCmsAboutUsSection che non bisogna indicare)*/
-				}
-			</h1>
-			<p
-				dangerouslySetInnerHTML={{
-					__html: data.homepage.sections[0].descrizioneNode.childMarkdownRemark.html,
-				}}
-			/>
-			<p>Welcome to your new Gatsby site.</p>
-			<p>Now go build something great.</p>
-			<div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-				<Image />
-			</div>
-			<Link to="/page-2/">Go to page 2</Link> <br />
-			<Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-		</Layout>
-	)
-}
-export const query = graphql`
-	{
-		homepage: datoCmsHomepage {
-			sections {
-				... on DatoCmsAboutUsSection {
-					titolo
-					descrizioneNode {
-						childMarkdownRemark {
-							html
-						}
-					}
-					immagine {
-						url
-					}
-				}
-				... on DatoCmsAboutCodingBunkerSection {
-					titolo
-					descrizioneNode {
-						childMarkdownRemark {
-							html
-						}
-					}
-					immagine {
-						url
-					}
-				}
-				... on DatoCmsEventSection {
-					carte {
-						tipoCarta {
-							... on DatoCmsEvento {
-								dataEvento
-							}
-						}
-					}
-				}
-				... on DatoCmsDiscordSection {
-					immagineDiscord {
-						url
-					}
-					immagineBackground {
-						url
-					}
-					descrizione
-					linkDiscord {
-						nome
-						link
-					}
-				}
-				... on DatoCmsProjectSection {
-					titolo
-					descrizione
-					linkPaginaProgetti
-					progetti {
-						tipoCarta {
-							... on DatoCmsProgetto {
-								immagine {
-									url
-								}
-							}
-						}
-					}
-				}
-				... on DatoCmsQuoteSection {
-					riferimentoQuote {
-						nomeStaff
-						testoCitato
-						immagineStaff {
-							url
-						}
-						ruoloStaff
-					}
-				}
-				... on DatoCmsPartnerSection {
-					partners {
-						immaginePartner {
-							url
-						}
-					}
-				}
-			}
-		}
-	}
-`
+import TextAndPhoto from '../components/TextAndPhoto/TextAndPhoto'
+import CoseCB from '../components/CoseCB/CoseCB'
+import Scrollable from '../components/Scrollable/Scrollable'
+import PastScrollable from '../components/PastScrollable/PastScrollable'
+import Blog from '../components/Blog/Blog'
+import AlcuniNumeri from '../components/Alcuni Numeri/AlcuniNumeri'
+import DiconoDiNoi from '../components/Dicono Di Noi/DiconoDiNoi'
+import EntraOraHome from '../components/EntraOraHome/EntraOraHome'
+import Progetti from '../components/Progetti/Progetti'
+import Testimonianze from '../components/Testimonianze/Testimonianze'
+import Aziende from '../components/Aziende/Aziende'
+
+const IndexPage = () => (
+	<Layout>
+		<TextAndPhoto
+			linkText="Leggi altro"
+			title="Coding Bunker"
+			description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit sodales nulla id consectetur. Mauris quis eleifend ex. Nullam justo nisl, pharetra id fermentum in, pretium sit amet tortor. Integer volutpat nulla sed placerat ultrices. Duis gravida tortor ac eros consectetur, non varius metus egestas."
+			img={require('../images/Image_1.png')}
+		/>
+		<CoseCB />
+		<Scrollable />
+		<PastScrollable />
+		<Blog />
+		<AlcuniNumeri />
+		<DiconoDiNoi />
+		<EntraOraHome />
+		<Progetti />
+		<Testimonianze />
+		<Aziende />
+	</Layout>
+)
 
 export default IndexPage

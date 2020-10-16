@@ -6,7 +6,7 @@
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop -p 8080",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -53,6 +53,7 @@
     "react-helmet": "^6.1.0",
     "react-hook-form": "^6.2.0",
     "react-typography": "^0.16.19",
+    "react-visibility-sensor": "^5.1.1",
     "typography": "^0.16.19"
   },
   "devDependencies": {

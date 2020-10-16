@@ -1,0 +1,63 @@
+.container_component {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+//Icona virgolette
+.quoto_sx{
+  width: 5vh;
+  height: 5vh;
+  transform: scaleX(-1);
+}
+
+.quoto_dx{
+  width: 5vh;
+  height: 5vh;
+}
+
+//div virgolette
+.contenitore_quoto_sx{
+  float: left;
+  padding-top: 10vh;
+  padding-left: 10vh;
+}
+
+.contenitore_quoto_dx{
+  padding-right: 10vh;
+  text-align: right;
+}
+
+//contenitore della testimonianza
+.container{
+  display: inline-block;
+  padding-top: 5vh;
+  margin-left: auto;
+}
+
+//icona testimone
+.testimone{
+  width: 20vh;
+  height: 20vh;
+}
+
+//nome
+.BigBoi{
+  display:block;
+  padding-top: 3vh;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+//ruolo
+.OwO{
+  font-size: 20px;
+  font-weight: bold;
+  color: rgba(121,87,184,1);
+}
+
+//testo testimonianza
+.testiomonianza{
+  font-size: 35px;
+  font-weight: lighter;
+  color: rgba(0,0,0,0.5);
+}
