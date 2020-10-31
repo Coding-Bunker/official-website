@@ -71,5 +71,8 @@
   "bugs": {
     "url": "https://github.com/Coding-Bunker/official-website/issues"
   },
-  "homepage": "https://github.com/Coding-Bunker/official-website#readme"
+  "homepage": "https://github.com/Coding-Bunker/official-website#readme",
+  "engines": {
+    "npm": ">= 7.0.0"
+  }
 }
