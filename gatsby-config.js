@@ -40,7 +40,7 @@ module.exports = {
 			resolve: `gatsby-source-datocms`,
 			options: {
 				previewMode: false,
-				disableLiveReload: true, // Sennò superiamo il limite di chiamate mensile
+				disableLiveReload: false,
 				apiToken: process.env.DATO_CMS_API_KEY,
 			},
 		},
@@ -58,12 +58,12 @@ module.exports = {
 				plugins: [],
 			},
 		},
+		`gatsby-plugin-mdx`,
 		{
-			resolve: `gatsby-plugin-mdx`,
+			resolve: `gatsby-source-codingbunker`,
 			options: {
-				defaultLayouts: {
-					default: path.join(__dirname, './src/components/BlogLayout'),
-				},
+				apiKey: process.env.BACKEND_API_KEY,
+				apiEndpoint: 'https://coding-bunker-dev.herokuapp.com/',
 			},
 		},
 	],
