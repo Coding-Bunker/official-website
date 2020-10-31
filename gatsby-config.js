@@ -49,5 +49,20 @@ module.exports = {
 				pathToConfigModule: 'src/utils/typography.js',
 			},
 		},
+		'gatsby-plugin-fontawesome-css',
+		{
+			resolve: `gatsby-transformer-remark`,
+			options: {
+				plugins: [],
+			},
+		},
+		`gatsby-plugin-mdx`,
+		{
+			resolve: `gatsby-source-codingbunker`,
+			options: {
+				apiKey: process.env.BACKEND_API_KEY,
+				apiEndpoint: 'https://coding-bunker-dev.herokuapp.com/',
+			},
+		},
 	],
 }
