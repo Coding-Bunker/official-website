@@ -3,7 +3,7 @@ const { POST_TYPE, CONTRIBUTOR_TYPE, EVENT_TYPE, PROJECT_TYPE } = require('../ut
 const createNodeFromData = require('../utils/createNodeFromData');
 
 module.exports = async (gatsbyHelpers, { apiKey, apiEndpoint }) => {
-	const { actions, createNodeId, createContentDigest, reporter, parentSpan } = gatsbyHelpers;
+	const { actions, reporter, parentSpan } = gatsbyHelpers;
 	const { createNode } = actions;
 
 	const helpers = {
@@ -14,7 +14,7 @@ module.exports = async (gatsbyHelpers, { apiKey, apiEndpoint }) => {
 	if (!apiKey) reporter.panic('apiKey is missing from plugin options');
 	if (!apiEndpoint) reporter.panic('apiEndpoint is missing from plugin options');
 
-	const activity = reporter.activityTimer(`loading data from API`, {
+	const activity = reporter.activityTimer(`loading data from Coding Bunker's API`, {
 		parentSpan,
 	});
 
@@ -31,6 +31,6 @@ module.exports = async (gatsbyHelpers, { apiKey, apiEndpoint }) => {
 		activity.end();
 	} catch (e) {
 		activity.panic(e.message);
-		reporter.error('Failed to fetch data from endpoint', e instanceof Error ? e : void 0);
+		reporter.error('Failed to fetch data from endpoint', e instanceof Error ? e : undefined);
 	}
 };
