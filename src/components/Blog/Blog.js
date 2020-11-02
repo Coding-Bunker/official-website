@@ -1,18 +1,7 @@
 import React from 'react'
-import Link from 'gatsby'
 import blog from './Blog.module.scss'
 import { Container, Row, Col } from 'react-bootstrap'
 import PostCard from '../PostCard/PostCard'
-
-const backgroundStyle = {
-	background: 'black',
-	color: 'white',
-	height: '500px',
-}
-
-const align = {
-	marginLeft: '15px',
-}
 
 const Argomento = props => {
 	return <div className={blog.args}>{props.children.toUpperCase()}</div>

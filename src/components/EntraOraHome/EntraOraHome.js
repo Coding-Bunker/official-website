@@ -1,7 +1,6 @@
 import React from 'react'
 import { Container, Button } from 'react-bootstrap'
 import './EntraOraHome.scss'
-import entraora1 from '../../images/Entra_ora_con_logo_discord.svg'
 import entraora2 from '../../images/Entra_ora_senza_logo_discord.png'
 
 const backgroundStyle = {
@@ -15,7 +14,7 @@ const EntraOraHome = () => {
 	return (
 		<section className="entra-ora-component">
 			<div className="Icona-Discord">
-				<img src={require('../../images/icona-discord.png')} />
+				<img alt="icon di discord" src={require('../../images/icona-discord.png')} />
 			</div>
 			<Container fluid className="entra-ora" style={backgroundStyle}>
 				<p>

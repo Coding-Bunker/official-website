@@ -24,14 +24,14 @@ const CoseCB = () => {
 						</Col>
 						<Col>
 							<div className="LogoCB">
-								<img src={require('../../images/LogoCB2.png')} />
+								<img alt="Logo coding bunker" src={require('../../images/LogoCB2.png')} />
 							</div>
 						</Col>
 					</Row>
 				</Container>
 
 				<div className="Contanier-Scopri">
-					<a href="#" className="Scopri">
+					<a href="/about-us" className="Scopri">
 						Scopri di più
 					</a>
 				</div>

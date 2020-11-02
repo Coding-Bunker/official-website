@@ -4,7 +4,6 @@ import pasquale from '../../images/pasquale.png'
 import './PostCard.scss'
 import calendar from '../../images/calendar.png'
 import clock from '../../images/clock.png'
-import arrowRight from '../../images/right-arrow.png'
 
 const PostCard = props => {
 	return (

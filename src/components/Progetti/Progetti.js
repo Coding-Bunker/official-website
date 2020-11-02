@@ -36,7 +36,7 @@ const Progetti = () => {
 				</Row>
 			</Container>
 			<div className={progettiStyle.altri_progetti}>
-				<a href="#" className={progettiStyle.scopri_progetti}>
+				<a href="/project" className={progettiStyle.scopri_progetti}>
 					Scopri tutti i progetti
 				</a>
 			</div>

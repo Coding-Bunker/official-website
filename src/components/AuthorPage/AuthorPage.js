@@ -42,7 +42,7 @@ const AuthorPage = () => {
 					<PostCard />
 					<PostCard />
 				</div>
-				<a href="#" target="_blank" className="vedi-tutti">
+				<a href="/post" target="_blank" className="vedi-tutti">
 					Vedi altri articoli
 				</a>
 			</div>

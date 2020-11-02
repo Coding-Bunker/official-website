@@ -12,7 +12,7 @@ export default props => {
 		peopleElement.push(
 			<Col className={pastEventCardStyles.peopleContainer}>
 				<div className={pastEventCardStyles.peopleImgContainer}>
-					<img className={pastEventCardStyles.peopleImg} src={person.img} />
+					<img className={pastEventCardStyles.peopleImg} alt="people" src={person.img} />
 				</div>
 				<div className={pastEventCardStyles.peopleName}>{person.name}</div>
 				<div className={pastEventCardStyles.peopleSurname}>{person.surname}</div>

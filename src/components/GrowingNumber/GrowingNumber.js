@@ -1,5 +1,4 @@
 import React from 'react'
-import VizSensor from 'react-visibility-sensor'
 
 export default class GrowingNumber extends React.Component {
 	constructor(props) {
@@ -44,7 +43,7 @@ export default class GrowingNumber extends React.Component {
 				this.incremento /*Math.floor(this.props.number / this.constPotentissima)*/,
 		})
 
-		if (this.props.number == 984) {
+		if (this.props.number === 984) {
 			console.log(this.incremento)
 		}
 
