@@ -3,7 +3,7 @@
 $distance-links: 1.6em;
 $vertical-spacing: 0.5em;
 
-$lg-breakpoint: 992px;
+$lg-breakpoint: 62em;
 
 .navbar.navbar-dark {
 	font-size: 0.9em;
@@ -11,10 +11,10 @@ $lg-breakpoint: 992px;
 
 	#entra-nel-bunker{
 		background-color: #A576FF;
-		font-size: 23px;
+		font-size: 1.4375em;
 		font-weight: bold;
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 1.25em;
+		padding-right: 1.25em;
 	}
 
 
@@ -35,8 +35,8 @@ $lg-breakpoint: 992px;
 			}
 			&.links {
 				@media screen and (max-width: $lg-breakpoint) {
-					margin-bottom: 20px;
-					font-size: 27px;
+					margin-bottom: 1.25em;
+					font-size: 1.6875em;
 					text-align: center;
 				}
 			}
