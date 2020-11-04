@@ -1,5 +1,3 @@
-# Disabled because the website is not ready to production
-
 name: Build and Deploy
 
 on:
