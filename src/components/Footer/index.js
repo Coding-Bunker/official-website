@@ -45,8 +45,6 @@ const Footer = () => {
 	)
 
 	const onSubmitForm = async data => {
-		console.log(data)
-
 		await axios.post('http://94.38.129.41:8080/newsletters', {
 			data,
 		})

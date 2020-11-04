@@ -1,12 +1,8 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from 'react'
 import PropTypes from 'prop-types'
+import { MDXProvider } from '@mdx-js/react'
+
+import MdxCustomComponents from './MDX'
 
 import Head from './Head'
 import Navbar from './Navbar'
@@ -17,7 +13,9 @@ const Layout = ({ children }) => {
 		<React.Fragment>
 			<Head />
 			<Navbar />
-			<main>{children}</main>
+			<MDXProvider components={MdxCustomComponents}>
+				<main>{children}</main>
+			</MDXProvider>
 			<Footer />
 		</React.Fragment>
 	)

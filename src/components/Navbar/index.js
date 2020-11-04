@@ -22,7 +22,6 @@ const Navbar = () => {
 			}
 		`,
 	)
-	console.log(data)
 	return (
 		<BtNavbar expand="lg" bg="primary" variant="dark">
 			<BtNavbar.Brand to="/" as={Link}>

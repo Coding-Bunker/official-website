@@ -58,7 +58,14 @@ module.exports = {
 				plugins: [],
 			},
 		},
-		`gatsby-plugin-mdx`,
+		{
+			resolve: `gatsby-plugin-mdx`,
+			option: {
+				defaultLayout: {
+					default: require.resolve('./src/components/layout.js'),
+				},
+			},
+		},
 		{
 			resolve: `gatsby-source-codingbunker`,
 			options: {
