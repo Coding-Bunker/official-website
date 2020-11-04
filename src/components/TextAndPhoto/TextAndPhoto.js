@@ -5,22 +5,43 @@ import { Container, Row, Col } from "react-bootstrap"
 
 
 export default props => (
-    <div className={textAndPhotoStyles.containerSection}>
-        <Container fluid className={textAndPhotoStyles.containerText}>
-            <Row>
-                <Col>
-                    <div className={textAndPhotoStyles.title}>{props.title}</div>
-                    <div className={textAndPhotoStyles.description}>{props.description}</div>
-                    <div className={textAndPhotoStyles.linkContainer}>
-                        <div className={textAndPhotoStyles.link}>
-                            <Link to={props.linkTo}>{props.linkText} <span style={{fontWeight: "normal"}}>></span></Link>
-                        </div>
-                    </div>
-                </Col>
-                <div className={textAndPhotoStyles.imgContainer}>
-                    <img className={textAndPhotoStyles.img} src={props.img} />
-                </div>
-            </Row>
-        </Container>
-    </div>
+  // <div className={textAndPhotoStyles.containerSection}>
+  //     <Container fluid className={textAndPhotoStyles.containerText}>
+  //         <Row>
+  //             <Col>
+  //                 <div className={textAndPhotoStyles.title}>{props.title}</div>
+  //                 <div className={textAndPhotoStyles.description}>{props.description}</div>
+  //                 <div className={textAndPhotoStyles.linkContainer}>
+  //                     <div className={textAndPhotoStyles.link}>
+  //                         <Link to={props.linkTo}>{props.linkText} <span style={{fontWeight: "normal"}}>></span></Link>
+  //                     </div>
+  //                 </div>
+  //             </Col>
+  //             <div className={textAndPhotoStyles.imgContainer}>
+  //                 <img className={textAndPhotoStyles.img} src={props.img} />
+  //             </div>
+  //         </Row>
+  //     </Container>
+  // </div>
+  <div className={textAndPhotoStyles.containerSection}>
+      <Row>
+          <Col className={textAndPhotoStyles.textContainer}>
+              <div className={textAndPhotoStyles.title}>{props.title}</div>
+                 <div className={textAndPhotoStyles.description}>{props.description}</div>
+                 <div className={textAndPhotoStyles.linkContainer}>
+                 <div className={textAndPhotoStyles.link}>
+                    <Link to={props.linkTo}>{props.linkText} ></Link>
+                 </div>
+               </div>
+          </Col>
+          <Col style={{padding: 0}}>
+              <div className={textAndPhotoStyles.imgContainer}>
+                  <img className={textAndPhotoStyles.img} src={props.img} />
+              </div>
+          </Col>
+      </Row>
+      <Container>sdifioedf</Container>
+
+  </div>
+
 )
