@@ -18,7 +18,7 @@ module.exports = ({ actions }) => {
                 type ${POST_TYPE} implements Node {
                         id: ID!
                         title: String!
-                        content: Mdx @link
+                        content: Mdx
                 }
 
                 type ${CONTRIBUTOR_TYPE} implements Node {
