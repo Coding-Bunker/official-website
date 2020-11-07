@@ -22,8 +22,8 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `gatsby-starter-default`,
-				short_name: `starter`,
+				name: `Coding Bunker Website`,
+				short_name: `Coding Bunker`,
 				start_url: `/`,
 				background_color: `#663399`,
 				theme_color: `#663399`,
@@ -38,7 +38,7 @@ module.exports = {
 			resolve: `gatsby-source-datocms`,
 			options: {
 				previewMode: false,
-				disableLiveReload: true, // Sennò superiamo il limite di chiamate mensile
+				disableLiveReload: false,
 				apiToken: process.env.DATO_CMS_API_KEY,
 			},
 		},
@@ -54,6 +54,14 @@ module.exports = {
 			resolve: `gatsby-transformer-remark`,
 			options: {
 				plugins: [],
+			},
+		},
+		`gatsby-plugin-mdx`,
+		{
+			resolve: `gatsby-source-codingbunker`,
+			options: {
+				apiKey: process.env.BACKEND_API_KEY,
+				apiEndpoint: 'https://coding-bunker-dev.herokuapp.com/',
 			},
 		},
 	],
