@@ -1,0 +1,105 @@
+.blog-page-component {
+    .heading {
+        background-color: #111111;
+        color: white;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        padding-top: 100px;
+        margin-bottom: 3em;
+    }
+
+    .left {
+        padding-left: 50px;
+    }
+
+    .left img {
+        width: 500px;
+    }
+
+    .right {
+        padding-left: 100px; 
+    }
+
+    .autore {
+        display: flex;
+    }
+
+    .autore h1 {
+        font-weight: bold;
+    }
+
+    .autore span:first-of-type {
+        font-size: 40px;
+        color: white;
+        opacity: 0.45;
+        margin: 0 0.7em;
+    }
+
+    .autore span:nth-of-type(2) {
+        font-size: 30px;
+        color: #A576FF;
+        margin-top: 7px;
+    }
+
+    .right p {
+        font-size: 30px;
+        color: white;
+        opacity: 0.45;
+    }
+
+    .social-icons img {
+        width: 50px;
+        height: 50px;
+        margin-right: 25px;
+        margin-top: 50px;
+    }
+
+    .i-miei-articoli h1 {
+        font-weight: bold;
+        margin-bottom: 1.5em;
+        color: #A576FF;
+    }
+
+    .consigliati h1 {
+        font-weight: bold;
+        margin-bottom: 1.5em;
+        color: #A576FF;
+    }
+
+    .i-miei-articoli,
+    .consigliati {
+        margin-bottom: 3em;
+        padding-left: 5em;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .vedi-tutti {
+        color: #A576FF;
+        font-size: 40px;
+        text-align: right;
+        float: right;
+        margin-right: 130px;
+        font-weight: bold;
+    }
+
+    .altri-articoli {
+
+        border: none;
+        background-color: #A576FF;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        padding: 0.5em 1.5em;
+    }
+
+    .button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5em;
+    }
+}
