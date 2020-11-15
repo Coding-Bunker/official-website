@@ -53,6 +53,7 @@
     "react-helmet": "^6.1.0",
     "react-hook-form": "^6.2.0",
     "react-typography": "^0.16.19",
+    "styled-components": "^5.2.1",
     "react-visibility-sensor": "^5.1.1",
     "typography": "^0.16.19"
   },
