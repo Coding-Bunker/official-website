@@ -1,0 +1,16 @@
+{
+  "name": "gatsby-source-codingbunker",
+  "version": "1.0.0",
+  "description": "Plugin that allows to perform gatsby graphQL queries",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Coding Bunker",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "gatsby-plugin-mdx": "^1.2.35"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.0"
+  }
+}

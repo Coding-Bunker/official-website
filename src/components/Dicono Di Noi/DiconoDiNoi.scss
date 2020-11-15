@@ -1,0 +1,83 @@
+.dicono-di-noi {
+	.linea {
+	  height: 1vh;
+	  width: 15vh;
+	  background-color: black;
+	  display: inline-block;
+	  margin-bottom: 0.7vh
+	}
+
+	.titolo {
+	  cursor: default;
+	  font-weight: bold;
+	  text-align: center;
+	  font-size: 2.5rem;
+	  padding-left: 7vh;
+	  padding-right: 7vh;
+	}
+
+	.sottotitolo {
+	  cursor: default;
+	  text-align: center;
+	  font-size: 2.3rem;
+	  margin-top: 1em;
+	}
+
+	.intestazione {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	}
+
+	.quote-container{
+	  padding-top: 1em;
+	}
+
+	.quote-card {
+	  border: 2px solid #A576FF;
+	  border-radius: 10px;
+	  width: 500px;
+	  margin: 20px auto;
+	  padding-top: 2em;
+	  padding-bottom: 1em;
+	  padding-left: 4em;
+	  padding-right: 3em;
+	  text-align: left;
+	  box-shadow: 2px 8px 10px lightgrey;
+	}
+
+	blockquote {
+		font-weight: 100;
+		font-size: 1.2em;
+		max-width: 500px;
+		line-height: 1.4;
+
+	}
+
+	blockquote:before,
+	blockquote:after {
+		position: absolute;
+		color: #A576FF;
+		font-size: 7rem;
+		width: 3rem;
+		height: 3rem;
+	}
+
+	blockquote:before {
+		content: '“';
+		left: 2.7em;
+		top: -0.1em;
+	}
+
+	blockquote:after {
+		content: '”';
+		right: 2.5em;
+		bottom: 0.7em;
+	}
+
+	cite {
+	  text-align: left;
+	  font-weight: bold;
+	  font-size: 1.5em;
+	}
+}

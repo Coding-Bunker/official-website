@@ -1,0 +1,76 @@
+// classe per la sezione globale
+.containerSection {
+    color: white;
+    padding: 10vh 0;
+    background-color: #00070f;
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+// classe scritta coding bunker
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+// classe testo sotto coding bunker
+.description {
+    font-size: 1rem;
+}
+
+// classe foto figa
+.img {
+    width: 100vh;
+    margin: 0;
+    clip-path: polygon(0% 15%, 5% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+// container per la foto
+.imgContainer {
+    text-align: right;
+}
+
+
+// telefono
+@media screen and (max-width: 420px) {
+    .imgContainer {
+        width: 0px;
+        height: 0px;
+    }
+
+    .containerText {
+        width: 90%;
+    }
+
+    .containerSection {
+        height: auto;
+    }
+}
+
+// ipad e tablet
+@media screen and (min-width: 421px) and (max-width: 1024px) {
+    .containerText {
+        width: 75%;
+    }
+}
+
+.linkContainer {
+    text-align: right;
+    font-size: 1.2rem;
+    color: #a576ff;
+    position: relative;
+    top: 20px;
+    right: 5vh;
+}
+
+.link {
+    display: inline-block;
+}
+
+.textContainer {
+    padding-top: 10vh;
+    padding-right: 5vh;
+    padding-left: 20vh;
+}

@@ -3,12 +3,33 @@
 // classe che gestisce il componente in se
 .containerCard {
     border: .1px solid rgba(0,0,0,.1);
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
     display: inline-block;
     transition: .2s all;
     width: 65vh;
     border-radius: 0px 0px 20px 20px;
+    background: white;
+
+
+
+    position: relative;
+    flex-direction: column;
+    box-shadow: -1rem 0 1rem rgba(0,0,0,.3);
 }
+
+.containerCard:hover{
+    transform: translateY(-1rem);
+}
+
+.containerCard:hover~.containerCard{
+    transform: translateX(130px);
+}
+
+.containerCard:not(:first-child){
+    margin-left: -130px;
+}
+
+
+
 
 // Allarghiamo il componente a tutto schermo nel caso in cui stiamo da telefono
 @media screen and (max-width: 420px) {
@@ -18,16 +39,16 @@
 }
 
 // Animazione per il componente quando ci si passa sopra con il mouse
-.containerCard:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0,0,0,.2);
-}
+//.containerCard:hover {
+  //  transform: translateY(-3px);
+  //  box-shadow: 0 10px 20px rgba(0,0,0,.2);
+//}
 
 // Div che contiene la foto
 .imgContainer {
     height: auto;
     width: auto;
-    
+
 }
 
 // Classe che gestisce la foto
@@ -54,7 +75,7 @@
     font-size: 1rem;
     position: relative;
     top: 5px;
-    
+
 }
 
 // Classe che gestisce il giorno

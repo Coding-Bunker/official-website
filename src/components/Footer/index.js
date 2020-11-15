@@ -52,7 +52,6 @@ const Footer = () => {
 		})
 	}
 
-
 	return (
 		<footer className="footer">
 			<Container fluid className="text-center">
