@@ -2,9 +2,15 @@ import React from "react";
 import "./LaCommunity.scss"
 import {Button} from "react-bootstrap";
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps"
 =======
 import { MapContainer, Marker, Popup, TileLayer} from 'react-leaflet'
+>>>>>>> Stashed changes
+=======
+
+import { MapContainer, Marker, Popup, TileLayer} from 'react-leaflet'
+
 >>>>>>> Stashed changes
 
 interface Props{
@@ -16,6 +22,7 @@ interface Props{
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 function Map(){
     return (
         <GoogleMap
@@ -26,6 +33,9 @@ function Map(){
 }
 
 const WrappedMap = withScriptjs(withGoogleMap(Map));
+=======
+
+>>>>>>> Stashed changes
 =======
 
 >>>>>>> Stashed changes
@@ -50,6 +60,7 @@ const LaCommunity = (props:Props) =>{
             <div className="Contenitore-Bottone">
                 <Button variant="light" className="Bottone">{props.text_button}</Button>
             </div>
+<<<<<<< Updated upstream
 
 <<<<<<< Updated upstream
             <div className="Contenitore-Mappa" style={{ width:"65%", height:"50%" }}>
@@ -60,6 +71,8 @@ const LaCommunity = (props:Props) =>{
                     loadingElement = {<div style={{ height:"100%" }} />}
                 />
 =======
+=======
+>>>>>>> Stashed changes
             <div className="Contenitore-Mappa">
                 <MapContainer className="Mappa" style={{height: 700, width:1250}} center={[41.8719, 12.5674]} zoom={6} scrollWheelZoom={true}>
                     <TileLayer
@@ -87,6 +100,9 @@ const LaCommunity = (props:Props) =>{
                         </Popup>
                     </Marker>
                 </MapContainer>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             </div>
         </div>

@@ -9,6 +9,7 @@ import {graphql, useStaticQuery} from "gatsby";
 import ContributorCardGrid from "../components/ContributorCardGrid/ContributorCard-Grid";
 import Footer from "../components/Footer";
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 
 
@@ -16,10 +17,16 @@ import Footer from "../components/Footer";
 =======
 import "leaflet"
 >>>>>>> Stashed changes
+=======
+
+import "leaflet"
+import CoseCB from "../components/CoseCB/CoseCB";
+>>>>>>> Stashed changes
 
 
 const ChiSiamoPage = () => (
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 
     <div>
@@ -29,6 +36,13 @@ const ChiSiamoPage = () => (
     <div>
         <Navbar />
         <Chisiamo title={"Chi siamo"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula dictum cursus. Sed bibendum imperdiet sollicitudin. Nam vitae justo vitae leo egestas viverra. Curabitur viverra pharetra rhoncus. Aliquam commodo vel ipsum pellentesque efficitur. Duis semper arcu in mauris maximus, sed pretium lacus aliquet."} />
+>>>>>>> Stashed changes
+=======
+
+    <div>
+        <Navbar />
+        <Chisiamo title={"Chi siamo"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula dictum cursus. Sed bibendum imperdiet sollicitudin. Nam vitae justo vitae leo egestas viverra. Curabitur viverra pharetra rhoncus. Aliquam commodo vel ipsum pellentesque efficitur. Duis semper arcu in mauris maximus, sed pretium lacus aliquet."} />
+        <CoseCB title={"Cos'è Coding Bunker"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula dictum cursus. Sed bibendum imperdiet sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula dictum cursus. Sed bibendum imperdiet sollicitudin. Nam vitae justo vitae leo egestas viverra. Sed bibendum imperdiet sollicitudin. Nam vitae justo vitae leo egestas viverra. Curabitur viverra pharetra rhoncus. Aliquam commodo vel ipsum pellentesque efficitur. Duis semper arcu in mauris maximus, sed pretium lacus aliquet."} />
 >>>>>>> Stashed changes
         <LoStaff title={"Lo staff"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula dictum cursus. Sed bibendum imperdiet sollicitudin. Nam vitae justo vitae leo egestas viverra. Curabitur viverra pharetra rhoncus. Aliquam commodo vel ipsum pellentesque efficitur. Duis semper arcu in mauris maximus, sed pretium lacus aliquet."}/>
         <LaCommunity title={"La community"} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula dictum cursus. Sed bibendum imperdiet sollicitudin. Nam vitae justo vitae leo egestas viverra. Curabitur viverra pharetra rhoncus. Aliquam commodo vel ipsum pellentesque efficitur."} members={"Al momento siamo in "} num_members={9} text_button={"Entra ora"} />

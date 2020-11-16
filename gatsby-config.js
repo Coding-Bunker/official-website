@@ -57,7 +57,10 @@ module.exports = {
 			},
 		},
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 		{
 			resolve: 'gatsby-plugin-react-leaflet',
 			options: {

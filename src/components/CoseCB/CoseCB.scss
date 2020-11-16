@@ -1,5 +1,6 @@
-.cose-CB{
+.CoseCB{
 
+<<<<<<< Updated upstream
   //Titolo
   .Titolo{
     font-weight: bold;
@@ -27,5 +28,32 @@
       display: block;
       text-align: center;
     }
+=======
+  .Contenitore-Nero{
+    background-color: black;
+    height: 695px;
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+    clip-path: polygon(56% 7%, 100% 7%, 100% 100%, 47% 100%, 41% 93%, 0 93%, 0 0, 50% 0);
+  }
+
+  .Contenitore-Testo{
+    color: white;
+    padding-left: 25vh;
+    padding-bottom: 10vh;
+    padding-right: 80vh;
+  }
+
+  .titoloCB{
+    font-weight: bolder;
+    color: #A576FF;
+    margin-bottom: 3rem;
+  }
+
+  .descrizioneCB{
+    font-weight: lighter;
+    font-size: 1.3rem;
+>>>>>>> Stashed changes
   }
 }
+
