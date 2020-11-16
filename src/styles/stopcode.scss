@@ -1,0 +1,85 @@
+.stopcode__container {
+    width: 100%;
+    height: 100vh;
+    background-color: #2A2A2A;
+    text-align: center;
+}
+
+.stopcode__window {
+    display: inline-block;
+    width: 70vh;
+    background-color: #4A4A4A;
+    border-radius: 21px;
+    margin-top: 20vh;
+}
+
+.stopcode__topbar {
+    text-align: left;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    color: white;
+    background-color: rgba(165,118,255, .41);
+    border-radius: 21px 21px 0 0;
+}
+
+.stopcode__topbar-close {
+    font-size: .8rem;
+    float: right;
+    position: relative;
+    right: 1rem;
+    padding: .1rem .4rem;
+    background-color: #D13939;
+    border-radius: 6px;
+}
+
+.stopcode__description {
+    margin-top: 1.5rem;
+}
+
+.stopcode__description-left {
+    float: left;
+    position: relative;
+    left: 3rem;
+}
+
+.stopcode__description-left-icon {
+    display: inline-block;
+    color: white;
+    font-size: 3rem;
+    background-color: #D13939;
+    padding: .1rem 1.3rem;
+    border-radius: 300px;
+}
+
+.stopcode__description-right {
+    display: inline-block;
+    text-align: left;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.stopcode__buttons {
+    text-align: right;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+}
+
+.stopcode__button-back {
+    display: inline-block;
+    padding: .1rem 1.5rem;
+    margin-right: 20px;
+}
+
+.stopcode__button-home {
+    display: inline-block;
+    padding: .1rem 1.5rem;
+    background-color: #A576FF;
+    border-radius: 10px;
+}
+
+a:hover {
+    text-decoration: none;
+}
