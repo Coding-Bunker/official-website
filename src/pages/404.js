@@ -12,7 +12,7 @@ const NotFoundPage = () => (
 			<div className="fourofour__title">Il computer ha riscontrato un problema e deve essere riavviato.<br />Riavvio Automatico.</div>
 			<Row className="fourofour__description">
 				<div>
-					<img src={qr} />
+					<img className="fourofour__img" src={qr} />
 				</div>
 				<div className="fourofour__description-text">
 					<Row><Col>Per risolvere questo problema vai <a className="fourofour__link" href="javascript:history.back()">Indietro</a> o <Link className="fourofour__link" to="/">Torna alla Homepage.</Link><br />http://codingbunker.it/stopcode</Col></Row>
