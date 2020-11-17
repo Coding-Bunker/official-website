@@ -1,58 +1,52 @@
 @import "../StaffCard/StaffCard.module";
 
-.Lo-Staff{
-  //------------= Sezione superiore =------------//
-                                                 //
-  //Divisore (rettangoli neri vicino a Lo Staff) //
-  .Divisore{                                     //
-    height: 0.7vh;                               //
-    width: 17vh;                                 //
-    background-color: black;                     //
-    display: inline-block;                       //
-    margin-bottom: 0.7vh                         //
-  }                                              //
-                                                 //
-  //Titolo Lo staff                              //
-  .Titolo-Staff{                                 //
-    font-weight: bold;                           //
-    text-align: center;                          //
-    font-size: 2.5rem;                           //
-    padding-left: 7vh;                           //
-    padding-right: 7vh;                          //
-  }                                              //
-                                                 //
-  //Contenitore del titolo e dei divisori        //
-  .Contenitore-Titoli{                           //
-    text-align: center;                          //
-  }                                              //
-                                                 //
-  //-----------= Sezione intermedia =------------//
-                                                 //
-  //Contenitore della descrizione                //
-  .Contenitore-Descrizione{                      //
-    padding-top: 5vh;                            //
-    padding-bottom: 5vh;                         //
-    text-align: center;                          //
-    margin: 0 auto;                              //
-    width: 90%;                                  //
-  }                                              //
-                                                 //
-  //Descrizione in sè                            //
-  .Descrizione{                                  //
-    font-size: 1.5em;                            //
-    display: flex;                               //
-    justify-content: center;                     //
-  }                                              //
-                                                 //
-  //------------= Sezione inferiore =------------//
-                                                 //
-  .containerCard{                                //
-    width: 40vh !important;                      //
-  }                                              //
-                                                 //
-  //=============================================//
-
-}
+//------------= Sezione superiore =------------//
+                                               //
+//Divisore (rettangoli neri vicino a Lo Staff) //
+.Divisore{                                     //
+  height: 1vh;                                 //
+  width: 15vh;                                 //
+  background-color: black;                     //
+  display: inline-block;                       //
+  margin-bottom: 0.7vh                         //
+}                                              //
+                                               //
+//Titolo Lo staff                              //
+.Titolo-Staff{                                 //
+  font-weight: bold;                           //
+  text-align: center;                          //
+  font-size: 35px;                             //
+  padding-left: 7vh;                           //
+  padding-right: 7vh;                          //
+}                                              //
+                                               //
+//Contenitore del titolo e dei divisori        //
+.Contenitore-Titoli{                           //
+  text-align: center;                          //
+}                                              //
+                                               //
+//-----------= Sezione intermedia =------------//
+                                               //
+//Contenitore della descrizione                //
+.Contenitore-Descrizione{                      //
+  padding-top: 5vh;                            //
+  padding-bottom: 5vh;                         //
+  text-align: center;                          //
+                                               //
+  //Descrizione in sè                          //
+  span{                                        //
+    display: block;                            //
+    padding-bottom: 2px;                       //
+  }                                            //
+}                                              //
+                                               //
+//------------= Sezione inferiore =------------//
+                                               //
+.containerCard{                                //
+  width: 40vh !important;                      //
+}                                              //
+                                               //
+//=============================================//
 
 
 

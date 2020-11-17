@@ -56,23 +56,11 @@ module.exports = {
 				plugins: [],
 			},
 		},
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 		{
 			resolve: 'gatsby-plugin-react-leaflet',
 			options: {
 				linkStyles: true // (default: true) Enable/disable loading stylesheets via CDN
 			},
 		},
->>>>>>> Stashed changes
 	],
 }

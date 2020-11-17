@@ -1,92 +1,3 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-.CoseCB{
-
-<<<<<<< Updated upstream
-  //Titolo
-  .Titolo{
-    font-weight: bold;
-    color: rgba(161,115,249,1);
-    font-size: 32px;
-  }
-
-  //sottotitolo
-  span{
-    font-weight: bold;
-    color: rgba(161,115,249,1);
-    padding-left: 10px;
-  }
-
-  //Descrizione Scritta
-  p{
-    color: black;
-    padding-top: 1rem;
-    font-weight: 500;
-    font-size: 18px;
-  }
-
-  @media only screen and (max-width: 576px) {
-    span{
-      display: block;
-      text-align: center;
-    }
-=======
-  .Contenitore-Nero{
-    background-color: black;
-    height: 695px;
-    padding-top: 4rem;
-    margin-bottom: 4rem;
-    clip-path: polygon(56% 7%, 100% 7%, 100% 100%, 47% 100%, 41% 93%, 0 93%, 0 0, 50% 0);
-  }
-
-  .Contenitore-Testo{
-    color: white;
-    padding-left: 25vh;
-    padding-bottom: 10vh;
-    padding-right: 80vh;
-  }
-
-  .titoloCB{
-    font-weight: bolder;
-    color: #A576FF;
-    margin-bottom: 3rem;
-  }
-
-  .descrizioneCB{
-    font-weight: lighter;
-    font-size: 1.3rem;
->>>>>>> Stashed changes
-  }
-=======
-.CoseCB {
-
-    .Contenitore-Nero {
-      background-color: black;
-      height: 695px;
-      padding-top: 4rem;
-      margin-bottom: 4rem;
-      clip-path: polygon(56% 7%, 100% 7%, 100% 100%, 47% 100%, 41% 93%, 0 93%, 0 0, 50% 0);
-    }
-
-    .Contenitore-Testo {
-      color: white;
-      padding-left: 25vh;
-      padding-bottom: 10vh;
-      padding-right: 80vh;
-    }
-
-    .titoloCB {
-      font-weight: bolder;
-      color: #A576FF;
-      margin-bottom: 3rem;
-    }
-
-    .descrizioneCB {
-      font-weight: lighter;
-      font-size: 1.3rem;
-    }
->>>>>>> Stashed changes
-=======
 .CoseCB {
 
   .Contenitore-Nero {
@@ -114,6 +25,5 @@
     font-weight: lighter;
     font-size: 1.3rem;
   }
->>>>>>> Stashed changes
 }
 

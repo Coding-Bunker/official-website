@@ -1,28 +1,7 @@
 import React from "react";
 import "./LaCommunity.scss"
 import {Button} from "react-bootstrap";
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps"
-=======
 import { MapContainer, Marker, Popup, TileLayer} from 'react-leaflet'
->>>>>>> Stashed changes
-=======
-
-import { MapContainer, Marker, Popup, TileLayer} from 'react-leaflet'
-
->>>>>>> Stashed changes
-=======
-
-import { MapContainer, Marker, Popup, TileLayer} from 'react-leaflet'
-import L, {icon} from "leaflet";
-
->>>>>>> Stashed changes
-=======
-import { MapContainer, Marker, Popup, TileLayer} from 'react-leaflet'
->>>>>>> Stashed changes
 
 interface Props{
     title:string,
@@ -32,41 +11,7 @@ interface Props{
     text_button:string,
 }
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-function Map(){
-    return (
-        <GoogleMap
-            defaultZoom = {10}
-            defaultCenter = {{lat: 41.902782, lng: 12.496365}}
-        />
-    );
-}
-
-const WrappedMap = withScriptjs(withGoogleMap(Map));
-=======
-
->>>>>>> Stashed changes
-=======
-
->>>>>>> Stashed changes
-
 const LaCommunity = (props:Props) =>{
-=======
-
-
-
-
-
-const LaCommunity = (props:Props) =>{
-
->>>>>>> Stashed changes
-=======
-
-const LaCommunity = (props:Props) =>{
->>>>>>> Stashed changes
     return(
         <div className="La-Community">
             <div className="Contenitore-Titoli">
@@ -86,40 +31,14 @@ const LaCommunity = (props:Props) =>{
             <div className="Contenitore-Bottone">
                 <Button variant="light" className="Bottone">{props.text_button}</Button>
             </div>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
-<<<<<<< Updated upstream
-            <div className="Contenitore-Mappa" style={{ width:"65%", height:"50%" }}>
-                <WrappedMap
-                    containerElement = {<div style={{ height:"900px" }} />}
-                    mapElement = {<div style={{ height:"100%" }} />}
-                    googleMapURL = {`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places`}
-                    loadingElement = {<div style={{ height:"100%" }} />}
-                />
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             <div className="Contenitore-Mappa">
                 <MapContainer className="Mappa" style={{height: 700, width:1250}} center={[41.8719, 12.5674]} zoom={6} scrollWheelZoom={true}>
                     <TileLayer
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-                    <Marker position={[41.9028,12.4964]}>
-=======
+
                     <Marker position={[41.9028, 12.4964]}>
->>>>>>> Stashed changes
-=======
-                    <Marker position={[41.9028, 12.4964]}>
->>>>>>> Stashed changes
                         <Popup>
                             A pretty CSS3 popup. <br /> Easily customizable.
                         </Popup>
@@ -140,16 +59,6 @@ const LaCommunity = (props:Props) =>{
                         </Popup>
                     </Marker>
                 </MapContainer>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             </div>
         </div>
     )

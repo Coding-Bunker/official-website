@@ -51,7 +51,6 @@ img {
     border-radius: 2000px;
     width: 22vh;
     position: relative;
-    margin-bottom: 7px;
 }
 
 // container della foto del profilo
@@ -75,7 +74,7 @@ img {
 // Classe che gestisce il nome dello staff
 .name {
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1rem;
     position: relative;
     bottom: 10px;
 }
@@ -89,6 +88,6 @@ img {
 // Classe che gestisce la descrizione dello staff   
 .description {
     position: relative;
-    font-size: 0.8rem;
+    font-size: .6rem;
     display: block;
 }

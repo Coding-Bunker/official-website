@@ -12,8 +12,6 @@ module.exports = async ({ actions, createNodeId, node }) => {
 			node,
 		});
 
-		createNode(mdxNode);
-
-		node.content = mdxNode.id;
+		node.content = mdxNode;
 	}
 };

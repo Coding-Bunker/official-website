@@ -6,12 +6,10 @@
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     display: inline-block;
     transition: .2s all;
-    width: 50vh;
+    width: 60vh;
     border-radius: 20px;
     text-align: center;
     height: 250px;
-    margin-right: 2em;
-    margin-bottom: 2em;
 }
 
 
@@ -23,7 +21,7 @@
 
 // Classe contentente il nome dell'utente
 .name {
-    margin-top: 20px;
+    padding-top: 20px;
     margin-bottom: 20px;
     font-weight: bold;
     font-size: 1.5rem;
@@ -31,6 +29,8 @@
 
 .description {
     font-size: .8rem;
+    transition: .2s all;
+
 }
 
 .profilePic {
@@ -57,4 +57,27 @@
     background-color: rgba(0,0,0,.2);
     border-radius: 200px;
     margin-top: 20px;
+}
+
+.right {
+    width: 64%;
+}
+
+.other {
+    opacity: 0;
+    transition: .2s all;
+    font-size: .8rem;
+    color: rgba(255,255,255,.7);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: relative;
+    bottom: 1.3rem;
+}
+
+.right:hover .other {
+    opacity: 1;
+}
+
+.right:hover .description {
+    opacity: 0;
 }

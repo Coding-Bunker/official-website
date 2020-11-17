@@ -1,0 +1,103 @@
+@import "../../styles/style.scss";
+
+// classe che gestisce il componente in se
+.containerCard {
+  border: .1px solid rgba(0,0,0,.1);
+  display: inline-block;
+  transition: .2s all;
+  width: 50vh;
+  border-radius: 0px 0px 20px 20px;
+  background: white;
+
+  position: relative;
+  flex-direction: column;
+  box-shadow: -1rem 0 1rem rgba(0,0,0,.3);
+}
+
+.containerCard:hover{
+  transform: translateY(-1rem);
+}
+
+.containerCard:hover~.containerCard{
+  transform: translateX(130px);
+}
+
+.containerCard:not(:first-child){
+  margin-left: -130px;
+}
+
+// Allarghiamo il componente a tutto schermo nel caso in cui stiamo da telefono
+@media screen and (max-width: 420px) {
+  .containerCard {
+    width: 100%;
+  }
+}
+
+// Div che contiene la foto
+.imgContainer {
+  height: auto;
+  width: auto;
+}
+
+// Classe che gestisce la foto
+.img {
+  margin: 0;
+  width: 100%;
+}
+
+// Div che contiene tutta la descrizione dell'evento
+.descriptionContainer {
+  padding: 30px 30px;
+}
+
+// Classe che gestisce il titolo dell'evento
+.title {
+  font-weight: bold;
+  font-size: 1.15rem;
+  position: relative;
+  bottom: 10px;
+}
+
+@media screen and (max-width: 420px) {
+  .title {
+    font-size: .75rem;
+  }
+}
+
+// Classe che gestisce la descrizione dell'evento
+.description {
+  position: relative;
+  font-size: .78rem;
+  display: block;
+}
+
+// foto dei partecipanti all'evento
+.peopleImg {
+  width: 8vh;
+  border: solid 3px rgb(157, 124, 255);
+  border-radius: 200px;
+  margin-bottom: 10px;
+}
+
+// contenitore dei partecipanti
+.peopleContainer {
+  text-align: center;
+  font-size: .78rem;
+}
+
+// contenitore del link
+.showMoreContainer {
+  text-align: right;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #a576ff;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+// link
+.showMore {
+  display: inline-block;
+  border-bottom: solid #a576ff 2px;
+}
