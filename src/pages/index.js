@@ -4,6 +4,7 @@ import React from "react"
 const IndexPage = () => (
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <div>
         YEET
     </div>
@@ -13,6 +14,12 @@ const IndexPage = () => (
    </div>
 >>>>>>> Stashed changes
 =======
+   <div>
+       YEET
+   </div>
+>>>>>>> Stashed changes
+=======
+
    <div>
        YEET
    </div>

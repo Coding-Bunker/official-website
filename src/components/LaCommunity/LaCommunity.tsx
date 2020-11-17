@@ -3,6 +3,7 @@ import "./LaCommunity.scss"
 import {Button} from "react-bootstrap";
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps"
 =======
 import { MapContainer, Marker, Popup, TileLayer} from 'react-leaflet'
@@ -10,6 +11,12 @@ import { MapContainer, Marker, Popup, TileLayer} from 'react-leaflet'
 =======
 
 import { MapContainer, Marker, Popup, TileLayer} from 'react-leaflet'
+
+>>>>>>> Stashed changes
+=======
+
+import { MapContainer, Marker, Popup, TileLayer} from 'react-leaflet'
+import L, {icon} from "leaflet";
 
 >>>>>>> Stashed changes
 
@@ -21,6 +28,7 @@ interface Props{
     text_button:string,
 }
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 function Map(){
@@ -41,6 +49,15 @@ const WrappedMap = withScriptjs(withGoogleMap(Map));
 >>>>>>> Stashed changes
 
 const LaCommunity = (props:Props) =>{
+=======
+
+
+
+
+
+const LaCommunity = (props:Props) =>{
+
+>>>>>>> Stashed changes
     return(
         <div className="La-Community">
             <div className="Contenitore-Titoli">
@@ -61,6 +78,7 @@ const LaCommunity = (props:Props) =>{
                 <Button variant="light" className="Bottone">{props.text_button}</Button>
             </div>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
 <<<<<<< Updated upstream
             <div className="Contenitore-Mappa" style={{ width:"65%", height:"50%" }}>
@@ -73,13 +91,19 @@ const LaCommunity = (props:Props) =>{
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
             <div className="Contenitore-Mappa">
                 <MapContainer className="Mappa" style={{height: 700, width:1250}} center={[41.8719, 12.5674]} zoom={6} scrollWheelZoom={true}>
                     <TileLayer
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
+<<<<<<< Updated upstream
                     <Marker position={[41.9028,12.4964]}>
+=======
+                    <Marker position={[41.9028, 12.4964]}>
+>>>>>>> Stashed changes
                         <Popup>
                             A pretty CSS3 popup. <br /> Easily customizable.
                         </Popup>
@@ -101,6 +125,9 @@ const LaCommunity = (props:Props) =>{
                     </Marker>
                 </MapContainer>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

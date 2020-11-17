@@ -50,10 +50,18 @@
     "react-bootstrap": "^1.2.2",
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "react-dom": "^16.12.0",
     "react-google-maps": "^9.4.5",
     "react-helmet": "^6.1.0",
     "react-hook-form": "^6.2.0",
+=======
+    "react-dom": "^16.14.0",
+    "react-google-maps": "^9.4.5",
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^6.2.0",
+    "react-leaflet": "^3.0.0",
+>>>>>>> Stashed changes
 =======
     "react-dom": "^16.14.0",
     "react-google-maps": "^9.4.5",
@@ -74,6 +82,10 @@
   "devDependencies": {
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+    "@types/leaflet": "^1.5.19",
+>>>>>>> Stashed changes
 =======
     "@types/leaflet": "^1.5.19",
 >>>>>>> Stashed changes

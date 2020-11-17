@@ -62,6 +62,7 @@
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   .Contenitore-Mappa{
     padding-top: 20vh;
     margin: 0 auto;
@@ -78,5 +79,18 @@
     margin: 15vh auto 15vh;
   }
 
+>>>>>>> Stashed changes
+=======
+  .Contenitore-Mappa {
+    margin: 0 auto;
+    .Mappa {
+      border: 2px solid black;
+      margin: 15vh auto 15vh;
+    }
+
+    .leaflet-marker-icon{
+      content: url('../../images/map-marker-alt-solid.png') !important;
+    }
+  }
 >>>>>>> Stashed changes
 }
