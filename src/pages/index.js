@@ -5,6 +5,7 @@ const IndexPage = () => (
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <div>
         YEET
     </div>
@@ -20,6 +21,11 @@ const IndexPage = () => (
 >>>>>>> Stashed changes
 =======
 
+   <div>
+       YEET
+   </div>
+>>>>>>> Stashed changes
+=======
    <div>
        YEET
    </div>
