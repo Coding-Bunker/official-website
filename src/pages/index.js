@@ -1,7 +1,5 @@
 import React from 'react'
-
 import Layout from '../components/layout'
-
 import TextAndPhoto from '../components/TextAndPhoto/TextAndPhoto'
 import CoseCB from '../components/CoseCB/CoseCB'
 import Scrollable from '../components/Scrollable/Scrollable'
