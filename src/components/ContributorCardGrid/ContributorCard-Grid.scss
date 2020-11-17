@@ -1,7 +1,9 @@
 .Contenitore-Grid{
-
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   .Contenitore-Bottone{
     text-align: center;
+    margin-top: 1.5rem;
   }
 
   .Bottone{
@@ -13,5 +15,9 @@
     margin-top: 2vh;
     margin-bottom: 17vh;
     border-radius: 0.7rem !important;
+  }
+
+  .rowCard{
+    padding-bottom: 3rem;
   }
 }
