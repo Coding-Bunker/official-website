@@ -4,6 +4,7 @@ const {
 	EVENT_TYPE,
 	PROJECT_TYPE,
 	LOCATION_TYPE,
+	LANGUAGE_TYPE,
 } = require('../utils/nodeTypes');
 
 module.exports = ({ actions }) => {
@@ -23,8 +24,13 @@ module.exports = ({ actions }) => {
 
                 type ${CONTRIBUTOR_TYPE} implements Node {
                         id: ID!
-                        money: Int
+                        username: String!
+                        description: String!
+                        picture: String!
+                        job: String!
+                        city: String!
                         role: String!
+                        languages: [${LANGUAGE_TYPE}]!
                         date: Date! @dateformat
                 }
 
@@ -42,6 +48,11 @@ module.exports = ({ actions }) => {
                         name: String!
                         description: String!
                         date: Date! @dateformat
+                }
+
+                type ${LANGUAGE_TYPE} implements Node {
+                        id: ID!
+                        name: String!
                 }
         `);
 };
