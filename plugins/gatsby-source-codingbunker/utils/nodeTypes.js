@@ -4,4 +4,5 @@ module.exports = {
 	EVENT_TYPE: 'CodingBunker_Event',
 	PROJECT_TYPE: 'CodingBunker_Project',
 	LOCATION_TYPE: 'CodingBunker_Location',
+	LANGUAGE_TYPE: 'CodingBunker_Language',
 };
