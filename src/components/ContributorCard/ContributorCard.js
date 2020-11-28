@@ -31,10 +31,12 @@ export default props => {
 	let bgcolor = ''
 
 	const icons = []
-
-	props.icons.forEach(e => {
-		icons.push(<Col><FontAwesomeIcon icon={iconMapping[e]} size="2x" style={{marginTop: "2rem", color: "white"}} /></Col>)
-	})
+	
+	if (props.icons != null) {	
+		props.icons.forEach(e => {
+			icons.push(<Col><FontAwesomeIcon icon={iconMapping[e]} size="2x" style={{marginTop: "2rem", color: "white"}} /></Col>)
+		})
+	}
 
 	// Associamo il tipo di utente al colore corrispondente
 	switch (user) {
@@ -94,7 +96,7 @@ export default props => {
 						<div className={contributorCard.other}>
 							<Row><Col style={{textAlign: "left"}}>{props.job}</Col><Col style={{textAlign: "right"}}>{props.date}</Col></Row>
 							<Row><Col style={{textAlign: "left"}}>{props.role}</Col><Col style={{textAlign: "right"}}>{props.place}</Col></Row>
-							<Row>{icons}</Row>
+							<Row>{icons? icons : ""}</Row>
 						</div>
 					</Right>
 				</div>
