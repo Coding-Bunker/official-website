@@ -3,14 +3,28 @@ import StaffCard from '../StaffCard/StaffCard'
 import './LoStaff.scss'
 
 
+interface Card {
+	title: string,
+	description: string,
+	img: string
+}
+
 interface Props{
 	title:string,
 	description:string,
+	cards: Array<Card>
 }
 
 import { Container, Row, Col } from 'react-bootstrap'
 
 const LoStaff = (props: Props) => {
+	const cards = []
+
+	props.cards.forEach((e:Card) => {
+		cards.push(<Col md="auto"><StaffCard profilePic={e.img} name={e.title} description={e.description} /></Col>)
+	})
+
+
 	return (
 		<div className="Lo-Staff">
 			<div className="Contenitore-Titoli">
@@ -25,20 +39,7 @@ const LoStaff = (props: Props) => {
 
 			<Container fluid>
 				<Row className="justify-content-around h-100">
-					<Col md="auto">
-						<StaffCard
-							profilePic={require('../../images/me.jpg')}
-							name="Prosciutto"
-							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit sodales nulla id consectetur. Proin suscipit sodales nulla id consectetur."
-						/>
-					</Col>
-					<Col md="auto">
-						<StaffCard
-							profilePic={require('../../images/me.jpg')}
-							name="Salame"
-							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit sodales nulla id consectetur. Proin suscipit sodales nulla id consectetur."
-						/>
-					</Col>
+					{cards}
 				</Row>
 			</Container>
 		</div>

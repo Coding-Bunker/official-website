@@ -5,13 +5,14 @@ import './Chisiamo.scss'
 interface Props{
 	title:string,
 	description:string,
+	img: string
 }
 
 const Chisiamo = (props: Props) => {
 	return (
 		<section className="chi-siamo">
 			<div>
-				<img className="background-section" src={require('../../images/banner.png')} />
+				<img className="background-section" src={props.img} />
 			</div>
 			<Container fluid className="contenitore-testo">
 				<h1>{props.title}</h1>

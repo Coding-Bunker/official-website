@@ -49,13 +49,13 @@ export default props => {
 		case 'Mentor':
 			bgcolor = 'rgb(250, 51, 24)'
 			break
-		case 'Senior member':
+		case 'Senior Member':
 			bgcolor = 'rgb(226, 129, 6)'
 			break
 		case 'Member':
 			bgcolor = 'rgb(130, 196, 250)'
 			break
-		case 'Junior member':
+		case 'Junior Member':
 			bgcolor = 'rgb(122, 203, 219)'
 			break
 		case 'Contributor':
