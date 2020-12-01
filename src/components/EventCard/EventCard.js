@@ -4,7 +4,7 @@ import eventCardStyles from './EventCard.module.scss'
 export default props => {
 	// Prendo la data e la scompongo in giorno, mese, anno
 	let date = props.date
-	let [day, month, year] = date.split('/')
+	let [year, month, day] = date.split('-')
 
 	// Converto il mese da numero a lettere
 	switch (parseInt(month)) {
