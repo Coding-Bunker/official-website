@@ -58,6 +58,9 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          DATO_CMS_API_KEY: ${{ secrets.DATO_CMS_API_KEY }}
+          BACKEND_API_KEY: ${{ secrets.BACKEND_API_KEY }}
 
       - name: Upload Build
         if: |
