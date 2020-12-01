@@ -27,7 +27,6 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Install
-        if: steps.cache-npm.outputs.cache-hit != 'true'
         run: npm install
 
   build:
@@ -53,7 +52,6 @@ jobs:
             ${{ runner.os }}-node-
 
       - name: Install
-        if: steps.cache-npm.outputs.cache-hit != 'true'
         run: npm install
 
       - name: Build
