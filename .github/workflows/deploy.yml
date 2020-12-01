@@ -96,7 +96,6 @@ jobs:
       - uses: technote-space/workflow-conclusion-action@v1
       - name: Notify Discord
         uses: rjstone/discord-webhook-notify@v1
-        if: failure()
         with:
           severity: error
           details: Pipeline Failed
