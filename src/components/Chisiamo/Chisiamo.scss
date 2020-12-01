@@ -1,23 +1,29 @@
 //Titolo (chi siamo)
 .chi-siamo {
-  h5{
+  h1{
     display: block;
     font-weight: bold;
-    font-size: 40px;
     padding-top: 5vh;
+    color: #A576FF;
     padding-bottom: 4vh;
   }
 
   //Testo
   p{
-    font-size: 20px;
-    padding-bottom: 2vh;
+    font-size: 1.5em;
   }
 
   //contenitore che racchiude tutto il testo
   .contenitore-testo{
     padding-left: 10vh;
+    padding-bottom: 10vh;
+    padding-right: 80vh;
   }
+
+  .background-section{
+    width: 100%;
+  }
+
 }
 
 

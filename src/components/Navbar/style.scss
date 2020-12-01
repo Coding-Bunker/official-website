@@ -20,12 +20,14 @@ $lg-breakpoint: 62em;
 
 	.navbar-toggler {
 		border: none;
+		color: white;
 		outline: none;
 	}
 	.nav-container {
 		@media screen and (min-width: $lg-breakpoint) {
 			padding-top: $vertical-spacing;
 			padding-bottom: $vertical-spacing;
+		
 		}
 		.navbar-nav {
 			.nav-link {
@@ -34,6 +36,10 @@ $lg-breakpoint: 62em;
 				padding-right: $distance-links;
 			}
 			&.links {
+                                & > *:last-child {
+                                        border: 2px solid white;
+				}
+				
 				@media screen and (max-width: $lg-breakpoint) {
 					margin-bottom: 1.25em;
 					font-size: 1.6875em;
@@ -44,6 +50,5 @@ $lg-breakpoint: 62em;
 	}
 	@media screen and (max-width: $lg-breakpoint) {
 		padding: 0.9em 1em;
-		text-align: center;
 	}
 }
