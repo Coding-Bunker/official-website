@@ -3,10 +3,20 @@
 $distance-links: 1.6em;
 $vertical-spacing: 0.5em;
 
-$lg-breakpoint: 992px;
+$lg-breakpoint: 62em;
 
 .navbar.navbar-dark {
 	font-size: 0.9em;
+	background-color: #111111;
+
+	#entra-nel-bunker{
+		background-color: #A576FF;
+		font-size: 1.4375em;
+		font-weight: bold;
+		padding-left: 1.25em;
+		padding-right: 1.25em;
+	}
+
 
 	.navbar-toggler {
 		border: none;
@@ -31,18 +41,9 @@ $lg-breakpoint: 992px;
 				}
 				
 				@media screen and (max-width: $lg-breakpoint) {
-					margin-bottom: 20px;
-				}
-                        }
-			&.link-buttons {
-                                flex-direction: row;
-
-				& > * {
-					margin-right: 20px;
-
-					&:last-child {
-						margin-right: 0;
-					}
+					margin-bottom: 1.25em;
+					font-size: 1.6875em;
+					text-align: center;
 				}
 			}
 		}
