@@ -8,7 +8,7 @@
     "dev": "gatsby develop",
     "develop": "gatsby develop -p 8080",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
-    "lint": "eslint --ext .js,.jsx src plugins",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src plugins",
     "lint:fix": "npm run lint -- --fix",
     "start": "npm run develop",
     "serve": "gatsby serve",

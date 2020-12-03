@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
-import StaffCard from '../StaffCard/StaffCard'
+import StaffCard from '../StaffCard/StaffCard.js'
 
 import './LoStaff.scss'
 import MeImg from '../../images/me.jpg'
