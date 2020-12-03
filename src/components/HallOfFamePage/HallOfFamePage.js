@@ -1,17 +1,22 @@
 import React from 'react'
-import './HallOfFamePage.scss'
-import hallOfFame from '../../images/hall-of-fame.png'
-import GrowingNumber from '../GrowingNumber/GrowingNumber'
 import { Col, Container, Row } from 'react-bootstrap'
+
+import GrowingNumber from '../GrowingNumber/GrowingNumber'
 import ProjectCard from '../ProjectCard/ProjectCard'
 import ContributorCard from '../ContributorCard/ContributorCard'
-import enleyn from '../../images/enleyn.png'
+
+import './HallOfFamePage.scss'
+
+import HallOfFame from '../../images/hall-of-fame.png'
+import Enleyn from '../../images/enleyn.png'
+import Project from '../../images/project.png'
+import Test from '../../images/test.png'
 
 const HallOfFamePage = () => {
 	return (
 		<section className="hall-of-fame">
 			<div className="heading">
-				<img src={hallOfFame} alt="Team Working" />
+				<img src={HallOfFame} alt="Team Working" />
 				<div className="testo">
 					<div className="intestazione">
 						<div className="linea" />
@@ -56,21 +61,21 @@ const HallOfFamePage = () => {
 					<Row className="justify-content-around ">
 						<Col md="auto">
 							<ProjectCard
-								img={require('../../images/project.png')}
+								img={Project}
 								title="Progetto 1"
 								description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit sodales nulla id"
 							/>
 						</Col>
 						<Col md="auto">
 							<ProjectCard
-								img={require('../../images/test.png')}
+								img={Test}
 								title="Progetto 1"
 								description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit sodales nulla id"
 							/>
 						</Col>
 						<Col md="auto">
 							<ProjectCard
-								img={require('../../images/project.png')}
+								img={Project}
 								title="Progetto 1"
 								description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit sodales nulla id"
 							/>
@@ -79,21 +84,21 @@ const HallOfFamePage = () => {
 					<Row className="justify-content-around">
 						<Col md="auto">
 							<ProjectCard
-								img={require('../../images/project.png')}
+								img={Project}
 								title="Progetto 1"
 								description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit sodales nulla id"
 							/>
 						</Col>
 						<Col md="auto">
 							<ProjectCard
-								img={require('../../images/test.png')}
+								img={Test}
 								title="Progetto 1"
 								description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit sodales nulla id"
 							/>
 						</Col>
 						<Col md="auto">
 							<ProjectCard
-								img={require('../../images/project.png')}
+								img={Project}
 								title="Progetto 1"
 								description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit sodales nulla id"
 							/>
@@ -107,7 +112,7 @@ const HallOfFamePage = () => {
 					<span className="titolo">Contributors</span>
 					<div className="linea" />
 				</div>
-				<p class="sottotitolo">
+				<p className="sottotitolo">
 					In luctus vitae mi a auctor. In varius quam nec nibh accumsan, at blandit diam egestas.
 					Duis tincidunt, sem id tristique dapibus, ante magna dictum nulla, nec vehicula augue
 					turpis vitae nunc. Proin ultricies mollis enim, fermentum mollis mi commodo nec.
@@ -117,7 +122,7 @@ const HallOfFamePage = () => {
 						<Col md="auto">
 							<ContributorCard
 								user="Contributor"
-								profilePic={enleyn}
+								profilePic={Enleyn}
 								name="enleyn"
 								description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque purus vel nulla rhoncus, sed commodo augue fermentum."
 							/>
@@ -125,7 +130,7 @@ const HallOfFamePage = () => {
 						<Col md="auto">
 							<ContributorCard
 								user="Contributor"
-								profilePic={enleyn}
+								profilePic={Enleyn}
 								name="enleyn"
 								description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque purus vel nulla rhoncus, sed commodo augue fermentum."
 							/>
@@ -133,15 +138,15 @@ const HallOfFamePage = () => {
 						<Col md="auto">
 							<ContributorCard
 								user="Contributor"
-								profilePic={enleyn}
+								profilePic={Enleyn}
 								name="enleyn"
 								description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque purus vel nulla rhoncus, sed commodo augue fermentum."
 							/>
 						</Col>
 					</Row>
 				</Container>
-				<div class="vedi-altri">
-					<button>Vedi altri</button>
+				<div className="vedi-altri">
+					<button type="button">Vedi altri</button>
 				</div>
 			</div>
 		</section>

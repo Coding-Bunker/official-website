@@ -1,8 +1,8 @@
 import React from 'react'
-import { Nav, Navbar as BtNavbar } from 'react-bootstrap'
-import { faLinkedin, faDiscord, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { graphql, useStaticQuery, Link } from 'gatsby'
 import Img from 'gatsby-image'
+import { Nav, Navbar as BtNavbar } from 'react-bootstrap'
+import { faLinkedin, faDiscord, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 import LinkButton from '../LinkButton'
 
@@ -22,7 +22,7 @@ const Navbar = () => {
 			}
 		`,
 	)
-	console.log(data)
+
 	return (
 		<BtNavbar expand="lg" bg="primary" variant="dark">
 			<BtNavbar.Brand to="/" as={Link}>
@@ -53,10 +53,10 @@ const Navbar = () => {
 						</Nav.Link>
 					</Nav>
 					<Nav className="link-buttons">
-						<LinkButton link={'/test'} icon={faInstagram} />
-						<LinkButton link={'/test'} icon={faGithub} />
-						<LinkButton link={'/test'} icon={faDiscord} />
-						<LinkButton link={'/test'} icon={faLinkedin} />
+						<LinkButton link="/test" icon={faInstagram} />
+						<LinkButton link="/test" icon={faGithub} />
+						<LinkButton link="/test" icon={faDiscord} />
+						<LinkButton link="/test" icon={faLinkedin} />
 					</Nav>
 				</BtNavbar.Collapse>
 			</div>

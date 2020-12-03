@@ -1,13 +1,10 @@
 .entra-ora-component {
-  * {
-    font-family: 'Raleway', sans-serif;
-  }
   .entra-ora {
     height: 570px;
     color: white;
     padding-bottom: 50px;
   }
-  
+
   p {
     width: 60%;
     font-size: 1.2em;
@@ -17,14 +14,14 @@
   }
 
   //Ho reso l'icona di discord un item effettivo
-  .Icona-Discord{
+  .Icona-Discord {
     margin: 0 auto;
     position: relative;
     top: 75px;
     width: 150px;
     height: 150px;
   }
-  
+
   .entra-ora-btn {
     margin-top: 6vh;
     text-align: center;
@@ -32,7 +29,7 @@
   }
 
   //div per centrare il bottone
-  .centrare{
+  .centrare {
     text-align: center;
     margin: 0 auto;
   }

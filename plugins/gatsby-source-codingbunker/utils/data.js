@@ -1,6 +1,6 @@
 const { default: axios } = require('axios');
 
-module.exports = async (apiKey, apiEndpoint, reporter) => {
+module.exports = async (apiKey, apiEndpoint) => {
 	axios.defaults.headers = {
 		'X-Api-Key': apiKey,
 	};
