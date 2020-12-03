@@ -129,6 +129,7 @@ jobs:
     needs:
       - build
       - setup
+      - lint
     steps:
       - uses: technote-space/workflow-conclusion-action@v1
       - name: Notify Discord
