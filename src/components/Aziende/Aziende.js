@@ -1,5 +1,10 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import Collab1 from '../../images/collab_1.png'
+import Collab2 from '../../images/collab_2.png'
+import Collab3 from '../../images/collab_3.png'
+import Collab4 from '../../images/collab_4.png'
+
 import './Aziende.scss'
 
 const Aziende = () => {
@@ -12,20 +17,20 @@ const Aziende = () => {
 				<div className="linea" />
 			</div>
 			{/* Sottotitolo della sezione */}
-			<div class="sottotitolo">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+			<div className="sottotitolo">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
 			<Container>
 				<Row className="align-center">
 					<Col md={6}>
-						<img className="Azienda" src={require('../../images/Image_3.png')} alt="" />
+						<img className="Azienda" src={Collab1} alt="" />
 					</Col>
 					<Col md={6}>
-						<img className="Azienda" src={require('../../images/Image_4.png')} alt="" />
+						<img className="Azienda" src={Collab2} alt="" />
 					</Col>
 					<Col md={6}>
-						<img className="Azienda" src={require('../../images/Image_5.png')} alt="" />
+						<img className="Azienda" src={Collab3} alt="" />
 					</Col>
 					<Col md={6}>
-						<img className="Azienda" src={require('../../images/Image_6.png')} alt="" />
+						<img className="Azienda" src={Collab4} alt="" />
 					</Col>
 				</Row>
 			</Container>

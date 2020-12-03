@@ -20,13 +20,13 @@ const LinkButton = ({ link, icon }) => (
 				textAnchor="middle"
 				alignmentBaseline="middle"
 				icon={faCircle}
-				size={'2x'}
+				size="2x"
 			/>
 			<FontAwesomeIcon
 				textAnchor="middle"
 				alignmentBaseline="middle"
 				icon={icon}
-				size={'1x'}
+				size="1x"
 				style={{
 					position: 'absolute',
 					left: '50%',

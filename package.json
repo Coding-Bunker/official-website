@@ -7,7 +7,9 @@
     "build": "gatsby build",
     "dev": "gatsby develop",
     "develop": "gatsby develop -p 8080",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx}\"",
+    "lint": "eslint --ext .js,.jsx src plugins",
+    "lint:fix": "npm run lint -- --fix",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
@@ -41,6 +43,7 @@
     "gatsby-plugin-react-leaflet": "^2.0.13",
     "gatsby-plugin-sass": "^2.3.12",
     "gatsby-plugin-sharp": "^2.6.13",
+    "gatsby-plugin-typescript": "^2.8.0",
     "gatsby-plugin-typography": "^2.5.10",
     "gatsby-source-datocms": "^2.3.0",
     "gatsby-source-filesystem": "^2.3.25",
@@ -52,7 +55,6 @@
     "react": "^16.14.0",
     "react-bootstrap": "^1.2.2",
     "react-dom": "^16.14.0",
-    "react-google-maps": "^9.4.5",
     "react-helmet": "^6.1.0",
     "react-hook-form": "^6.2.0",
     "react-leaflet": "^3.0.0",
@@ -63,10 +65,21 @@
   },
   "devDependencies": {
     "@types/leaflet": "^1.5.19",
-    "eslint-config-react-app": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-prettier": "^3.2.0",
+    "eslint-plugin-react": "7.21.5",
+    "eslint-plugin-react-hooks": "4",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
-    "prettier": "2.0.5"
+    "prettier": "2.0.5",
+    "typescript": "^4.1.2"
   },
   "keywords": [
     "gatsby"

@@ -6,21 +6,17 @@ import './DiconoDiNoi.scss'
 const DiconoDiNoi = () => {
 	return (
 		<div className="dicono-di-noi">
-			{/* Titolo della sezione "Dicono di noi" */}
 			<div className="intestazione">
 				<div className="linea" />
 				<span className="titolo">Dicono di noi</span>
 				<div className="linea" />
 			</div>
-			{/* Sottotitolo della sezione */}
-			<div class="sottotitolo">Lorem ipsum dolor sit amet</div>
+			<div className="sottotitolo">Lorem ipsum dolor sit amet</div>
 
-			{/* Container per le testimonianze */}
 			<Container className="quote-container">
 				<Row>
 					<Col>
-						{/* Card di una singola testimonianza formata dalla citazione e dal nome della persona citata */}
-						<div class="quote-card">
+						<div className="quote-card">
 							<blockquote>
 								Lorem ipsum dolor sit amet,
 								<br />
@@ -34,8 +30,7 @@ const DiconoDiNoi = () => {
 				</Row>
 				<Row>
 					<Col>
-						{/* Card di una singola testimonianza formata dalla citazione e dal nome della persona citata */}
-						<div class="quote-card">
+						<div className="quote-card">
 							<blockquote>
 								Lorem ipsum dolor sit amet,
 								<br />
@@ -49,8 +44,7 @@ const DiconoDiNoi = () => {
 				</Row>
 				<Row>
 					<Col>
-						{/* Card di una singola testimonianza formata dalla citazione e dal nome della persona citata */}
-						<div class="quote-card">
+						<div className="quote-card">
 							<blockquote>
 								Lorem ipsum dolor sit amet,
 								<br />
