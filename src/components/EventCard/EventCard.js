@@ -3,7 +3,7 @@ import React from 'react'
 import eventCardStyles from './EventCard.module.scss'
 
 const EventCard = ({ date, title, img, description }) => {
-	const [day, month] = date.split('/')
+	const [year, month, day] = date.split('-')
 
 	let parsedMonth = ''
 	// Converto il mese da numero a lettere

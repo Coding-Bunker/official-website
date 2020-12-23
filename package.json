@@ -20,7 +20,10 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": ["prettier --write", "eslint --fix"]
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.30",

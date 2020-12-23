@@ -7,31 +7,27 @@ import Collab4 from '../../images/collab_4.png'
 
 import './Aziende.scss'
 
-const Aziende = () => {
+const Aziende = (props) => {
+	const partners = []
+	
+	props.partners.forEach(e => {
+		partners.push(<Col md={6}><a href={e.link}><img className="Azienda" src={e.img} alt="" /></a></Col>)
+	});
+
+
 	return (
 		<div className="Aziende">
 			{/* Titolo della sezione "Dicono di noi" */}
 			<div className="intestazione">
 				<div className="linea" />
-				<span className="titolo">I nostri partner</span>
+					<span className="titolo">{props.title}</span>
 				<div className="linea" />
 			</div>
 			{/* Sottotitolo della sezione */}
-			<div className="sottotitolo">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+			<div class="sottotitolo">{props.description}</div>
 			<Container>
 				<Row className="align-center">
-					<Col md={6}>
-						<img className="Azienda" src={Collab1} alt="" />
-					</Col>
-					<Col md={6}>
-						<img className="Azienda" src={Collab2} alt="" />
-					</Col>
-					<Col md={6}>
-						<img className="Azienda" src={Collab3} alt="" />
-					</Col>
-					<Col md={6}>
-						<img className="Azienda" src={Collab4} alt="" />
-					</Col>
+					{partners}
 				</Row>
 			</Container>
 		</div>
