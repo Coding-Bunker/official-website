@@ -1,7 +1,9 @@
 import React from 'react'
-import './Scrollable.scss'
 
 import EventCard from '../EventCard/EventCard'
+
+import './Scrollable.scss'
+import CbImg from '../../images/cb.png'
 
 const Scrollable = () => {
 	return (
@@ -17,30 +19,10 @@ const Scrollable = () => {
 			</div>
 
 			<section className="card-list">
-				<EventCard
-					date="25/09/2020"
-					img={require('../../images/cb.png')}
-					title="Gieri"
-					description="ihgIFIEUFGEFU"
-				/>
-				<EventCard
-					date="25/09/2020"
-					img={require('../../images/cb.png')}
-					title="Gieri"
-					description="ihgIFIEUFGEFU"
-				/>
-				<EventCard
-					date="25/09/2020"
-					img={require('../../images/cb.png')}
-					title="Gieri"
-					description="ihgIFIEUFGEFU"
-				/>
-				<EventCard
-					date="25/09/2020"
-					img={require('../../images/cb.png')}
-					title="Gieri"
-					description="ihgIFIEUFGEFU"
-				/>
+				<EventCard date="25/09/2020" img={CbImg} title="Gieri" description="ihgIFIEUFGEFU" />
+				<EventCard date="25/09/2020" img={CbImg} title="Gieri" description="ihgIFIEUFGEFU" />
+				<EventCard date="25/09/2020" img={CbImg} title="Gieri" description="ihgIFIEUFGEFU" />
+				<EventCard date="25/09/2020" img={CbImg} title="Gieri" description="ihgIFIEUFGEFU" />
 			</section>
 		</div>
 	)

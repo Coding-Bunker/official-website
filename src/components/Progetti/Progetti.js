@@ -1,7 +1,11 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import progettiStyle from './Progetti.module.scss'
+
 import ProjectCard from '../ProjectCard/ProjectCard'
+
+import progettiStyle from './Progetti.module.scss'
+import ProjectImg from '../../images/project.png'
+import TestImg from '../../images/test.png'
 
 const Progetti = () => {
 	return (
@@ -14,21 +18,21 @@ const Progetti = () => {
 				<Row className="justify-content-around">
 					<Col md="auto">
 						<ProjectCard
-							img={require('../../images/project.png')}
+							img={ProjectImg}
 							title="Progetto 1"
 							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit sodales nulla id"
 						/>
 					</Col>
 					<Col md="auto">
 						<ProjectCard
-							img={require('../../images/test.png')}
+							img={TestImg}
 							title="Progetto 1"
 							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit sodales nulla id"
 						/>
 					</Col>
 					<Col md="auto">
 						<ProjectCard
-							img={require('../../images/project.png')}
+							img={ProjectImg}
 							title="Progetto 1"
 							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit sodales nulla id"
 						/>
@@ -36,7 +40,7 @@ const Progetti = () => {
 				</Row>
 			</Container>
 			<div className={progettiStyle.altri_progetti}>
-				<a href="#" className={progettiStyle.scopri_progetti}>
+				<a href="/" className={progettiStyle.scopri_progetti}>
 					Scopri tutti i progetti
 				</a>
 			</div>

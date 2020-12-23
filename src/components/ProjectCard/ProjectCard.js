@@ -1,14 +1,16 @@
 import React from 'react'
 import projectCardStyles from './ProjectCard.module.scss'
 
-export default props => (
+const ProjectCard = ({ img, title, description }) => (
 	<div className={projectCardStyles.containerCard}>
 		<div className={projectCardStyles.imgContainer}>
-			<img className={projectCardStyles.img} src={props.img} alt={props.title} />
+			<img className={projectCardStyles.img} src={img} alt={title} />
 		</div>
 		<div className={projectCardStyles.descriptionContainer}>
-			<div className={projectCardStyles.title}>{props.title}</div>
-			<div className={projectCardStyles.description}>{props.description}</div>
+			<div className={projectCardStyles.title}>{title}</div>
+			<div className={projectCardStyles.description}>{description}</div>
 		</div>
 	</div>
 )
+
+export default ProjectCard

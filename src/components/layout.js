@@ -14,12 +14,12 @@ import Footer from './Footer'
 
 const Layout = ({ children }) => {
 	return (
-		<React.Fragment>
+		<>
 			<Head />
 			<Navbar />
 			<main>{children}</main>
 			<Footer />
-		</React.Fragment>
+		</>
 	)
 }
 

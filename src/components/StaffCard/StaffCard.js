@@ -1,19 +1,21 @@
 import React from 'react'
 import staffCardStyles from './StaffCard.module.scss'
 
-export default props => {
+const StaffCard = ({ className, profilePic, name, description }) => {
 	return (
-		<div className={staffCardStyles.component + (props.className ? ` ${props.className}` : '')}>
+		<div className={staffCardStyles.component + (className ? ` ${className}` : '')}>
 			<div className={staffCardStyles.profilePicContainer}>
-				<img className={staffCardStyles.profilePic} src={props.profilePic} alt="" />
+				<img className={staffCardStyles.profilePic} src={profilePic} alt="" />
 			</div>
 			<div className={staffCardStyles.containerCard}>
-				<div className={staffCardStyles.imgBackground}></div>
+				<div className={staffCardStyles.imgBackground} />
 				<div className={staffCardStyles.descriptionContainer}>
-					<div className={staffCardStyles.name}>{props.name}</div>
-					<div className={staffCardStyles.description}>{props.description}</div>
+					<div className={staffCardStyles.name}>{name}</div>
+					<div className={staffCardStyles.description}>{description}</div>
 				</div>
 			</div>
 		</div>
 	)
 }
+
+export default StaffCard

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import textAndPhotoStyles from './TextAndPhoto.module.scss'
 import { Container, Row, Col } from 'react-bootstrap'
+import textAndPhotoStyles from './TextAndPhoto.module.scss'
 
 export default props => (
   <div className={textAndPhotoStyles.containerSection}>
@@ -24,3 +24,5 @@ export default props => (
   </div>
 
 )
+
+export default TextAndPhoto
