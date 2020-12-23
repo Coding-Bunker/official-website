@@ -138,7 +138,6 @@ const IndexPage = () => {
 			}
 		}
 	`)
-
 	console.log(query)
 	const projects = []
 	const events = []
