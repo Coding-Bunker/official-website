@@ -15,13 +15,11 @@ export default props => (
                  </div>
                </div>
           </Col>
-          <Col style={{padding: 0}}>
-              <div className={textAndPhotoStyles.imgContainer}>
-                  <img className={textAndPhotoStyles.img} src={props.img} />
-              </div>
+          <Col className={textAndPhotoStyles.imgContainer} style={{padding: 0}}>
+
+            <img className={textAndPhotoStyles.img} src={props.img} />
           </Col>
       </Row>
-      <Container>sdifioedf</Container>
 
   </div>
 

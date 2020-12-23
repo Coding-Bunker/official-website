@@ -15,14 +15,14 @@ import Testimonianze from '../components/Testimonianze/Testimonianze'
 import Aziende from '../components/Aziende/Aziende'
 
 const IndexPage = () => (
-	<Layout>
+	// <Layout>
 		<TextAndPhoto
 			linkText="Leggi altro"
 			title="Coding Bunker"
-			description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit sodales nulla id consectetur. Mauris quis eleifend ex. Nullam justo nisl, pharetra id fermentum in, pretium sit amet tortor. Integer volutpat nulla sed placerat ultrices. Duis gravida tortor ac eros consectetur, non varius metus egestas."
+			description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit sodales nulla id consectetur. Mauris quis eleifend ex. Nullam justo nisl, pharetra id fermentum in, pretium"
 			img={require('../images/Image_1.png')}
 		/>
-		<CoseCB />
+		/* <CoseCB />
 		<Scrollable />
 		<PastScrollable />
 		<Blog />
@@ -31,8 +31,8 @@ const IndexPage = () => (
 		<EntraOraHome />
 		<Progetti />
 		<Testimonianze />
-		<Aziende />
-	</Layout>
+		<Aziende /> */
+	// </Layout>
 )
 
 export default IndexPage
