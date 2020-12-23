@@ -1,7 +1,8 @@
 import React from 'react'
-import StaffCard from '../StaffCard/StaffCard'
-import './LoStaff.scss'
+import { Container, Row, Col } from 'react-bootstrap'
 
+import StaffCard from '../StaffCard/StaffCard.js'
+import './LoStaff.scss'
 
 interface Card {
 	title: string,
@@ -15,7 +16,10 @@ interface Props{
 	cards: Array<Card>
 }
 
-import { Container, Row, Col } from 'react-bootstrap'
+interface Props {
+	title: string
+	description: string
+}
 
 const LoStaff = (props: Props) => {
 	const cards = []

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import textAndPhotoStyles from './TextAndPhoto.module.scss'
 import { Container, Row, Col } from 'react-bootstrap'
+import textAndPhotoStyles from './TextAndPhoto.module.scss'
 
 export default props => (
   <div className={textAndPhotoStyles.containerSection}>
@@ -15,13 +15,11 @@ export default props => (
                  </div>
                </div>
           </Col>
-          <Col style={{padding: 0}}>
-              <div className={textAndPhotoStyles.imgContainer}>
-                  <img className={textAndPhotoStyles.img} src={props.img} />
-              </div>
+          <Col className={textAndPhotoStyles.imgContainer} style={{padding: 0}}>
+
+            <img className={textAndPhotoStyles.img} src={props.img} />
           </Col>
       </Row>
-      <Container>sdifioedf</Container>
 
   </div>
 

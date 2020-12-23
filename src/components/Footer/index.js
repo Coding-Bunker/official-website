@@ -4,7 +4,6 @@ import Img from 'gatsby-image'
 import { Row, Col, Container, Form, Button } from 'react-bootstrap'
 import { faLinkedin, faDiscord, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { useForm } from 'react-hook-form'
-import axios from 'axios'
 
 import LinkButton from '../LinkButton'
 
@@ -44,13 +43,7 @@ const Footer = () => {
 		`,
 	)
 
-	const onSubmitForm = async data => {
-		console.log(data)
-
-		await axios.post('http://94.38.129.41:8080/newsletters', {
-			data,
-		})
-	}
+	const onSubmitForm = async () => {}
 
 	return (
 		<footer className="footer">
@@ -58,10 +51,10 @@ const Footer = () => {
 				<Row>
 					<Col md="8" className="bg-primary no-gutters footer__links p-4">
 						<div className="d-flex flex-row justify-content-center align-items-center">
-							<LinkButton link={'/test'} icon={faInstagram} />
-							<LinkButton link={'/test'} icon={faGithub} />
-							<LinkButton link={'/test'} icon={faDiscord} />
-							<LinkButton link={'/test'} icon={faLinkedin} />
+							<LinkButton link="/test" icon={faInstagram} />
+							<LinkButton link="/test" icon={faGithub} />
+							<LinkButton link="/test" icon={faDiscord} />
+							<LinkButton link="/test" icon={faLinkedin} />
 						</div>
 						<Row>
 							<Col>

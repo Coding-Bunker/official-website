@@ -1,7 +1,7 @@
-import React from "react";
-import "./ContributorCard-Grid.scss"
-import {Container, Col, Row, Button} from "react-bootstrap";
-import ContributorCard from "../ContributorCard/ContributorCard";
+import React from 'react'
+import { Container, Col, Row, Button } from 'react-bootstrap'
+import ContributorCard from '../ContributorCard/ContributorCard.js'
+import './ContributorCard-Grid.scss'
 
 interface Language {
     name: string
@@ -18,12 +18,13 @@ interface Contributor {
     languages: Array<Language>
 }
 
+
 interface Props {
     text_button:string
     contributors: Array<Contributor>
 }
 
-const ContributorCardGrid = (props:Props) => {
+const ContributorCardGrid = (props: Props) => {
 
     const contributors: Array<JSX.Element> = []
 
@@ -106,11 +107,13 @@ const ContributorCardGrid = (props:Props) => {
                 {newContributors}
             </Container>
 
-            <div className="Contenitore-Bottone">
-                <Button variant="light" className="Bottone">{props.text_button}</Button>
-            </div>
-        </div>
-    )
+			<div className="Contenitore-Bottone">
+				<Button variant="light" className="Bottone">
+					{props.text_button}
+				</Button>
+			</div>
+		</div>
+	)
 }
 
 export default ContributorCardGrid

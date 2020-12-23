@@ -1,17 +1,19 @@
 import React from 'react'
-import Layout from "../components/layout"
-import TextAndPhoto from "../components/TextAndPhoto/TextAndPhoto"
-import CoseCB from "../components/CoseCB/CoseCB"
-import Scrollable from "../components/Scrollable/Scrollable"
-import PastScrollable from "../components/PastScrollable/PastScrollable"
-import Blog from "../components/Blog/Blog"
-import AlcuniNumeri from "../components/Alcuni Numeri/AlcuniNumeri"
+
+import Layout from '../components/layout'
+import TextAndPhoto from '../components/TextAndPhoto/TextAndPhoto'
+import Scrollable from '../components/Scrollable/Scrollable'
+import PastScrollable from '../components/PastScrollable/PastScrollable'
+import AlcuniNumeri from '../components/Alcuni Numeri/AlcuniNumeri'
 import DiconoDiNoi from '../components/Dicono Di Noi/DiconoDiNoi'
-import EntraOraHome from "../components/EntraOraHome/EntraOraHome"
-import Progetti from "../components/Progetti/Progetti"
-import Testimonianze from "../components/Testimonianze/Testimonianze"
-import Aziende from "../components/Aziende/Aziende"
-import { graphql, useStaticQuery } from "gatsby"
+import EntraOraHome from '../components/EntraOraHome/EntraOraHome'
+import Progetti from '../components/Progetti/Progetti'
+import Testimonianze from '../components/Testimonianze/Testimonianze'
+import Aziende from '../components/Aziende/Aziende'
+import WhyEnter from '../components/WhyEnter/WhyEnter'
+import Blog from "../components/Blog/Blog"
+import { useStaticQuery, graphql } from "gatsby"
+
 
 const IndexPage = () => {
 	const query = useStaticQuery(graphql`
@@ -107,20 +109,30 @@ const IndexPage = () => {
 						}
 					}
 					... on DatoCmsReviewsSection {
-							titolo
-							descrizione
-							testimonianze {
-									nome
-									testimonianza
-							}
+						titolo
+						descrizione
+						testimonianze {
+								nome
+								testimonianza
+						}
 					}
 					... on DatoCmsPartnerSection {
-							partners {
-									immaginePartner {
-											url
-									}
-									linkSitoPartner
-							}
+						titolo
+						descrizione
+						partners {
+								immaginePartner {
+										url
+								}
+								linkSitoPartner
+						}
+					}
+
+					... on DatoCmsWhyenterSection {
+						titolo
+						descrizione
+						immagine {
+							url
+						}
 					}	
 				}
 			}
@@ -132,7 +144,7 @@ const IndexPage = () => {
 	const past_events = []
 	const topics = []
 	const reviews = []
-	const sponsors = []
+	const partners = []
 
 	query.datoCmsHomepage.sections[2].progetti.forEach(e => {
 		projects.push({description: e.tipoCarta[0].descrizione, title: e.tipoCarta[0].titolo, img: e.tipoCarta[0].immagine.url})
@@ -160,24 +172,22 @@ const IndexPage = () => {
 	})
 
 	query.datoCmsHomepage.sections[8].partners.forEach(e => {
-		sponsors.push({img: e.immaginePartner.url, link: e.linkSitoPartner})
+		partners.push({img: e.immaginePartner.url, link: e.linkSitoPartner})
 	})
 
 	return (
-		<>
-			<Layout>	
-				<TextAndPhoto linkText="Leggi altro" title={query.datoCmsHomepage.sections[5].titolo} description={query.datoCmsHomepage.sections[5].descrizione} img={query.datoCmsHomepage.sections[5].immagine.url} />	
-				<Scrollable title={query.datoCmsHomepage.sections[3].titolo} description={query.datoCmsHomepage.sections[3].descrizione} cards={events} />	
-				<PastScrollable title={query.datoCmsHomepage.sections[4].titolo} button="Vedi tutti gli eventi" cards={past_events} />	
-				<Blog title={query.datoCmsHomepage.sections[6].titolo} description={query.datoCmsHomepage.sections[6].descrizione} topics={topics} />	
-				<AlcuniNumeri />	
-				<DiconoDiNoi  description={query.datoCmsHomepage.sections[7].descrizione} reviews={reviews} title={query.datoCmsHomepage.sections[7].titolo}/>	
-				<EntraOraHome discord_img={query.datoCmsHomepage.sections[1].immagineDiscord.url} description={query.datoCmsHomepage.sections[1].descrizione} background_img={query.datoCmsHomepage.sections[1].immagineBackground.url} link={query.datoCmsHomepage.sections[1].linkDiscord.link} />	
-				<Progetti title={query.datoCmsHomepage.sections[2].titolo} projects={projects} link={query.datoCmsHomepage.sections[2].linkPaginaProgetti} />	
-				<Testimonianze />	
-				<Aziende sponsors={sponsors}/>	
-			</Layout>
-		</>
+		<Layout>
+			<TextAndPhoto linkText="Leggi altro" title={query.datoCmsHomepage.sections[5].titolo} description={query.datoCmsHomepage.sections[5].descrizione} img={query.datoCmsHomepage.sections[5].immagine.url} />
+			<Scrollable title={query.datoCmsHomepage.sections[3].titolo} description={query.datoCmsHomepage.sections[3].descrizione} cards={events} />
+			<Aziende title={query.datoCmsHomepage.sections[8].titolo} description={query.datoCmsHomepage.sections[8].descrizione} partners={partners}/>
+			<Progetti title={query.datoCmsHomepage.sections[2].titolo} projects={projects} link={query.datoCmsHomepage.sections[2].linkPaginaProgetti} />
+			<WhyEnter title={query.datoCmsHomepage.sections[9].titolo} description={query.datoCmsHomepage.sections[9].descrizione} img={query.datoCmsHomepage.sections[9].immagine.url}/>
+			<EntraOraHome discord_img={query.datoCmsHomepage.sections[1].immagineDiscord.url} description={query.datoCmsHomepage.sections[1].descrizione} background_img={query.datoCmsHomepage.sections[1].immagineBackground.url} link={query.datoCmsHomepage.sections[1].linkDiscord.link} />
+			<AlcuniNumeri />
+			<Blog title={query.datoCmsHomepage.sections[6].titolo} description={query.datoCmsHomepage.sections[6].descrizione} topics={topics} />
+			<DiconoDiNoi  description={query.datoCmsHomepage.sections[7].descrizione} reviews={reviews} title={query.datoCmsHomepage.sections[7].titolo}/>
+		</Layout>
+
 	)
 }
 
