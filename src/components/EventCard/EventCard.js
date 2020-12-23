@@ -1,64 +1,69 @@
 import React from 'react'
+
 import eventCardStyles from './EventCard.module.scss'
 
-export default props => {
-	// Prendo la data e la scompongo in giorno, mese, anno
-	let date = props.date
-	let [year, month, day] = date.split('-')
+const EventCard = ({ date, title, img, description }) => {
+	const [day, month] = date.split('/')
 
+	let parsedMonth = ''
 	// Converto il mese da numero a lettere
-	switch (parseInt(month)) {
+	switch (parseInt(month, 10)) {
 		case 1:
-			month = 'GEN'
+			parsedMonth = 'GEN'
 			break
 		case 2:
-			month = 'FEB'
+			parsedMonth = 'FEB'
 			break
 		case 3:
-			month = 'MAR'
+			parsedMonth = 'MAR'
 			break
 		case 4:
-			month = 'APR'
+			parsedMonth = 'APR'
 			break
 		case 5:
-			month = 'MAG'
+			parsedMonth = 'MAG'
 			break
 		case 6:
-			month = 'GIU'
+			parsedMonth = 'GIU'
 			break
 		case 7:
-			month = 'LUG'
+			parsedMonth = 'LUG'
 			break
 		case 8:
-			month = 'AGO'
+			parsedMonth = 'AGO'
 			break
 		case 9:
-			month = 'SET'
+			parsedMonth = 'SET'
 			break
 		case 10:
-			month = 'OTT'
+			parsedMonth = 'OTT'
 			break
 		case 11:
-			month = 'NOV'
+			parsedMonth = 'NOV'
 			break
 		case 12:
-			month = 'DEC'
+			parsedMonth = 'DEC'
+			break
+		default:
+			parsedMonth = 'GEN'
 			break
 	}
 
 	return (
 		<div className={eventCardStyles.containerCard}>
 			<div className={eventCardStyles.imgContainer}>
-				<img className={eventCardStyles.img} src={props.img} alt={props.title} />
+				<img className={eventCardStyles.img} src={img} alt={title} />
 			</div>
 			<div className={eventCardStyles.calendarContainer}>
-				<div className={eventCardStyles.month}>{month}</div>
+				<div className={eventCardStyles.month}>{parsedMonth}</div>
 				<div className={eventCardStyles.day}>{day}</div>
 			</div>
 			<div className={eventCardStyles.descriptionContainer}>
-				<div className={eventCardStyles.title}>{props.title}</div>
-				<div className={eventCardStyles.description}>{props.description}</div>
+				<div className={eventCardStyles.title}>{title}</div>
+				<div className={eventCardStyles.description}>{description}</div>
 			</div>
 		</div>
 	)
 }
+
+export default EventCard

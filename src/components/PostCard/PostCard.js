@@ -1,14 +1,15 @@
 import React from 'react'
+
+import './PostCard.scss'
+
 import nodejs from '../../images/nodejs.jpg'
 import pasquale from '../../images/pasquale.png'
-import './PostCard.scss'
 import calendar from '../../images/calendar.png'
 import clock from '../../images/clock.png'
-import arrowRight from '../../images/right-arrow.png'
 
-const PostCard = props => {
+const PostCard = ({ className }) => {
 	return (
-		<div className={'post-card-component ' + props.className}>
+		<div className={`post-card-component ${className}`}>
 			<div className="post-card">
 				<div className="categoria-parent">
 					<div className="categoria-child">
@@ -48,7 +49,7 @@ const PostCard = props => {
 							Pasquale Giorgio
 						</div>
 						<div className="leggi">
-							<i class="fas fa-long-arrow-alt-right"></i>
+							<i className="fas fa-long-arrow-alt-right" />
 						</div>
 					</div>
 				</div>

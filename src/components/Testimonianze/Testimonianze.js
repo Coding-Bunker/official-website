@@ -1,26 +1,21 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+
 import testimonianzeStyle from './Testimonianze.module.scss'
+import QuoteSvg from '../../images/quote.svg'
+import FotoTestimoneImg from '../../images/foto-testimone.png'
 
 const Testimonianze = () => {
 	return (
 		<div className={testimonianzeStyle.container_component}>
 			<div className={testimonianzeStyle.contenitore_quoto_sx}>
-				<img
-					className={testimonianzeStyle.quoto_sx}
-					src={require('../../images/quote.svg')}
-					alt="quoto"
-				/>
+				<img className={testimonianzeStyle.quoto_sx} src={QuoteSvg} alt="quoto" />
 			</div>
 
 			<Container>
 				<Row className={testimonianzeStyle.justify_content_start}>
 					<Col md="auto">
-						<img
-							className={testimonianzeStyle.testimone}
-							src={require('../../images/foto-testimone.png')}
-							alt="testimone"
-						/>
+						<img className={testimonianzeStyle.testimone} src={FotoTestimoneImg} alt="testimone" />
 					</Col>
 					<Col md="auto">
 						<span className={testimonianzeStyle.BigBoi}>Ludovico Besana</span>
@@ -38,11 +33,7 @@ const Testimonianze = () => {
 			</Container>
 
 			<div className={testimonianzeStyle.contenitore_quoto_dx}>
-				<img
-					className={testimonianzeStyle.quoto_dx}
-					src={require('../../images/quote.svg')}
-					alt="quoto"
-				/>
+				<img className={testimonianzeStyle.quoto_dx} src={QuoteSvg} alt="quoto" />
 			</div>
 		</div>
 	)

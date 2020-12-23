@@ -1,5 +1,10 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
+import Collab1 from '../../images/collab_1.png'
+import Collab2 from '../../images/collab_2.png'
+import Collab3 from '../../images/collab_3.png'
+import Collab4 from '../../images/collab_4.png'
+
 import './Aziende.scss'
 
 const Aziende = (props) => {

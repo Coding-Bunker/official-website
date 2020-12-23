@@ -1,10 +1,9 @@
 import React from 'react'
+
 import Layout from '../components/layout'
 import TextAndPhoto from '../components/TextAndPhoto/TextAndPhoto'
-import CoseCB from '../components/CoseCB/CoseCB'
 import Scrollable from '../components/Scrollable/Scrollable'
 import PastScrollable from '../components/PastScrollable/PastScrollable'
-import Blog from '../components/Blog/Blog'
 import AlcuniNumeri from '../components/Alcuni Numeri/AlcuniNumeri'
 import DiconoDiNoi from '../components/Dicono Di Noi/DiconoDiNoi'
 import EntraOraHome from '../components/EntraOraHome/EntraOraHome'
