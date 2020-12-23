@@ -11,6 +11,7 @@ import Progetti from '../components/Progetti/Progetti'
 import Testimonianze from '../components/Testimonianze/Testimonianze'
 import Aziende from '../components/Aziende/Aziende'
 import WhyEnter from '../components/WhyEnter/WhyEnter'
+import Blog from "../components/Blog/Blog"
 import { useStaticQuery, graphql } from "gatsby"
 
 

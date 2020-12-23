@@ -24,5 +24,3 @@ export default props => (
   </div>
 
 )
-
-export default TextAndPhoto

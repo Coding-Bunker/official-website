@@ -1,0 +1,62 @@
+.section {
+  background-color: black;
+  clip-path: polygon(0 0, 50% 0, 60% 10%, 100% 10%, 100% 100%, 50% 100%, 40% 90%, 0 90%);
+  height: 90vh;
+}
+
+.container {
+  padding-left: 3em;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 50px;
+  display: inline-block;
+} 
+
+.description {
+  color: white;
+  margin-top: 30px;
+  font-weight: 100;
+}
+
+.themes {
+  color: white;
+  margin-top: 7.5vh;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.argsContainer {
+  margin-top: 20px;
+}
+
+.args {
+  font-weight: bold;
+  color: #A576FF;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.card {
+  position: relative;
+  top: 7.5vh;
+}
+
+.button {
+  color: white;
+  background-color: #A576FF;
+  display: inline-block;
+  padding: 20px 70px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
+  transform: rotate(270deg);
+  position: relative;
+  left: 72.2vh;
+  bottom: 20vh;
+  cursor: pointer;
+}
