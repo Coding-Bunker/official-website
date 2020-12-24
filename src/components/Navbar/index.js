@@ -1,5 +1,6 @@
+/* eslint-disable no-console */
 import React from 'react'
-import { Nav, Navbar as BtNavbar, Button, Container} from 'react-bootstrap'
+import { Nav, Navbar as BtNavbar, Button, Container } from 'react-bootstrap'
 import { graphql, useStaticQuery, Link } from 'gatsby'
 import Img from 'gatsby-image'
 
@@ -8,15 +9,15 @@ import './style.scss'
 const Navbar = () => {
 	const data = useStaticQuery(
 		graphql`
-        query NavbarQuery {
-            datoCmsNavbar {
-                logo {
-                    fixed(height: 100, width: 100) {
-                        ...GatsbyDatoCmsFixed
-                    }
-                }
-            }
-        }
+			query NavbarQuery {
+				datoCmsNavbar {
+					logo {
+						fixed(height: 100, width: 100) {
+							...GatsbyDatoCmsFixed
+						}
+					}
+				}
+			}
 		`,
 	)
 	console.log(data)

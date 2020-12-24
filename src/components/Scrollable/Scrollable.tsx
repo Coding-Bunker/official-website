@@ -1,41 +1,45 @@
-import React from "react";
-import "./Scrollable.scss"
+import React from 'react'
+import './Scrollable.scss'
 
-import EventCard from "../EventCard/EventCard";
+import EventCard from '../EventCard/EventCard.js'
 
 interface Card {
-    date: string,
-    img: any,
-    title: string,
-    description: string
+	date: string
+	img: string
+	title: string
+	description: string
 }
 
 interface Props {
-    title: string,
-    description: string,
-    cards: Array<Card>
+	title: string
+	description: string
+	cards: Array<Card>
 }
 
-const Scrollable = (props: Props) => {
-    const cardsRes: Array<EventCard> = []
+const Scrollable: React.FC<Props> = ({ title, description, cards }) => {
+	return (
+		<div className="scrollable">
+			<div className="intestazione">
+				<div className="linea" />
+				<span className="titolo">{title}</span>
+				<div className="linea" />
+			</div>
 
-    props.cards.forEach((card: Card) => {
-        cardsRes.push(<EventCard date={card.date} img={card.img} title={card.title} description={card.description} />)
-    })
+			<div className="sottotitolo">{description}</div>
 
-    return(
-        <div className="scrollable">
-            <div className="intestazione">
-                <div className="linea"/>
-                <span className="titolo">{props.title}</span>
-                <div className="linea"/>
-            </div>
-            
-            <div className="sottotitolo">{props.description}</div>
-            
-            <section className="card-list">{cardsRes}</section>
-        </div>
-    )
+			<section className="card-list">
+				{cards.map((card, i) => (
+					<EventCard
+						key={i}
+						date={card.date}
+						img={card.img}
+						title={card.title}
+						description={card.description}
+					/>
+				))}
+			</section>
+		</div>
+	)
 }
 
-export default Scrollable;
+export default Scrollable
