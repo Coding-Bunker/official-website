@@ -1,88 +1,43 @@
-import React from "react";
-import Link from "gatsby"
-import blog from "./Blog.module.scss"
-import { Container, Row, Col } from "react-bootstrap";
-import PostCard from "../PostCard/PostCard"
-
-
-interface TopicProps {
-    children: string
-}
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
+import blog from './Blog.module.scss'
+import PostCard from '../PostCard/PostCard.js'
 
 interface Props {
-    topics: Array<string>,
-    title: string,
-    description: string,
-
+	topics: Array<string>
+	title: string
+	description: string
 }
 
-const backgroundStyle = {
-    background: "black",
-    color: "white",
-    height: "500px"
-}
+const Argomento: React.FC = ({ children }) => <div className={blog.args}>{children}</div>
 
-const align = {
-    marginLeft: "15px"
-}
+const Blog: React.FC<Props> = ({ topics, title, description }) => (
+	<div className={blog.section}>
+		<Container fluid className={blog.container}>
+			<Row>
+				<Col>
+					<div className={blog.title}>{title}</div>
+					<div className={blog.description}>{description}</div>
+					<div className={blog.themes}>Trattiamo questi temi:</div>
+					<div className={blog.argsContainer}>
+						{Array.from({ length: topics.length / 3 })
+							.map((_, i) => topics.slice(i, i + 3))
+							.map((topicGroup, groupIndex) => (
+								<Row key={groupIndex}>
+									{topicGroup.map((topic, topicIndex) => (
+										<Argomento key={topicIndex}>{topic}</Argomento>
+									))}
+								</Row>
+							))}
+					</div>
+				</Col>
+				<Col>
+					<PostCard className={blog.card} />
+					<div className={blog.button}>Vai al Blog</div>
+				</Col>
+			</Row>
+		</Container>
+	</div>
+)
 
-const Argomento = (props: TopicProps) => (<div className={blog.args}>{props.children}</div>)
-
-
-const Blog = (props: Props) =>{
-
-    // let argomenti = [
-    //     <Argomento>Programmazione</Argomento>,
-    //     <Argomento>A.I.</Argomento>,
-    //     <Argomento>Blockchain</Argomento>,
-    //     <Argomento>Sviluppo</Argomento>,
-    //     <Argomento>Design</Argomento>,
-    //     <Argomento>Lavoro</Argomento>,
-    //     <Argomento>Community</Argomento>,
-    //     <Argomento>Innovazione</Argomento>,
-    //     <Argomento>Interviste</Argomento>
-    // ]
-
-    let argomenti: Array<JSX.Element> = []
-
-    props.topics.forEach(topic => {
-        argomenti.push(<Argomento>{topic}</Argomento>)
-    })
-
-    let newArgomenti = []
-
-    for (let i = 0; i < argomenti.length; i++) {
-        if (!((i + 1) % 3)) {
-            newArgomenti.push([argomenti[i - 2], argomenti[i - 1], argomenti[i]])
-        }
-    }
-
-    let definitiveArgomenti: Array<JSX.Element> = []
-
-    newArgomenti.forEach(treArgomenti => {
-        definitiveArgomenti.push(<Row><Col>{treArgomenti[0]}</Col><Col>{treArgomenti[1]}</Col><Col>{treArgomenti[2]}</Col></Row>)
-    })
-
-    return (
-        <div className={blog.section}>
-            <Container fluid className={blog.container}>
-                <Row>
-                    <Col>
-                        <div className={blog.title}>{props.title}</div>
-                        <div className={blog.description}>{props.description}</div>
-                        <div className={blog.themes}>Trattiamo questi temi:</div>
-                        <div className={blog.argsContainer}>{definitiveArgomenti}</div>
-                    </Col>
-                    <Col>
-                        <PostCard className={blog.card} />
-                        <div className={blog.button}>Vai al Blog</div>
-                    </Col>
-                </Row>
-            </Container>
-        </div>
-        
-    )
-}
-
-export default Blog;
-
+export default Blog

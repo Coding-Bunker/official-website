@@ -1,18 +1,17 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
-
-import CookieBiteSolid from '../../images/cookie-bite-solid.png'
 import './CookieBar.scss'
+import CookieBarImage from '../../images/cookie-bite-solid.png'
 
-const CookieBar = () => {
+const CookieBar: React.FC = () => {
 	return (
-		<div>
+		<div className="CookieBar">
 			<div className="MainDiv">
-				<img className="CookieIcon" src={CookieBiteSolid} alt="" />
+				<img className="CookieIcon" src={CookieBarImage} alt="" />
 				<div className="TextDiv">
 					<span className="CookieText">
 						Usiamo i cookie per darti un eseprienza migliore sul nostro sito. Per maggiori
-						informazioni{' '}
+						informazioni
 					</span>
 					<a href="/" className="ClickableLink">
 						clicca qui.

@@ -3,6 +3,7 @@ import React from 'react'
 import eventCardStyles from './EventCard.module.scss'
 
 const EventCard = ({ date, title, img, description }) => {
+	// eslint-disable-next-line no-unused-vars
 	const [year, month, day] = date.split('-')
 
 	let parsedMonth = ''
