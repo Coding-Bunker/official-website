@@ -9,6 +9,20 @@ $lg-breakpoint: 62em;
 	font-size: 0.9em;
 	background-color: #111111;
 
+	#brand{
+		@media screen and (min-width: $lg-breakpoint) {
+			margin-left: -250px;
+		}
+
+	}
+
+	.links{
+		@media screen and (min-width: $lg-breakpoint) {
+			margin-left: -100px;
+		}
+	}
+
+
 	#entra-nel-bunker{
 		background-color: #A576FF;
 		font-size: 1.4375em;
@@ -33,6 +47,7 @@ $lg-breakpoint: 62em;
 				color: white;
 				padding-left: $distance-links;
 				padding-right: $distance-links;
+
 			}
 			&.links {
 				@media screen and (max-width: $lg-breakpoint) {
