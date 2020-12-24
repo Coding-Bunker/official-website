@@ -33,28 +33,6 @@
 }
 
 
-// telefono
-@media screen and (max-width: 420px) {
-    .imgContainer {
-        width: 0px;
-        height: 0px;
-    }
-
-    .containerText {
-        width: 90%;
-    }
-
-    .containerSection {
-        height: auto;
-    }
-}
-
-// ipad e tablet
-@media screen and (min-width: 421px) and (max-width: 1024px) {
-    .containerText {
-        width: 75%;
-    }
-}
 
 .linkContainer {
     text-align: right;
@@ -73,4 +51,62 @@
     padding-top: 10vh;
     padding-right: 5vh;
     padding-left: 20vh;
+}
+
+// telefono
+@media screen and (max-width: 420px) {
+    .containerSection {
+        padding: 1rem;
+    }
+
+    .textContainer {
+        padding: 2rem;
+        width: 200%;
+    }
+
+    .imgContainer {
+        display: none;
+    }
+
+    .containerText {
+        width: 90%;
+    }
+
+    .containerSection {
+        height: auto;
+    }
+}
+
+// ipad pro
+@media screen and (max-width: 1024px) {
+    .containerSection {
+        padding: 5rem 0;
+        height: auto;
+    }
+    
+    .textContainer {
+        padding-left: 4rem;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+// ipad
+@media screen and (max-width: 768px) {
+    .containerSection {
+        padding: 5rem 0;
+        height: auto;
+    }
+    
+    .textContainer {
+        padding-left: 3rem;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .img {
+        margin-top: 2.5rem;
+    }
 }

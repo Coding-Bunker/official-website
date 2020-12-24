@@ -2,44 +2,48 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
 import StaffCard from '../StaffCard/StaffCard.js'
-
 import './LoStaff.scss'
-import MeImg from '../../images/me.jpg'
+
+interface Card {
+	title: string,
+	description: string,
+	img: string
+}
+
+interface Props{
+	title:string,
+	description:string,
+	cards: Array<Card>
+}
 
 interface Props {
 	title: string
 	description: string
 }
 
-const LoStaff: React.FC<Props> = ({ title, description }) => {
+const LoStaff = (props: Props) => {
+	const cards = []
+
+	props.cards.forEach((e:Card) => {
+		cards.push(<Col md="auto"><StaffCard profilePic={e.img} name={e.title} description={e.description} /></Col>)
+	})
+
+
 	return (
 		<div className="Lo-Staff">
 			<div className="Contenitore-Titoli">
 				<div className="Divisore" />
-				<span className="Titolo-Staff">{title}</span>
+				<span className="Titolo-Staff">{props.title}</span>
 				<div className="Divisore" />
 			</div>
 
 			<div className="Contenitore-Descrizione">
-				<span className="Descrizione">{description}</span>
+				<span className="Descrizione">{props.description}</span>
 			</div>
 
 			<Container fluid>
 				<Row className="justify-content-around h-100">
-					<Col md="auto">
-						<StaffCard
-							profilePic={MeImg}
-							name="Prosciutto"
-							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit sodales nulla id consectetur. Proin suscipit sodales nulla id consectetur."
-						/>
-					</Col>
-					<Col md="auto">
-						<StaffCard
-							profilePic={MeImg}
-							name="Salame"
-							description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit sodales nulla id consectetur. Proin suscipit sodales nulla id consectetur."
-						/>
-					</Col>
+					{cards}
 				</Row>
 			</Container>
 		</div>
