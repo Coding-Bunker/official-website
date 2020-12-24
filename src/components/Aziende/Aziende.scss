@@ -49,6 +49,18 @@ $lg-breakpoint: 48em;
       margin-top: 0.5em;
     }
   }
+  .diventa-partner {
+    background-color: #A576FF;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  .button{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   .intestazione {
     display: flex;
