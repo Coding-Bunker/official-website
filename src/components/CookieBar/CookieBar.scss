@@ -1,14 +1,15 @@
 //Contenitore di tutti i componenti
 .MainDiv{
   //cambiare dimesione barra qui
-  width: 200vh;
-  height: 10vh;
+  width: 60%;
+  height: 6vh;
 
   //decorazione barra
   background-color: black;
   border-radius: 10px;
   text-align: center;
   vertical-align: middle;
+  box-shadow: 0 8px 6px -6px black;
   margin: 50px auto auto auto;
 
   //queste tre righe tengono allineato TUTTO
@@ -32,13 +33,13 @@
 //Testo in bianco
 .CookieText{
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   cursor: default;
 }
 
 //Link in Clicca qui
 .ClickableLink{
-  font-size: 20px;
+  font-size: 16px;
   cursor: pointer;
 
   //se si vuole cambiare colore
