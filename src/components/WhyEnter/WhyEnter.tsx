@@ -13,15 +13,15 @@ const WhyEnter: React.FC<Props> = ({ title, description, img }) => {
 		<div className="container-WhyEnter">
 			<Container fluid>
 				<Row>
-					<Col>
+					<Col sm md>
 						<div className="container-text">
 							<span className="title">{title}</span>
 							<p className="description">{description}</p>
 						</div>
 					</Col>
-					<Col>
-						<div>
-							<img src={img} alt="" />
+					<Col sm={12} md={12} lg={12} xl={6}>
+						<div className="container-image">
+							<img className="skater" src={img} alt="" />
 						</div>
 					</Col>
 				</Row>
