@@ -31,12 +31,7 @@
 
 
 
-// Allarghiamo il componente a tutto schermo nel caso in cui stiamo da telefono
-@media screen and (max-width: 420px) {
-    .containerCard {
-        width: 100%;
-    }
-}
+
 
 // Animazione per il componente quando ci si passa sopra con il mouse
 //.containerCard:hover {
@@ -101,11 +96,7 @@
     font-size: 1rem;
 }
 
-@media screen and (max-width: 420px) {
-    .title {
-        font-size: .75rem;
-    }
-}
+
 
 // Classe che gestisce la descrizione dell'evento
 .description {
@@ -113,4 +104,23 @@
     top: 10px;
     font-size: .6rem;
     display: block;
+}
+
+@media screen and (max-width: 420px) {
+    .containerCard {
+        width: 10rem;
+    }
+
+
+    .title {
+        font-size: .75rem;
+    }
+    
+    .month {
+        font-size: .8rem;
+    }
+
+    .day {
+        font-size: 1.6rem;
+    }
 }
