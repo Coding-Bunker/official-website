@@ -1,97 +1,266 @@
-//Contenitore di tutti i componenti
-.MainDiv{
-  //cambiare dimesione barra qui
-  width: 60%;
-  height: 6vh;
+.CookieBar {
+	//Contenitore di tutti i componenti
+  margin-top: 20vh !important;
 
-  //decorazione barra
-  background-color: black;
-  border-radius: 10px;
-  text-align: center;
-  vertical-align: middle;
-  box-shadow: 0 8px 6px -6px black;
-  margin: 50px auto auto auto;
+	.MainDiv {
+		//cambiare dimesione barra qui
+		width: 65%;
+		height: 6vh;
 
-  //queste tre righe tengono allineato TUTTO
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+		//decorazione barra
+		background-color: black;
+		border-radius: 10px;
+		text-align: center;
+		vertical-align: middle;
+		box-shadow: 0 8px 6px -6px black;
+		margin: 50px auto auto auto;
+
+		//queste tre righe tengono allineato TUTTO
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		//Icona biscotto
+		.CookieContainer {
+			//non cambiare sennò si distorce //
+			height: 100px; //
+			width: 100px; //
+			//------------------------------ //
+
+			//queste servono per allineare l'icona
+			margin-bottom: 0.25px;
+			margin-inline-start: -70px;
+		}
+
+		//Tutte le scritte
+		.TextDiv {
+      margin: 0 auto;
+      
+			//Testo in bianco
+			.CookieText {
+				color: white;
+				font-size: 16px;
+				cursor: default;
+			}
+
+			//Link in Clicca qui
+			.ClickableLink {
+				font-size: 16px;
+				cursor: pointer;
+				margin-left: 1vh;
+
+				//se si vuole cambiare colore
+				color: #a576ff !important;
+
+				//queste sono per la sottolineatura custom
+				padding-bottom: 1px;
+				border-bottom: 1px solid currentColor;
+			}
+
+			//Rimozione della sottolineatura di base dei link + cambio colore
+			.ClickableLink:hover {
+				//se si vuole cambiare colore
+				color: cornflowerblue !important;
+				text-decoration: none;
+			}
+		}
+	}
+
+	//Link in Clicca qui
+	.ClickableLink {
+		font-size: 16px;
+		cursor: pointer;
+
+		//se si vuole cambiare colore
+		color: #a576ff !important;
+
+		//queste sono per la sottolineatura custom
+		padding-bottom: 1px;
+		border-bottom: 1px solid currentColor;
+	}
+
+	//Rimozione della sottolineatura di base dei link + cambio colore
+	.ClickableLink:hover {
+		//se si vuole cambiare colore
+		color: cornflowerblue !important;
+
+		text-decoration: none;
+	}
+
+	//Bottone di Accetto + animazione
+	.AcceptButton {
+		//dimensione bottone
+		width: 17vh;
+		height: 4.5vh;
+
+		//decorazionen bottone
+		background-color: #a576ff;
+		border-radius: 5px;
+		font-size: 22px;
+		font-weight: bolder;
+		padding: 10px 10px;
+
+		//allinea tutto
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		margin-right: 2vh;
+
+		//Da qui parte l'animazione
+		-webkit-transform: perspective(1px) translateZ(0);
+		transform: perspective(1px) translateZ(0);
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		-webkit-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+		-webkit-transition-property: transform;
+		transition-property: transform;
+	}
+
+	//Animazione bottone
+	.AcceptButton:hover,
+	.hvr-grow:focus,
+	.hvr-grow:active {
+		background-color: cornflowerblue;
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+	}
 }
 
-//Icona biscotto
-.CookieIcon{
-  //non cambiare sennò si distorce //
-  height: 100px;                   //
-  width: 100px;                    //
-  //------------------------------ //
-
-  //queste servono per allineare l'icona
-  margin-bottom: 0.25px;
-  margin-inline-start: -70px;
+/*MEDIA QUERY - Telefoni*/
+@media screen and (min-width: 0px) {
+	.MainDiv {
+		width: 85% !important;
+    height: 29vh !important;
+    margin-top: 10vh !important;
+    margin-left: 5vh !important;
+	}
+	.TextDiv {
+		width: 220px;
+    margin-bottom: 7vh !important;
+		position: absolute;
+  }
+  .CookieText{
+    font-size: 12px !important;
+  }
+  .ClickableLink {
+    font-size: 12px !important;
+  }
+	.AcceptDiv {
+    position: absolute;
+    margin-top: 19vh !important;
+    margin-left: 2vh !important;
+  }
+  .AcceptButton{
+    width: 20vh !important;
+		height: 7vh !important;
+  } 
+	.CookieContainer {
+    width: 16vh !important;
+    position: absolute;
+    margin-left: 0vh !important;
+    margin-bottom: 39vh !important;
+  }
 }
 
-//Testo in bianco
-.CookieText{
-  color: white;
-  font-size: 16px;
-  cursor: default;
+/*MEDIA QUERY - Tablet medi*/
+@media screen and (min-width: 410px) {
+  .MainDiv {
+		width: 85% !important;
+		height: 22vh !important;
+	}
+	.TextDiv {
+		width: 380px;
+    margin-bottom: 5vh !important;
+		position: absolute;
+  }
+  .CookieText{
+    font-size: 18px !important;
+  }
+  .ClickableLink {
+    font-size: 18px !important;
+  }
+	.AcceptDiv {
+    position: absolute;
+    margin-top: 15vh !important;
+    margin-left: 2vh !important;
+	}
+	.CookieContainer {
+    position: absolute;
+    margin-left: 0vh !important;
+    margin-bottom: 35vh !important;
+  }
 }
 
-//Link in Clicca qui
-.ClickableLink{
-  font-size: 16px;
-  cursor: pointer;
-
-  //se si vuole cambiare colore
-  color: #A576FF !important;
-
-  //queste sono per la sottolineatura custom
-  padding-bottom: 1px;
-  border-bottom: 1px solid currentColor;
+/*MEDIA QUERY - Tablet medi*/
+@media screen and (min-width: 720px) {
+  .MainDiv {
+    margin-left: 80px !important;
+		width: 85% !important;
+		height: 6vh !important; 
+	}
+	.TextDiv {
+		width: 450px;
+    margin-bottom: 0vh !important;
+    margin-right: 5vh !important;
+		position: absolute;
+  }
+  .CookieText{
+    font-size: 18px !important;
+  }
+  .ClickableLink {
+    font-size: 18px !important;
+  }
+	.AcceptDiv {
+    position: absolute;
+    margin-top: 0vh !important;
+    margin-left: 53vh !important;
+  }
+  .AcceptButton{
+    width: 10vh !important;
+		height: 4.5vh !important;
+  }
+	.CookieContainer {
+    position: absolute;
+    width: 10vh !important;
+    margin-right: 59vh !important;
+    margin-top: 34vh !important;
+    margin-bottom: 35vh !important;
+  }
 }
 
-//Rimozione della sottolineatura di base dei link + cambio colore
-.ClickableLink:hover{
-  //se si vuole cambiare colore
-  color: cornflowerblue !important;
+/*MEDIA QUERY - Desktop*/
+@media screen and (min-width: 1000px) {
 
-  text-decoration: none;
+  .CookieBar{
+    margin-top: 0vh !important;
+  }
+
+  .MainDiv{
+    width: 65% !important;
+    height: 6vh !important;
+    margin-left: 37vh !important;
+  }
+
+  .TextDiv{
+    width: 900px !important;
+  }
+  .CookieContainer {
+    position: absolute;
+    width: 10vh !important;
+    margin-right: 130vh !important;
+    margin-top: 34vh !important;
+    margin-bottom: 35vh !important;
+  }
+  .AcceptDiv {
+    position: absolute;
+    margin-top: 0vh !important;
+    margin-left: 123vh !important;
+  }
+  .AcceptButton{
+    width: 15vh !important;
+		height: 4.5vh !important;
+  }
 }
 
-//Bottone di Accetto + animazione
-.AcceptButton{
-
-  //dimensione bottone
-  width: 150px;
-  height: 40px;
-
-  //decorazionen bottone
-  background-color: #a576ff;
-  border-radius: 10px;
-  font-size: 25px;
-  font-weight: bolder;
-  padding: 10px 10px;
-
-  //allinea tutto 
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-
-  //Da qui parte l'animazione
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-
-//Animazione bottone
-.AcceptButton:hover, .hvr-grow:focus, .hvr-grow:active {
-  background-color: cornflowerblue;
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
