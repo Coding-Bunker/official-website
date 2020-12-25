@@ -24,7 +24,7 @@ const Navbar = () => {
 	return (
 		<BtNavbar variant="dark" expand="lg">
 			<Container>
-				<BtNavbar.Brand to="/" as={Link}>
+				<BtNavbar.Brand id="brand" to="/" as={Link}>
 					<Img
 						style={{ verticalAlign: 'middle' }}
 						imgStyle={{ marginBottom: 0 }}
