@@ -1,130 +1,129 @@
-.container-WhyEnter{
+.container-WhyEnter {
+	margin-top: 16vh;
+	margin-left: 27vh;
+	margin-right: 27vh;
+	.container-text {
+		margin-top: 2vh;
+	}
 
-    margin-top: 16vh;
-    margin-left: 27vh;
-    margin-right: 27vh;
-    .container-text{
-      margin-top: 2vh;
-    }
+	.container-text {
+		width: 120%;
+	}
 
-    .container-text{
-      width: 120%;
-    }
+	.container-image {
+		margin-right: -250px;
+		.skater {
+			object-fit: cover;
+			width: 100%;
+			max-height: 100%;
+		}
+	}
 
-    .container-image{
-      margin-right: -250px;
-      .skater{
-        object-fit: cover;
-        width: 100%;
-        max-height: 100%;
-      }
-    }
-  
-    .title{
-      font-size: 40px;
-      font-weight: bold;
-      color: #A576FF;
-    }
-  
-    .description{
-      font-size: 25px;
-      margin-top: 2vh;
-    }
-}  
+	.title {
+		font-size: 40px;
+		font-weight: bold;
+		color: #a576ff;
+	}
+
+	.description {
+		font-size: 25px;
+		margin-top: 2vh;
+	}
+}
 
 /*MEDIA QUERY - Telefoni*/
-@media screen and (max-width: 470px){
-  .container-WhyEnter{
-    margin: 10vh 2vh 0 2vh !important;
+@media screen and (max-width: 470px) {
+	.container-WhyEnter {
+		margin: 10vh 2vh 0 2vh !important;
 
-    .container-text{
-      text-align: center;
-      margin: 0 auto;
-      width: 95%;
-    }
-    .title{
-      font-size: 30px;
-    }
-    .description{
-      font-size: 15px;
-    }
-    .container-image{
-      margin: 0px !important;
-    }
-  }
+		.container-text {
+			text-align: center;
+			margin: 0 auto;
+			width: 95%;
+		}
+		.title {
+			font-size: 30px;
+		}
+		.description {
+			font-size: 15px;
+		}
+		.container-image {
+			margin: 0px !important;
+		}
+	}
 }
 
 /*MEDIA QUERY - Tablet medi*/
 @media screen and (max-width: 767px) {
-  .container-WhyEnter{
-    margin: 10vh 5vh 0 5vh !important;
+	.container-WhyEnter {
+		margin: 10vh 5vh 0 5vh !important;
 
-    .container-text{
-      text-align: center;
-      margin: 0 auto;
-      width: 95%;
-    }
-    .title{
-      font-size: 35px;
-    }
-    .description{
-      font-size: 20px;
-    }
-    .container-image{
-      margin: 0px !important;
-    }
-  }
+		.container-text {
+			text-align: center;
+			margin: 0 auto;
+			width: 95%;
+		}
+		.title {
+			font-size: 35px;
+		}
+		.description {
+			font-size: 20px;
+		}
+		.container-image {
+			margin: 0px !important;
+		}
+	}
 }
 
 /*MEDIA QUERY - Tablet Grandi*/
-@media screen and (max-width: 991px){
-  .container-WhyEnter{
-    margin: 10vh 5vh 0 5vh !important;
+@media screen and (max-width: 991px) {
+	.container-WhyEnter {
+		margin: 10vh 5vh 0 5vh !important;
 
-    .container-text{
-      text-align: center;
-      margin: 0 auto;
-      width: 95%;
-    }
-    .description{
-      font-size: 20px;
-    }
-    .container-image{
-      margin: 0px !important;
-    }
-  }
+		.container-text {
+			text-align: center;
+			margin: 0 auto;
+			width: 95%;
+		}
+		.description {
+			font-size: 20px;
+		}
+		.container-image {
+			margin: 0px !important;
+		}
+	}
 }
 
 /*MEDIA QUERY - Desktop (non ho capito bene perché le media query si bugghino tutte però funziona)*/
-@media screen and (max-width: 1198px){
-  .container-WhyEnter{
-    margin: 10vh 5vh 0 5vh !important;
+@media screen and (max-width: 1198px) {
+	.container-WhyEnter {
+		margin: 10vh 5vh 0 5vh !important;
 
-    .container-text{
-      text-align: center;
-      margin: 0 auto;
-      width: 95%;
-    }
-    .description{
-      font-size: 20px;
-    }
-    .container-image{
-      margin: 0px !important;
-    }
-  }
+		.container-text {
+			text-align: center;
+			margin: 0 auto;
+			width: 95%;
+		}
+		.description {
+			font-size: 20px;
+		}
+		.container-image {
+			margin: 0px !important;
+		}
+	}
 }
 
 /*MEDIA QUERY - Desktop (non ho capito bene perché le media query si bugghino tutte però funziona)*/
-@media screen and (min-width: 1199px){
-  .container-WhyEnter{
-    margin: 10vh 5vh 0 5vh !important;
+@media screen and (min-width: 1199px) {
+	.container-WhyEnter {
+		margin: 10vh 5vh 0 5vh !important;
 
-    .container-text{
-      margin: 0 auto;
-      width: 95%;
-    }
-    .container-image{
-      margin: 0px !important;
-    }
-  }
+		.container-text {
+			margin: 0 auto;
+			width: 95%;
+		}
+		.container-image {
+			margin: 0px !important;
+		}
+	}
 }
