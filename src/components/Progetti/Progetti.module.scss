@@ -81,11 +81,11 @@
   }
   .description {
     position: relative;
-    font-size: 14px;
+    font-size: 14px !important;
     display: block;
   }
   .title{
-    font-size: 18px;
+    font-size: 18px !important;
   }
 }
 
@@ -117,15 +117,41 @@
     margin-top: 5vh;
     margin-right: 28vh;
     margin-bottom: 2vh;
-  }
-  .description {
-    position: relative;
-    font-size: 12px;
-    display: block;
-  }
-  
+  }  
 }
 
+//per i tablet
+@media screen and (min-width: 768px) {
+
+  .titolo_progetti{
+    font-size: 24px !important;
+    justify-content: start;
+    padding-left: 1.5vh;
+    margin-bottom: 7vh;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+  }
+  .Container_titolo{
+    width: 330px;
+  }
+  .main_container{
+    height: 100%;
+    width: 100%;
+  }
+  .containerCard{
+    margin-bottom: 0vh;
+    width: 20vh !important;
+    margin-left: 0vh;
+  }
+  .scopri_progetti{
+    font-size: 20px;
+    margin-top: 5vh;
+    margin-right: 3.5vh;
+    margin-bottom: 2vh;
+  }
+}
+
+//per Desktop
 @media screen and (min-width: 1535px) {
   .titolo_progetti{
     font-size: 38px !important;
@@ -166,6 +192,7 @@
   }
 }
 
+//per Desktop
 @media screen and (min-width: 1919px) {
   .titolo_progetti{
     font-size: 38px !important;
