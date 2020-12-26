@@ -264,3 +264,76 @@
   }
 }
 
+/*MEDIA QUERY - Desktop*/
+@media screen and (min-width: 1535px) {
+
+	.CookieBar{
+	  margin-top: 0vh !important;
+	}
+	.MainDiv{
+	  width: 65% !important;
+	  height: 6vh !important;
+	  margin-left: 37vh !important;
+	}
+	.CookieText{
+		font-size: 16px !important;
+	  }
+	  .ClickableLink {
+		font-size: 16px !important;
+	  }
+	.TextDiv{
+	  width: 900px !important;
+	  margin-right: 7vh !important;
+	}
+	.CookieContainer {
+	  position: absolute;
+	  width: 10vh !important;
+	  margin-right: 135vh !important;
+	  margin-top: 37vh !important;
+	  margin-bottom: 35vh !important;
+	}
+	.AcceptDiv {
+	  position: absolute;
+	  margin-top: 0vh !important;
+	  margin-left: 122vh !important;
+	}
+	.AcceptButton{
+	  width: 15vh !important;
+	  height: 4.2vh !important;
+	}
+  }
+
+/*MEDIA QUERY - Desktop*/
+@media screen and (min-width: 1919px) {
+
+	.CookieBar{
+	  margin-top: 0vh !important;
+	}
+  
+	.MainDiv{
+	  width: 65% !important;
+	  height: 6vh !important;
+	  margin-left: 37vh !important;
+	}
+  
+	.TextDiv{
+	  width: 900px !important;
+	}
+	.CookieContainer {
+	  position: absolute;
+	  width: 10vh !important;
+	  margin-right: 110vh !important;
+	  margin-top: 34vh !important;
+	  margin-bottom: 35vh !important;
+	}
+	.AcceptDiv {
+	  position: absolute;
+	  margin-top: 0vh !important;
+	  margin-left: 101vh !important;
+	}
+	.AcceptButton{
+	  width: 15vh !important;
+	  height: 4.5vh !important;
+	}
+  }
+
