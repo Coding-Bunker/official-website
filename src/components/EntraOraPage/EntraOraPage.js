@@ -1,15 +1,17 @@
 import React from 'react'
 import { Container, Button } from 'react-bootstrap'
+
 import './EntraOraPage.module.scss'
+import DiscordImg from '../../images/discord.png'
 
 const EntraOraPage = () => {
 	return (
 		<section>
 			<Container fluid className="entra-ora">
-				<div class="logo-discord">
-					<img src={require('../../images/discord.png')} alt="" class="icona" />
+				<div className="logo-discord">
+					<img src={DiscordImg} alt="" className="icona" />
 				</div>
-				<div class="cta">
+				<div className="cta">
 					<p>
 						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio consequuntur libero
 						similique commodi? Qui amet doloremque ab libero numquam dicta, explicabo quo commodi

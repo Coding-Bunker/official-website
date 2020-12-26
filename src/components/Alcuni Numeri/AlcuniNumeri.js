@@ -1,6 +1,6 @@
 import React from 'react'
-import GrowingNumber from '../GrowingNumber/GrowingNumber'
 import { Container, Row, Col } from 'react-bootstrap'
+import GrowingNumber from '../GrowingNumber/GrowingNumber'
 
 import './AlcuniNumeri.scss'
 

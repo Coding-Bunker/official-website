@@ -22,8 +22,8 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `gatsby-starter-default`,
-				short_name: `starter`,
+				name: `Coding Bunker Website`,
+				short_name: `Coding Bunker`,
 				start_url: `/`,
 				background_color: `#663399`,
 				theme_color: `#663399`,
@@ -56,6 +56,12 @@ module.exports = {
 				plugins: [],
 			},
 		},
+		{
+			resolve: 'gatsby-plugin-react-leaflet',
+			options: {
+				linkStyles: true, // (default: true) Enable/disable loading stylesheets via CDN
+			},
+		},
 		`gatsby-plugin-mdx`,
 		{
 			resolve: `gatsby-source-codingbunker`,
@@ -64,5 +70,6 @@ module.exports = {
 				apiEndpoint: 'https://coding-bunker-dev.herokuapp.com/',
 			},
 		},
+		`gatsby-plugin-typescript`,
 	],
 }

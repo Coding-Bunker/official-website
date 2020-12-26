@@ -1,6 +1,8 @@
 import React from 'react'
-import './AuthorPage.scss'
+
 import PostCard from '../PostCard/PostCard'
+import './AuthorPage.scss'
+
 import ludovico from '../../images/ludovico.png'
 import facebookIcon from '../../images/facebook-icon.png'
 import linkedinIcon from '../../images/linkedin-icon.png'
@@ -42,7 +44,7 @@ const AuthorPage = () => {
 					<PostCard />
 					<PostCard />
 				</div>
-				<a href="#" target="_blank" className="vedi-tutti">
+				<a href="/" target="_blank" className="vedi-tutti">
 					Vedi altri articoli
 				</a>
 			</div>

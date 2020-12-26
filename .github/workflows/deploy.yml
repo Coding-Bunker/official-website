@@ -1,0 +1,144 @@
+name: Build and Deploy
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+      - qa
+      - dev
+  pull_request:
+    branches:
+      - master
+      - qa
+      - dev
+
+jobs:
+  setup:
+    name: setup
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup
+        uses: actions/setup-node@v1
+        with:
+          node-version: "10.x"
+      - name: Cache Node Modules
+        id: cache-node-modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: node-modules-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            node-modules-
+
+      - name: Install
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: npm install
+
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup
+        uses: actions/setup-node@v1
+        with:
+          node-version: "10.x"
+
+      - name: Cache Node Modules
+        id: cache-node-modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: node-modules-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            node-modules-
+
+      - name: Install
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: npm install
+
+      - name: Lint
+        run: npm run lint
+
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup
+        uses: actions/setup-node@v1
+        with:
+          node-version: "10.x"
+
+      - name: Cache Node Modules
+        id: cache-node-modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: node-modules-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            node-modules-
+
+      - name: Install
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: npm install
+
+      - name: Build
+        run: npm run build
+        env:
+          DATO_CMS_API_KEY: ${{ secrets.DATO_CMS_API_KEY }}
+          BACKEND_API_KEY: ${{ secrets.BACKEND_API_KEY }}
+
+      - name: Upload Build
+        if: |
+          contains(github.ref, 'refs/heads/next')
+          || contains(github.ref, 'refs/heads/master')
+          || contains(github.ref, 'refs/heads/next-major')
+          || contains(github.ref, 'refs/heads/beta')
+        uses: actions/upload-artifact@v1
+        with:
+          name: build
+          path: public
+
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup
+        uses: actions/setup-node@v1
+        with:
+          node-version: "10.x"
+      - name: Download Build
+        uses: actions/download-artifact@v1
+        with:
+          name: build
+
+  notify:
+    name: Notify
+    runs-on: ubuntu-latest
+    if: failure()
+    needs:
+      - build
+      - setup
+      - lint
+    steps:
+      - uses: technote-space/workflow-conclusion-action@v1
+      - name: Notify Discord
+        uses: rjstone/discord-webhook-notify@v1
+        with:
+          severity: error
+          details: Pipeline Failed
+          webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}

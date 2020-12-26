@@ -1,0 +1,79 @@
+.fourofour {
+    width: 100%;
+    height: 100vh;
+    margin: 0px 0px !important;
+    background-color: #A576FF;
+}
+
+@media screen and (max-width: 320px) {
+    .sad {
+        padding-top: 0vh !important;
+        font-size: 6rem !important;
+    }
+
+    .fourofour__description {
+        margin-top: 1rem !important;
+    }
+}
+
+
+//Telefoni in generale
+@media screen and (max-width: 600px) {
+    .fourofour {
+        height: 100vh !important;
+        overflow: hidden;
+    }
+
+    .sad {
+        padding-top: 5vh !important;
+        font-size: 6rem !important;
+    }
+
+    .fourofour__title {
+        font-size: 1.2rem !important;
+    }
+
+
+    .fourofour__description-text {
+        left: 0 !important;
+        font-size: .7rem !important;
+    }
+
+    .fourofour__img {
+        width: 5rem;
+    }
+}
+
+.sad {
+    padding-top: 10vh;
+    font-size: 10rem;
+    color: white;
+}
+
+.fourofour__title {
+    font-size: 2rem;
+    color: white;
+}
+
+.fourofour__description {
+    margin-top: 10vh;
+    padding-left: 1rem;
+}
+
+.fourofour__description-text {
+    color: white;
+    position: relative;
+    left: 1rem;
+}
+
+.fourofour__link {
+    color: white;
+    font-weight: bold;
+    border-bottom: white 1px solid;
+}
+
+.fourofour__link:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}

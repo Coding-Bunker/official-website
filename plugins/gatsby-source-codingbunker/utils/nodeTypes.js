@@ -7,4 +7,5 @@ module.exports = {
 	PROJECT_TYPE: cbPrefix('Project'),
 	LOCATION_TYPE: cbPrefix('Location'),
 	LANGUAGE_TYPE: cbPrefix('Language'),
+	SPEAKER_TYPE: cbPrefix('Speaker'),
 };

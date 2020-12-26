@@ -1,3 +1,4 @@
+$lg-breakpoint: 48em;
 
 //Classe generale che comprende tutto
 .Aziende{
@@ -5,7 +6,70 @@
   //classe che fa riferimento alla dimensione delle icone
   // (se si volesse ingrandire/rimpicciolire modificare width e height)
   .Azienda{
-    width: 80%;
     height: 80%;
+    @media screen and (max-width: $lg-breakpoint) {
+      height: 60%;
+    }
   }
+  .linea {
+    height: 1vh;
+    width: 15vh;
+    background-color: #000000;
+    display: inline-block;
+    margin-bottom: 0.7vh;
+    @media screen and (max-width: $lg-breakpoint) {
+      height: 0.2vh;
+      width: 7.5vh;
+      margin-bottom: 0.35vh;
+    }
+
+  }
+
+  .titolo {
+    cursor: default;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.625rem;
+    padding-left: 7vh;
+    padding-right: 7vh;
+    @media screen and (max-width: $lg-breakpoint) {
+      font-size: 1.5rem;
+      padding-left: 3.5vh;
+      padding-right: 3.5vh;
+    }
+  }
+
+  .sottotitolo {
+    cursor: default;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 1em;
+    @media screen and (max-width: $lg-breakpoint) {
+      font-size: 0.688rem;
+      margin-top: 0.5em;
+    }
+  }
+  .diventa-partner {
+    background-color: #A576FF;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-color: #A576FF;
+  }
+  .button{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .intestazione {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .align-center{
+    text-align: center;
+  }
+
 }

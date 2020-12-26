@@ -1,27 +1,25 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { Row, Col } from 'react-bootstrap'
 import textAndPhotoStyles from './TextAndPhoto.module.scss'
-import { Container, Row, Col } from 'react-bootstrap'
 
-export default props => (
+const TextAndPhoto = ({ title, description, linkTo, linkText, img }) => (
 	<div className={textAndPhotoStyles.containerSection}>
-		<Container fluid className={textAndPhotoStyles.containerText}>
-			<Row>
-				<Col>
-					<div className={textAndPhotoStyles.title}>{props.title}</div>
-					<div className={textAndPhotoStyles.description}>{props.description}</div>
-					<div className={textAndPhotoStyles.linkContainer}>
-						<div className={textAndPhotoStyles.link}>
-							<Link to={props.linkTo}>
-								{props.linkText} <span style={{ fontWeight: 'normal' }}>></span>
-							</Link>
-						</div>
+		<Row>
+			<Col className={textAndPhotoStyles.textContainer}>
+				<div className={textAndPhotoStyles.title}>{title}</div>
+				<div className={textAndPhotoStyles.description}>{description}</div>
+				<div className={textAndPhotoStyles.linkContainer}>
+					<div className={textAndPhotoStyles.link}>
+						<Link to={linkTo}>{linkText}</Link>
 					</div>
-				</Col>
-				<div className={textAndPhotoStyles.imgContainer}>
-					<img className={textAndPhotoStyles.img} src={props.img} />
 				</div>
-			</Row>
-		</Container>
+			</Col>
+			<Col className={textAndPhotoStyles.imgContainer} style={{ padding: 0 }}>
+				<img className={textAndPhotoStyles.img} alt="background" src={img} />
+			</Col>
+		</Row>
 	</div>
 )
+
+export default TextAndPhoto

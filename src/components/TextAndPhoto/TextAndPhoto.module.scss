@@ -4,6 +4,8 @@
     padding: 10vh 0;
     background-color: #00070f;
     height: 70vh;
+    width: 100%;
+    overflow: hidden;
 }
 
 // classe scritta coding bunker
@@ -20,28 +22,50 @@
 
 // classe foto figa
 .img {
-    position: relative;
-    left: 5.15vh;
-    top: 5vh;
-    width: 105vh;
-    display: inline-block;
+    width: 100vh;
+    margin: 0;
+    clip-path: polygon(0% 15%, 5% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 // container per la foto
 .imgContainer {
+    text-align: right;
+}
+
+
+
+.linkContainer {
+    text-align: right;
+    font-size: 1.2rem;
+    color: #a576ff;
+    position: relative;
+    top: 20px;
+    right: 5vh;
+}
+
+.link {
     display: inline-block;
 }
 
-// div che contiene il testo
-.containerText {
-    width: 190vh;
+.textContainer {
+    padding-top: 10vh;
+    padding-right: 5vh;
+    padding-left: 20vh;
 }
 
 // telefono
 @media screen and (max-width: 420px) {
+    .containerSection {
+        padding: 1rem;
+    }
+
+    .textContainer {
+        padding: 2rem;
+        width: 200%;
+    }
+
     .imgContainer {
-        width: 0px;
-        height: 0px;
+        display: none;
     }
 
     .containerText {
@@ -53,24 +77,36 @@
     }
 }
 
-// ipad e tablet
-@media screen and (min-width: 421px) and (max-width: 1024px) {
-    .containerText {
-        width: 75%;
+// ipad pro
+@media screen and (max-width: 1024px) {
+    .containerSection {
+        padding: 5rem 0;
+        height: auto;
+    }
+    
+    .textContainer {
+        padding-left: 4rem;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
     }
 }
 
-.linkContainer {
-    text-align: right;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #a576ff;
-    position: relative;
-    top: 20px;
-}
+// ipad
+@media screen and (max-width: 768px) {
+    .containerSection {
+        padding: 5rem 0;
+        height: auto;
+    }
+    
+    .textContainer {
+        padding-left: 3rem;
+        padding-top: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
 
-.link {
-    display: inline-block;
-    border-bottom: solid #a576ff 2px;
-
+    .img {
+        margin-top: 2.5rem;
+    }
 }
