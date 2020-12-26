@@ -12,6 +12,7 @@ import Progetti from '../components/Progetti/Progetti.tsx'
 import Aziende from '../components/Aziende/Aziende'
 import WhyEnter from '../components/WhyEnter/WhyEnter.tsx'
 import Blog from '../components/Blog/Blog.tsx'
+import CookieBar from '../components/CookieBar/CookieBar.tsx'
 
 const IndexPage = () => {
 	const query = useStaticQuery(graphql`
@@ -197,6 +198,7 @@ const IndexPage = () => {
 				description={query.datoCmsHomepage.sections[5].descrizione}
 				img={query.datoCmsHomepage.sections[5].immagine.url}
 			/>
+			<CookieBar />
 			<Scrollable
 				title={query.datoCmsHomepage.sections[3].titolo}
 				description={query.datoCmsHomepage.sections[3].descrizione}

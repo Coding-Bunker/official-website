@@ -29,6 +29,9 @@ const Progetti: React.FC<Props> = ({ link, projects, title }) => (
 							img={project.img}
 							title={project.title}
 							description={project.description}
+							className={progettiStyle.containerCard}
+							className2={progettiStyle.description}
+							className3={progettiStyle.title}
 						/>
 					</Col>
 				))}
@@ -36,7 +39,7 @@ const Progetti: React.FC<Props> = ({ link, projects, title }) => (
 		</Container>
 		<div className={progettiStyle.altri_progetti}>
 			<a href={link} className={progettiStyle.scopri_progetti}>
-				Scopri tutti i progetti
+				Scopri tutti i progetti {'>'}
 			</a>
 		</div>
 	</div>

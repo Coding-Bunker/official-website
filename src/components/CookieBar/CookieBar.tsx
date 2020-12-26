@@ -7,7 +7,9 @@ const CookieBar: React.FC = () => {
 	return (
 		<div className="CookieBar">
 			<div className="MainDiv">
-				<img className="CookieIcon" src={CookieBarImage} alt="" />
+				<div className="CookieContainer">
+					<img className="CookieIcon" src={CookieBarImage} alt="" />
+				</div>
 				<div className="TextDiv">
 					<span className="CookieText">
 						Usiamo i cookie per darti un eseprienza migliore sul nostro sito. Per maggiori
@@ -17,7 +19,9 @@ const CookieBar: React.FC = () => {
 						clicca qui.
 					</a>
 				</div>
-				<Button className="AcceptButton">Accetto</Button>
+				<div className="AcceptDiv">
+					<Button className="AcceptButton">Accetto</Button>
+				</div>
 			</div>
 		</div>
 	)
