@@ -1,8 +1,11 @@
+const cbPrefix = type => `CodingBunker_${type}`;
+
 module.exports = {
-	POST_TYPE: 'CodingBunker_Post',
-	CONTRIBUTOR_TYPE: 'CodingBunker_Contributor',
-	EVENT_TYPE: 'CodingBunker_Event',
-	PROJECT_TYPE: 'CodingBunker_Project',
-	LOCATION_TYPE: 'CodingBunker_Location',
-	LANGUAGE_TYPE: 'CodingBunker_Language',
+	POST_TYPE: cbPrefix('Post'),
+	CONTRIBUTOR_TYPE: cbPrefix('Contributor'),
+	EVENT_TYPE: cbPrefix('Event'),
+	PROJECT_TYPE: cbPrefix('Project'),
+	LOCATION_TYPE: cbPrefix('Location'),
+	LANGUAGE_TYPE: cbPrefix('Language'),
+	SPEAKER_TYPE: cbPrefix('Speaker'),
 };

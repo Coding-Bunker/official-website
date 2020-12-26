@@ -1,13 +1,30 @@
 @import '../../styles/variables';
 
+
 $distance-links: 1.6em;
 $vertical-spacing: 0.5em;
-
 $lg-breakpoint: 62em;
+
 
 .navbar.navbar-dark {
 	font-size: 0.9em;
 	background-color: #111111;
+
+	#nav-0{
+		@media screen and (max-width: $lg-breakpoint){
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+			height: 60vh;
+		}
+	}
+
+	#ncollapse{
+		@media screen and (max-width: $lg-breakpoint){
+			width: 100%;
+			height: 100vh;
+		}
+	}
 
 	#brand{
 		@media screen and (min-width: $lg-breakpoint) {
@@ -29,6 +46,8 @@ $lg-breakpoint: 62em;
 		font-weight: bold;
 		padding-left: 1.25em;
 		padding-right: 1.25em;
+		margin-top: $vertical-spacing;
+		margin-bottom: $vertical-spacing;
 	}
 
 
@@ -54,6 +73,7 @@ $lg-breakpoint: 62em;
 					margin-bottom: 1.25em;
 					font-size: 1.6875em;
 					text-align: center;
+
 				}
 			}
 		}
