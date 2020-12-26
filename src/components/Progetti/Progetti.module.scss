@@ -89,6 +89,43 @@
   }
 }
 
+@media screen and (min-width: 376px) {
+
+  .titolo_progetti{
+    font-size: 32px;
+    justify-content: start;
+    padding-left: 0vh;
+    margin-bottom: 10vh;
+  }
+  .Container_titolo{
+    width: 300px;
+    text-align: center;
+  }
+  .main_container{
+    height: 100%;
+    width: 100%;
+  }
+  .containerCard{
+    margin-bottom: 5vh;
+    width: 35vh !important;
+    margin-left: 3.5vh;
+ }
+  .scopri_progetti{
+    font-size: 20px;
+    margin-top: 3vh;
+    margin-right: 10vh;
+    margin-bottom: 4vh;
+  }
+  .description {
+    position: relative;
+    font-size: 14px !important;
+    display: block;
+  }
+  .title{
+    font-size: 18px !important;
+  }
+}
+
 //per i tablet
 @media screen and (min-width: 768px) {
 
