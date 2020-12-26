@@ -9,8 +9,8 @@ import clock from '../../images/clock.png'
 
 const PostCard = ({ className }) => {
 	return (
-		<div className={`post-card-component ${className}`}>
-			<div className="post-card">
+		<div className="post-card-component">
+			<div className={`post-card ${className}`}>
 				<div className="categoria-parent">
 					<div className="categoria-child">
 						<p>Programmazione</p>

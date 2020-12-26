@@ -2,6 +2,13 @@
   background-color: black;
   clip-path: polygon(0 0, 50% 0, 60% 10%, 100% 10%, 100% 100%, 50% 100%, 40% 90%, 0 90%);
   height: 90vh;
+  overflow: hidden;
+}
+
+.textContainer {
+  padding-top: 10vh;
+  padding-right: 5vh;
+  padding-left: 20vh;
 }
 
 .container {
@@ -9,7 +16,7 @@
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   color: white;
   margin-top: 50px;
@@ -41,22 +48,117 @@
   text-transform: uppercase;
 }
 
-.card {
-  position: relative;
-  top: 7.5vh;
+.right {
+  padding-top: 8rem;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
+.card {
+  display: block !important;
+  margin: 0 auto !important;
+  text-align: left !important;
+}
+
+.buttonContainer {
+  text-align: center;
+}
+
 
 .button {
   color: white;
   background-color: #A576FF;
-  display: inline-block;
-  padding: 20px 70px;
+  width: 350px;
+  padding-top: .4rem;
+  padding-bottom: .4rem;
+  text-align: center;
   font-weight: bold;
-  font-size: 1.5rem;
-  clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
-  transform: rotate(270deg);
-  position: relative;
-  left: 72.2vh;
-  bottom: 20vh;
+  font-size: 1.2rem;
   cursor: pointer;
+  border-radius: 7px;
+}
+
+// ipad pro
+@media screen and (max-width: 1024px) {
+  .section {
+    background-color: black;
+    clip-path: polygon(0 0, 50% 0, 60% 5%, 100% 5%, 100% 100%, 50% 100%, 40% 95%, 0 95%);
+    height: 60vh;
+    overflow: hidden;
+  }
+  
+  .textContainer {
+      padding-left: 4rem;
+      padding-top: 2rem;
+      padding-right: 2rem;
+      padding-bottom: 2rem;
+  }
+}
+
+// ipad
+@media screen and (max-width: 768px) {
+  .section {
+    clip-path: polygon(0 0, 50% 0, 60% 5%, 100% 5%, 100% 100%, 50% 100%, 40% 95%, 0 95%);
+
+    height: 80vh;
+  }
+
+
+  .textContainer {
+      padding-left: 3rem;
+      padding-top: 0rem;
+      padding-right: 2rem;
+      padding-bottom: 2rem;
+  }
+
+  .right {
+    padding-top: 5rem;
+  }
+
+  .card {
+    transform: scale(.8);
+  }
+
+  .button {
+    margin-top: -3rem;
+    transform: scale(.8);
+  }
+}
+
+// telefono
+@media screen and (max-width: 420px) {
+  
+  .section {
+    height: auto !important;
+    padding-bottom: 5rem;
+  }
+
+  .title {
+    font-size: 1.7rem;
+  }
+
+  .description {
+    font-size: .8rem;
+  }
+
+  .section {
+    height: 100vh;
+  }
+
+  .textContainer {
+      padding-left: 2rem;
+      display: block;
+  }
+
+  .argsContainer {
+    display: none;
+  }
+
+  .right {
+    margin-top: -7rem;
+  }
 }
