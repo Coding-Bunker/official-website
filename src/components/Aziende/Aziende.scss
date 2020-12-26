@@ -72,4 +72,13 @@ $lg-breakpoint: 48em;
     text-align: center;
   }
 
+  img{
+    opacity: 0.5;
+    transition: 0.2s;
+  }
+
+  img:hover{
+    opacity: 1;
+  }
+
 }
