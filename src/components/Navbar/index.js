@@ -22,7 +22,7 @@ const Navbar = () => {
 	)
 	console.log(data)
 	return (
-		<BtNavbar variant="dark" expand="lg">
+		<BtNavbar variant="dark" expand="lg" collapseOnSelect>
 			<Container>
 				<BtNavbar.Brand id="brand" to="/" as={Link}>
 					<Img
@@ -33,8 +33,8 @@ const Navbar = () => {
 				</BtNavbar.Brand>
 				<BtNavbar.Toggle />
 				<div className="nav-container w-100">
-					<BtNavbar.Collapse>
-						<Nav className="links mr-auto">
+					<BtNavbar.Collapse id="ncollapse">
+						<Nav className="links mr-auto" id="nav-0">
 							<Nav.Link to="/chi-siamo" as={Link}>
 								Chi siamo
 							</Nav.Link>
