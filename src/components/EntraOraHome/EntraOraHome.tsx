@@ -8,7 +8,7 @@ import EntraOra2 from '../../images/Entra_ora_senza_logo_discord.png'
 const EntraOraHome = () => {
 	return (
 		<section className="entra-ora-component">
-			<div className="Icona-Discord">
+			<div className="Discord-Icon">
 				<img src={IconaDiscord} alt="discord" />
 			</div>
 			<Container
@@ -21,17 +21,15 @@ const EntraOraHome = () => {
 					overflow: 'hidden',
 				}}
 			>
-				<p>
+				<div className="Enter-Text">
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio consequuntur YEET YEET YEET
 					libero similique commodi? Qui amet doloremque ab libero numquam dicta, explicabo quo
 					commodi voluptatibus, error, earum hic minima architecto nesciunt?
-				</p>
+				</div>
 
-				<div className="centrare">
+				<div className="center">
 					<Button variant="light" className="entra-ora-btn px-5 py3">
-						<h1>
-							<strong>Entra ora</strong>
-						</h1>
+						Entra Ora
 					</Button>
 				</div>
 			</Container>
