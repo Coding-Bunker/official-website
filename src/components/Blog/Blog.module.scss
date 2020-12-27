@@ -1,7 +1,8 @@
 .section {
   background-color: black;
   clip-path: polygon(0 0, 50% 0, 60% 10%, 100% 10%, 100% 100%, 50% 100%, 40% 90%, 0 90%);
-  height: 90vh;
+  height: auto !important;
+  padding-bottom: 5rem;
   overflow: hidden;
 }
 
