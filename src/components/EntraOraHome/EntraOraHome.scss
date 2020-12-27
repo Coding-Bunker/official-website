@@ -75,7 +75,7 @@
 }
 
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1025px){
 	.entra-ora-btn{
 		padding: 1vh 6vh 1vh 6vh !important;
 		margin-top: 11vh !important;
@@ -90,8 +90,9 @@
 	}
 	
 	.Enter-Text{
-    	font-size: 18px !important;
-    	padding-top: 12vh !important;
+		width: 40% !important;
+    	font-size: 24px !important;
+    	padding-top: 20vh !important;
 	}
 }
 
