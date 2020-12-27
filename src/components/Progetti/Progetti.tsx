@@ -19,24 +19,28 @@ const Progetti: React.FC<Props> = ({ link, projects, title }) => (
 	<div className={progettiStyle.main_container}>
 		<Container className={progettiStyle.Container_titolo}>
 			<span className={progettiStyle.titolo_progetti}>{title}</span>
+
+			<Container fluid className={progettiStyle.testa}>
+				<Row className="justify-content-around">
+					{projects.map((project, i) => (
+						<Col md="auto" className={progettiStyle.colonna} key={i}>
+							<ProjectCard
+								img={project.img}
+								title={project.title}
+								description={project.description}
+								className={progettiStyle.containerCard}
+								className2={progettiStyle.description}
+								className3={progettiStyle.title}
+							/>
+						</Col>
+					))}
+				</Row>
+			</Container>
 		</Container>
 
-		<Container fluid>
-			<Row className="justify-content-around">
-				{projects.map((project, i) => (
-					<Col md="auto" key={i}>
-						<ProjectCard
-							img={project.img}
-							title={project.title}
-							description={project.description}
-						/>
-					</Col>
-				))}
-			</Row>
-		</Container>
 		<div className={progettiStyle.altri_progetti}>
 			<a href={link} className={progettiStyle.scopri_progetti}>
-				Scopri tutti i progetti
+				Scopri tutti i progetti {'>'}
 			</a>
 		</div>
 	</div>
