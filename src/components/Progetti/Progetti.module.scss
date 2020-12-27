@@ -51,9 +51,12 @@
   color: white;
 }
 
-//per i telefoni
+//per i telefoni-------------------------------------------
 @media screen and (min-width: 0px) {
 
+  .testa{
+    text-align: left !important;
+  }
   .titolo_progetti{
     font-size: 32px;
     justify-content: start;
@@ -70,8 +73,8 @@
   }
   .containerCard{
     margin-bottom: 5vh;
+    margin-left: 0vh;
     width: 35vh !important;
-    margin-left: 3.5vh;
   }
   .scopri_progetti{
     font-size: 20px;
@@ -89,8 +92,31 @@
   }
 }
 
-//per i tablet
-@media screen and (min-width: 768px) {
+//per i telefoni-------------------------------------------
+@media screen and (min-width: 376px) {
+
+  .containerCard{
+    width: 35vh !important;
+    margin-left: 0.5vh;
+ }
+}
+
+//tra telefono e tablet------------------------------------
+@media screen and (min-width: 380px) {
+
+  .containerCard{
+    margin-left: 0vh;
+    width: 30vh !important;
+ }
+}
+
+//per i tablet medi----------------------------------------
+@media screen and (min-width: 767px) {
+
+  .testa{
+    margin-left: -24.5vh !important;
+    width: 800px;
+  }
 
   .titolo_progetti{
     font-size: 24px !important;
@@ -115,28 +141,41 @@
   .scopri_progetti{
     font-size: 20px;
     margin-top: 5vh;
-    margin-right: 28vh;
+    margin-right: 3.5vh;
     margin-bottom: 2vh;
-  }  
+  }
 }
 
-//per i tablet
-@media screen and (min-width: 768px) {
+//tra tablet medi e desktop-------------------------------------------
+@media screen and (min-width: 769px) {
+  .testa{
+    margin-left: -43.5vh !important;
+    width: 900px;
+  }
+  .containerCard{
+    width: 29vh !important;
+  }
+}
+
+
+//per i tablet garndi - ipad PRO
+@media screen and (min-width: 1024px) and (min-height: 1300px) {
+
+  .testa{
+    margin-left: -25.5vh !important;
+    width: 1000px;
+  }
 
   .titolo_progetti{
     font-size: 24px !important;
     justify-content: start;
-    padding-left: 1.5vh;
+    padding-left: 2vh;
     margin-bottom: 7vh;
     padding-bottom: 1vh;
     padding-top: 1vh;
   }
   .Container_titolo{
     width: 330px;
-  }
-  .main_container{
-    height: 100%;
-    width: 100%;
   }
   .containerCard{
     margin-bottom: 0vh;
@@ -151,8 +190,25 @@
   }
 }
 
+@media screen and (min-width: 1025px){
+
+  .testa{
+    margin-left: -50.5vh !important;
+    width: 1000px;
+  }
+  .containerCard{
+    width: 40vh !important;
+  }
+}
+
+
 //per Desktop
 @media screen and (min-width: 1535px) {
+
+  .testa{
+    margin-left: -60.5vh !important;
+    width: 1400px;
+  }
   .titolo_progetti{
     font-size: 38px !important;
     justify-content: start;
@@ -163,10 +219,6 @@
   }
   .Container_titolo{
     width: 550px !important;
-  }
-  .main_container{
-    height: 100%;
-    width: 100%;
   }
   .containerCard{
     margin-bottom: 0vh;
@@ -194,20 +246,10 @@
 
 //per Desktop
 @media screen and (min-width: 1919px) {
-  .titolo_progetti{
-    font-size: 38px !important;
-    justify-content: start;
-    padding-left: 5.5vh;
-    margin-bottom: 5rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-  }
-  .Container_titolo{
-    width: 550px !important;
-  }
-  .main_container{
-    height: 100%;
-    width: 100%;
+
+  .testa{
+    margin-left: -63.5vh !important;
+    width: 1900px;
   }
   .containerCard{
     margin-bottom: 0vh;
