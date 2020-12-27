@@ -15,33 +15,25 @@ const AlcuniNumeri = () => {
 
 			<Container className="Contenitore-Numeri">
 				<Row>
-					<Col>
+					<Col xs={12} md lg className="Contenitore-Numero">
 						<span className="Decorazione-Numeri">
 							<GrowingNumber number={2136} />
 						</span>
+						<div className="Decorazione-Sottotitoli">Membri</div>
 					</Col>
-					<Col>
+					<Col xs={12} md lg className="Contenitore-Numero">
 						<span className="Decorazione-Numeri">
 							<GrowingNumber number={3} />
 						</span>
+						<div className="Decorazione-Sottotitoli Indent">Eventi</div>
+						<div className="Decorazione-Sottotitoli">organizzati</div>
 					</Col>
-					<Col>
+					<Col xs={12} md lg className="Contenitore-Numero">
 						<span className="Decorazione-Numeri">
 							<GrowingNumber number={5} />
 						</span>
-					</Col>
-				</Row>
-				<Row>
-					<Col>
-						<span className="Decorazione-Sottotitoli">Membri</span>
-					</Col>
-					<Col>
-						<span className="Decorazione-Sottotitoli Indent">Eventi</span>
-						<span className="Decorazione-Sottotitoli">organizzati</span>
-					</Col>
-					<Col>
-						<span className="Decorazione-Sottotitoli Indent">Aziende</span>
-						<span className="Decorazione-Sottotitoli">partner</span>
+						<div className="Decorazione-Sottotitoli Indent">Aziende</div>
+						<div className="Decorazione-Sottotitoli">partner</div>
 					</Col>
 				</Row>
 			</Container>
