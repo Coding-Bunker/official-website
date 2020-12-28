@@ -13,52 +13,84 @@ const DiconoDiNoi = () => {
 			</div>
 			<div className="sottotitolo">Lorem ipsum dolor sit amet</div>
 
-			<Container className="quote-container">
-				<Row>
-					<Col>
-						<div className="quote-card">
-							<blockquote>
-								Lorem ipsum dolor sit amet,
-								<br />
-								consetetur sadipscing elitr, sed diam
-								<br />
-								nonumy eirmod tempor.
-							</blockquote>
-							<cite>Gino Padellino</cite>
-						</div>
-					</Col>
-				</Row>
-				<Row>
-					<Col>
-						<div className="quote-card">
-							<blockquote>
-								Lorem ipsum dolor sit amet,
-								<br />
-								consetetur sadipscing elitr, sed diam
-								<br />
-								nonumy eirmod tempor.
-							</blockquote>
-							<cite>Gino Padellino</cite>
-						</div>
-					</Col>
-				</Row>
-				<Row>
-					<Col>
-						<div className="quote-card">
-							<blockquote>
-								Lorem ipsum dolor sit amet,
-								<br />
-								consetetur sadipscing elitr, sed diam
-								<br />
-								nonumy eirmod tempor.
-							</blockquote>
-							<cite>Gino Padellino</cite>
-						</div>
-					</Col>
-				</Row>
-			</Container>
+			<div className="quote-list">
+				<div className="quote-card">
+					<blockquote>
+						Lorem ipsum dolor sit amet,
+						<br />
+						consetetur sadipscing elitr, sed diam
+						<br />
+						nonumy eirmod tempor.
+					</blockquote>
+					<cite>Gino Padellino</cite>
+				</div>
+				<div className="quote-card">
+					<blockquote>
+						Lorem ipsum dolor sit amet,
+						<br />
+						consetetur sadipscing elitr, sed diam
+						<br />
+						nonumy eirmod tempor.
+					</blockquote>
+					<cite>Gino Padellino</cite>
+				</div>
+				<div className="quote-card">
+					<blockquote>
+						Lorem ipsum dolor sit amet,
+						<br />
+						consetetur sadipscing elitr, sed diam
+						<br />
+						nonumy eirmod tempor.
+					</blockquote>
+					<cite>Gino Padellino</cite>
+				</div>
+			</div>
 		</div>
 	)
 }
-
 export default DiconoDiNoi
+
+/* <Container className="quote-container">
+				<Row>
+					<Col>
+						<div className="quote-card">
+							<blockquote>
+								Lorem ipsum dolor sit amet,
+								<br />
+								consetetur sadipscing elitr, sed diam
+								<br />
+								nonumy eirmod tempor.
+							</blockquote>
+							<cite>Gino Padellino</cite>
+						</div>
+					</Col>
+				</Row>
+				<Row>
+					<Col>
+						<div className="quote-card">
+							<blockquote>
+								Lorem ipsum dolor sit amet,
+								<br />
+								consetetur sadipscing elitr, sed diam
+								<br />
+								nonumy eirmod tempor.
+							</blockquote>
+							<cite>Gino Padellino</cite>
+						</div>
+					</Col>
+				</Row>
+				<Row>
+					<Col>
+						<div className="quote-card">
+							<blockquote>
+								Lorem ipsum dolor sit amet,
+								<br />
+								consetetur sadipscing elitr, sed diam
+								<br />
+								nonumy eirmod tempor.
+							</blockquote>
+							<cite>Gino Padellino</cite>
+						</div>
+					</Col>
+				</Row>
+			</Container> */
