@@ -57,9 +57,16 @@
   }
 }
 
+// MEDIA QUERY PER RIMUOVERE LO SPAZIO - TELEFONI
+@media screen and (min-width: 0px){
+  .scrollable{
+    padding-top: 0vh;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .scrollable {
+    padding-top: 0vh;
     padding-left: 1rem;
     padding-right: 1rem;
 
