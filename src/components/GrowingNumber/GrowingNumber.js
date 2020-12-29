@@ -6,15 +6,18 @@ import VisibilitySensor from 'react-visibility-sensor'
 const time = 3
 
 const GrowingNumber = ({ number: initialNumber }) => {
+	let flag = true
+
 	return (
 		<>
 			<VisibilitySensor>
 				{({ isVisible }) => {
-					if (isVisible) {
+					if (isVisible && flag) {
+						flag = false
 						return <CountUp end={initialNumber} duration={time} delay={0.2} />
 					}
 
-					return <div>0</div>
+					return <div>{initialNumber}</div>
 				}}
 			</VisibilitySensor>
 		</>
