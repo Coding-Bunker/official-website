@@ -20,10 +20,10 @@ const Progetti: React.FC<Props> = ({ link, projects, title }) => (
 		<Container className={progettiStyle.Container_titolo}>
 			<span className={progettiStyle.titolo_progetti}>{title}</span>
 
-			<Container fluid className={progettiStyle.testa}>
+			<Container fluid className={progettiStyle.Project_Container}>
 				<Row className="justify-content-around">
 					{projects.map((project, i) => (
-						<Col md="auto" className={progettiStyle.colonna} key={i}>
+						<Col md="auto" className={progettiStyle.Project_Column} key={i}>
 							<ProjectCard
 								img={project.img}
 								title={project.title}
