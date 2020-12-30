@@ -1,7 +1,10 @@
-.CookieBar {
+.CookieBar{
 	//Contenitore di tutti i componenti
   position: sticky;
   z-index: 1000 !important;
+  display: none;
+  transition: all 0.5s ease;
+
 
 	.MainDiv {
 		//cambiare dimesione barra qui
@@ -128,8 +131,9 @@
 		transform: scale(1.1);
 	}
 }
+ 
 
-/*MEDIA QUERY - Telefoni*/
+//MEDIA QUERY - Telefoni
 @media screen and (min-width: 0px) {
 
 	.CookieBar{
@@ -168,7 +172,7 @@
 	}
 }
 
-/*MEDIA QUERY - Desktop responsiveness*/
+//MEDIA QUERY - Desktop responsiveness
 @media screen and (min-width: 450px) {
   .MainDiv {
 		width: 400px !important;
@@ -195,7 +199,7 @@
 	}
 }
 
-/*MEDIA QUERY - Desktop responsiveness*/
+//MEDIA QUERY - Desktop responsiveness
 @media screen and (min-width: 600px) {
 	.MainDiv {
 		width: 400px !important;
@@ -204,7 +208,7 @@
 	}
   }
 
-/*MEDIA QUERY - IPAD - Tablet medi*/
+//MEDIA QUERY - IPAD - Tablet medi
 @media screen and (min-width: 768px) {
 
   .CookieBar{
@@ -236,7 +240,7 @@
 	}
 }
 
-/*MEDIA QUERY - Desktop responsiveness*/
+//MEDIA QUERY - Desktop responsiveness
 @media screen and (min-width: 769px) {
 	.MainDiv {
 		  width: 690px !important;
@@ -264,7 +268,7 @@
   }
 
 
-/*MEDIA QUERY - Ipad PRO - TABLET GRANDI*/
+//MEDIA QUERY - Ipad PRO - TABLET GRANDI
 @media screen and (min-width: 1024px) {
 
   .CookieBar{
@@ -274,7 +278,7 @@
   .MainDiv{
     width: 75% !important;
     height: 6vh !important;
-    margin-left: 9.5vh !important;
+	margin: 0vh auto !important;
   }
   .TextDiv{
     width: 500px !important;
@@ -293,8 +297,8 @@
   }
 }
 
-/*MEDIA QUERY - Laptop */
-@media screen and (min-width: 1024px) and (min-height: 1080px) {
+//MEDIA QUERY - Laptop 
+@media screen and (max-width: 1024px) and (max-height: 1080px) {
 
 	.CookieContainer {
 		margin-right: 71vh !important;
@@ -305,7 +309,7 @@
 	}
   }
 
-/*MEDIA QUERY - Desktop responsiveness*/
+//MEDIA QUERY - Desktop responsiveness
 @media screen and (min-width: 1025px){
   
 	.MainDiv{
@@ -335,7 +339,7 @@
 	}
   }
 
-  /*MEDIA QUERY - Desktop*/
+//MEDIA QUERY - Desktop
 @media screen and (min-width: 1440px) {
 
 	.MainDiv{
@@ -366,7 +370,7 @@
 	}
   }
 
-/*MEDIA QUERY - Desktop*/
+//MEDIA QUERY - Desktop
 @media screen and (min-width: 1535px) {
 
 	.MainDiv{
@@ -397,7 +401,7 @@
 	}
   }
 
-/*MEDIA QUERY - Desktop*/
+//MEDIA QUERY - Desktop
 @media screen and (min-width: 1919px) {
   
 	.MainDiv{
@@ -426,7 +430,7 @@
 	}
   }
 
-  /*MEDIA QUERY - Desktop*/
+//MEDIA QUERY - Desktop
 @media screen and (min-width: 2560px) {
   
 	.MainDiv{
@@ -455,4 +459,8 @@
 	}
   }
 
+.CookieBar.active{
+display: block;
+transition: all 0.5s ease;
 
+}
