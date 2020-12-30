@@ -64,10 +64,31 @@
 
 @media (max-width: 768px) {
 
+  .Divisore {
+    width: 10vh;
+  }
+
+  .Titolo-Staff {
+    font-size: 1.5rem;
+    padding-left: 1rem;                           //
+    padding-right: 1rem;
+  }
+
+  .Decorazione-Numeri{
+    font-size: 2.5rem;
+  }
+
   .Decorazione-Sottotitoli{
-    color: #a576ff;
-    font-weight: 900;
-    font-size: 3.5vh;
+
+    font-size: 1.2rem;
+  }
+
+  .Contenitore-Numeri {
+    padding-top: 5vh;
+  }
+
+  .Contenitore-Numero {
+    margin: 1rem 0;
   }
 
 }

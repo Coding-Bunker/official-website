@@ -1,69 +1,266 @@
-@import "../ProjectCard/ProjectCard.module.scss";
+@import '../ProjectCard/ProjectCard.module.scss';
 
 //Contenitore della sezione
-.main_container{
-  width: 100%;
-  height: 70vh;
-  background-color: rgb(175, 109, 255);
+.main_container {
+	width: 100%;
+	height: 70vh;
+	background-color: rgb(175, 109, 255);
 }
 
 //Titolo "Alcuni nostri progetti"
-.titolo_progetti{
-  font-size: 40px;
-  color: white;
-  font-weight: bolder;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 4px solid white;
-  border-left: 4px solid white;
-  border-right: 4px solid white;
-  margin-bottom: 6rem;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+.titolo_progetti {
+	font-size: 40px;
+	color: white;
+	font-weight: bolder;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 4px solid white;
+	border-left: 4px solid white;
+	border-right: 4px solid white;
+	margin-bottom: 6rem;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
 }
 
-.Container_titolo{
-  width: 550px;
+.Container_titolo {
+	width: 550px;
 }
 
 //sottotilo per altri progetti
-.scopri_progetti{
-  font-weight: lighter;
-  font-size: 30px;
-  display: inline-block;
-  margin-top: 10vh;
-  margin-right: 6vh;
-  text-align: end;
-  color: white;
-  border-bottom: 1px solid white;
-  text-decoration: none !important;
+.scopri_progetti {
+	font-weight: lighter;
+	font-size: 30px;
+	display: inline-block;
+	margin-top: 10vh;
+	margin-right: 6vh;
+	text-align: end;
+	color: white;
+	border-bottom: 1px solid white;
+	text-decoration: none !important;
 }
 
 //contenitore sottotitolo
-.altri_progetti{
-  text-align: end;
+.altri_progetti {
+	text-align: end;
 }
 
 //per cambiare il puntatore
-.scopri_progetti:hover{
-  cursor: pointer;
-  color: white;
+.scopri_progetti:hover {
+	cursor: pointer;
+	color: white;
 }
 
-//per i telefoni
-@media (max-width: 992px) {
-
-
-  .main_container{
-    height: 100%;
-    width: 100%;
-  }
-
-  .containerCard{
-    margin-bottom: 20vh;
-  }
-  
+//per i telefoni-------------------------------------------
+@media screen and (min-width: 0px) {
+	.Project_Container {
+		text-align: left !important;
+	}
+	.titolo_progetti {
+		font-size: 32px;
+		justify-content: start;
+		padding-left: 0vh;
+		margin-bottom: 10vh;
+	}
+	.Container_titolo {
+		width: 300px;
+		text-align: center;
+	}
+	.main_container {
+		height: 100%;
+		width: 100%;
+	}
+	.containerCard {
+		margin-bottom: 5vh;
+		margin-left: 0vh;
+		width: 35vh !important;
+	}
+	.scopri_progetti {
+		font-size: 20px;
+		margin-top: 3vh;
+		margin-right: 10vh;
+		margin-bottom: 4vh;
+	}
+	.description {
+		position: relative;
+		font-size: 14px !important;
+		display: block;
+	}
+	.title {
+		font-size: 18px !important;
+	}
 }
 
+//per i telefoni-------------------------------------------
+@media screen and (min-width: 376px) {
+	.containerCard {
+		width: 35vh !important;
+		margin-left: 0.5vh;
+	}
+}
 
+//tra telefono e tablet------------------------------------
+@media screen and (min-width: 380px) {
+	.containerCard {
+		margin-left: 0vh;
+		width: 30vh !important;
+	}
+}
+
+//per i tablet medi----------------------------------------
+@media screen and (min-width: 767px) {
+	.Project_Container {
+		margin-left: -24.5vh !important;
+		width: 800px;
+	}
+
+	.titolo_progetti {
+		font-size: 24px !important;
+		justify-content: start;
+		padding-left: 2.5vh;
+		margin-bottom: 7vh;
+		padding-bottom: 1vh;
+		padding-top: 1vh;
+	}
+	.Container_titolo {
+		width: 330px;
+	}
+	.main_container {
+		height: 100%;
+		width: 100%;
+	}
+	.containerCard {
+		margin-bottom: 0vh;
+		width: 20vh !important;
+		margin-left: 0vh;
+	}
+	.scopri_progetti {
+		font-size: 20px;
+		margin-top: 5vh;
+		margin-right: 3.5vh;
+		margin-bottom: 2vh;
+	}
+}
+
+//tra tablet medi e desktop-------------------------------------------
+@media screen and (min-width: 769px) {
+	.Project_Container {
+		margin-left: -43.5vh !important;
+		width: 900px;
+	}
+	.containerCard {
+		width: 29vh !important;
+	}
+}
+
+//per i tablet garndi - ipad PRO
+@media screen and (min-width: 1024px) and (min-height: 1300px) {
+	.Project_Container {
+		margin-left: -25.5vh !important;
+		width: 1000px;
+	}
+
+	.titolo_progetti {
+		font-size: 24px !important;
+		justify-content: start;
+		padding-left: 2vh;
+		margin-bottom: 7vh;
+		padding-bottom: 1vh;
+		padding-top: 1vh;
+	}
+	.Container_titolo {
+		width: 330px;
+	}
+	.containerCard {
+		margin-bottom: 0vh;
+		width: 20vh !important;
+		margin-left: 0vh;
+	}
+	.scopri_progetti {
+		font-size: 20px;
+		margin-top: 5vh;
+		margin-right: 3.5vh;
+		margin-bottom: 2vh;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.Project_Container {
+		margin-left: -50.5vh !important;
+		width: 1000px;
+	}
+	.containerCard {
+		width: 40vh !important;
+	}
+}
+
+//per Desktop
+@media screen and (min-width: 1535px) {
+	.Project_Container {
+		margin-left: -60.5vh !important;
+		width: 1400px;
+	}
+	.titolo_progetti {
+		font-size: 38px !important;
+		justify-content: start;
+		padding-left: 8vh;
+		margin-bottom: 5rem;
+		padding-bottom: 1rem;
+		padding-top: 1rem;
+	}
+	.Container_titolo {
+		width: 550px !important;
+	}
+	.containerCard {
+		margin-bottom: 0vh;
+		width: 50vh !important;
+		margin-left: 0vh;
+	}
+	.scopri_progetti {
+		font-size: 20px;
+		margin-top: 5vh;
+		margin-right: 11vh;
+		margin-bottom: 7vh;
+	}
+	.title {
+		font-weight: bold;
+		font-size: 18px;
+		position: relative;
+		bottom: 10px;
+	}
+	.description {
+		position: relative;
+		font-size: 16px !important;
+		display: block;
+	}
+}
+
+//per Desktop
+@media screen and (min-width: 1919px) {
+	.Project_Container {
+		margin-left: -73.5vh !important;
+		width: 1900px;
+	}
+	.containerCard {
+		margin-bottom: 0vh;
+		width: 50vh !important;
+		margin-left: 0vh;
+	}
+	.scopri_progetti {
+		font-size: 24px;
+		margin-top: 5vh;
+		margin-right: 5.5vh;
+		margin-bottom: 7vh;
+	}
+	.title {
+		font-weight: bold;
+		font-size: 24px !important;
+		position: relative;
+		bottom: 10px;
+	}
+	.description {
+		position: relative;
+		font-size: 20px !important;
+		display: block;
+	}
+}
