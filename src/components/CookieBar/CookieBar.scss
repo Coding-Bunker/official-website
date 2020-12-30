@@ -3,7 +3,6 @@
   position: sticky;
   z-index: 1000 !important;
   display: none;
-  transition: all 0.5s ease;
 
 
 	.MainDiv {
@@ -461,6 +460,5 @@
 
 .CookieBar.active{
 display: block;
-transition: all 0.5s ease;
 
 }
