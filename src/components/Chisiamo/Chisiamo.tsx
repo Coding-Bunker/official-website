@@ -11,7 +11,7 @@ interface Props {
 const Chisiamo: React.FC<Props> = ({ title, description, img }) => {
 	return (
 		<section className="chi-siamo">
-			<div>
+			<div className="background-container">
 				<img className="background-section" alt="background" src={img} />
 			</div>
 			<Container fluid className="contenitore-testo">
