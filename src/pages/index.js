@@ -11,7 +11,6 @@ import EntraOraHome from '../components/EntraOraHome/EntraOraHome.tsx'
 import Progetti from '../components/Progetti/Progetti.tsx'
 import Aziende from '../components/Aziende/Aziende'
 import WhyEnter from '../components/WhyEnter/WhyEnter.tsx'
-import Blog from '../components/Blog/Blog.tsx'
 import CookieBar from '../components/CookieBar/CookieBar.tsx'
 
 const IndexPage = () => {
@@ -226,11 +225,6 @@ const IndexPage = () => {
 				link={query.datoCmsHomepage.sections[1].linkDiscord.link}
 			/>
 			<AlcuniNumeri />
-			<Blog
-				title={query.datoCmsHomepage.sections[6].titolo}
-				description={query.datoCmsHomepage.sections[6].descrizione}
-				topics={topics}
-			/>
 			<DiconoDiNoi
 				description={query.datoCmsHomepage.sections[7].descrizione}
 				reviews={reviews}
