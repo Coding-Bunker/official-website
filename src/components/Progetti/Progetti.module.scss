@@ -102,7 +102,7 @@
 //tra telefono e tablet------------------------------------
 @media screen and (min-width: 380px) {
 	.containerCard {
-		margin-left: 0vh;
+		margin-left: -2.5vh;
 		width: 30vh !important;
 	}
 }
@@ -145,11 +145,15 @@
 //tra tablet medi e desktop-------------------------------------------
 @media screen and (min-width: 769px) {
 	.Project_Container {
-		margin-left: -43.5vh !important;
-		width: 900px;
+		margin-left: -25vh !important;
+		width: 800px;
 	}
 	.containerCard {
-		width: 29vh !important;
+		width: 22vh !important;
+	}
+	#card1{
+		margin-left: -10vh !important;
+		margin-right: -10vh !important;
 	}
 }
 
@@ -186,24 +190,24 @@
 
 @media screen and (min-width: 1025px) {
 	.Project_Container {
-		margin-left: -50.5vh !important;
+		margin-left: -37vh !important;
 		width: 1000px;
 	}
 	.containerCard {
-		width: 40vh !important;
+		width: 30vh !important;
 	}
 }
 
 //per Desktop
 @media screen and (min-width: 1535px) {
 	.Project_Container {
-		margin-left: -60.5vh !important;
+		margin-left: -47vh !important;
 		width: 1400px;
 	}
 	.titolo_progetti {
 		font-size: 38px !important;
 		justify-content: start;
-		padding-left: 8vh;
+		padding-left: 6.5vh;
 		margin-bottom: 5rem;
 		padding-bottom: 1rem;
 		padding-top: 1rem;
@@ -212,9 +216,7 @@
 		width: 550px !important;
 	}
 	.containerCard {
-		margin-bottom: 0vh;
-		width: 50vh !important;
-		margin-left: 0vh;
+		width: 40vh !important;
 	}
 	.scopri_progetti {
 		font-size: 20px;
