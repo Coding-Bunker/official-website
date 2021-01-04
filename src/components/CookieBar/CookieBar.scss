@@ -1,9 +1,9 @@
-.CookieBar {
+.CookieBar{
 	//Contenitore di tutti i componenti
-  margin-top: 20vh !important;
   position: sticky;
-  top: 30px;
   z-index: 1000 !important;
+  display: none;
+
 
 	.MainDiv {
 		//cambiare dimesione barra qui
@@ -130,12 +130,13 @@
 		transform: scale(1.1);
 	}
 }
+ 
 
-/*MEDIA QUERY - Telefoni*/
+//MEDIA QUERY - Telefoni
 @media screen and (min-width: 0px) {
 
 	.CookieBar{
-		top: 100px;
+		top: 70%;
 	}
 	.MainDiv {
 		width: 318px !important;
@@ -170,12 +171,12 @@
 	}
 }
 
-/*MEDIA QUERY - Desktop responsiveness*/
+//MEDIA QUERY - Desktop responsiveness
 @media screen and (min-width: 450px) {
   .MainDiv {
 		width: 400px !important;
 		height: 27vh !important;
-		margin: 27vh auto 0vh !important;
+		margin: 0vh auto 0vh !important;
 	}
 	.TextDiv {
 		width: 380px;
@@ -192,22 +193,26 @@
 		margin-left: 2vh !important;
 	}
 	.CookieContainer {
-		margin-left: 0vh !important;
-		margin-bottom: 30vh !important;
+		margin: 0 auto 30vh !important;
 	}
 }
 
-/*MEDIA QUERY - Desktop responsiveness*/
+//MEDIA QUERY - Desktop responsiveness
 @media screen and (min-width: 600px) {
 	.MainDiv {
 		width: 400px !important;
 		height: 27vh !important;
-		margin: 17vh auto 0vh !important;
+		margin: 0 auto !important;
 	}
   }
 
-/*MEDIA QUERY - IPAD - Tablet medi*/
+//MEDIA QUERY - IPAD - Tablet medi
 @media screen and (min-width: 768px) {
+
+  .CookieBar{
+		top: 70%;
+		margin-top: 10vh !important;
+  }
   .MainDiv {
 		width: 652px !important;
 		height: 6vh !important;
@@ -229,56 +234,57 @@
 	.CookieContainer {
 		width: 10vh !important;
 		margin-right: 59vh !important;
-		margin-top: 38vh !important;
+		margin-top: 30vh !important;
 	}
 }
 
-/*MEDIA QUERY - Desktop responsiveness*/
+//MEDIA QUERY - Desktop responsiveness
 @media screen and (min-width: 769px) {
 	.MainDiv {
-		  width: 666px !important;
+		  width: 690px !important;
 		  height: 8vh !important; 
 		  margin: 80px auto 0vh !important;
 	  }
 	  .TextDiv {
 		  width: 450px;
 		  margin-bottom: 0vh !important;
-		  margin-right: 10vh !important;
+		  margin-right: 8.5vh !important;
 	  }
 	  .AcceptDiv {
 		  margin-top: 0vh !important;
-		  margin-left: 75vh !important;
+		  margin-left: 60vh !important;
 	  }
 	  .AcceptButton{
-		  width: 14vh !important;
+		  width: 12vh !important;
 		  height: 4.5vh !important;
 	  }
 	  .CookieContainer {
 		  width: 10vh !important;
-		  margin-right: 88vh !important;
-    	  margin-top: 34vh !important;
+		  margin-right: 70vh !important;
+		  margin-top: 30vh !important;
 	  }
   }
 
 
-/*MEDIA QUERY - Ipad PRO - TABLET GRANDI*/
+//MEDIA QUERY - Ipad PRO - TABLET GRANDI
 @media screen and (min-width: 1024px) {
 
   .CookieBar{
 	margin-top: 0vh !important;
+	top: 90%;
   }
   .MainDiv{
     width: 75% !important;
     height: 6vh !important;
-    margin-left: 9.5vh !important;
+	margin: 0vh auto !important;
   }
   .TextDiv{
     width: 500px !important;
   }
   .CookieContainer {
 	margin-right: 55vh !important;
-    margin-bottom: 43vh !important;
-    width: 8vh !important;
+	margin-bottom: 32vh !important;
+	width: 8vh !important;
   }
   .AcceptDiv {
     margin-left: 45vh !important;
@@ -289,7 +295,7 @@
   }
 }
 
-/*MEDIA QUERY - Desktop responsiveness*/
+//MEDIA QUERY - Desktop responsiveness
 @media screen and (min-width: 1025px){
   
 	.MainDiv{
@@ -298,7 +304,7 @@
 	  margin: 9.6vh auto 0vh  !important;
 	}
 	.TextDiv{
-	  width: 1000px !important;
+	  width: 500px !important;
 	}
 	.CookieText{
 		font-size: 16px !important;
@@ -307,11 +313,11 @@
 		font-size: 16px !important;
 	}
 	.CookieContainer {
-		margin-right: 125vh !important;
-    	margin-bottom: 29vh !important;
+		margin-right: 93vh !important;
+    	margin-bottom: 27vh !important;
 	}
 	.AcceptDiv {
-	  margin-left: 112vh !important;
+	  margin-left: 81vh !important;
 	}
 	.AcceptButton{
 		width: 13vh !important;
@@ -319,7 +325,7 @@
 	}
   }
 
-  /*MEDIA QUERY - Desktop*/
+//MEDIA QUERY - Desktop
 @media screen and (min-width: 1440px) {
 
 	.MainDiv{
@@ -337,11 +343,11 @@
 	  margin-right: 7vh !important;
 	}
 	.CookieContainer {
-		margin-right: 165vh !important;
-		margin-top: 35vh !important;
+		margin-right: 125vh !important;
+    	margin-top: 30vh !important;
 	}
 	.AcceptDiv {
-		margin-left: 153.5vh !important;
+		margin-left: 113vh !important;
 	}
 	.AcceptButton{
 	  width: 15vh !important;
@@ -350,30 +356,28 @@
 	}
   }
 
-/*MEDIA QUERY - Desktop*/
+//MEDIA QUERY - Desktop
 @media screen and (min-width: 1535px) {
 
 	.MainDiv{
-	  width: 65% !important;
-	  margin-left: 37vh !important;
+	  width: 1300px !important;
+	  margin: 0 auto !important;
 	}
 	.TextDiv{
 	  width: 900px !important;
 	  margin-right: 7vh !important;
 	}
 	.CookieText{
-		font-size: 16px !important;
+		font-size: 18px !important;
 	}
 	.ClickableLink{
-		font-size: 16px !important;
+		font-size: 18px !important;
 	}
 	.CookieContainer {
 	  margin-right: 135vh !important;
-	  margin-bottom: 35vh !important;
-	  margin-top: 40vh !important;
 	}
 	.AcceptDiv {
-		margin-left: 122vh !important;
+		margin-left: 123vh !important;
 	}
 	.AcceptButton{
 	  width: 15vh !important;
@@ -381,7 +385,7 @@
 	}
   }
 
-/*MEDIA QUERY - Desktop*/
+//MEDIA QUERY - Desktop
 @media screen and (min-width: 1919px) {
   
 	.MainDiv{
@@ -389,14 +393,19 @@
 	  margin-left: 37vh !important;
 	}
 	.TextDiv{
-	  width: 900px !important;
+	  width: 1000px !important;
+	}
+	.CookieText{
+		font-size: 20px !important;
+	}
+	.ClickableLink{
+		font-size: 20px !important;
 	}
 	.CookieContainer {
-	  margin-right: 130vh !important;
-	  margin-bottom: 37vh !important;
+		margin-right: 128vh !important;
 	}
 	.AcceptDiv {
-	  margin-left: 120vh !important;
+		margin-left: 118.5vh !important;
 	}
 	.AcceptButton{
 	  width: 12vh !important;
@@ -404,7 +413,7 @@
 	}
   }
 
-  /*MEDIA QUERY - Desktop*/
+//MEDIA QUERY - Desktop
 @media screen and (min-width: 2560px) {
   
 	.MainDiv{
@@ -433,4 +442,7 @@
 	}
   }
 
+.CookieBar.active{
+display: block;
 
+}
