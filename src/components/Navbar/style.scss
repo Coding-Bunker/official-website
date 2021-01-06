@@ -20,6 +20,12 @@ $lg-breakpoint: 62em;
 		}
 	}
 
+	#div-0{
+		@media screen and (max-width: $lg-breakpoint){
+		}
+
+	}
+
 	#ncollapse{
 		@media screen and (max-width: $lg-breakpoint){
 			width: 100%;
@@ -28,14 +34,14 @@ $lg-breakpoint: 62em;
 	}
 
 	#brand{
-		@media screen and (min-width: $lg-breakpoint) {
+		@media screen and (min-width: 1640px) {
 			margin-left: -250px;
 		}
 
 	}
 
 	.links{
-		@media screen and (min-width: $lg-breakpoint) {
+		@media screen and (min-width: 1640px) {
 			margin-left: -100px;
 		}
 	}
@@ -49,6 +55,13 @@ $lg-breakpoint: 62em;
 		padding-right: 1.25em;
 		margin-top: $vertical-spacing;
 		margin-bottom: $vertical-spacing;
+		@media screen and (min-width:$lg-breakpoint) and (max-width: 1425px) {
+			font-size: 1em;
+			padding-left: 1em;
+			padding-right: 1em;
+			margin-top: 0.3em;
+			margin-bottom: 0.3em;
+		}
 	}
 
 
@@ -74,7 +87,9 @@ $lg-breakpoint: 62em;
 					margin-bottom: 1.25em;
 					font-size: 1.6875em;
 					text-align: center;
-
+				}
+				@media screen and (min-width:$lg-breakpoint) and (max-width: 1425px) {
+					font-size: 0.85em;
 				}
 			}
 		}
