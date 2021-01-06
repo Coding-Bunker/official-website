@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React from 'react'
 import { Nav, Navbar as BtNavbar, Button, Container } from 'react-bootstrap'
 import { graphql, useStaticQuery, Link } from 'gatsby'

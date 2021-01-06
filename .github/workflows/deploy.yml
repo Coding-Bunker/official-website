@@ -5,9 +5,13 @@ on:
   push:
     branches:
       - master
+      - qa
+      - dev
   pull_request:
     branches:
       - master
+      - qa
+      - dev
 
 jobs:
   setup:
