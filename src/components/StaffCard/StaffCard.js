@@ -1,9 +1,17 @@
 import React from 'react'
 import staffCardStyles from './StaffCard.module.scss'
 
-const StaffCard = ({ className, className2, className3, profilePic, name, description }) => {
+const StaffCard = ({
+	className,
+	className2,
+	className3,
+	className4,
+	profilePic,
+	name,
+	description,
+}) => {
 	return (
-		<div className={staffCardStyles.component}>
+		<div className={`${staffCardStyles.component} ${className4}`}>
 			<div className={`${staffCardStyles.profilePicContainer} ${className}`}>
 				<img className={staffCardStyles.profilePic} src={profilePic} alt="" />
 			</div>

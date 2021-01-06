@@ -34,9 +34,10 @@ const LoStaff: React.FC<Props> = ({ title, description, cards }) => {
 					{cards.map((card, i) => (
 						<Col md="auto" key={i}>
 							<StaffCard
-								className={staffCardStyles.profielPicContainer}
+								className={staffCardStyles.profilePicContainer}
 								className2={staffCardStyles.name}
 								className3={staffCardStyles.description}
+								className4={staffCardStyles.component}
 								profilePic={card.img}
 								name={card.title}
 								description={card.description}

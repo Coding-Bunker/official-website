@@ -3,7 +3,7 @@
 //------------= Sezione superiore =------------//
                                                //
 //Divisore (rettangoli neri vicino a Lo Staff) //
-.Seperators{                                     //
+.Seperators{                                   //
   height: 1vh;                                 //
   width: 15vh;                                 //
   background-color: black;                   //
@@ -12,29 +12,29 @@
 }                                              //
                                                //
 //Titolo Lo staff                              //
-.ComponentTitle{                                 //
+.ComponentTitle{                               //
   font-weight: bold;                           //
   text-align: center;                          //
-  font-size: 35px;                             //
+  font-size: 40px;                             //
   padding-left: 7vh;                           //
   padding-right: 7vh;                          //
 }                                              //
                                                //
 //Contenitore del titolo e dei divisori        //
-.TitlesContainer{                           //
+.TitlesContainer{                              //
   text-align: center;                          //
 }                                              //
                                                //
 //-----------= Sezione intermedia =------------//
                                                //
 //Contenitore della descrizione                //
-.DescriptionContainer{                      //
+.DescriptionContainer{                         //
   padding-top: 5vh;                            //
   padding-bottom: 5vh;                         //
   text-align: center;                          //
                                                //
   //Descrizione in sè                          //
-  .Description{                                        //
+  .Description{                                //
     font-size: 25px;                           //
     padding-left: 7rem;                        //
     padding-right: 7rem;                       //    
@@ -44,23 +44,119 @@
 }                                              //
                                                //
 //------------= Sezione inferiore =------------//
-//comprende tutta la card                      //
-.profielPicContainer{                          //
-  width: 56vh !important;
-  margin-left: -10vh;
-  .name{
-    font-size: 25px;
-    margin-top: 1vh;
-    text-align: center;
-  }//
-  .description{
-    font-size: 16px;
-  }
-}                                              //
                                                //
+.component{                                    //
+  //per spostare card a dx e sx cambiare width //
+  width: 38vh;                                 //
+                                               //
+  //card effettiva                             //
+  .profilePicContainer{                        //
+    width: 56vh !important;                    //
+    margin-left: -10vh;                        //
+    .name{                                     //
+      font-size: 25px;                         //
+      margin-top: 1vh;                         //
+      text-align: center;                      //
+    }                                          //
+    .description{                              //
+      font-size: 16px;                         //
+    }                                          //
+  }                                            //
+}                                              //
 //=============================================//
 
+//MEDIA QUERY - TELEFONI
+@media screen and (min-width: 0px){
+  .Seperators{
+    width: 8vh;
+  }
+  .ComponentTitle{
+    font-size: 35px;
+    padding-left: 4vh;
+    padding-right: 4vh;
+  }
+  .DescriptionContainer{
+    padding-bottom: 6vh;
+    .Description{
+      font-size: 18px;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    } 
+  }
+  .component{
+    margin-left: 39%;
+    margin-bottom: 10vh;
+    .profilePicContainer{
+      width: 30vh !important;
+    }
+  }
+}
 
+//MEDIA QUERY - TABLET PICCOLI
+@media screen and (min-width: 768px){
+  .Seperators{
+    width: 15vh;
+  }
+  .component{
+    margin-left: -4vh;
+    width: 50px;
+    margin-bottom: 0vh;
+    .profilePicContainer{
+      width: 30vh !important;
+    }
+  }
+}
+
+//MEDIA QUERY - TABLET MEDI
+@media screen and (min-width: 1024px){
+  .component{
+    margin-left: -5vh;
+  }
+  .ComponentTitle{
+    font-size: 40px;
+  }
+  .DescriptionContainer{
+    .Description{
+      font-size: 25px;
+    }
+  }
+}
+
+//MEDIA QUERY - Desktop resposniveness
+@media screen and (min-width: 1100px){
+  .component{
+    margin-left: -130%;
+    .profilePicContainer{
+      width: 40vh !important;
+    }
+  }
+  .DescriptionContainer{
+    .Description{
+      padding-left: 5rem;
+      padding-right: 5rem;
+    } 
+  }
+}
+
+//MEDIA QUERY - Desktop resposniveness
+@media screen and (min-width: 1300px){
+  .component{
+    margin-left: -200%;
+    .profilePicContainer{
+      width: 50vh !important;
+    }
+  }
+}
+
+//MEDIA QUERY - Desktop resposniveness
+@media screen and (min-width: 1500px){
+  .component{
+    margin-left: -330%;
+    .profilePicContainer{
+      width: 60vh !important;
+    }
+  }
+}
 
 
 
