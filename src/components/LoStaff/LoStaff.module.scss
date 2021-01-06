@@ -3,16 +3,16 @@
 //------------= Sezione superiore =------------//
                                                //
 //Divisore (rettangoli neri vicino a Lo Staff) //
-.Divisore{                                     //
+.Seperators{                                     //
   height: 1vh;                                 //
   width: 15vh;                                 //
-  background-color: black;                     //
+  background-color: black;                   //
   display: inline-block;                       //
   margin-bottom: 0.7vh                         //
 }                                              //
                                                //
 //Titolo Lo staff                              //
-.Titolo-Staff{                                 //
+.ComponentTitle{                                 //
   font-weight: bold;                           //
   text-align: center;                          //
   font-size: 35px;                             //
@@ -21,31 +21,41 @@
 }                                              //
                                                //
 //Contenitore del titolo e dei divisori        //
-.Contenitore-Titoli{                           //
+.TitlesContainer{                           //
   text-align: center;                          //
 }                                              //
                                                //
 //-----------= Sezione intermedia =------------//
                                                //
 //Contenitore della descrizione                //
-.Contenitore-Descrizione{                      //
+.DescriptionContainer{                      //
   padding-top: 5vh;                            //
   padding-bottom: 5vh;                         //
   text-align: center;                          //
                                                //
   //Descrizione in sè                          //
-  span{
-    font-size: 1.7rem;
-    padding-left: 5rem;//
+  .Description{                                        //
+    font-size: 25px;                           //
+    padding-left: 7rem;                        //
+    padding-right: 7rem;                       //    
     display: block;                            //
     padding-bottom: 2px;                       //
   }                                            //
 }                                              //
                                                //
 //------------= Sezione inferiore =------------//
-                                               //
-.containerCard{                                //
-  width: 40vh !important;                      //
+//comprende tutta la card                      //
+.profielPicContainer{                          //
+  width: 56vh !important;
+  margin-left: -10vh;
+  .name{
+    font-size: 25px;
+    margin-top: 1vh;
+    text-align: center;
+  }//
+  .description{
+    font-size: 16px;
+  }
 }                                              //
                                                //
 //=============================================//
