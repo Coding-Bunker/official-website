@@ -16,12 +16,7 @@ const CoseCB: React.FC<Props> = ({ title, description }) => {
 						<h1 className="titoloCB">{title}</h1>
 					</div>
 					<div className="Contenitore-Descrizione">
-						<p className="descrizioneCB">
-							{description} <br /> <br />
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci animi beatae
-							blanditiis commodi dolor ea eligendi eveniet, libero, molestiae numquam praesentium
-							quod reiciendis rerum sequi, similique sit suscipit veniam.
-						</p>
+						<p className="descrizioneCB">{description}</p>
 					</div>
 				</Container>
 			</div>
