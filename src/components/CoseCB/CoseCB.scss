@@ -68,7 +68,7 @@
 @media screen and (min-width: 600px){
   .CoseCB {
     .Contenitore-Nero { 
-      height: 600px;
+      height: 550px;
     }
     .Contenitore-Testo {
       width: 70%;
@@ -99,7 +99,7 @@
     .Contenitore-Testo {
       width: 65%;
       margin-top: 3.5vh;
-      margin-left: 15vh;
+      margin-left: 12vh;
       padding-bottom: 10vh;
     }
     .titoloCB {
@@ -136,6 +136,16 @@
     }
     .Contenitore-Descrizione {
       padding-top: 3vh;
+    }
+  }
+}
+
+//MEDIA QUERY - Tablet grandi
+@media screen and (min-width: 1025px){
+  .CoseCB {
+    .Contenitore-Testo {
+      margin-top: 2vh;
+      margin-left: 17vh;
     }
   }
 }
