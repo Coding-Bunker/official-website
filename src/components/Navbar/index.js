@@ -31,7 +31,7 @@ const Navbar = () => {
 					/>
 				</BtNavbar.Brand>
 				<BtNavbar.Toggle />
-				<div className="nav-container w-100">
+				<div className="nav-container w-100" id="div-0">
 					<BtNavbar.Collapse id="ncollapse">
 						<Nav className="links mr-auto" id="nav-0">
 							<Nav.Link to="/chi-siamo" as={Link}>
