@@ -117,7 +117,7 @@ const ChiSiamoPage = () => {
 					description={query.datoCmsChisiamo.sections[3].descrizione}
 					members="Al momento siamo in "
 					num_members={9}
-					text_button="Entra ora"
+					text_button="Unisciti a noi"
 				/>
 				<ContributorCardGrid text_button="Vedi altri" contributors={contributors} />
 			</Layout>
