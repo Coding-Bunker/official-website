@@ -26,3 +26,154 @@
     font-size: 1.3rem;
   }
 }
+
+//MEDIA QUERY - TELEFONI
+@media screen and (min-width: 0px){
+  .CoseCB {
+    .Contenitore-Nero { 
+      height: 750px;
+      clip-path: polygon(75% 7%, 100% 7%, 100% 100%, 57% 100%, 25% 93%, 0 93%, 0 0, 45% 0);
+    }
+    .titoloCB {
+      font-size: 1.7rem;
+    }
+    .Contenitore-Testo {
+      padding: 0px;
+      margin-top: 2vh;
+      width: 300px;
+      height: 200px;
+    }
+    .descrizioneCB {
+      font-size: 1rem;
+    }
+  }
+}
+
+//MEDIA QUERY - Desktop Responsiveness
+@media screen and (min-width: 500px){
+  .CoseCB {
+    .Contenitore-Nero { 
+      clip-path: polygon(58% 7%, 100% 7%, 100% 100%, 45% 100%, 39% 93%, 0 93%, 0 0, 52% 0);
+    }
+    .Contenitore-Testo {
+      padding: 0px;
+      margin-left: 5vh;
+      margin-top: 2vh;
+      width: 300px;
+    }
+  }
+}
+
+//MEDIA QUERY - Desktop Responsiveness 
+@media screen and (min-width: 600px){
+  .CoseCB {
+    .Contenitore-Nero { 
+      height: 550px;
+    }
+    .Contenitore-Testo {
+      width: 70%;
+      margin-top: 0vh;
+      width: 500px;
+      height: 200px;
+    }
+  }
+}
+
+//MEDIA QUERY - Tablet medi
+@media screen and (min-width: 768px){
+  .CoseCB {
+    .Contenitore-Testo {
+      padding: 0px;
+      margin-top: 5vh;
+      margin-left: 9vh;
+    }
+  }
+}
+
+//MEDIA QUERY - Desktop Responsiveness 
+@media screen and (min-width: 769px){
+  .CoseCB {
+    .Contenitore-Nero { 
+      height: 800px;
+    }
+    .Contenitore-Testo {
+      width: 65%;
+      margin-top: 3.5vh;
+      margin-left: 12vh;
+      padding-bottom: 10vh;
+    }
+    .titoloCB {
+      font-size: 40px;
+    }
+    .descrizioneCB {
+      font-size: 25px;
+    }
+  }
+}
+
+//MEDIA QUERY - Desktop Responsiveness 
+@media screen and (min-width: 1000px){
+  .CoseCB {
+    .Contenitore-Nero{
+      height: 700px;
+    }
+    .Contenitore-Testo {
+      width: 65%;
+      margin-left: 17vh;
+    }
+  }
+}
+
+//MEDIA QUERY - Tablet grandi
+@media screen and (min-width: 1024px){
+  .CoseCB {
+    .Contenitore-Nero { 
+      height: 650px;
+    }
+    .Contenitore-Testo {
+      margin-top: 1vh;
+      margin-left: 7vh;
+    }
+    .Contenitore-Descrizione {
+      padding-top: 3vh;
+    }
+  }
+}
+
+//MEDIA QUERY - Tablet grandi
+@media screen and (min-width: 1025px){
+  .CoseCB {
+    .Contenitore-Testo {
+      margin-top: 2vh;
+      margin-left: 17vh;
+    }
+  }
+}
+
+//MEDIA QUERY - Desktop Responsiveness 
+@media screen and (min-width: 1200px){
+  .CoseCB {
+    .Contenitore-Testo {
+      width: 65%;
+      margin-top: 5vh;
+    }
+  }
+}
+
+//MEDIA QUERY - Desktop Responsiveness 
+@media screen and (min-width: 1400px){
+  .CoseCB {
+    .Contenitore-Testo {
+      width: 55%;
+    }
+  }
+}
+
+//MEDIA QUERY - Desktop Responsiveness 
+@media screen and (min-width: 1600px){
+  .CoseCB {
+    .Contenitore-Nero{
+      height: 650px;
+    }
+  }
+}
