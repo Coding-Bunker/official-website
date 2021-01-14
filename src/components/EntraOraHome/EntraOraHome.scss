@@ -1,37 +1,98 @@
 .entra-ora-component {
-  .entra-ora {
-    height: 570px;
-    color: white;
-    padding-bottom: 50px;
-  }
+	.entra-ora {
+		height: 570px;
+		color: white;
+		padding-bottom: 50px;
+	}
 
-  p {
-    width: 60%;
-    font-size: 1.2em;
-    text-align: center;
-    padding-top: 200px;
-    margin: 0 auto;
-  }
+	.Enter-Text {
+		width: 60%;
+		font-size: 1.2em;
+		text-align: center;
+		padding-top: 200px;
+		margin: 0 auto;
+	}
 
-  //Ho reso l'icona di discord un item effettivo
-  .Icona-Discord {
-    margin: 0 auto;
-    position: relative;
-    top: 75px;
-    width: 150px;
-    height: 150px;
-  }
+	//Ho reso l'icona di discord un item effettivo
+	.Discord-Icon {
+		margin: 0 auto;
+		position: relative;
+		top: 75px;
+		width: 150px;
+		height: 150px;
+	}
 
-  .entra-ora-btn {
-    margin-top: 6vh;
-    text-align: center;
-    border-radius: 15px;
-  }
+	.entra-ora-btn {
+		margin-top: 6vh;
+		text-align: center;
+		border-radius: 15px;
+	}
 
-  //div per centrare il bottone
-  .centrare {
-    text-align: center;
-    margin: 0 auto;
-  }
-  margin-top: 15vh;
+	//div per centrare il bottone
+	.center {
+		text-align: center;
+		margin: 0 auto;
+	}
 }
+
+@media screen and (min-width:0px){
+	.entra-ora-btn{
+		padding: 1vh 1vh 1vh 1vh !important;
+		margin-top: 5vh !important;
+		font-size: 35px;
+		font-weight: bolder;
+		border-radius: 10px !important;
+	}
+
+	.entra-ora{
+		height: 600px !important;
+	}
+	
+	.Enter-Text{
+    	font-size: 18px !important;
+    	padding-top: 15vh !important;
+	}
+}
+
+@media screen and (min-width: 1022px){
+	.entra-ora-btn{
+		padding: 0.5vh 3vh 0.5vh 3vh !important;
+		margin-top: 3.5vh !important;
+		font-size: 35px;
+		font-weight: bolder;
+		border-radius: 10px !important;
+	}
+
+	.entra-ora{
+		height: 400px !important;
+		background-image: url('../../images/Entra_ora_senza_logo_discord_tablet.png') !important;
+	}
+	
+	.Enter-Text{
+    	font-size: 18px !important;
+    	padding-top: 8vh !important;
+	}
+}
+
+
+@media screen and (min-width: 1025px){
+	.entra-ora-btn{
+		padding: 1vh 6vh 1vh 6vh !important;
+		margin-top: 11vh !important;
+		font-size: 35px;
+		font-weight: bolder;
+		border-radius: 10px !important;
+	}
+
+	.entra-ora{
+		height: 600px !important;
+		background-image: url('../../images/Entra_ora_senza_logo_discord.png') !important;
+	}
+	
+	.Enter-Text{
+		width: 40% !important;
+    	font-size: 24px !important;
+    	padding-top: 20vh !important;
+	}
+}
+

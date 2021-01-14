@@ -26,4 +26,56 @@
 
 }
 
+@media screen and (max-width: 600px) {
+  .chi-siamo {
+    h1 {
+      font-size: 1.7rem !important;
+      padding-bottom: 1vh !important;
+    }
 
+    //Testo
+    p{
+      font-size: 1rem !important;
+    }
+
+
+    .contenitore-testo{
+      padding-left: 3vh !important;
+      padding-bottom: 10vh !important;
+      padding-right: 8vh !important;
+    }
+
+    .background-section{
+      transform: scale(2) !important;
+      margin-top: 5vh !important;
+    }
+
+    .background-container {
+      overflow: hidden !important;
+      height: 20vh !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .chi-siamo {
+    h1 {
+      font-size: 1.7rem;
+      padding-bottom: 1vh;
+    }
+
+    //Testo
+    p{
+      font-size: 1rem;
+    }
+
+
+    .contenitore-testo{
+      padding-left: 3vh;
+      padding-bottom: 10vh;
+      padding-right: 35vh;
+    }
+
+
+  }
+}
