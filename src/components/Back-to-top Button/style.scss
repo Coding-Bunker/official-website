@@ -1,0 +1,45 @@
+@import '../../styles/variables';
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+
+.back-to-top-link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  line-height: 3rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #A576FF;
+  padding-left: 0.30em;
+  position: sticky;
+  pointer-events: all;
+  top: calc(100vh - 5rem);
+  z-index: 10;
+}
+
+$scrollLength: 100vh;
+
+.back-to-top-wrapper {
+  position: absolute;
+  top: $scrollLength;
+  right: 0.25rem;
+  bottom: -5em;
+  width: 3em;
+  pointer-events: none;
+}
+
+#ArrowUp{
+  color: white;
+  height: 50%;
+}
+
+
+main {
+  position: relative;
+}
