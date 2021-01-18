@@ -20,7 +20,8 @@
   position: sticky;
   pointer-events: all;
   top: calc(100vh - 5rem);
-  z-index: 10;
+  z-index: 1000;
+  transition: background-color .3s, opacity .5s, visibility .5s;
 }
 
 $scrollLength: 100vh;
@@ -28,10 +29,11 @@ $scrollLength: 100vh;
 .back-to-top-wrapper {
   position: absolute;
   top: $scrollLength;
-  right: 0.25rem;
-  bottom: -5em;
+  left: 2.2rem;
+  bottom: -20em;
   width: 3em;
   pointer-events: none;
+
 }
 
 #ArrowUp{
