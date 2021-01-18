@@ -2,48 +2,48 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 
 import StaffCard from '../StaffCard/StaffCard.js'
-import './LoStaff.scss'
+import staffCardStyles from './LoStaff.module.scss'
 
 interface Card {
-	title: string,
-	description: string,
+	title: string
+	description: string
 	img: string
-}
-
-interface Props{
-	title:string,
-	description:string,
-	cards: Array<Card>
 }
 
 interface Props {
 	title: string
 	description: string
+	cards: Array<Card>
 }
 
-const LoStaff = (props: Props) => {
-	const cards = []
-
-	props.cards.forEach((e:Card) => {
-		cards.push(<Col md="auto"><StaffCard profilePic={e.img} name={e.title} description={e.description} /></Col>)
-	})
-
-
+const LoStaff: React.FC<Props> = ({ title, description, cards }) => {
 	return (
 		<div className="Lo-Staff">
-			<div className="Contenitore-Titoli">
-				<div className="Divisore" />
-				<span className="Titolo-Staff">{props.title}</span>
-				<div className="Divisore" />
+			<div className={staffCardStyles.TitlesContainer}>
+				<div className={staffCardStyles.Seperators} />
+				<span className={staffCardStyles.ComponentTitle}>{title}</span>
+				<div className={staffCardStyles.Seperators} />
 			</div>
 
-			<div className="Contenitore-Descrizione">
-				<span className="Descrizione">{props.description}</span>
+			<div className={staffCardStyles.DescriptionContainer}>
+				<span className={staffCardStyles.Description}>{description}</span>
 			</div>
 
 			<Container fluid>
-				<Row className="justify-content-around h-100">
-					{cards}
+				<Row className="justify-content-around">
+					{cards.map((card, i) => (
+						<Col md="auto" key={i}>
+							<StaffCard
+								className={staffCardStyles.profilePicContainer}
+								className2={staffCardStyles.name}
+								className3={staffCardStyles.description}
+								className4={staffCardStyles.component}
+								profilePic={card.img}
+								name={card.title}
+								description={card.description}
+							/>
+						</Col>
+					))}
 				</Row>
 			</Container>
 		</div>

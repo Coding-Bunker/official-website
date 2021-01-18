@@ -6,6 +6,7 @@
     height: 70vh;
     width: 100%;
     overflow: hidden;
+    margin-bottom: 10vh !important;
 }
 
 // classe scritta coding bunker
@@ -95,6 +96,7 @@
 // ipad
 @media screen and (max-width: 768px) {
     .containerSection {
+        margin-bottom: 0vh;
         padding: 5rem 0;
         height: auto;
     }
