@@ -10,6 +10,7 @@ const Navbar = () => {
 	const toggleBox = () => {
 		setActive(!isActive)
 	}
+
 	const data = useStaticQuery(
 		graphql`
 			query NavbarQuery {
