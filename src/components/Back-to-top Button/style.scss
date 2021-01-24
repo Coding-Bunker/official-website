@@ -22,6 +22,12 @@
   top: calc(100vh - 5rem);
   z-index: 1000;
   transition: background-color .3s, opacity .5s, visibility .5s;
+  @media screen and (max-width: 760px){
+    font-size: 1.3rem;
+    line-height: 2rem;
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 $scrollLength: 100vh;
@@ -33,12 +39,16 @@ $scrollLength: 100vh;
   bottom: -20em;
   width: 3em;
   pointer-events: none;
+  @media screen and (max-width: 760px){
+    bottom: -46em;
+    left: 0.3rem;
+  }
 
 }
 
 #ArrowUp{
   color: white;
-  height: 55%;
+  height: 65%;
   padding-bottom: 0.15em;
 }
 
