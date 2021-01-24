@@ -35,11 +35,6 @@ const LaCommunity: React.FC<Props> = ({
 				<span className="Num_Membri">{num_members}</span>
 			</div>
 
-			<div className="Contenitore-Bottone">
-				<Button variant="light" className="Bottone">
-					{text_button}
-				</Button>
-			</div>
 			<div className="Contenitore-Mappa">
 				<MapContainer
 					className="Mappa"
@@ -74,6 +69,12 @@ const LaCommunity: React.FC<Props> = ({
 						</Popup>
 					</Marker>
 				</MapContainer>
+			</div>
+
+			<div className="Contenitore-Bottone">
+				<Button variant="light" className="Bottone">
+					{text_button}
+				</Button>
 			</div>
 		</div>
 	)

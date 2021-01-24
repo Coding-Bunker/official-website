@@ -58,6 +58,7 @@
     color: white;
     margin-top: 5vh;
     border-radius: 0.7rem !important;
+    margin-bottom: 15vh;
   }
 
   .Contenitore-Mappa {
@@ -68,6 +69,84 @@
     }
     .leaflet-marker-icon{
       content: url('../../images/map-marker-alt-solid.png') !important;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .La-Community {
+    .Divisore {
+      width: 4vh !important;
+    }
+    .Titolo{                                       //
+      font-size: 1.5rem !important;
+    }
+    .Descrizione{                                  //
+      font-size: 1rem !important;                            //
+      display: flex !important;                               //
+      justify-content: center !important;                     //
+    }
+
+    .Membri {
+      font-size: 1.2rem !important;
+    }
+
+    .Num_Membri {
+      font-size: 1.6rem !important;
+    }
+
+    .Bottone {
+      transform: scale(.6) !important;
+      font-size: 2rem !important;
+    }
+
+    .Contenitore-Mappa {
+      width: 100% !important;
+      .Mappa {
+        margin-top: 5vh !important;
+        margin-bottom: 3vh !important;
+        width: 80% !important;
+        height: 60vh !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .La-Community {
+    .Divisore {
+      width: 8vh;
+    }
+    .Titolo{                                       //
+      font-size: 2rem;
+    }
+    .Descrizione{                                  //
+      font-size: 1.4rem;                            //
+      display: flex;                               //
+      justify-content: center;                     //
+    }
+
+    .Membri {
+      font-size: 1.6rem;
+    }
+
+    .Num_Membri {
+      font-size: 1.8rem;
+    }
+
+    .Bottone {
+      transform: scale(.6);
+      font-size: 2rem;
+    }
+
+    .Contenitore-Mappa {
+      width: 100%;
+      .Mappa {
+        margin-top: 5vh;
+        margin-bottom: 3vh;
+        width: 80% !important;
+        height: 60vh !important;
+      }
     }
   }
 }

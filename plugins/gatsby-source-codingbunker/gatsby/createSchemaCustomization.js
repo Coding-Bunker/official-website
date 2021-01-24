@@ -5,6 +5,7 @@ const {
 	PROJECT_TYPE,
 	LOCATION_TYPE,
 	LANGUAGE_TYPE,
+	SPEAKER_TYPE,
 } = require('../utils/nodeTypes');
 
 module.exports = ({ actions }) => {
@@ -39,8 +40,11 @@ module.exports = ({ actions }) => {
                         name: String!
                         description: String!
                         date: Date! @dateformat
-                        location: ${LOCATION_TYPE}
+                        hasEnded: Boolean!
+                        bgImage: String
                         link: String!
+                        speakers: [${SPEAKER_TYPE}]
+                        location: ${LOCATION_TYPE}
                 }
 
                 type ${PROJECT_TYPE} implements Node {
@@ -53,6 +57,12 @@ module.exports = ({ actions }) => {
                 type ${LANGUAGE_TYPE} implements Node {
                         id: ID!
                         name: String!
+                }
+
+                type ${SPEAKER_TYPE} implements Node {
+                        id: ID!
+                        name: String!
+                        imgUrl: String!
                 }
         `);
 };
