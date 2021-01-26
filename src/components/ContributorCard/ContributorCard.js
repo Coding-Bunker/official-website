@@ -31,6 +31,7 @@ const ContributorCard = ({
 	date,
 	role,
 	place,
+	className,
 }) => {
 	let bgcolor = ''
 
@@ -82,6 +83,7 @@ const ContributorCard = ({
 		height: 100%;
 		transition: 0.2s all;
 		border-radius: 0 20px 20px 0;
+		display: inline-block;
 		&:hover {
 			color: white !important;
 			background-color: ${bgcolor};
@@ -89,16 +91,16 @@ const ContributorCard = ({
 	`
 
 	return (
-		<div className={contributorCard.containerCard}>
+		<div className={`${contributorCard.containerCard} ${className}`}>
 			<Row className={contributorCard.coso}>
-				<Col className={contributorCard.left} lg="4" style={{ backgroundColor: bgcolor }}>
+				<div className={contributorCard.left} lg="4" style={{ backgroundColor: bgcolor }}>
 					<Container fluid>
 						<div className={contributorCard.user}>{user}</div>
 						<div className={contributorCard.profilePicContainer}>
 							<img src={profilePic} alt="profile" className={contributorCard.profilePic} />
 						</div>
 					</Container>
-				</Col>
+				</div>
 				<div className={contributorCard.right}>
 					<Right>
 						<div className={contributorCard.name}>{name}</div>

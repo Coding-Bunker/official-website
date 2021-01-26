@@ -73,6 +73,7 @@ const ContributorCardGrid: React.FC<Props> = ({ text_button, contributors }) => 
 		return (
 			<Col md="auto" key={i}>
 				<ContributorCard
+					className="contributor_card_grid"
 					user={contributor.role}
 					profilePic={contributor.picture}
 					name={contributor.username}
