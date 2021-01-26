@@ -1,4 +1,5 @@
 .Contenitore-Grid{
+  text-align: center !important;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   .Contenitore-Bottone{
@@ -20,4 +21,23 @@
   .rowCard{
     padding-bottom: 3rem;
   }
+
+  
+
+  @media screen and (max-width: 1024px) {
+    .contributor_card_grid {
+      transform: scale(1);
+      width: 60vh;
+      margin: 2rem 0;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .contributor_card_grid {
+      transform: scale(1);
+      width: 103%;
+      margin: 2rem 0;
+    }
+  }
+  
 }
