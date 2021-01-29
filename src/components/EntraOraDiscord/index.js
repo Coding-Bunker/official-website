@@ -9,7 +9,7 @@ const EntraOraDiscord = ({ logo, text }) => (
 				<iframe
 					className={style.discord}
 					title="Discord"
-					src="https://discord.com/widget?id=734875478179053629&theme=dark"
+					src="https://discord.com/widget?id=707223405153484802&theme=dark"
 					width="350"
 					height="500"
 					allowtransparency="true"
