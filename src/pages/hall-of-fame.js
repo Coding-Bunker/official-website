@@ -3,8 +3,16 @@ import Layout from '../components/layout'
 import Contributors from '../components/Contributors'
 import HallOfFameSection from '../components/HallOfFameSection-HallOfFame'
 import foto1 from '../images/homepage_bg.png'
+import Projects from '../components/Progetti-HallofFame/ProgettiHOF.tsx'
+import ProjectImage from '../images/project.png'
 
 const HallOfFame = () => {
+	const projects = []
+	projects.push({
+		description: 'TEST',
+		title: 'TEST',
+		img: ProjectImage,
+	})
 	return (
 		<Layout>
 			<HallOfFameSection
@@ -15,6 +23,7 @@ const HallOfFame = () => {
 				progetti={15}
 				utenti={869}
 			/>
+			<Projects title="I nostri progetti" projects={projects} />
 			<Contributors />
 		</Layout>
 	)
