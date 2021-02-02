@@ -23,7 +23,7 @@ const HallOfFame = () => {
 				progetti={15}
 				utenti={869}
 			/>
-      <Projects title="I nostri progetti" projects={projects} />
+			<Projects title="I nostri progetti" projects={projects} />
 			<Contributors />
 		</Layout>
 	)
