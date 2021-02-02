@@ -1,0 +1,459 @@
+.ProgettiHOF{
+  margin-top: 10vh;
+  margin-bottom: 15vh;
+}  
+
+//Divisore (rettangoli neri vicino a Lo Staff) //
+.Seperators{
+  height: 0.5vh;
+  width: 15vh;
+  background-color: black;
+  display: inline-block;
+  margin-bottom: 0.7vh;
+}
+
+//Titolo Lo staff//
+.ComponentTitle{
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  padding-left: 7vh;
+  padding-right: 7vh;
+}
+
+//Contenitore del titolo e dei divisori//
+.TitlesContainer{
+  text-align: center;
+}
+
+//Sezione rosa che comprende la sezione
+.SezioneRosa{
+  background-color: #A576FF;
+  height: 695px;
+  margin-top: 5vh;
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+  clip-path: polygon(100% 88%, 100% 0%, 21% 0px, 15% 11%, 0px 11%, 0px 100%, 79% 100%, 84% 88%);
+}
+
+//MEDIA QUERY - TELEFONI -------------------------------------------------------------------
+@media screen and (min-width: 0px){
+
+  //Divisore (rettangoli neri vicino a Lo Staff) 
+  .Seperators{
+    width: 4vh;
+    margin-bottom: 1vh;
+  }
+
+  //Titolo Sezione
+  .ComponentTitle{
+    font-size: 35px;
+    padding-left: 2vh;
+    padding-right: 2vh;
+  }
+
+  //Sezione rosa che comprende la sezione
+  .SezioneRosa{
+    height: 1090px;
+    clip-path: polygon(56% 5%, 100% 5%, 100% 100%, 62% 100%, 36% 95%, 0 95%, 0 0, 40% 0);
+    text-align: center;
+  }
+
+  //Sezione che comprende le carte dei progetti
+  .Project_Container{
+    margin-top: -8vh;
+    margin-bottom: 4vh;
+  }
+
+  //Le carte dei progetti
+  .containerCard {
+		margin-bottom: 5vh;
+    justify-content: center;
+    width: 30vh !important;
+    text-align: left;
+  }
+
+  //Descrizione dei progetti
+	.description {
+		position: relative;
+		font-size: 14px !important;
+		display: block;
+  }
+
+  //Titolo progetti
+	.title {
+		font-size: 18px !important;
+  }
+
+  //Bottone nero a destra (comprende solo la freccetta bianca)
+  .ScrollButton1{
+    position: relative;
+    left: 7px;
+  }
+
+  //Bottone nero a sinistra (comprende solo la freccetta bianca)
+  .ScrollButton2{
+    position: relative;
+    left: 7px;
+  }
+
+  //Contenitore del bottono di destra [appare]
+  .ScrollButtonContainer1{
+    display: inline-flex;
+    position: relative;
+    z-index: 100;
+    top: 506px;
+    left: 145px;
+    height: 61px;
+    width: 38px;
+    color: white;
+    background-color: black;
+    clip-path: polygon(40% 0, 40% 100%, 70% 100%, 100% 68%, 100% 28%, 68% 0);
+  }
+
+  //Classe di controllo del contenitore del bottone di destra [visto che è attivo non appare (Active)]
+  .ScrollButtonContainer1Active{
+    opacity: 0;
+  }
+
+  //Contenitore del bottono di sinistra [appare]
+  .ScrollButtonContainer2{
+    display: inline-flex;
+    position: relative;
+    z-index: 100;
+    top: 460px;
+    height: 61px;
+    left: 165px;
+    color: white;
+    background-color: black;
+    clip-path: polygon(40% 0, 40% 100%, 70% 100%, 100% 68%, 100% 28%, 68% 0);
+   }
+
+  //Classe di controllo del contenitore del bottone di sinistra [visto che è attivo non appare (Active)]
+  .ScrollButtonContainer2Active{
+    opacity: 0; 
+  }
+
+  //ID che serve specificamente per ruotare una copia del bottone di destra per metterelo a sinistra (non mi andava di creare un altro clip-path)
+  #Rotate{
+    transform:rotateY(180deg);
+    top: 460px;
+    left: -150px;
+  }
+
+  //Sezione che scorre da sinistra verso destra che comprende tutte le card progetti
+  .Collapse1{
+    transition: 0.5s;
+    opacity: 1;
+    width: 1vh;
+    animation-duration: 1s;
+    animation-name: slidein1;
+    @keyframes slidein1 {
+      from {
+        margin-left: -300%;
+      }
+      to {
+        margin-right: 0%;
+      }
+    }
+  }
+
+  //Classe di controllo della sezione che scorre da sinistra verso destra [visto che è attivo non appare (Active)]
+  .Collapse1Active {
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  //Sezione che scorre da destra verso sinistra che comprende tutte le card progetti
+  .Collapse2{
+    transition: 0.5s;
+    opacity: 1;
+    animation-duration: 1s;
+    animation-name: slidein2;
+    @keyframes slidein2 {
+      from {
+        margin-left: 180%;
+      }
+      to {
+        margin-left: 0%;
+      }
+    }
+  }
+  
+  //Classe di controllo della sezione che scorre da destra verso sinistra [visto che è attivo non appare (Active)]
+  .Collapse2Active {
+  opacity: 0;
+  transition: 0.5s;
+  }
+}
+//-----------------------------------------------------------------------------------------------------------------------------
+
+//MEDIA QUERY - Controllo finestra PC -----------------------------------------------------------------------------------------
+@media screen and (min-width: 500px){
+  
+  //Divisore (rettangoli neri vicino a Lo Staff) 
+  .Seperators{
+    width: 7vh;
+  }
+
+  //Titolo Sezione
+  .ComponentTitle{
+    padding-left: 3vh;
+    padding-right: 3vh;
+  }
+    
+  //Sezione rosa che comprende la sezione
+  .SezioneRosa{
+    height: 1100px;
+    clip-path: none;
+  }
+
+  //Sezione che comprende le carte dei progetti
+  .Project_Container{
+    margin-top: -10vh;
+  }
+
+  //Le carte dei progetti
+  .containerCard {
+    margin-bottom: 3.5vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+  }
+
+  //Contenitore del bottono di destra [appare]
+  .ScrollButtonContainer1{
+    top: 520px;
+    left: 200px;
+    height: 75px;
+  }
+
+  //Contenitore del bottono di sinistra [appare]
+  .ScrollButtonContainer2{
+    height: 75px;
+  }
+
+  //ID che serve specificamente per ruotare una copia del bottone di destra per metterelo a sinistra (non mi andava di creare un altro clip-path)
+  #Rotate{
+    top: 480px;
+    left: -200px;
+  }
+  
+  //Sezione che scorre da sinistra verso destra che comprende tutte le card progetti
+  .Collapse1{
+    width: 100vh;
+    transition: 0s;
+  }
+
+  //Sezione che scorre da destra verso sinistra che comprende tutte le card progetti
+  .Collapse2{
+    width: 50vh !important;
+    height: 45vh !important;
+    transition: 0s;
+  } 
+}
+//-----------------------------------------------------------------------------------------------------------------------------
+
+//MEDIA QUERY - Controllo finestra PC -----------------------------------------------------------------------------------------
+@media screen and (min-width: 670px){
+  
+  //Le carte dei progetti
+  .containerCard {
+    margin-left: 10vh;
+  }
+
+  //Contenitore del bottono di destra [appare]
+  .ScrollButtonContainer1{
+    left: 250px;
+  }
+
+  //ID che serve specificamente per ruotare una copia del bottone di destra per metterelo a sinistra (non mi andava di creare un altro clip-path)
+  #Rotate{
+    top: 470px;
+    left: -190px;
+  }
+}
+//-----------------------------------------------------------------------------------------------------------------------------
+
+//MEDIA QUERY - Tablet --------------------------------------------------------------------------------------------------------
+@media screen and (min-width: 768px){
+
+  //Divisore (rettangoli neri vicino a Lo Staff) //
+  .Seperators{
+    width: 15vh;
+    margin-bottom: 1vh;
+  }
+
+  //Titolo Sezione 
+  .ComponentTitle{
+    font-size: 40px;
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
+
+  //Sezione rosa che comprende la sezione
+  .SezioneRosa{
+    height: 618px;
+    clip-path: polygon(0 8%, 22% 8%, 35% 0, 100% 0%, 100% 92%, 76% 92%, 64% 100%, 0% 100%);
+  }
+
+  //Sezione che scorre da destra verso sinistra che comprende tutte le card progetti
+  .Collapse2{
+    width: 100vh !important;
+  }
+
+  //Le carte dei progetti
+  .containerCard {
+    margin-bottom: 3.5vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+  }
+
+  //Contenitore del bottono di destra [appare]
+  .ScrollButtonContainer1{
+    top: 305px;
+    left: 350px;
+  }
+
+  //ID che serve specificamente per ruotare una copia del bottone di destra per metterelo a sinistra (non mi andava di creare un altro clip-path)
+   #Rotate{
+    top: 253px;
+    left: -350px;
+  }
+}
+//-----------------------------------------------------------------------------------------------------------------------------
+
+//MEDIA QUERY - Tablet grandi -------------------------------------------------------------------------------------------------
+@media screen and (min-width: 1024px){
+
+  //Sezione rosa che comprende la sezione
+  .SezioneRosa{
+    clip-path: polygon(0 8%, 19% 8%, 32% 0, 100% 0%, 100% 92%, 79% 92%, 67% 100%, 0% 100%);
+  }
+
+  //Sezione che comprende le carte dei progetti
+  .Project_Container{
+    margin-top: -7.5vh;
+  }
+
+  //Le carte dei progetti
+  .containerCard {
+    width: 20vh !important;
+  }
+
+  //Sezione che scorre da sinistra verso destra che comprende tutte le card progetti
+  .Collapse1{
+    animation-duration: 0.5s;
+    @keyframes slidein1 {
+      from {
+        margin-left: -500%;
+      }
+      to {
+        margin-right: 0%;
+      }
+    }
+  }
+
+  //Sezione che scorre da sinistra verso destra che comprende tutte le card progetti
+  .Collapse2{
+    animation-duration: 0.5s;
+    @keyframes slidein2 {
+      from {
+        margin-left: 1000%;
+      }
+      to {
+        margin-right: 0%;
+      }
+    }
+  }
+}
+//-----------------------------------------------------------------------------------------------------------------------------
+
+//MEDIA QUERY - Controllo finestra PC -----------------------------------------------------------------------------------------
+@media screen and (min-width: 1025px){
+
+  //Divisore (rettangoli neri vicino a Lo Staff) //
+  .Seperators{
+    width: 15vh;
+  }
+
+  //Sezione rosa che comprende la sezione
+  .SezioneRosa{
+    clip-path: polygon(0 8%, 14% 8%, 19% 0, 100% 0%, 100% 92%, 84% 92%, 80% 100%, 0% 100%);
+    height: 740px;
+  }
+
+  //Sezione che comprende le carte dei progetti
+  .Project_Container{
+    margin-top: -8vh;
+  }
+
+  //Le carte dei progetti
+  .containerCard {
+    width: 40vh !important;
+  }
+
+  //Sezione che scorre da sinistra verso destra che comprende tutte le card progetti
+  .Collapse1{
+    width: 100vh !important;
+  }
+
+  //Sezione che scorre da sinistra verso destra che comprende tutte le card progetti
+  .Collapse2{
+    width: 100vh !important;
+  }
+
+  //Contenitore del bottono di destra [appare]
+  .ScrollButtonContainer1{
+    top: 325px;
+    left: 500px;
+    height: 90px;
+  }
+
+  //Contenitore del bottono di sinistra [appare]
+  .ScrollButtonContainer2{
+    height: 90px;
+  }
+
+  //ID che serve specificamente per ruotare una copia del bottone di destra per metterelo a sinistra (non mi andava di creare un altro clip-path)
+  #Rotate{
+    top: 285px;
+    left: -490px;
+  }
+}
+//-----------------------------------------------------------------------------------------------------------------------------
+
+//MEDIA QUERY - Controllo finestra PC -----------------------------------------------------------------------------------------
+@media screen and (min-width: 1920px){
+
+  //Sezione che comprende le carte dei progetti
+  .Project_Container{
+    margin-top: -12vh;
+  }
+
+  //Le carte dei progetti
+  .containerCard {
+    width: 50vh !important;
+  }
+
+  //Sezione che scorre da sinistra verso destra che comprende tutte le card progetti
+  .Collapse1{
+    width: 150vh !important;
+  }
+
+  //Sezione che scorre da sinistra verso destra che comprende tutte le card progetti
+  .Collapse2{
+    width: 150vh !important;
+  }
+
+  //Contenitore del bottono di destra [appare]
+  .ScrollButtonContainer1{
+    top: 355px;
+    left: 590px;
+  }
+
+  //ID che serve specificamente per ruotare una copia del bottone di destra per metterelo a sinistra (non mi andava di creare un altro clip-path)
+   #Rotate{
+    top: 304px;
+    left: -580px;
+  }
+}
