@@ -19,23 +19,23 @@ const Progetti: React.FC<Props> = ({ link, projects, title }) => (
 	<div className={progettiStyle.main_container}>
 		<Container className={progettiStyle.Container_titolo}>
 			<span className={progettiStyle.titolo_progetti}>{title}</span>
+		</Container>
 
-			<Container fluid className={progettiStyle.Project_Container}>
-				<Row className="justify-content-around">
-					{projects.map((project, i) => (
-						<Col md="auto" className={progettiStyle.Project_Column} key={i}>
-							<ProjectCard
-								img={project.img}
-								title={project.title}
-								description={project.description}
-								className={progettiStyle.containerCard}
-								className2={progettiStyle.description}
-								className3={progettiStyle.title}
-							/>
-						</Col>
-					))}
-				</Row>
-			</Container>
+		<Container fluid className={progettiStyle.Project_Container}>
+			<Row className="justify-content-around">
+				{projects.map((project, i) => (
+					<Col md="auto" className={progettiStyle.Project_Column} key={i}>
+						<ProjectCard
+							img={project.img}
+							title={project.title}
+							description={project.description}
+							className={progettiStyle.containerCard}
+							className2={progettiStyle.description}
+							className3={progettiStyle.title}
+						/>
+					</Col>
+				))}
+			</Row>
 		</Container>
 
 		<div className={progettiStyle.altri_progetti}>
