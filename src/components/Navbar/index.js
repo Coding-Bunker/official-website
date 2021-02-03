@@ -1,5 +1,4 @@
-/* eslint-disable no-console */
-import React from 'react'
+import React, { useState } from 'react'
 import { Nav, Navbar as BtNavbar, Button, Container } from 'react-bootstrap'
 import { graphql, useStaticQuery, Link } from 'gatsby'
 import Img from 'gatsby-image'
@@ -7,6 +6,11 @@ import Img from 'gatsby-image'
 import './style.scss'
 
 const Navbar = () => {
+	const [isActive, setActive] = useState(false)
+	const toggleBox = () => {
+		setActive(!isActive)
+	}
+
 	const data = useStaticQuery(
 		graphql`
 			query NavbarQuery {
@@ -21,8 +25,15 @@ const Navbar = () => {
 		`,
 	)
 	console.log(data)
+
 	return (
-		<BtNavbar variant="dark" expand="lg" collapseOnSelect>
+		<BtNavbar
+			variant="dark"
+			expand="lg"
+			className={isActive ? 'sticky-top' : ''}
+			onClick={toggleBox}
+			collapseOnSelect
+		>
 			<Container>
 				<BtNavbar.Brand id="brand" to="/" as={Link}>
 					<Img
@@ -32,7 +43,7 @@ const Navbar = () => {
 					/>
 				</BtNavbar.Brand>
 				<BtNavbar.Toggle />
-				<div className="nav-container w-100">
+				<div className="nav-container w-100" id="mydiv">
 					<BtNavbar.Collapse id="ncollapse">
 						<Nav className="links mr-auto" id="nav-0">
 							<Nav.Link to="/chi-siamo" as={Link}>

@@ -1,0 +1,48 @@
+.container {
+    overflow: hidden;
+}
+
+.left {
+    background-color: #36393F;
+    text-align: center;
+    
+    .discord {
+        margin-top: 2rem;
+    }
+
+    @media screen and (max-width: 420px) {
+        display: none;
+    }
+}
+
+.right {
+    background-color: #7289DA;
+    text-align: center;
+    color: white;
+
+    .img {
+        width: 4rem;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+    }
+
+    .text {
+        margin: 0 3rem;
+
+        @media screen and (max-width: 1200px) {
+            margin: 0 1.5rem;
+        }
+    }
+
+    .btn {
+        font-size: 1.5rem;
+
+        @media screen and (max-width: 420px) {
+            padding: .5rem 1rem !important;
+        }
+
+        @media screen and (max-width: 1200px) {
+            margin-bottom: 5rem;
+        }
+    }
+}

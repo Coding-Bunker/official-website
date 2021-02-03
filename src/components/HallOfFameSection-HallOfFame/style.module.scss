@@ -1,0 +1,89 @@
+//Divisore (rettangoli neri vicino a Lo Staff) //
+.Seperators{                                   //
+  height: 1vh;                                 //
+  width: 15vh;                                 //
+  background-color: black;                   //
+  display: inline-block;                       //
+  margin-bottom: 0.7vh                         //
+}                                              //
+                                                //
+//Titolo Lo staff                              //
+.ComponentTitle{                               //
+  font-weight: bold;                           //
+  text-align: center;                          //
+  font-size: 40px;                             //
+  padding-left: 7vh;                           //
+  padding-right: 7vh;                          //
+}                                              //
+                                                //
+//Contenitore del titolo e dei divisori        //
+.TitlesContainer{                              //
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 5vh;                          //
+} 
+  
+.description {
+  padding: 0 5vh;
+}
+
+.img {
+  clip-path: polygon(100% 0, 100% 55%, 80% 100%, 0 100%, 0 0);
+}
+
+.container {
+  overflow: hidden;
+}
+
+@media (max-width: 1372px) {
+
+  .Seperators {
+    height: .75vh;
+    width: 10vh;
+  }
+
+  .ComponentTitle {
+    font-size: 32px;
+    padding-left: 3vh;                           //
+    padding-right: 3vh; 
+  }
+}
+
+@media (max-width: 1075px) {
+
+  .Seperators {
+    height: .6vh;
+    width: 6vh;
+  }
+
+  .ComponentTitle {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 950px) {
+
+  .Seperators {
+    height: .75vh;
+    width: 5vh;
+  }
+
+  .ComponentTitle {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 850px) {
+
+  .Seperators {
+    height: .75vh;
+    width: 5vh;
+  }
+
+  .ComponentTitle {
+    font-size: 24px;
+    padding-left: 3vh;                           //
+    padding-right: 3vh;
+  }
+}
+

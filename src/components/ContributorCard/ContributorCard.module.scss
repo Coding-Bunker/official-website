@@ -48,6 +48,7 @@
     text-align: center;
     border-radius: 20px 0 0 20px;
     height: 100%;
+    width: 23%;
 }
 
 .user {
@@ -60,7 +61,7 @@
 }
 
 .right {
-    width: 64%;
+    width: 75%;
 }
 
 .other {
@@ -81,3 +82,18 @@
 .right:hover .description {
     opacity: 0;
 }
+
+@media screen and (max-width: 420px) {
+    .containerCard {
+      width: 10vh;
+      
+    }
+
+    .left {
+        width: 33%;
+    }
+
+    .right {
+        width: 65%;
+    }
+  }
