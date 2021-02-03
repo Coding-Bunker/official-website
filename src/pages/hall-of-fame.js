@@ -8,7 +8,7 @@ import ProjectImage from '../images/project.png'
 
 const HallOfFame = () => {
 	const projects = []
-	for (let i = 0; i < 6; i + 1) {
+	for (let i = 0; i < 6; i += 1) {
 		projects.push({
 			description: 'TEST',
 			title: 'TEST',
