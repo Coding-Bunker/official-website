@@ -21,6 +21,7 @@
 	margin-bottom: 6rem;
 	padding-bottom: 1rem;
 	padding-top: 1rem;
+	cursor: default;
 }
 
 .Container_titolo {
@@ -54,7 +55,7 @@
 //per i telefoni-------------------------------------------
 @media screen and (min-width: 0px) {
 	.Project_Container {
-		text-align: left !important;
+		text-align: center !important;
 	}
 	.titolo_progetti {
 		font-size: 32px;
@@ -74,6 +75,8 @@
 		margin-bottom: 5vh;
 		margin-left: 0vh;
 		width: 35vh !important;
+		text-align: left;
+		cursor: default;
 	}
 	.scopri_progetti {
 		font-size: 20px;
@@ -102,7 +105,6 @@
 //tra telefono e tablet------------------------------------
 @media screen and (min-width: 380px) {
 	.containerCard {
-		margin-left: -2.5vh;
 		width: 30vh !important;
 	}
 }
@@ -110,7 +112,6 @@
 //per i tablet medi----------------------------------------
 @media screen and (min-width: 767px) {
 	.Project_Container {
-		margin-left: -24.5vh !important;
 		width: 800px;
 	}
 
@@ -145,7 +146,6 @@
 //tra tablet medi e desktop-------------------------------------------
 @media screen and (min-width: 769px) {
 	.Project_Container {
-		margin-left: -25vh !important;
 		width: 800px;
 	}
 	.containerCard {
@@ -160,7 +160,6 @@
 //per i tablet garndi - ipad PRO
 @media screen and (min-width: 1024px) and (min-height: 1300px) {
 	.Project_Container {
-		margin-left: -25.5vh !important;
 		width: 1000px;
 	}
 
@@ -190,7 +189,6 @@
 
 @media screen and (min-width: 1025px) {
 	.Project_Container {
-		margin-left: -37vh !important;
 		width: 1000px;
 	}
 	.containerCard {
@@ -201,7 +199,6 @@
 //per Desktop
 @media screen and (min-width: 1535px) {
 	.Project_Container {
-		margin-left: -47vh !important;
 		width: 1400px;
 	}
 	.titolo_progetti {
@@ -240,7 +237,6 @@
 //per Desktop
 @media screen and (min-width: 1919px) {
 	.Project_Container {
-		margin-left: -73.5vh !important;
 		width: 1900px;
 	}
 	.containerCard {
