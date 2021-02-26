@@ -49,7 +49,10 @@ $scrollLength: 100vh;
 #ArrowUp{
   color: white;
   height: 65%;
-  padding-bottom: 0.15em;
+  margin-left: 0.1vh;
+  @media screen and (max-width: 760px){
+    margin-left: 0.09vh;
+  }
 }
 
 
