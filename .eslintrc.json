@@ -26,7 +26,7 @@
 			"settings": {
 				"import/resolver": {
 					"node": {
-						"extensions": [".js", ".jsx"]
+						"extensions": [".js", ".jsx", ".ts", ".tsx"]
 					}
 				}
 			},
@@ -47,6 +47,8 @@
 			],
 
 			"rules": {
+				"import/extensions": "off",
+				"jsx-a11y/anchor-is-valid": 0,
 				"react/jsx-filename-extension": [
 					"error",
 					{
@@ -100,7 +102,8 @@
 
 				"prettier/standard",
 				"prettier/react",
-				"prettier/@typescript-eslint"
+				"prettier/@typescript-eslint",
+				"plugin:import/typescript"
 			],
 			"plugins": ["@typescript-eslint"],
 			"parserOptions": {
