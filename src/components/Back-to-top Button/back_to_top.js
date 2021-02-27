@@ -11,11 +11,12 @@ const handleClick = () => {
 const Backtotop = () => {
 	return (
 		<div className="back-to-top-wrapper">
+			{/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
 			<a
 				onClick={handleClick}
 				onKeyDown={handleClick}
 				role="button"
-				tabIndex={0}
+				tabIndex={-1}
 				className="back-to-top-link"
 				aria-label="Scroll to Top"
 			>
