@@ -100,8 +100,7 @@
 
 				"prettier/standard",
 				"prettier/react",
-				"prettier/@typescript-eslint",
-				"plugin:import/typescript"
+				"prettier/@typescript-eslint"
 			],
 			"plugins": ["@typescript-eslint"],
 			"parserOptions": {
