@@ -100,8 +100,6 @@
 
 				"prettier/standard",
 				"prettier/react",
-				"prettier/@typescript-eslint",
-				"plugin:import/typescript"
 			],
 			"plugins": ["@typescript-eslint"],
 			"parserOptions": {
@@ -109,7 +107,6 @@
 			},
 			"settings": {
 				"import/resolver": {
-					"typescript": {} // this loads <rootdir>/tsconfig.json to eslint
 					"node": {
 						"extensions": [".ts", ".tsx"]
 					}
