@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import Contributors from '../components/Contributors'
+import Contributors from '../components/Contributors/contributors.tsx'
 import HallOfFameSection from '../components/HallOfFameSection-HallOfFame'
 import foto1 from '../images/homepage_bg.png'
 import Projects from '../components/Progetti-HallofFame/ProgettiHOF.tsx'
