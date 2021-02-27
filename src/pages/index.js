@@ -9,7 +9,7 @@ import AlcuniNumeri from '../components/Alcuni Numeri/AlcuniNumeri'
 import DiconoDiNoi from '../components/Dicono Di Noi/DiconoDiNoi.tsx'
 import EntraOraHome from '../components/EntraOraHome/EntraOraHome.tsx'
 import Progetti from '../components/Progetti/Progetti.tsx'
-import Aziende from '../components/Aziende/Aziende'
+import Aziende from '../components/Aziende/Aziende.tsx'
 import WhyEnter from '../components/WhyEnter/WhyEnter.tsx'
 import CookieBar from '../components/CookieBar/CookieBar.tsx'
 

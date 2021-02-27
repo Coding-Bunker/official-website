@@ -1,28 +1,5 @@
 $lg-breakpoint: 48em;
 
-//Classe generale che comprende tutto
-.Aziende{
-
-  //classe che fa riferimento alla dimensione delle icone
-  // (se si volesse ingrandire/rimpicciolire modificare width e height)
-  .Azienda{
-    height: 75%;
-    width: 75%;
-    @media screen and (max-width: $lg-breakpoint) {
-      height: auto;
-    }
-  }
-
-  img{
-    opacity: 0.5;
-    transition: 0.2s;
-  }
-
-  img:hover{
-    opacity: 1;
-  }
-
-
   .linea {
     height: 1vh;
     width: 15vh;
@@ -61,12 +38,17 @@ $lg-breakpoint: 48em;
       margin-top: 0.5em;
     }
   }
-  .diventa-partner {
+  .vediAltri {
     background-color: #A576FF;
     font-size: 1.25rem;
     font-weight: bold;
     border-color: #A576FF;
+    padding: 5px 36px;
+    @media screen and (max-width: $lg-breakpoint) {
+      font-size: 0.75rem;
+    }
   }
+
   .button{
     margin-top: 1em;
     margin-bottom: 1em;
@@ -80,8 +62,3 @@ $lg-breakpoint: 48em;
     align-items: center;
     justify-content: center;
   }
-  .align-center{
-    text-align: center;
-  }
-
-}

@@ -1,7 +1,22 @@
 $lg-breakpoint: 48em;
 
-//Classe generale che comprende tutto
-.Contributors {
+  .Azienda{
+    height: 75%;
+    width: 75%;
+    @media screen and (max-width: $lg-breakpoint) {
+      height: auto;
+    }
+  }
+
+  img{
+    opacity: 0.5;
+    transition: 0.2s;
+  }
+
+  img:hover{
+    opacity: 1;
+  }
+
 
   .linea {
     height: 1vh;
@@ -41,17 +56,12 @@ $lg-breakpoint: 48em;
       margin-top: 0.5em;
     }
   }
-  .vedi-altri {
+  .diventaPartner {
     background-color: #A576FF;
     font-size: 1.25rem;
     font-weight: bold;
     border-color: #A576FF;
-    padding: 5px 36px;
-    @media screen and (max-width: $lg-breakpoint) {
-      font-size: 0.75rem;
-    }
   }
-
   .button{
     margin-top: 1em;
     margin-bottom: 1em;
@@ -65,4 +75,7 @@ $lg-breakpoint: 48em;
     align-items: center;
     justify-content: center;
   }
-}
+  .alignCenter{
+    text-align: center;
+  }
+

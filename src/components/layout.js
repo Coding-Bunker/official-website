@@ -11,7 +11,7 @@ import PropTypes from 'prop-types'
 import Head from './Head'
 import Navbar from './Navbar'
 import Footer from './Footer'
-import Backtotop from './Back-to-top Button'
+import Backtotop from './Back-to-top Button/back_to_top'
 
 const Layout = ({ children }) => {
 	return (
