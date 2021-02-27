@@ -2,7 +2,7 @@ import React from 'react'
 import { Container, Button } from 'react-bootstrap'
 import contributors_style from './contributors.module.scss'
 
-import ContributorCard from '../ContributorCard/ContributorCard'
+import ContributorCard from '../ContributorCard/ContributorCard.js'
 
 interface Props {
 	title: string
