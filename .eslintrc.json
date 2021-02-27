@@ -26,7 +26,7 @@
 			"settings": {
 				"import/resolver": {
 					"node": {
-						"extensions": [".js", ".jsx"]
+						"extensions": [".js", ".jsx", ".ts", ".tsx"]
 					}
 				}
 			},
@@ -100,6 +100,8 @@
 
 				"prettier/standard",
 				"prettier/react",
+				"prettier/@typescript-eslint",
+				"plugin:import/typescript"
 			],
 			"plugins": ["@typescript-eslint"],
 			"parserOptions": {
