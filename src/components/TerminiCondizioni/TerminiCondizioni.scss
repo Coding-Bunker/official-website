@@ -1,0 +1,191 @@
+.Termini-Condizioni{
+  .contenitore-Testo{
+    display: inline-block;
+    padding-left: 10%;
+    line-height: 38.2px;
+
+  }
+
+  .titoloTermini{
+    color: #a576ff;
+    font-weight: bolder;
+  }
+
+  .contenitore-Titolo{
+    padding-bottom: 1.6rem;
+  }
+
+  .descrizioneTermini, .descrizioneTermini2{
+    margin-bottom: 2.3rem;
+  }
+
+  .sottotitoliTermini{
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+
+  .descrizioneSottotitoli{
+    margin-bottom: 8rem;
+  }
+
+  .ColonnaIndice{
+    text-align: center;
+  }
+
+  .elementiIndice{
+    padding-left: 2vh;
+    padding-right: 2vh;
+  }
+
+  .dataIndice{
+    color: white;
+    border-bottom: #BC99FF 1px solid;
+    padding-top: 1.2vh;
+    padding-bottom: 1.2vh;
+  }
+  
+  .titoloIndice{
+    font-size: 1.8rem;
+    margin-top: 1.6rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 2vh;
+  }
+}
+
+@media screen and (min-width: 0px){
+
+  .contenitore-Testo-Titolo{
+    display: inline-block;
+    padding-top: 9vh;
+    padding-left: 6%;
+    width: 100%;
+  }
+  .contenitore-Testo{
+    padding-left: 4% !important;
+    padding-top: 9vh;
+  }
+  .titoloTermini{
+    font-size: 34px;
+  }
+  .sezioneIndice{
+    display: inline-block;
+    background-color: #a576ff;
+    width: 321px;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 5%, 89% 0);
+    padding-bottom: 4vh;
+    margin-top: 1vh;
+  }
+  .descrizioneTermini, .descrizioneTermini2{
+    display: none; 
+  }
+  .sottotitoliTermini:first-child{
+    margin-top: 0vh;
+  }
+}
+
+@media screen and (min-width: 500px){
+  .sezioneIndice{
+    width: 360px;
+  }
+  .contenitore-Testo{
+    width: 95%;
+    padding-top: 10vh;
+    text-align: center;
+  }
+  .contenitore-Testo-Titolo{
+    text-align: center;
+    padding: 0;
+    margin-top: 5vh;
+  }
+  .descrizioneSottotitoli{
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 576px){
+  .contenitore-Testo{
+    padding-top: 1vh;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .contenitore-Testo-Titolo{
+    display: inline-block;
+    padding-top: 9vh;
+    padding-left: 3%;
+    text-align: left;
+    margin-top: 0vh;
+    width: 100%;
+  }
+  .contenitore-Testo{
+    padding-left: 4% !important;
+    padding-top: 0vh !important;
+  }
+  .titoloTermini{
+    font-size: 34px;
+  }
+  .sottotitoliTermini{
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  .descrizioneSottotitoli{
+    text-align: justify;
+  }
+  .sezioneIndice{
+    display: inline-block;
+    background-color: #a576ff;
+    width: 350px;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 5%, 89% 0);
+    padding-bottom: 4vh;
+    margin-top: -7vh;
+  }
+  .descrizioneTermini, .descrizioneTermini2{
+    display: none; 
+  }
+  .sottotitoliTermini:first-child{
+    margin-top: 0vh ;
+  }
+}
+
+@media screen and (min-width: 769px){
+  .contenitore-Testo-Titolo{
+    text-align: left;
+  }
+  .sottotitoliTermini{
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .titoloTermini{
+    font-size: 40px;
+  }
+  .sezioneIndice{
+    margin-top: -5.5vh;
+  }
+}
+
+@media screen and (min-width: 1500px){
+
+  .SectionContainer{
+    max-width: 100%;
+    padding-left: 10%;
+  }
+
+  .sottotitoliTermini:first-child{
+    margin-top: 9vh;
+  }
+  
+  .contenitore-Testo-Titolo{
+    padding-left: 2.5%;
+  }
+
+  .descrizioneTermini, .descrizioneTermini2{
+    display: inline-block; 
+    text-align: justify;
+    font-size: 22px;
+    line-height: 38.2px;
+  }
+}
+

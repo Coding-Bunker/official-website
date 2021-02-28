@@ -1,10 +1,5 @@
 $lg-breakpoint: 48em;
 
-//Classe generale che comprende tutto
-.Aziende{
-
-  //classe che fa riferimento alla dimensione delle icone
-  // (se si volesse ingrandire/rimpicciolire modificare width e height)
   .Azienda{
     height: 75%;
     width: 75%;
@@ -61,7 +56,7 @@ $lg-breakpoint: 48em;
       margin-top: 0.5em;
     }
   }
-  .diventa-partner {
+  .diventaPartner {
     background-color: #A576FF;
     font-size: 1.25rem;
     font-weight: bold;
@@ -80,8 +75,7 @@ $lg-breakpoint: 48em;
     align-items: center;
     justify-content: center;
   }
-  .align-center{
+  .alignCenter{
     text-align: center;
   }
 
-}

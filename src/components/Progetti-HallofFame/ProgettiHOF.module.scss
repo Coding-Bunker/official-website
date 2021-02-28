@@ -1,0 +1,307 @@
+.ProgettiHOF{
+  margin-top: 10vh;
+  margin-bottom: 15vh;
+}  
+
+//Divisore (rettangoli neri vicino a Lo Staff) //
+.Seperators{
+  height: 0.5vh;
+  width: 15vh;
+  background-color: black;
+  display: inline-block;
+  margin-bottom: 0.7vh;
+}
+
+//Titolo Lo staff//
+.ComponentTitle{
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  padding-left: 7vh;
+  padding-right: 7vh;
+}
+
+//Contenitore del titolo e dei divisori//
+.TitlesContainer{
+  text-align: center;
+}
+
+//Sezione rosa che comprende la sezione
+.SezioneRosa{
+  background-color: #A576FF;
+  height: 695px;
+  margin-top: 5vh;
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+  clip-path: polygon(100% 88%, 100% 0%, 21% 0px, 15% 11%, 0px 11%, 0px 100%, 79% 100%, 84% 88%);
+}
+
+//MEDIA QUERY - TELEFONI -------------------------------------------------------------------
+@media screen and (min-width: 0px){
+
+  //Divisore (rettangoli neri vicino a Lo Staff) 
+  .Seperators{
+    width: 4vh;
+    margin-bottom: 1vh;
+  }
+
+  //Titolo Sezione
+  .ComponentTitle{
+    font-size: 35px;
+    padding-left: 2vh;
+    padding-right: 2vh;
+  }
+
+  //Sezione rosa che comprende la sezione
+  .SezioneRosa{
+    height: 1175px;
+    clip-path: polygon(56% 5%, 100% 5%, 100% 100%, 62% 100%, 36% 95%, 0 95%, 0 0, 40% 0);
+    text-align: center;
+  }
+
+  //Sezione che comprende le carte dei progetti
+  .Project_Container{
+    margin-top: 15%;
+    margin-bottom: 0vh;
+  }
+
+  //Le carte dei progetti
+  .containerCard {
+		margin-bottom: 7vh;
+    justify-content: center;
+    width: 30vh !important;
+    text-align: left;
+  }
+
+  //Selezione le ultime 2 card
+  .containerCard:nth-last-child(-n+2){
+    display: none;
+  }
+
+  //Descrizione dei progetti
+	.description {
+		position: relative;
+		font-size: 14px !important;
+		display: block;
+  }
+
+  //Titolo progetti
+	.title {
+		font-size: 18px !important;
+  }
+}
+//-----------------------------------------------------------------------------------------------------------------------------
+
+//MEDIA QUERY - Controllo finestra PC -----------------------------------------------------------------------------------------
+@media screen and (min-width: 500px){
+  
+  //Divisore (rettangoli neri vicino a Lo Staff) 
+  .Seperators{
+    width: 7vh;
+  }
+
+  //Titolo Sezione
+  .ComponentTitle{
+    padding-left: 3vh;
+    padding-right: 3vh;
+  }
+    
+  //Sezione rosa che comprende la sezione
+  .SezioneRosa{
+    height: 1100px;
+    clip-path: none;
+  }
+
+  //Sezione che comprende le carte dei progetti
+  .Project_Container{
+    margin-top: 0vh;
+  }
+
+  //Le carte dei progetti
+  .containerCard {
+    margin-bottom: 5.5vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+  }
+}
+//-----------------------------------------------------------------------------------------------------------------------------
+
+//MEDIA QUERY - Tablet --------------------------------------------------------------------------------------------------------
+@media screen and (min-width: 768px){
+
+  //Divisore (rettangoli neri vicino a Lo Staff) //
+  .Seperators{
+    width: 15vh;
+    margin-bottom: 1vh;
+  }
+
+  //Titolo Sezione 
+  .ComponentTitle{
+    font-size: 40px;
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
+
+  //Sezione rosa che comprende la sezione
+  .SezioneRosa{
+    height: 618px;
+    clip-path: polygon(0 8%, 22% 8%, 35% 0, 100% 0%, 100% 92%, 76% 92%, 64% 100%, 0% 100%);
+  }
+
+  .Project_Container{
+    margin-top: 1.5vh;
+  }
+
+  //Le carte dei progetti
+  .containerCard {
+    margin-bottom: 5.5vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    width: 25vh !important;
+  }
+}
+//-----------------------------------------------------------------------------------------------------------------------------
+
+//MEDIA QUERY - Controllo finestra PC -----------------------------------------------------------------------------------------
+@media screen and (min-width: 769px){
+  .containerCard {
+    margin-bottom: 7vh;
+  }
+  .Project_Container{
+    margin-top: 3%;
+  }
+}
+//-----------------------------------------------------------------------------------------------------------------------------
+
+//MEDIA QUERY - Controllo finestra PC -----------------------------------------------------------------------------------------
+@media screen and (min-width: 898px){
+  .containerCard:nth-last-child(-n+2){
+    display: inline-block;
+  }
+  .containerCard {
+    margin-bottom: 5vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    width: 25vh !important;
+  }
+}
+//-----------------------------------------------------------------------------------------------------------------------------
+
+//MEDIA QUERY - Tablet grandi -------------------------------------------------------------------------------------------------
+@media screen and (min-width: 1024px){
+
+  //Sezione rosa che comprende la sezione
+  .SezioneRosa{
+    height: 750px;
+    clip-path: polygon(0 8%, 19% 8%, 32% 0, 100% 0%, 100% 92%, 79% 92%, 67% 100%, 0% 100%);
+  }
+
+  //Sezione che comprende le carte dei progetti
+  .Project_Container{
+    margin-top: 4%;
+  }
+
+  //Le carte dei progetti
+  .containerCard {
+    margin-bottom: 5.5vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    width: 25vh !important;
+  }
+
+  .containerCard:nth-last-child(-n+2){
+    display: none;
+  }
+}
+//-----------------------------------------------------------------------------------------------------------------------------
+
+//MEDIA QUERY - Controllo finestra PC -----------------------------------------------------------------------------------------
+@media screen and (min-width: 1025px){
+
+  //Divisore (rettangoli neri vicino a Lo Staff) //
+  .Seperators{
+    width: 15vh;
+  }
+
+  //Sezione rosa che comprende la sezione
+  .SezioneRosa{
+    clip-path: polygon(0 8%, 14% 8%, 19% 0, 100% 0%, 100% 92%, 84% 92%, 80% 100%, 0% 100%);
+    height: 640px;
+  }
+
+  //Sezione che comprende le carte dei progetti
+  .Project_Container{
+    margin-top: 4%;
+  }
+
+  //Selezione le ultime 2 card
+  .containerCard:nth-last-child(-n+2){
+    display: inline-block;
+  }
+}
+//-----------------------------------------------------------------------------------------------------------------------------
+
+//MEDIA QUERY - Controllo finestra PC -----------------------------------------------------------------------------------------
+@media screen and (min-width: 1199px){
+  .containerCard {
+    margin-bottom: 6vh;
+    margin-left: 2vh;
+    margin-right: 6vh;
+  }
+}
+
+@media screen and (min-width: 1274px){
+  .SezioneRosa{
+    height: 720px;
+  }
+  .containerCard {
+    margin-right: 3vh;
+    width: 35vh !important;
+  }
+   //Sezione che comprende le carte dei progetti
+   .Project_Container{
+    margin-top: 3%;
+  }
+}
+
+@media screen and (min-width: 1423px){
+  .SezioneRosa{
+    height: 720px;
+  }
+  .containerCard {
+    margin-left: 4vh;
+    margin-right: 4vh;
+    width: 35vh !important;
+  }
+}
+
+
+@media screen and (min-width: 1646px){
+  .SezioneRosa{
+    height: 780px;
+  }
+  .containerCard {
+    margin-left: 6vh;
+    margin-right: 6vh;
+    width: 40vh !important;
+  }
+   //Sezione che comprende le carte dei progetti
+   .Project_Container{
+    margin-top: 4%;
+  }
+}
+//-----------------------------------------------------------------------------------------------------------------------------
+
+//MEDIA QUERY - Controllo finestra PC -----------------------------------------------------------------------------------------
+@media screen and (min-width: 1920px){
+
+  //Sezione che comprende le carte dei progetti
+  .Project_Container{
+    margin-top: 3%;
+  }
+  
+  //Le carte dei progetti
+  .containerCard {
+    width: 45vh !important;
+  }
+}
