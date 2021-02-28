@@ -35,6 +35,7 @@ const LinkButton = ({ link, icon }) => (
 					width: '1em',
 					height: '1em',
 					transform: 'translate(-50%, -50%)',
+					color: 'black',
 				}}
 			/>
 		</span>
