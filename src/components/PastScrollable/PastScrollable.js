@@ -7,7 +7,7 @@ import MeImg from '../../images/me.jpg'
 import PasqualeImg from '../../images/pasquale.png'
 import CbImg from '../../images/cb.png'
 
-const PastScrollable = () => {
+const PastScrollable = ({ description }) => {
 	return (
 		<div className="Pastscrollable">
 			<div className="intestazione">
@@ -15,6 +15,8 @@ const PastScrollable = () => {
 				<span className="titolo">Eventi passati</span>
 				<div className="linea" />
 			</div>
+
+			<div className="sottotitolo">{description}</div>
 
 			<section className="card-list">
 				<PastEventCard

@@ -6,7 +6,7 @@
 
   //linea a dx e sx del titolo
   .linea {
-    height: 1vh;
+    height: 0.5vh;
     width: 15vh;
     background-color: black;
     display: inline-block;
@@ -58,28 +58,47 @@
 }
 
 // MEDIA QUERY PER RIMUOVERE LO SPAZIO - TELEFONI
-@media screen and (min-width: 0px){
+
+@media screen and (min-width: 0px) {
   .scrollable{
-    padding-top: 0vh;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .scrollable {
-    padding-top: 0vh;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
+    padding-left: 0em;
+    .linea {
+      width: 6vh;
+    } 
     .titolo {
-      padding-left: 1rem;
-      padding-right: 1rem;
-      font-size: 1.5rem;
+      padding-left: 0rem;
+      padding-right: 0rem;
+      font-size: 30px;
+      width: 65%;
     }
-
     .sottotitolo {
       font-size: 1rem;
       width: 80%;
     }
   }
-
 }
+
+@media screen and (min-width: 700px) {
+  .scrollable{
+    .titolo{
+      width: 350px;
+      font-size: 38px;
+    }
+    .linea{
+      width: 15vh;
+    }
+  }
+}
+
+@media screen and (min-width: 1120px){
+  .scrollable{
+    .sottotitolo {
+      font-size: 20px;
+      width: 870px;
+    }
+    .titolo{
+      width: 30%;
+    }
+  }
+}
+
