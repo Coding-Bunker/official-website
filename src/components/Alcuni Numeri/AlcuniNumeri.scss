@@ -1,100 +1,92 @@
-
 //------------= Sezione superiore =------------//
-                                               //
+//
 //Divisore (rettangoli neri vicino a Lo Staff) //
-.Divisore{                                     //
-  height: 1vh;                                 //
-  width: 15vh;                                 //
-  background-color: black;                   //
-  display: inline-block;                       //
-  margin-bottom: 0.7vh                         //
-}                                              //
-                                               //
+.Divisore {
+	//
+	height: 1vh; //
+	width: 15vh; //
+	background-color: black; //
+	display: inline-block; //
+	margin-bottom: 0.7vh; //
+} //
+//
 //Titolo Lo staff                              //
-.Titolo-Staff{                                 //
-  cursor: default;                             //
-  font-weight: bold;                           //
-  text-align: center;                          //
-  font-size: 2.5rem;                             //
-  padding-left: 7vh;                           //
-  padding-right: 7vh;                          //
-}                                              //
-                                               //
+.Titolo-Staff {
+	//
+	cursor: default; //
+	font-weight: bold; //
+	text-align: center; //
+	font-size: 2.5rem; //
+	padding-left: 7vh; //
+	padding-right: 7vh; //
+} //
+//
 //Contenitore del titolo e dei divisori        //
-.Contenitore-Titoli{                           //
-  display: flex;                               //
-  align-items: center;                         //
-  justify-content: center;                     //
-                                               //
-}                                              //
-                                               //
+.Contenitore-Titoli {
+	//
+	display: flex; //
+	align-items: center; //
+	justify-content: center; //
+	//
+} //
+//
 //-----------= Sezione intermedia =------------//
 
 //Fa riferimento al contenitore della sezione dei numeri
-.Contenitore-Numeri{
-  text-align: center;
-  padding-top: 15vh;
-  padding-bottom: 15vh;
+.Contenitore-Numeri {
+	text-align: center;
+	padding-top: 15vh;
+	padding-bottom: 15vh;
 }
 
 //Decorazione per i numeri
-.Decorazione-Numeri{
-  font-size: 4.5rem;
-  font-weight: bolder;
-  cursor: default;
+.Decorazione-Numeri {
+	font-size: 3rem;
+	font-weight: bolder;
+	cursor: default;
 }
 
 //Decorazione per i sottotitoli
-.Decorazione-Sottotitoli{
-  cursor: default;
-  color: #a576ff;
-  font-weight: 900;
-  font-size: 2.5rem;
+.Decorazione-Sottotitoli {
+	cursor: default;
+	color: #a576ff;
+	font-weight: 900;
+	font-size: 1.5rem;
 }
 
 //Questa classe serve per mandare a capo i due span dei sottotitoli
-.Indent{
-  display: block;
+.Indent {
+	display: block;
 }
 
 .alcuni-numeri {
-  margin-top: 25vh;
+	margin-top: 25vh;
 }
-
 
 @media (max-width: 768px) {
+	.Divisore {
+		width: 10vh;
+	}
 
-  .Divisore {
-    width: 10vh;
-  }
+	.Titolo-Staff {
+		font-size: 1.5rem;
+		padding-left: 1rem; //
+		padding-right: 1rem;
+	}
 
-  .Titolo-Staff {
-    font-size: 1.5rem;
-    padding-left: 1rem;                           //
-    padding-right: 1rem;
-  }
+	.Decorazione-Numeri {
+		font-size: 2.5rem;
+	}
 
-  .Decorazione-Numeri{
-    font-size: 2.5rem;
-  }
+	.Decorazione-Sottotitoli {
+		font-size: 1.2rem;
+	}
 
-  .Decorazione-Sottotitoli{
+	.Contenitore-Numeri {
+		padding-top: 5vh;
+	}
 
-    font-size: 1.2rem;
-  }
-
-  .Contenitore-Numeri {
-    padding-top: 5vh;
-  }
-
-  .Contenitore-Numero {
-    margin: 1rem 0;
-  }
-
+	.Contenitore-Numero {
+		margin: 1rem 0;
+	}
 }
-
-
-
-
-
-

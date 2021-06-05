@@ -2,67 +2,68 @@ $lg-breakpoint: 48em;
 
 //Classe generale che comprende tutto
 .Contributors {
+	.linea {
+		height: 1vh;
+		width: 15vh;
+		background-color: #000000;
+		display: inline-block;
+		margin-bottom: 0.7vh;
+		@media screen and (max-width: $lg-breakpoint) {
+			height: 0.2vh;
+			width: 7.5vh;
+			margin-bottom: 0.35vh;
+		}
+	}
 
-  .linea {
-    height: 1vh;
-    width: 15vh;
-    background-color: #000000;
-    display: inline-block;
-    margin-bottom: 0.7vh;
-    @media screen and (max-width: $lg-breakpoint) {
-      height: 0.2vh;
-      width: 7.5vh;
-      margin-bottom: 0.35vh;
-    }
+	.titolo {
+		cursor: default;
+		font-weight: bold;
+		text-align: center;
+		font-size: 2.625rem;
+		padding-left: 7vh;
+		padding-right: 7vh;
+		@media screen and (max-width: $lg-breakpoint) {
+			font-size: 1.5rem;
+			padding-left: 3.5vh;
+			padding-right: 3.5vh;
+		}
+	}
 
-  }
+	.sottotitolo {
+		cursor: default;
+		text-align: center;
+		font-size: 1rem;
+		margin-top: 1em;
+		@media screen and (max-width: $lg-breakpoint) {
+			font-size: 1rem;
+			margin-top: 0.5em;
+		}
+		@media screen and (max-width: 500px) {
+			text-align: left;
+		}
+	}
+	.vedi-altri {
+		background-color: #a576ff;
+		font-size: 1.25rem;
+		font-weight: bold;
+		border-color: #a576ff;
+		padding: 5px 36px;
+		@media screen and (max-width: $lg-breakpoint) {
+			font-size: 0.75rem;
+		}
+	}
 
-  .titolo {
-    cursor: default;
-    font-weight: bold;
-    text-align: center;
-    font-size: 2.625rem;
-    padding-left: 7vh;
-    padding-right: 7vh;
-    @media screen and (max-width: $lg-breakpoint) {
-      font-size: 1.5rem;
-      padding-left: 3.5vh;
-      padding-right: 3.5vh;
-    }
-  }
+	.button {
+		margin-top: 1em;
+		margin-bottom: 1em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 
-  .sottotitolo {
-    cursor: default;
-    text-align: center;
-    font-size: 1.25rem;
-    margin-top: 1em;
-    @media screen and (max-width: $lg-breakpoint) {
-      font-size: 0.688rem;
-      margin-top: 0.5em;
-    }
-  }
-  .vedi-altri {
-    background-color: #A576FF;
-    font-size: 1.25rem;
-    font-weight: bold;
-    border-color: #A576FF;
-    padding: 5px 36px;
-    @media screen and (max-width: $lg-breakpoint) {
-      font-size: 0.75rem;
-    }
-  }
-
-  .button{
-    margin-top: 1em;
-    margin-bottom: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .intestazione {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+	.intestazione {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 }

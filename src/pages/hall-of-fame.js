@@ -10,10 +10,12 @@ const HallOfFame = () => {
 			<HallOfFameSection
 				img={foto1}
 				title="Hall Of Fame"
-				description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit sodales nulla id consectetur. Mauris quis eleifend ex. Nullam justo nisl, pharetra id fermentum in, pretium sit amet tortor. Integer volutpat nulla sed placerat ultrices. Duis gravida tortor ac eros consectetur, non varius metus egestas."
-				contributors={25}
-				progetti={15}
-				utenti={869}
+				description={
+					"Coding Bunker è fatta di utenti digitali, ma dietro cui ci sono delle persone in carne ed ossa.&lt;br&gt;Persone con delle passioni, delle ambizioni, dei valori e degli ideali che portano con sé quando comunicano all'interno della community.&lt;br&gt;In questa pagina vi illustriamo il cuore della community: le persone e ciò che sono state in grado di realizzare."
+				}
+				contributors={18}
+				progetti={4}
+				utenti={931}
 			/>
 			<Contributors />
 		</Layout>
