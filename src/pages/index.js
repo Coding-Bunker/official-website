@@ -145,49 +145,61 @@ const IndexPage = () => {
 	const reviews = []
 	const partners = []
 
-	query.datoCmsHomepage.sections[2].progetti.forEach(e => {
-		projects.push({
-			description: e.tipoCarta[0].descrizione,
-			title: e.tipoCarta[0].titolo,
-			img: e.tipoCarta[0].immagine.url,
+	if (Array.isArray(query.datoCmsHomepage.sections[2].progetti)) {
+		query.datoCmsHomepage.sections[2].progetti.forEach(e => {
+			projects.push({
+				description: e.tipoCarta[0].descrizione,
+				title: e.tipoCarta[0].titolo,
+				img: e.tipoCarta[0].immagine.url,
+			})
 		})
-	})
+	}
 
-	query.datoCmsHomepage.sections[3].eventi.forEach(e => {
-		events.push({
-			date: e.tipoCarta[0].dataEvento,
-			img: e.tipoCarta[0].fotoEvento.url,
-			title: e.tipoCarta[0].titolo,
-			description: e.tipoCarta[0].descrizione,
+	if (Array.isArray(query.datoCmsHomepage.sections[3].eventi)) {
+		query.datoCmsHomepage.sections[3].eventi.forEach(e => {
+			events.push({
+				date: e.tipoCarta[0].dataEvento,
+				img: e.tipoCarta[0].fotoEvento.url,
+				title: e.tipoCarta[0].titolo,
+				description: e.tipoCarta[0].descrizione,
+			})
 		})
-	})
+	}
 
-	query.datoCmsHomepage.sections[4].eventiPassati.forEach(e => {
-		const people = []
-		e.tipoCarta[0].persone.forEach(person => {
-			people.push({ name: person.nome, surname: person.cognome, img: person.immaginePersone.url })
+	if (Array.isArray(query.datoCmsHomepage.sections[4].eventiPassati)) {
+		query.datoCmsHomepage.sections[4].eventiPassati.forEach(e => {
+			const people = []
+			e.tipoCarta[0].persone.forEach(person => {
+				people.push({ name: person.nome, surname: person.cognome, img: person.immaginePersone.url })
+			})
+
+			pastEvents.push({
+				title: e.tipoCarta[0].titolo,
+				description: e.tipoCarta[0].descrizione,
+				img: e.tipoCarta[0].immagine.url,
+				people,
+				linkTo: ' ',
+			})
 		})
+	}
 
-		pastEvents.push({
-			title: e.tipoCarta[0].titolo,
-			description: e.tipoCarta[0].descrizione,
-			img: e.tipoCarta[0].immagine.url,
-			people,
-			linkTo: ' ',
+	if (Array.isArray(query.datoCmsHomepage.sections[6].argomenti)) {
+		query.datoCmsHomepage.sections[6].argomenti.forEach(e => {
+			topics.push(e.titolo)
 		})
-	})
+	}
 
-	query.datoCmsHomepage.sections[6].argomenti.forEach(e => {
-		topics.push(e.titolo)
-	})
+	if (Array.isArray(query.datoCmsHomepage.sections[7].testimonianze)) {
+		query.datoCmsHomepage.sections[7].testimonianze.forEach(e => {
+			reviews.push({ user: e.nome, message: e.testimonianza })
+		})
+	}
 
-	query.datoCmsHomepage.sections[7].testimonianze.forEach(e => {
-		reviews.push({ user: e.nome, message: e.testimonianza })
-	})
-
-	query.datoCmsHomepage.sections[8].partners.forEach(e => {
-		partners.push({ img: e.immaginePartner.url, link: e.linkSitoPartner })
-	})
+	if (Array.isArray(query.datoCmsHomepage.sections[8].partners)) {
+		query.datoCmsHomepage.sections[8].partners.forEach(e => {
+			partners.push({ img: e.immaginePartner.url, link: e.linkSitoPartner })
+		})
+	}
 
 	return (
 		<Layout>
