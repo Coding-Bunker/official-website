@@ -1,48 +1,69 @@
+@import '../../styles/_variables.scss';
+@import '~bootstrap/scss/_functions.scss';
+@import '~bootstrap/scss/_variables.scss';
+@import '~bootstrap/scss/mixins/_breakpoints.scss';
+
 .container {
-    overflow: hidden;
+	overflow: hidden;
 }
 
 .left {
-    background-color: #36393F;
-    text-align: center;
-    
-    .discord {
-        margin-top: 2rem;
-    }
+	background-color: #36393f;
+	text-align: center;
 
-    @media screen and (max-width: 420px) {
-        display: none;
-    }
+	.discord {
+		margin: 2rem;
+	}
+
+	@include media-breakpoint-down(sm) {
+		display: none;
+	}
 }
 
 .right {
-    background-color: #7289DA;
-    text-align: center;
-    color: white;
+	background-color: #7289da;
+	text-align: center;
+	color: white;
 
-    .img {
-        width: 4rem;
-        margin-top: 5rem;
-        margin-bottom: 2rem;
-    }
+	.img {
+		width: 4rem;
+		margin-top: 5rem;
+		margin-bottom: 2rem;
+	}
 
-    .text {
-        margin: 0 3rem;
+	.text {
+		font-size: $eo-font-size-texts-mobile;
+		line-height: $eo-line-height-texts-mobile;
+		margin: 0 3rem;
 
-        @media screen and (max-width: 1200px) {
-            margin: 0 1.5rem;
-        }
-    }
+		@include media-breakpoint-up(sm) {
+			font-size: $eo-font-size-texts-tablet;
+			line-height: $eo-line-height-texts-tablet;
+		}
 
-    .btn {
-        font-size: 1.5rem;
+		@include media-breakpoint-up(lg) {
+			font-size: $eo-font-size-texts-desktop;
+			line-height: $eo-line-height-texts-desktop;
+		}
+	}
 
-        @media screen and (max-width: 420px) {
-            padding: .5rem 1rem !important;
-        }
+	.btn {
+		font-size: $eo-font-size-titles-mobile;
+		line-height: $eo-line-height-titles-mobile;
+		padding: 0.5rem 1rem !important;
 
-        @media screen and (max-width: 1200px) {
-            margin-bottom: 5rem;
-        }
-    }
+		@include media-breakpoint-up(sm) {
+			font-size: $eo-font-size-titles-tablet;
+			line-height: $eo-line-height-titles-tablet;
+		}
+
+		@include media-breakpoint-up(lg) {
+			font-size: $eo-font-size-titles-desktop;
+			line-height: $eo-line-height-titles-desktop;
+		}
+
+		@include media-breakpoint-down(xl) {
+			margin-bottom: 5rem;
+		}
+	}
 }
