@@ -1,12 +1,34 @@
-$primary: #00070F;
-$secondary: #A576FF;
+$primary: #00070f;
+$secondary: #a576ff;
 // $success: #65ff9f;
 // $info: #7164ff;
 // $warning: #ff9f65;
 // $danger: #ff457b;
 // $light: #f2d4ff;
-// $dark: #18181d; 
+// $dark: #18181d;
 
+$font-family-base: 'Raleway', sans-serif;
 
-$font-family-base: "Raleway", sans-serif;
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px,
+);
 
+// Entra Ora page's font-sizes and line-heights
+$eo-font-size-texts-mobile: 12px;
+$eo-line-height-texts-mobile: 20px;
+$eo-font-size-texts-tablet: 16px;
+$eo-line-height-texts-tablet: 24px;
+$eo-font-size-texts-desktop: 20px;
+$eo-line-height-texts-desktop: 28px;
+
+$eo-font-size-titles-mobile: 22px;
+$eo-line-height-titles-mobile: 30px;
+$eo-font-size-titles-tablet: 26px;
+$eo-line-height-titles-tablet: 34px;
+$eo-font-size-titles-desktop: 30px;
+$eo-line-height-titles-desktop: 38px;

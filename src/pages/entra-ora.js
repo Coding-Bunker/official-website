@@ -9,15 +9,8 @@ import Annunci from '../components/Annunci'
 const EntraOraPage = () => {
 	return (
 		<Layout>
-			<EntraOraDiscord
-				logo={logo}
-				text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis cum dolorum error hic id inventore, iusto laborum maxime mollitia non officiis provident, quaerat quasi qui, quos sed sequi suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corpo"
-			/>
-			<WhyEnter
-				title="Perché entrare"
-				description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis cum dolorum error hic id inventore, iusto laborum maxime mollitia non officiis provident, quaerat quasi qui, quos sed sequi suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi corporis cum dolorum error hic id inventore."
-				img={WhyEnterImage}
-			/>
+			<EntraOraDiscord logo={logo} />
+			<WhyEnter title="Perché entrare" img={WhyEnterImage} />
 			<Annunci />
 		</Layout>
 	)

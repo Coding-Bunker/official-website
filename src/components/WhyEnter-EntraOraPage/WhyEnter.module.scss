@@ -1,126 +1,56 @@
+@import '../../styles/_variables.scss';
+@import '~bootstrap/scss/_functions.scss';
+@import '~bootstrap/scss/_variables.scss';
+@import '~bootstrap/scss/mixins/_breakpoints.scss';
+
 .WhyEnterContainer {
-	margin-top: 16vh;
-	margin-left: 27vh;
-	margin-right: 27vh;
+	margin: 6rem 3rem;
+	text-align: justify;
+
+	@include media-breakpoint-down(sm) {
+		margin: 3rem 1.5rem;
+	}
 
 	.TextContainer {
 		width: 100%;
-		margin-top: 2vh;
 	}
 
 	.ImageContainer {
-		margin-right: -250px;
 		.Skater {
 			object-fit: cover;
 		}
 	}
 
 	.Title {
-		font-size: 40px;
 		font-weight: bold;
 		color: #a576ff;
+		font-size: $eo-font-size-titles-mobile;
+		line-height: $eo-line-height-titles-mobile;
+
+		@include media-breakpoint-up(sm) {
+			font-size: $eo-font-size-titles-tablet;
+			line-height: $eo-line-height-titles-tablet;
+		}
+
+		@include media-breakpoint-up(lg) {
+			font-size: $eo-font-size-titles-desktop;
+			line-height: $eo-line-height-titles-desktop;
+		}
 	}
 
 	.Description {
-		font-size: 22px;
 		margin-top: 2vh;
-		line-height: 38.2px;
-	}
-}
+		font-size: $eo-font-size-texts-mobile;
+		line-height: $eo-line-height-texts-mobile;
 
-/*MEDIA QUERY - Telefoni*/
-@media screen and (max-width: 470px) {
-	.WhyEnterContainer {
-		margin: 10vh 2vh 0 2vh !important;
+		@include media-breakpoint-up(sm) {
+			font-size: $eo-font-size-texts-tablet;
+			line-height: $eo-line-height-texts-tablet;
+		}
 
-		.TextContainer {
-			text-align: center;
-			margin: 0 auto;
-			width: 95%;
-		}
-		.Title {
-			font-size: 30px;
-		}
-		.Description {
-			font-size: 15px;
-		}
-		.ImageContainer {
-			margin: 0px !important;
-		}
-	}
-}
-
-/*MEDIA QUERY - Tablet medi*/
-@media screen and (max-width: 767px) {
-	.WhyEnterContainer {
-		margin: 10vh 5vh 0 5vh !important;
-
-		.TextContainer {
-			text-align: center;
-			margin: 0 auto;
-			width: 95%;
-		}
-		.Title {
-			font-size: 35px;
-		}
-		.Description {
-			font-size: 20px;
-		}
-		.ImageContainer {
-			margin: 0px !important;
-		}
-	}
-}
-
-/*MEDIA QUERY - Tablet Grandi*/
-@media screen and (max-width: 991px) {
-	.WhyEnterContainer {
-		margin: 10vh 5vh 0 5vh !important;
-
-		.TextContainer {
-			text-align: center;
-			margin: 0 auto;
-			width: 95%;
-		}
-		.Description {
-			font-size: 20px;
-		}
-		.ImageContainer {
-			margin: 0px !important;
-		}
-	}
-}
-
-/*MEDIA QUERY - Desktop (non ho capito bene perché le media query si bugghino tutte però funziona)*/
-@media screen and (max-width: 1198px) {
-	.WhyEnterContainer {
-		margin: 10vh 5vh 0 5vh !important;
-
-		.TextContainer {
-			text-align: center;
-			margin: 0 auto;
-			width: 80%;
-		}
-		.Description {
-			font-size: 20px;
-		}
-		.ImageContainer {
-			margin: 0px !important;
-		}
-	}
-}
-
-/*MEDIA QUERY - Desktop (non ho capito bene perché le media query si bugghino tutte però funziona)*/
-@media screen and (min-width: 1199px) {
-	.WhyEnterContainer {
-		margin: 10vh 5vh 20vh 5vh !important;
-
-		.TextContainer {
-			margin: 0 auto 0 20vh;
-			width: 150%;
-		}
-		.ImageContainer {
-			margin: 0% 0% 0% 40% !important;
+		@include media-breakpoint-up(lg) {
+			font-size: $eo-font-size-texts-desktop;
+			line-height: $eo-line-height-texts-desktop;
 		}
 	}
 }
