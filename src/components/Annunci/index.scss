@@ -1,82 +1,141 @@
-$lg-breakpoint: 48em;
+@import '../../styles/_variables.scss';
+@import '~bootstrap/scss/_functions.scss';
+@import '~bootstrap/scss/_variables.scss';
+@import '~bootstrap/scss/mixins/_breakpoints.scss';
 
+.Annunci {
+	.Container {
+		justify-content: center;
+	}
 
-.Annunci{
+	h3 {
+		font-weight: bold;
+		text-align: center;
+	}
 
-  .Container {
-    justify-content: center;
-  }
+	p {
+		text-align: center;
+	}
 
-  h3{
-    font-weight: bold;
-    text-align: center;
-  }
+	.align-center {
+		text-align: center;
+	}
 
-  p {
-    text-align: center;
-  }
+	.linea {
+		height: 8px;
+		width: 90px;
+		background-color: #000000;
+		display: inline-block;
+		margin-bottom: 5px;
 
-  .align-center{
-    text-align: center;
-  }
+		@include media-breakpoint-down(md) {
+			height: 4px;
+			width: 45px;
+			margin-bottom: 2.5px;
+		}
+	}
 
+	.titolo {
+		cursor: default;
+		font-weight: bold;
+		text-align: center;
+		padding-left: 25px;
+		padding-right: 25px;
+		font-size: $eo-font-size-titles-mobile;
+		line-height: $eo-line-height-titles-mobile;
 
-  .linea {
-    height: 1vh;
-    width: 15vh;
-    background-color: #000000;
-    display: inline-block;
-    margin-bottom: 0.7vh;
-    @media screen and (max-width: $lg-breakpoint) {
-      height: 0.2vh;
-      width: 7.5vh;
-      margin-bottom: 0.35vh;
-    }
+		@include media-breakpoint-up(sm) {
+			font-size: $eo-font-size-titles-tablet;
+			line-height: $eo-line-height-titles-tablet;
+		}
 
-  }
+		@include media-breakpoint-up(md) {
+			padding-left: 50px;
+			padding-right: 50px;
+		}
 
-  .titolo {
-    cursor: default;
-    font-weight: bold;
-    text-align: center;
-    font-size: 2.625rem;
-    padding-left: 7vh;
-    padding-right: 7vh;
-    @media screen and (max-width: $lg-breakpoint) {
-      font-size: 1.5rem;
-      padding-left: 3.5vh;
-      padding-right: 3.5vh;
-    }
-  }
+		@include media-breakpoint-up(lg) {
+			font-size: $eo-font-size-titles-desktop;
+			line-height: $eo-line-height-titles-desktop;
+		}
+	}
 
-  .sottotitolo {
-    cursor: default;
-    text-align: center;
-    font-size: 1.25rem;
-    margin-top: 1em;
-    @media screen and (max-width: $lg-breakpoint) {
-      font-size: 0.75rem;
-      margin-top: 0.5em;
-    }
-  }
-  .diventa-partner {
-    background-color: #A576FF;
-    font-size: 1.65rem;
-    font-weight: bold;
-    border-color: #A576FF;
-  }
-  .button{
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+	.sottotitolo {
+		text-align: center;
+		margin-top: 1rem;
+		font-size: $eo-font-size-texts-mobile;
+		line-height: $eo-line-height-texts-mobile;
+		padding: 0 1rem;
 
-  .intestazione {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+		@include media-breakpoint-up(sm) {
+			font-size: $eo-font-size-texts-tablet;
+			line-height: $eo-line-height-texts-tablet;
+		}
 
+		@include media-breakpoint-up(lg) {
+			font-size: $eo-font-size-texts-desktop;
+			line-height: $eo-line-height-texts-desktop;
+		}
+	}
+
+	.diventa-partner {
+		background-color: #a576ff;
+		font-weight: bold;
+		border-color: #a576ff;
+		font-size: $eo-font-size-titles-mobile;
+		line-height: $eo-line-height-titles-mobile;
+		padding: 0.5rem 1rem !important;
+
+		@include media-breakpoint-up(sm) {
+			font-size: $eo-font-size-titles-tablet;
+			line-height: $eo-line-height-titles-tablet;
+		}
+
+		@include media-breakpoint-up(lg) {
+			font-size: $eo-font-size-titles-desktop;
+			line-height: $eo-line-height-titles-desktop;
+		}
+	}
+
+	.button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.intestazione {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.titolo-descrizione {
+		font-size: $eo-font-size-titles-mobile;
+		line-height: $eo-line-height-titles-mobile;
+
+		@include media-breakpoint-up(sm) {
+			font-size: $eo-font-size-titles-tablet;
+			line-height: $eo-line-height-titles-tablet;
+		}
+
+		@include media-breakpoint-up(lg) {
+			font-size: $eo-font-size-titles-desktop;
+			line-height: $eo-line-height-titles-desktop;
+		}
+	}
+
+	.testo-descrizione {
+		font-size: $eo-font-size-texts-mobile;
+		line-height: $eo-line-height-texts-mobile;
+
+		@include media-breakpoint-up(sm) {
+			font-size: $eo-font-size-texts-tablet;
+			line-height: $eo-line-height-texts-tablet;
+		}
+
+		@include media-breakpoint-up(lg) {
+			font-size: $eo-font-size-texts-desktop;
+			line-height: $eo-line-height-texts-desktop;
+		}
+	}
 }
