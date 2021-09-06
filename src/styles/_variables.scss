@@ -1,12 +1,40 @@
-$primary: #00070F;
-$secondary: #A576FF;
-// $success: #65ff9f;
-// $info: #7164ff;
-// $warning: #ff9f65;
-// $danger: #ff457b;
-// $light: #f2d4ff;
-// $dark: #18181d; 
+$font-family-base: 'Raleway', sans-serif;
 
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px,
+);
 
-$font-family-base: "Raleway", sans-serif;
+// Entra Ora page's font-sizes and line-heights
+$eo-font-size-titles-mobile: 22px;
+$eo-line-height-titles-mobile: 30px;
+$eo-font-size-titles-tablet: 26px;
+$eo-line-height-titles-tablet: 34px;
+$eo-font-size-titles-desktop: 30px;
+$eo-line-height-titles-desktop: 38px;
 
+$eo-font-size-texts-mobile: 12px;
+$eo-line-height-texts-mobile: 20px;
+$eo-font-size-texts-tablet: 16px;
+$eo-line-height-texts-tablet: 24px;
+$eo-font-size-texts-desktop: 20px;
+$eo-line-height-texts-desktop: 28px;
+
+// Text And Photo Home Section's font-sizes and line-heights
+$tap-fs-title-mobile: 30px;
+$tap-lh-title-mobile: 38px;
+$tap-fs-title-tablet: 34px;
+$tap-lh-title-tablet: 42px;
+$tap-fs-title-desktop: 38px;
+$tap-lh-title-desktop: 46px;
+
+$tap-fs-text-mobile: 16px;
+$tap-lh-text-mobile: 24px;
+$tap-fs-text-tablet: 18px;
+$tap-lh-text-tablet: 26px;
+$tap-fs-text-desktop: 20px;
+$tap-lh-text-desktop: 28px;

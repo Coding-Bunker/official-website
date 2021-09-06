@@ -1,114 +1,103 @@
-// classe per la sezione globale
-.containerSection {
-    color: white;
-    padding: 10vh 0;
-    background-color: #00070f;
-    height: 70vh;
+@import '../../styles/_variables.scss';
+@import '~bootstrap/scss/_functions.scss';
+@import '~bootstrap/scss/_variables.scss';
+@import '~bootstrap/scss/mixins/_breakpoints.scss';
+
+.TextAndPhotoHomeSection {
     width: 100%;
+    height: auto;
+    padding-bottom: 3rem;
+    color: white;
+    background-color: #00070f;
     overflow: hidden;
-    margin-bottom: 10vh !important;
-}
 
-// classe scritta coding bunker
-.title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-// classe testo sotto coding bunker
-.description {
-    font-size: 1rem;
-}
-
-// classe foto figa
-.img {
-    width: 100vh;
-    margin: 0;
-    clip-path: polygon(0% 15%, 5% 0%, 100% 0%, 100% 100%, 0% 100%);
-}
-
-// container per la foto
-.imgContainer {
-    text-align: right;
-}
-
-
-
-.linkContainer {
-    text-align: right;
-    font-size: 1.2rem;
-    color: #a576ff;
-    position: relative;
-    top: 20px;
-    right: 5vh;
-}
-
-.link {
-    display: inline-block;
-}
-
-.textContainer {
-    padding-top: 10vh;
-    padding-right: 5vh;
-    padding-left: 20vh;
-}
-
-// telefono
-@media screen and (max-width: 420px) {
-    .containerSection {
-        padding: 1rem;
+    @include media-breakpoint-up(lg) {
+        padding-top: 2rem;
+    }
+    
+    @include media-breakpoint-up(xl) {
+        padding-top: 4rem;
+        padding-bottom: 0;
     }
 
     .textContainer {
-        padding: 2rem;
-        width: 200%;
+        padding: 0 2rem;
+
+        @include media-breakpoint-up(sm) {
+            padding: 0 4rem;
+        }
+    
+        @include media-breakpoint-up(xl) {
+            padding: 0 6rem;
+        }
+
+        @include media-breakpoint-up(xxl) {
+            padding: 0 8rem;
+        }
+
+        .title {
+            font-size: $tap-fs-title-mobile;
+            line-height: $tap-lh-title-mobile;
+            font-weight: bold;
+            margin-bottom: 20px;
+
+            @include media-breakpoint-up(md) {
+                font-size: $tap-fs-title-tablet;
+                line-height: $tap-lh-title-tablet;
+            }
+
+            @include media-breakpoint-up(xl) {
+                font-size: $tap-fs-title-desktop;
+                line-height: $tap-lh-title-desktop;
+            }
+        }
+        
+        .description {
+            font-size: $tap-fs-text-mobile;
+            line-height: $tap-lh-text-mobile;
+
+            @include media-breakpoint-up(md) {
+                font-size: $tap-fs-text-tablet;
+                line-height: $tap-lh-text-tablet;
+            }
+
+            @include media-breakpoint-up(xl) {
+                font-size: $tap-fs-text-desktop;
+                line-height: $tap-lh-text-desktop;
+            }
+        }
+        
+        .linkContainer {
+            text-align: right;
+            color: #a576ff;
+            position: relative;
+            top: 20px;
+            right: 0;
+            font-size: $tap-fs-text-mobile;
+            line-height: $tap-lh-text-mobile;
+
+            @include media-breakpoint-up(md) {
+                font-size: $tap-fs-text-tablet;
+                line-height: $tap-lh-text-tablet;
+            }
+
+            @include media-breakpoint-up(xl) {
+                font-size: $tap-fs-text-desktop;
+                line-height: $tap-lh-text-desktop;
+            }
+        }
     }
 
     .imgContainer {
-        display: none;
-    }
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
 
-    .containerText {
-        width: 90%;
-    }
-
-    .containerSection {
-        height: auto;
-    }
-}
-
-// ipad pro
-@media screen and (max-width: 1024px) {
-    .containerSection {
-        padding: 5rem 0;
-        height: auto;
-    }
-    
-    .textContainer {
-        padding-left: 4rem;
-        padding-top: 2rem;
-        padding-right: 2rem;
-        padding-bottom: 2rem;
-    }
-}
-
-// ipad
-@media screen and (max-width: 768px) {
-    .containerSection {
-        margin-bottom: 0vh;
-        padding: 5rem 0;
-        height: auto;
-    }
-    
-    .textContainer {
-        padding-left: 3rem;
-        padding-top: 2rem;
-        padding-right: 2rem;
-        padding-bottom: 2rem;
-    }
-
-    .img {
-        margin-top: 2.5rem;
+        .img {
+            width: 100%;
+            height: auto;
+            clip-path: polygon(0% 15%, 5% 0%, 100% 0%, 100% 100%, 0% 100%);
+            opacity: 1;
+        }
     }
 }

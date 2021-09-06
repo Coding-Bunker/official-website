@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap'
 import textAndPhotoStyles from './TextAndPhoto.module.scss'
 
 const TextAndPhoto = ({ title, description, linkTo, linkText, img }) => (
-	<div className={textAndPhotoStyles.containerSection}>
+	<div className={textAndPhotoStyles.TextAndPhotoHomeSection}>
 		<Row>
 			<Col className={textAndPhotoStyles.textContainer}>
 				<div className={textAndPhotoStyles.title}>{title}</div>
@@ -15,7 +15,7 @@ const TextAndPhoto = ({ title, description, linkTo, linkText, img }) => (
 					</div>
 				</div>
 			</Col>
-			<Col className={textAndPhotoStyles.imgContainer} style={{ padding: 0 }}>
+			<Col className={textAndPhotoStyles.imgContainer}>
 				<img className={textAndPhotoStyles.img} alt="background" src={img} />
 			</Col>
 		</Row>
