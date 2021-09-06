@@ -1,0 +1,36 @@
+@import '../../styles/_variables.scss';
+@import '~bootstrap/scss/_functions.scss';
+@import '~bootstrap/scss/_variables.scss';
+@import '~bootstrap/scss/mixins/_breakpoints.scss';
+
+.Scrollable {
+    padding: 4rem 0;
+
+    @include media-breakpoint-up(sm) {
+        padding: 4rem 2.5rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        padding: 4rem 5rem;
+    }
+    
+    @include media-breakpoint-up(lg) {
+        padding: 4rem 10rem;
+    }
+
+    .cardList{
+        display: flex;
+        padding: 2rem 1rem 0 1rem;
+
+        &::-webkit-scrollbar{
+            width: 10px;
+            height: 10px;
+        }
+        
+        &::-webkit-scrollbar-thumb{
+            background: #201c29;
+            border-radius: 10px;
+            box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+        }
+    }
+}

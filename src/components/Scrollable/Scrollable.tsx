@@ -1,6 +1,6 @@
 import React from 'react'
-import './Scrollable.scss'
-
+import scrollableStyles from './Scrollable.module.scss'
+import Heading from '../Heading/Heading.js'
 import EventCard from '../EventCard/EventCard.js'
 
 interface Card {
@@ -8,6 +8,7 @@ interface Card {
 	img: string
 	title: string
 	description: string
+	link: string
 }
 
 interface Props {
@@ -18,16 +19,10 @@ interface Props {
 
 const Scrollable: React.FC<Props> = ({ title, description, cards }) => {
 	return (
-		<div className="scrollable">
-			<div className="intestazione">
-				<div className="linea" />
-				<span className="titolo">{title}</span>
-				<div className="linea" />
-			</div>
+		<section className={scrollableStyles.Scrollable}>
+			<Heading title={title} subtitle={description} />
 
-			<div className="sottotitolo">{description}</div>
-
-			<section className="card-list">
+			<div className={scrollableStyles.cardList}>
 				{cards.map((card, i) => (
 					<EventCard
 						key={i}
@@ -37,8 +32,8 @@ const Scrollable: React.FC<Props> = ({ title, description, cards }) => {
 						description={card.description}
 					/>
 				))}
-			</section>
-		</div>
+			</div>
+		</section>
 	)
 }
 

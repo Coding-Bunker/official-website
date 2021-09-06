@@ -1,13 +1,11 @@
 import React from 'react'
-
 import eventCardStyles from './EventCard.module.scss'
 
 const EventCard = ({ date, title, img, description }) => {
-	// eslint-disable-next-line no-unused-vars
-	const [year, month, day] = date.split('-')
+	const [month, day] = date.split('-')
 
 	let parsedMonth = ''
-	// Converto il mese da numero a lettere
+
 	switch (parseInt(month, 10)) {
 		case 1:
 			parsedMonth = 'GEN'
@@ -51,7 +49,7 @@ const EventCard = ({ date, title, img, description }) => {
 	}
 
 	return (
-		<div className={eventCardStyles.containerCard}>
+		<div className={eventCardStyles.EventCard}>
 			<div className={eventCardStyles.imgContainer}>
 				<img className={eventCardStyles.img} src={img} alt={title} />
 			</div>

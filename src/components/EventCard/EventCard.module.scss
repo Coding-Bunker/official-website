@@ -1,126 +1,98 @@
 @import "../../styles/style.scss";
+@import '../../styles/_variables.scss';
+@import '~bootstrap/scss/_functions.scss';
+@import '~bootstrap/scss/_variables.scss';
+@import '~bootstrap/scss/mixins/_breakpoints.scss';
+
 
 // classe che gestisce il componente in se
-.containerCard {
+.EventCard {
     border: .1px solid rgba(0,0,0,.1);
     display: inline-block;
     transition: .2s all;
-    width: 65vh;
+    width: 400px;
+    height: 100%;
     border-radius: 0px 0px 20px 20px;
     background: white;
-
-
-
     position: relative;
     flex-direction: column;
     box-shadow: -1rem 0 1rem rgba(0,0,0,.3);
-}
 
-.containerCard:hover{
-    transform: translateY(-1rem);
-}
-
-.containerCard:hover~.containerCard{
-    transform: translateX(130px);
-}
-
-.containerCard:not(:first-child){
-    margin-left: -130px;
-}
-
-
-
-
-
-
-// Animazione per il componente quando ci si passa sopra con il mouse
-//.containerCard:hover {
-  //  transform: translateY(-3px);
-  //  box-shadow: 0 10px 20px rgba(0,0,0,.2);
-//}
-
-// Div che contiene la foto
-.imgContainer {
-    height: auto;
-    width: auto;
-
-}
-
-// Classe che gestisce la foto
-.img {
-    margin: 0;
-    width: 100%;
-}
-
-// Div che contiene il calendario
-.calendarContainer{
-    display: inline-block;
-    text-align: center;
-    padding: 3% 0;
-    width: 24%;
-    background-color: $secondary;
-    border-radius: 0px 0px 0px 20px;
-    color: white;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-// Classe che gestisce il mese
-.month {
-    font-size: 1rem;
-    position: relative;
-    top: 5px;
-
-}
-
-// Classe che gestisce il giorno
-.day {
-    font-size: 2rem;
-    position: relative;
-    bottom: 5px;
-}
-
-// Div che contiene tutta la descrizione dell'evento
-.descriptionContainer {
-    display: inline-block;
-    padding: 0 15px;
-    width: 76%;
-    height: 12%;
-    position: relative;
-    bottom: 10px;
-}
-
-// Classe che gestisce il titolo dell'evento
-.title {
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-
-
-// Classe che gestisce la descrizione dell'evento
-.description {
-    position: relative;
-    top: 10px;
-    font-size: .6rem;
-    display: block;
-}
-
-@media screen and (max-width: 420px) {
-    .containerCard {
-        width: 10rem;
-    }
-
-
-    .title {
-        font-size: .75rem;
+    &:hover {
+        transform: translateY(-1rem);
     }
     
-    .month {
-        font-size: .8rem;
+    &:hover~& {
+        transform: translateX(130px);
+    }
+    
+    &:not(:first-child){
+        margin-left: -130px;
     }
 
-    .day {
-        font-size: 1.6rem;
+    .imgContainer {
+        .img {
+            margin: 0;
+            width: 100%;
+            height: 25%;
+        }
+    }
+
+    .under {
+        height: 120px;
+        display: flex;
+
+        .calendarContainer{
+            text-align: center;
+            padding: 3px;
+            width: 25%;
+            height: 120px;
+            background-color: $secondary;
+            border-radius: 0px 0px 0px 20px;
+            color: white;
+            font-weight: bold;
+
+            .month {
+                font-size: 0.8rem;
+                position: relative;
+                top: 5px;
+
+                @include media-breakpoint-up(md) {
+                    font-size: 1rem;
+                }
+            }
+
+            .day {
+                font-size: 1.6rem;
+                position: relative;
+                bottom: 5px;
+
+                @include media-breakpoint-up(md) {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .descriptionContainer {
+            padding: 0 0.5rem;
+            width: 75%;
+
+            .title {
+                font-weight: bold;
+                font-size: 0.75rem;
+
+                @include media-breakpoint-up(md) {
+                    font-size: 1rem;
+                }
+            }
+        }
     }
 }
+
+
+
+
+
+
+
+
