@@ -1,81 +1,53 @@
-$lg-breakpoint: 48em;
+@import '../../styles/_variables.scss';
+@import '~bootstrap/scss/_functions.scss';
+@import '~bootstrap/scss/_variables.scss';
+@import '~bootstrap/scss/mixins/_breakpoints.scss';
 
-  .Azienda{
-    height: 75%;
-    width: 75%;
-    @media screen and (max-width: $lg-breakpoint) {
-      height: auto;
+.Azienda {
+
+    .imgContainer {
+        text-align: center;
+        margin: 2rem 0;
+
+        @include media-breakpoint-up(sm) {
+            margin: 4rem;
+        }
+
+        .column {
+            height: 75px;
+
+            @include media-breakpoint-up(md) {
+                height: 150px;
+            }
+
+            img {
+                width: 200px;
+                opacity: 0.5;
+                transition: 0.2s;
+        
+                @include media-breakpoint-up(sm) {
+                    width: 300px;
+                }
+            }
+            
+            img:hover {
+                opacity: 1;
+            }
+        }
     }
-  }
 
-  img{
-    opacity: 0.5;
-    transition: 0.2s;
-  }
+    .button {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-  img:hover{
-    opacity: 1;
-  }
-
-
-  .linea {
-    height: 1vh;
-    width: 15vh;
-    background-color: #000000;
-    display: inline-block;
-    margin-bottom: 0.7vh;
-    @media screen and (max-width: $lg-breakpoint) {
-      height: 0.2vh;
-      width: 7.5vh;
-      margin-bottom: 0.35vh;
+        .diventaPartner {
+            background-color: #A576FF;
+            font-size: 1.25rem;
+            font-weight: bold;
+            border-color: #A576FF;
+        }
     }
-
-  }
-
-  .titolo {
-    cursor: default;
-    font-weight: bold;
-    text-align: center;
-    font-size: 2.625rem;
-    padding-left: 7vh;
-    padding-right: 7vh;
-    @media screen and (max-width: $lg-breakpoint) {
-      font-size: 1.5rem;
-      padding-left: 3.5vh;
-      padding-right: 3.5vh;
-    }
-  }
-
-  .sottotitolo {
-    cursor: default;
-    text-align: center;
-    font-size: 1.25rem;
-    margin-top: 1em;
-    @media screen and (max-width: $lg-breakpoint) {
-      font-size: 0.688rem;
-      margin-top: 0.5em;
-    }
-  }
-  .diventaPartner {
-    background-color: #A576FF;
-    font-size: 1.25rem;
-    font-weight: bold;
-    border-color: #A576FF;
-  }
-  .button{
-    margin-top: 1em;
-    margin-bottom: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .intestazione {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .alignCenter{
-    text-align: center;
-  }
-
+}

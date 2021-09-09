@@ -3,6 +3,21 @@
 @import '~bootstrap/scss/_variables.scss';
 @import '~bootstrap/scss/mixins/_breakpoints.scss';
 
+// Heading's font-sizes and line-heights
+$h-fs-title-mobile: 22px;
+$h-lh-title-mobile: 30px;
+$h-fs-title-tablet: 28px;
+$h-lh-title-tablet: 36px;
+$h-fs-title-desktop: 34px;
+$h-lh-title-desktop: 42px;
+
+$h-fs-text-mobile: 12px;
+$h-lh-text-mobile: 20px;
+$h-fs-text-tablet: 16px;
+$h-lh-text-tablet: 24px;
+$h-fs-text-desktop: 20px;
+$h-lh-text-desktop: 28px;
+
 .Heading {
     .title {
         display: flex;
@@ -30,12 +45,12 @@
             text-align: center;
             padding-left: 25px;
             padding-right: 25px;
-            font-size: $eo-font-size-titles-mobile;
-            line-height: $eo-line-height-titles-mobile;
+            font-size: $h-fs-title-mobile;
+            line-height: $h-lh-title-mobile;
         
             @include media-breakpoint-up(sm) {
-                font-size: $eo-font-size-titles-tablet;
-                line-height: $eo-line-height-titles-tablet;
+                font-size: $h-fs-title-tablet;
+                line-height: $h-lh-title-tablet;
             }
         
             @include media-breakpoint-up(md) {
@@ -44,21 +59,21 @@
             }
         
             @include media-breakpoint-up(lg) {
-                font-size: $eo-font-size-titles-desktop;
-                line-height: $eo-line-height-titles-desktop;
+                font-size: $h-fs-title-desktop;
+                line-height: $h-lh-title-desktop;
             }
         }
     }
     
     .subtitle {
         text-align: center;
-        font-size: $eo-font-size-texts-mobile;
-        line-height: $eo-line-height-texts-mobile;
+        font-size: $h-fs-text-mobile;
+        line-height: $h-lh-text-mobile;
         padding: 1rem 1rem 0 1rem;
     
         @include media-breakpoint-up(sm) {
-            font-size: $eo-font-size-texts-tablet;
-            line-height: $eo-line-height-texts-tablet;
+            font-size: $h-fs-text-tablet;
+            line-height: $h-lh-text-tablet;
         }
 
         @include media-breakpoint-up(md) {
@@ -67,8 +82,8 @@
         }
     
         @include media-breakpoint-up(lg) {
-            font-size: $eo-font-size-texts-desktop;
-            line-height: $eo-line-height-texts-desktop;
+            font-size: $h-fs-text-desktop;
+            line-height: $h-lh-text-desktop;
         }
     }
 }

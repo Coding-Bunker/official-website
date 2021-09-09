@@ -1,46 +1,44 @@
 import React from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
-import aziende_style from './Aziende.module.scss'
+import aziendeStyle from './Aziende.module.scss'
+import Heading from '../Heading/Heading.js'
+
+interface Partner {
+	img: string
+	link: string
+}
 
 interface Props {
 	title: string
-	undertitle: string
-	collab0: string
-	collab1: string
-	collab2: string
-	collab3: string
+	description: string
+	partners: Array<Partner>
 }
 
-const Aziende: React.FC<Props> = ({ title, undertitle, collab0, collab1, collab2, collab3 }) => {
+const Aziende: React.FC<Props> = ({ title, description, partners }) => {
 	return (
-		<div>
-			<div className={aziende_style.intestazione}>
-				<div className={aziende_style.linea} />
-				<span className={aziende_style.titolo}>{title}</span>
-				<div className={aziende_style.linea} />
-			</div>
-			<div className={aziende_style.sottotitolo}>{undertitle}</div>
-			<div className={aziende_style.button}>
-				<Button className={aziende_style.diventaPartner}>Diventa Partner</Button>
-			</div>
+		<div className={aziendeStyle.Azienda}>
+			<Heading title={title} subtitle={description} />
 
 			<Container>
-				<Row className={aziende_style.alignCenter}>
-					<Col md={6}>
-						<img className={aziende_style.Azienda} src={collab0} alt="" />
-					</Col>
-					<Col md={6}>
-						<img className={aziende_style.Azienda} src={collab1} alt="" />
-					</Col>
-					<Col md={6}>
-						<img className={aziende_style.Azienda} src={collab2} alt="" />
-					</Col>
-					<Col md={6}>
-						<img className={aziende_style.Azienda} src={collab3} alt="" />
-					</Col>
+				<Row className={aziendeStyle.imgContainer}>
+					{partners.map((partner, i) => (
+						<Col sm={6} key={i} className={aziendeStyle.column}>
+							<a href={partner.link}>
+								<img src={partner.img} alt="" />
+							</a>
+						</Col>
+					))}
 				</Row>
 			</Container>
+
+			{/* We actually can't insert this button, because we won't develop and publish the become partner page for the first
+            release
+            <div className={aziendeStyle.button}>
+				<Button className={aziendeStyle.diventaPartner}>Diventa Partner</Button>
+			</div>
+            */}
 		</div>
 	)
 }
+
 export default Aziende
