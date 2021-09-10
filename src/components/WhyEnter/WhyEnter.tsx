@@ -1,6 +1,6 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import './WhyEnter.scss'
+import { Row, Col } from 'react-bootstrap'
+import whyEnterStyles from './WhyEnter.module.scss'
 
 interface Props {
 	title: string
@@ -10,23 +10,21 @@ interface Props {
 
 const WhyEnter: React.FC<Props> = ({ title, description, img }) => {
 	return (
-		<div className="container-WhyEnter">
-			<Container fluid>
-				<Row>
-					<Col sm md>
-						<div className="container-text">
-							<span className="title">{title}</span>
-							<p className="description">{description}</p>
-						</div>
-					</Col>
-					<Col sm={12} md={12} lg={12} xl={6}>
-						<div className="container-image">
-							<img className="skater" src={img} alt="" />
-						</div>
-					</Col>
-				</Row>
-			</Container>
-		</div>
+		<section className={whyEnterStyles.WhyEnterHomeSection}>
+			<Row>
+				<Col className={whyEnterStyles.textContainer} lg={6}>
+					<div className={whyEnterStyles.title}>{title}</div>
+					<div className={whyEnterStyles.description}>{description}</div>
+				</Col>
+				<Col className={whyEnterStyles.imgContainer} lg={6}>
+					<img
+						className={whyEnterStyles.img}
+						src={img}
+						alt="Perché entrare dentro Coding Bunker - Why enter in Coding Bunker"
+					/>
+				</Col>
+			</Row>
+		</section>
 	)
 }
 export default WhyEnter
